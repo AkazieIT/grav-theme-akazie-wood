@@ -1,0 +1,28 @@
+title: default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        inhalt:
+          type: tab
+          title: THEME_TRAVELER.ADMIN.TAB.CONTENT
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              label: THEME_TRAVELER.ADMIN.FIELDS.TITLE.LABEL
+            header.image:
+              type: filepicker
+              label: THEME_TRAVELER.ADMIN.FIELDS.PREVIEW_IMAGE.LABEL
+              folder: '@self'
+              preview_images: true
+            content:
+              type: markdown
+              validate:
+                type: textarea
+            header.media_order:
+              type: pagemedia
+              label: PLUGIN_ADMIN.PAGE_MEDIA

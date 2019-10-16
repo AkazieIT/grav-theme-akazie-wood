@@ -1,0 +1,16 @@
+# Phpstorm
+.idea
+
+# OS Generated
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+*.swp
+
+node_modules
+scss/core
+js/core
+package-lock.json
+images/favicon
+images/logo

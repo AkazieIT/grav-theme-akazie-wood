@@ -1,0 +1,29 @@
+{% macro nav_loop(page, theme_config) %}
+  {% for p in page.children.visible | reverse %}
+    {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
+    {% if p.children.visible.count > 0 %}
+      <li>
+        <a href="{{ p.url }}" class="{{ active_page }}" link>
+          {{ p.menu }}
+        </a>
+        <ul>
+          {{ _self.nav_loop(p) }}
+        </ul>
+      </li>
+    {% else %}
+      {% if (p.home() and theme_config.nav.home) or p.home() == false %}
+        <li>
+          <a href="{{ p.url }}" class="{{ active_page }}" link>
+            {{ p.menu }}
+          </a>
+        </li>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
+<nav class="header-nav desktop">
+  <ul {{ tree ? 'class="tree"' : '' }}>
+    {{ _self.nav_loop(pages, theme_config) }}
+  </ul>
+</nav>

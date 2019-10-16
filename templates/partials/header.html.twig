@@ -1,0 +1,18 @@
+{% set logo = theme_config.nav.logo | first %}
+
+<header class="page-header">
+  <div class="header-inner">
+    <div class="logo">
+      <img src="{{ theme_config.preview ? theme_url ~ '/images/logo/wwbt.png' : logo.path }}" alt="Logo">
+    </div>
+    <div class="mobile-toggle">
+      <div class="pull">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    {% include 'partials/navigation.html.twig' %}
+  </div>
+</header>

@@ -1,0 +1,19 @@
+name: "Akazie - Wood"
+version: 1.0.0
+description: "This is a theme of Akazie IT GmbH and is intended for simple websites without great features"
+icon: id-card-o
+keywords: akazieit, akazie, wood, carpenter, simple, chargeable
+author:
+  name: Akazie IT GmbH
+  email: info@akazie.com
+  url: https://akazie.com
+homepage: https://github.com/Memurame/grav-theme-akazie-wood
+bugs: https://github.com/Memurame/grav-theme-akazie-wood/issues
+license: MIT
+demo: https://demo.hirter.dev/grav/akazie-wood
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+form:
+  validation: loose
+  fields:
+
