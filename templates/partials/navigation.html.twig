@@ -11,7 +11,7 @@
         </ul>
       </li>
     {% else %}
-      {% if (p.home() and theme_config.nav.home) or p.home() == false %}
+      {% if (p.home() and theme_config.header.home) or p.home() == false %}
         <li>
           <a href="{{ p.url }}" class="{{ active_page }}" link>
             {{ p.menu }}

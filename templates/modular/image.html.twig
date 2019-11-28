@@ -1,0 +1,19 @@
+<article class="modular section-image col-12 {% if page.header.column == 2 %}col-md-12{% else %}col-md-6{% endif %}">
+    {% if page.header.showtitle == 1 %}<h2 class="heading">{{ page.header.title }}</h2>{% endif %}
+    {% set image = page.header.image | first %}
+    {% if page.header.scale == 1 %}
+        {% set scale = 3 / 4 %}
+    {% elseif page.header.scale == 2 %}
+        {% set scale = 9 / 16 %}
+    {% elseif page.header.scale == 3 %}
+        {% set scale = 1 / 2.35 %}
+    {% endif %}
+    <div class="media-container {% if page.header.showtitle == 2 %}title-placeholder{% endif %}">
+        <div class="media" data-scale="{{ scale }}" style="background-image: url('{{ page.media[image.name].cropResize(1280,720).url }}')">
+
+        </div>
+        {% if page.header.description %}<div class="caption">{{ page.header.description }}</div>{% endif %}
+    </div>
+
+
+</article>

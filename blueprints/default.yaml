@@ -8,21 +8,30 @@ form:
       fields:
         inhalt:
           type: tab
-          title: THEME_TRAVELER.ADMIN.TAB.CONTENT
+          title: THEME_AKAZIEWOOD.ADMIN.TAB.CONTENT
           fields:
             header.title:
               type: text
               autofocus: true
-              label: THEME_TRAVELER.ADMIN.FIELDS.TITLE.LABEL
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
             header.image:
               type: filepicker
-              label: THEME_TRAVELER.ADMIN.FIELDS.PREVIEW_IMAGE.LABEL
-              folder: '@self'
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE_HEADER.LABEL
               preview_images: true
             content:
-              type: markdown
-              validate:
-                type: textarea
-            header.media_order:
-              type: pagemedia
-              label: PLUGIN_ADMIN.PAGE_MEDIA
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.CONTENT
+              underline: true
+              fields:
+                content:
+                  type: markdown
+                  validate:
+                    type: textarea
+            media:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
+              underline: true
+              fields:
+                header.media_order:
+                  type: pagemedia
+                  label: PLUGIN_ADMIN.PAGE_MEDIA

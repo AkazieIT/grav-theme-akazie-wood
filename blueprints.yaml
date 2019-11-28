@@ -1,5 +1,5 @@
 name: "Akazie - Wood"
-version: 1.0.0
+version: 0.9.0
 description: "This is a theme of Akazie IT GmbH and is intended for simple websites without great features"
 icon: id-card-o
 keywords: akazieit, akazie, wood, carpenter, simple, chargeable
@@ -10,10 +10,83 @@ author:
 homepage: https://github.com/Memurame/grav-theme-akazie-wood
 bugs: https://github.com/Memurame/grav-theme-akazie-wood/issues
 license: MIT
-demo: https://demo.hirter.dev/grav/akazie-wood
+demo: https://akazie.hirter.dev/grav/akazie-wood
 dependencies:
   - { name: grav, version: '>=1.6.0' }
 form:
   validation: loose
   fields:
+    site_section:
+      type: section
+      title: THEME_AKAZIEWOOD.THEME.SECTION.SITE
+      underline: true
+      fields:
+        site.favicon:
+          type: file
+          label: THEME_AKAZIEWOOD.THEME.FIELDS.FAVICON.LABEL
+          size: large
+          destination: 'theme://images/favicon'
+          multiple: false
+          markdown: true
+          description: THEME_AKAZIEWOOD.THEME.FIELDS.FAVICON.DESCRIPTION
+          accept:
+            - image/*
+    header_section:
+      type: section
+      title: THEME_AKAZIEWOOD.THEME.SECTION.HEADER
+      underline: true
+      fields:
+        header.logo:
+          type: file
+          label: THEME_AKAZIEWOOD.THEME.FIELDS.LOGO.LABEL
+          size: large
+          destination: 'theme://images/logo'
+          multiple: false
+          markdown: true
+          description: THEME_AKAZIEWOOD.THEME.FIELDS.LOGO.DESCRIPTION
+          accept:
+            - image/*
+        header.fixed:
+          type: toggle
+          label: THEME_AKAZIEWOOD.THEME.FIELDS.FIXED.LABEL
+          help: THEME_AKAZIEWOOD.THEME.FIELDS.FIXED.HELP
+          highlight: 1
+          default: 1
+          options:
+            0: PLUGIN_ADMIN.DISABLED
+            1: PLUGIN_ADMIN.ENABLED
+          validate:
+            type: bool
+        header.home:
+          type: toggle
+          label: 'Startseiten-Link'
+          highlight: 1
+          default: 1
+          options:
+            1: 'Anzeigen'
+            0: 'Verstecken'
+    footer_section:
+      type: section
+      title: THEME_AKAZIEWOOD.THEME.SECTION.FOOTER
+      underline: true
+      fields:
+        footer.home:
+          type: toggle
+          label: 'Startseiten-Link'
+          highlight: 1
+          default: 1
+          options:
+            1: 'Anzeigen'
+            0: 'Verstecken'
+        footer.address:
+          type: textarea
+          label: 'Adresse im Footer'
+          rows: 5
+          size: medium
+        footer.mail:
+          type: text
+          label: 'Mail im Footer'
+          size: large
+    map_section:
+      type: section
 

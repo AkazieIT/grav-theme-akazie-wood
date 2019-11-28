@@ -2,15 +2,103 @@ en:
   THEME_AKAZIEWOOD:
     THEME:
       SECTION:
-
+        SITE: 'Site settings'
+        HEADER: 'Header settings'
+        FOOTER: 'Footer settings'
       FIELDS:
-
+        FAVICON:
+          LABEL: 'Favicon'
+          DESCRIPTION: 'Used instead of `theme: // images / favicon.png`'
+        LOGO:
+          LABEL: 'Own logo'
+          DESCRIPTION: 'Used instead of `theme://images/logo.png` verwendet'
+        FIXED:
+          LABEL: 'Fixed Header'
+          HELP: 'If activated, the header will always be at the top of the browser window.'
     FRONTEND:
-
     ADMIN:
       TAB:
-
+        CONTENT: "Content"
       SECTION:
-
+        CONTENT: "Pages content"
+        SETTINGS: "Settings"
+        PREVIEW: "Preview"
+        MEDIA: 'Media'
+        MAPSETTINGS: 'Map settings'
+        MAPINFO: 'Map info'
       FIELDS:
+        TITLE:
+          LABEL: "Title"
+        SHOWTITLE:
+          LABEL: "Show title?"
+          OPTIONS:
+            0: "No"
+            1: "Yes"
+            2: "Only placeholder"
+        SLICE:
+          LABEL: "Limit text to 180 characters?"
+          OPTIONS:
+            0: "No"
+            1: "Yes"
+        GALLERIE:
+          LABEL: "Gallery"
+        TEXT:
+          LABEL: "Text"
+        HEADING:
+          LABEL: "Heading"
+        SLOGAN:
+          LABEL: "Slogan"
+        REDIRECT:
+          LABEL: "Select page"
+        BUTTONS:
+          LABEL: "Buttons"
+        TAXONOMY:
+          LABEL: "Taxonomy"
+        IMAGE:
+          LABEL: "Image"
+        IMAGES:
+          LABEL: "Images"
+        REFERENCE:
+          LABEL: 'select blog page'
+        IMAGE_HEADER:
+          LABEL: "Header image"
+        DESCRIPTION:
+          LABEL: "Description"
+        PREVIEW_IMAGE:
+          LABEL: "Image"
+          DESCRIPTION: "The pictures are reduced in a ratio of 4: 3 and cropped."
+        PREVIEW_TEXT:
+          LABEL: "Short introduction"
+          OPTIONS:
+            0: "No"
+            1: "Yes"
+        YOUTUBE:
+          LABEL: "Enter video ID"
+          DESCRIPTION: "Example: `VkvUH8vRQfE`"
+        COLUMN:
+          LABEL: 'content width'
+          OPTIONS:
+            1: "One column"
+            2: "two columns"
+        PAGINATION:
+          LABEL: 'Pagination'
+          OPTIONS:
+            0: "No"
+            1: "Yes"
+        LIMIT:
+          LABEL: 'Max entries per page'
+          OPTIONS:
+            0: "Show all"
+        SCALE:
+          LABEL: 'format'
+          OPTIONS:
+            1: '4:3'
+            2: '16:9 (Full HD)'
+            3: '2.35:1 (Widescreen)'
+        ICON:
+          LABEL: 'Fontawesome Icon'
+          DESCRIPTION: '[to the Fontawesome Icons](https://fontawesome.com/icons?d=gallery&s=solid&m=free&target=_blank) (Free & Solid)'
+        BUTTONLABEL:
+          LABEL: 'Button name'
+          HELP: 'This is the name of the button that links to the other entries. If empty, the button will not be displayed.'
 

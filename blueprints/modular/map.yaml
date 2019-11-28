@@ -1,0 +1,142 @@
+title: map
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        inhalt:
+          type: tab
+          title: THEME_AKAZIEWOOD.ADMIN.TAB.CONTENT
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+
+            columns:
+              type: columns
+              fields:
+                column1:
+                  type: column
+                  fields:
+                    mapsettings:
+                      type: section
+                      title: THEME_AKAZIEWOOD.ADMIN.SECTION.MAPSETTINGS
+                      underline: true
+                      fields:
+                        header.map.latitude:
+                          type: text
+                          label: Latitude
+                          size: small
+                          validate:
+                            required
+                        header.map.longitude:
+                          type: text
+                          label: Longitude
+                          size: small
+                          validate:
+                            required
+                        header.map.zoom:
+                          type: select
+                          label: Zoom
+                          default: 15
+                          size: small
+                          options:
+                            1: 1 (World)
+                            2: 2
+                            3: 3
+                            4: 4
+                            5: 5 (Landmass/continent)
+                            6: 6
+                            7: 7
+                            8: 8
+                            9: 9
+                            10: 10 (City)
+                            11: 11
+                            12: 12
+                            13: 13
+                            14: 14
+                            15: 15 (Streets)
+                            16: 16
+                            17: 17
+                            18: 18
+                            19: 19
+                            20: 20 (Buildings)
+                        header.map.controls:
+                          type: toggle
+                          label: Controls
+                          highlight: 0
+                          default: 0
+                          options:
+                            0: An
+                            1: Aus
+                          validate:
+                            type: bool
+                        header.scale:
+                          type: select
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.LABEL
+                          default: 1
+                          size: medium
+                          options:
+                            1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.1
+                            2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.2
+                            3: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.3
+                        header.map.style:
+                          type: textarea
+                          style: vertical
+                          label: Map style
+                          rows: 8
+                column2:
+                  type: column
+                  fields:
+                    mapinfo:
+                      type: section
+                      title: THEME_AKAZIEWOOD.ADMIN.SECTION.MAPINFO
+                      underline: true
+                      fields:
+                        header.map.description:
+                          type: text
+                          style: vertical
+                          label: Map description
+                        header.map.markertitle:
+                          type: text
+                          style: vertical
+                          label: Marker title
+                        header.map.infowindow:
+                          type: textarea
+                          rows: 4
+                          style: vertical
+                          label: Info window
+
+
+            settings:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.SETTINGS
+              underline: true
+              fields:
+                columns:
+                  type: columns
+                  fields:
+                    column1:
+                      type: column
+                      fields:
+                        header.column:
+                          type: select
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.LABEL
+                          default: asc
+                          options:
+                            1: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.OPTIONS.1
+                            2: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.OPTIONS.2
+                        header.showtitle:
+                          type: select
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.LABEL
+                          highlight: 1
+                          default: 1
+                          options:
+                            0: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.0
+                            1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.1
+                            2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.2
+
+

@@ -1,0 +1,38 @@
+title: home
+
+form:
+  validation: loose
+
+  fields:
+
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: Content
+
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+              validation:
+                required: true
+            header.text:
+              type: textarea
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.SLOGAN.LABEL
+            header.image:
+              type: filepicker
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE_HEADER.LABEL
+              preview_images: true
+            media:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
+              underline: true
+              fields:
+                header.media_order:
+                  type: pagemedia
+

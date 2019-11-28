@@ -1,5 +1,8 @@
 # Akazie - Wood Theme
 
+![akazie-holz](https://user-images.githubusercontent.com/15847494/69813757-22fdb980-11f3-11ea-9bdd-0cd9e7f3a696.png)
+
+
 **Akazie - Wood**, this is a theme of Akazie IT GmbH and is intended for simple websites without great features. Works with the [Grav CMS](http://github.com/getgrav/grav).
 
 ## Sample

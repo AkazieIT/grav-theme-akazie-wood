@@ -20,7 +20,16 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
     "bootstrap": "^4.3.1",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "lg-autoplay": "^1.0.4",
+    "lg-fullscreen": "^1.1.0",
+    "lg-hash": "^1.0.4",
+    "lg-pager": "^1.0.2",
+    "lg-share": "^1.1.0",
+    "lg-thumbnail": "^1.1.0",
+    "lg-video": "^1.2.2",
+    "lg-zoom": "^1.1.0",
+    "lightgallery": "^1.6.12"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

@@ -1,9 +1,16 @@
-{% set logo = theme_config.nav.logo | first %}
+{% set logo = theme_var('header.favicon') %}
 
-<header class="page-header">
+<header class="site-header  {{ theme_var('header.fixed') ? 'fixed' : '' }}">
   <div class="header-inner">
     <div class="logo">
-      <img src="{{ theme_config.preview ? theme_url ~ '/images/logo/wwbt.png' : logo.path }}" alt="Logo">
+      <a href="{{ home_url}}">
+        {% if logo %}
+          {% set logo_file = (logo|first).name %}
+          <img src="{{ url('theme://images/logo/' ~ logo_file)  }}" alt="{{ site.name }}" />
+        {% else %}
+          <img src="{{ url('theme://images/logo.png')  }}" alt="{{ site.name }}" />
+        {% endif %}
+      </a>
     </div>
     <div class="mobile-toggle">
       <div class="pull">

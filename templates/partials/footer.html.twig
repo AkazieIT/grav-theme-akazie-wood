@@ -1,11 +1,11 @@
-<footer class="footer">
+<footer class="site-footer">
   <div class="footer-top"></div>
   <div class="footer-main">
     <div class="footer-navigation">
       <ul>
         {% for p in pages.children.visible %}
           {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
-          {% if (p.home() and theme_config.footer.nav.home) or p.home() == false %}
+          {% if (p.home() and theme_config.footer.home) or p.home() == false %}
             <li>
               <a href="{{ p.url }}" class="{{ active_page }}" link>
                 {{ p.menu }}
@@ -18,12 +18,10 @@
 
     </div>
     <div class="footer-adress">
-      Akazie IT GmbH<br>
-      Schanzenstrasse 10d, 3775 Lenk<br>
-      fon+ 41 33 733 08 38
+      {{ theme_config.footer.address | nl2br }}
     </div>
     <div class="footer-email">
-      info@akazie.com
+      {{ theme_config.footer.mail | nl2br }}
     </div>
   </div>
 </footer>

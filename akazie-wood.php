@@ -12,9 +12,9 @@ class AkazieWood extends Theme
   public static function getSubscribedEvents()
   {
     return [
-      'onBlueprintCreated' => ['onBlueprintCreated', 0]
+      'onBlueprintCreated' => ['onBlueprintCreated', 0],
+      'onTwigSiteVariables'   => ['onTwigSiteVariables', 0]
     ];
-
   }
 
   public function onBlueprintCreated(Event $event)
@@ -41,6 +41,14 @@ class AkazieWood extends Theme
       $blueprint->extend($extends, true);
 
     }
+
+  }
+
+  public function onTwigSiteVariables()
+  {
+    $this->grav['assets']->addCss('theme://build/css/akazie-wood.min.css');
+    $this->grav['assets']->addJs('theme://build/js/akazie-wood.core.min.js', ['group' => 'bottom', 'priority' => 100]);
+    $this->grav['assets']->addJs('theme://build/js/akazie-wood.app.min.js', ['group' => 'bottom', 'priority' => 95]);
 
   }
 

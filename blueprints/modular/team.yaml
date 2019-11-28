@@ -1,0 +1,60 @@
+title: team
+
+form:
+  validation: loose
+
+  fields:
+
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: Content
+
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              label: 'Titel'
+              validation:
+                required: true
+            person:
+              type: section
+              title: 'Mitarbeiter'
+              underline: true
+              fields:
+                header.personen:
+                  name: personen
+                  type: list
+                  label: 'Personen'
+                  collapsed: true
+                  fields:
+                    .name:
+                      type: text
+                      label: 'Name'
+                      validate:
+                        required: true
+                    .position:
+                      type: text
+                      label: 'Position'
+                    .email:
+                      type: text
+                      label: 'E-Mail'
+                    .text:
+                      type: textarea
+                      label: 'Beschreibung'
+                      rows: 4
+                    .image:
+                      type: file
+                      label: 'Bild'
+                      destination: 'self@'
+                      accept:
+                      - image/*
+
+
+
+
+
