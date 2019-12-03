@@ -7,7 +7,7 @@
 
 ## Sample
 
-Show it on the [demo site](https://demo.hirter.dev/grav/akazie-wood)
+Show it on the [demo site](https://demo.akazie.com/akazie-wood)
 
 ## Intstallation
 

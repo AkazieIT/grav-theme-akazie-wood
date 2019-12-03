@@ -20,7 +20,9 @@
       <link rel="shortcut icon" href="/favicon.ico">
       <link rel="canonical" href="{{ page.url(true, true) }}" />
       <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
-
+      {% if theme_var('style.fonts.import') %}
+        <link href="{{ theme_var('style.fonts.import') }}" rel="stylesheet">
+      {% endif %}
       {% block assets deferred %}
         {{ assets.css()|raw }}
         {{ assets.js()|raw }}
