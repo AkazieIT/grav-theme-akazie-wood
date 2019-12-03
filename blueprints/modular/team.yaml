@@ -1,55 +1,48 @@
 title: team
 
 form:
-  validation: loose
-
   fields:
-
     tabs:
       type: tabs
       active: 1
-
       fields:
-        content:
+        inhalt:
           type: tab
-          title: Content
-
+          title: THEME_AKAZIEWOOD.ADMIN.TAB.CONTENT
           fields:
             header.title:
               type: text
               autofocus: true
-              label: 'Titel'
-              validation:
-                required: true
-            person:
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+            content:
               type: section
-              title: 'Mitarbeiter'
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.CONTENT
               underline: true
               fields:
                 header.personen:
                   name: personen
                   type: list
-                  label: 'Personen'
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.PERSONS.LABEL
                   collapsed: true
                   fields:
                     .name:
                       type: text
-                      label: 'Name'
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.NAME.LABEL
                       validate:
                         required: true
                     .position:
                       type: text
-                      label: 'Position'
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.POSITION.LABEL
                     .email:
                       type: text
-                      label: 'E-Mail'
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.EMAIL.LABEL
                     .text:
                       type: textarea
-                      label: 'Beschreibung'
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION.LABEL
                       rows: 4
                     .image:
                       type: file
-                      label: 'Bild'
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE.LABEL
                       destination: 'self@'
                       accept:
                       - image/*

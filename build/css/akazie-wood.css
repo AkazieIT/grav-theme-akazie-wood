@@ -16388,7 +16388,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 :root html, :root body {
   width: 100%;
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 }
 
@@ -16438,32 +16437,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   height: 6px;
   width: 6px;
   border-radius: 100%;
-  background-color: #486144;
   top: 14px;
   left: 10px;
   transform: translateY(-50%);
 }
 
 .markdown blockquote {
-  background-color: #121810;
   padding: 5px;
-  border: 1px solid #121810;
-  color: #ffffff;
 }
 
 .markdown blockquote p {
   margin: 0;
 }
 
-.markdown code {
-  color: darkred;
-}
-
 /* ##################################
  Typografie
 ###################################*/
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', sans-serif;
   margin-bottom: 1rem;
   font-size: 24px;
   font-weight: 700;
@@ -16471,13 +16461,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 110%;
 }
 
-a {
-  color: #486144;
+a:not([link]) {
   text-decoration: none !important;
 }
 
-a:hover {
-  color: #121810;
+a:not([link]):hover {
+  font-weight: bold;
 }
 
 /* ##################################
@@ -16499,14 +16488,12 @@ a:hover {
 .screen-image.screen-fullscreen {
   position: relative;
   height: 100vh;
-  z-index: -10;
   background-size: cover;
 }
 
 .screen-image.screen-top {
   position: relative;
   height: 300px;
-  z-index: -10;
   background-size: cover;
 }
 
@@ -16522,7 +16509,6 @@ a:hover {
   left: 50%;
   padding-top: 60px;
   transform: translate(-50%, -50%);
-  color: #ffffff;
   text-align: center;
 }
 
@@ -16567,7 +16553,6 @@ header.site-header {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #ffffff;
   z-index: 1000;
   webkit-box-shadow: 0 8px 10px -6px black;
   box-shadow: 0 3px 10px -6px black;
@@ -16618,24 +16603,22 @@ header.site-header div.header-inner nav.header-nav.desktop ul li {
 }
 
 header.site-header div.header-inner nav.header-nav.desktop ul li a {
-  font-family: 'Montserrat', sans-serif;
   line-height: 60px;
   padding: 0 20px;
-  background-color: #ffffff;
   display: block;
-  color: #000000;
   text-decoration: none;
   font-size: 14px;
 }
 
-header.site-header div.header-inner nav.header-nav.desktop ul li a:hover, header.site-header div.header-inner nav.header-nav.desktop ul li a.active {
-  background-color: #486144;
-  color: #ffffff;
-}
-
 header.site-header div.header-inner nav.header-nav.mobile {
   display: none;
-  margin-top: 20px;
+  margin-top: 60px;
+  background-color: lightgrey;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  padding-top: 2rem;
 }
 
 header.site-header div.header-inner nav.header-nav.mobile ul {
@@ -16646,9 +16629,8 @@ header.site-header div.header-inner nav.header-nav.mobile ul {
 header.site-header div.header-inner nav.header-nav.mobile ul li {
   list-style: none;
   display: block;
-  text-align: right;
-  margin-bottom: 20px;
-  margin-right: 30px;
+  text-align: center;
+  margin-bottom: 1rem;
   position: relative;
 }
 
@@ -16698,7 +16680,6 @@ header.site-header div.header-inner div.mobile-toggle .pull span {
   position: absolute;
   height: 5px;
   width: 100%;
-  background: #486144;
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
@@ -16852,7 +16833,6 @@ main.site-content .modular.section-teamlist .person-detail {
 
 main.site-content .modular.section-teamlist .person-name {
   font-size: 1.5em;
-  color: #000000;
   font-weight: 700;
   display: block;
   margin-bottom: 10px;
@@ -16894,9 +16874,7 @@ main.site-content .modular.section-map .caption {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #121810;
   opacity: 0.8;
-  color: #ffffff;
   padding: 5px;
 }
 
@@ -16936,7 +16914,6 @@ main.site-content .modular.section-gallery .gallery > article {
   width: 25%;
   background-size: cover;
   background-position: center center;
-  border: 14px solid #ffffff;
 }
 
 @media (max-width: 869.98px) {
@@ -16946,25 +16923,21 @@ main.site-content .modular.section-gallery .gallery > article {
 }
 
 footer.site-footer {
-  background-color: #121810;
   width: 100%;
 }
 
 footer.site-footer .footer-top {
   height: 30px;
   width: 100%;
-  background-color: #486144;
 }
 
 footer.site-footer .footer-main {
   width: 100%;
   padding: 20px 0;
   text-align: center;
-  font-family: 'Raleway', sans-serif !important;
 }
 
 footer.site-footer .footer-main .footer-adress, footer.site-footer .footer-main .footer-email {
-  color: #ffffff;
   font-size: 0.9rem;
   margin-bottom: 20px;
 }
@@ -16984,7 +16957,6 @@ footer.site-footer .footer-main .footer-navigation ul li {
 
 footer.site-footer .footer-main .footer-navigation ul li a {
   font-size: 0.9rem;
-  color: #ffffff;
   padding: 5px 10px;
   font-weight: bold;
 }

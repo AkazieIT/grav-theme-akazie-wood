@@ -1,5 +1,6 @@
-{% macro nav_loop(page, theme_config) %}
-  {% for p in page.children.visible | reverse %}
+{% macro nav_loop(page, theme_config, reverse = true) %}
+  {% set arr = reverse ? page.children.visible | reverse : page.children.visible %}
+  {% for p in arr %}
     {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
     {% if p.children.visible.count > 0 %}
       <li>
@@ -27,3 +28,9 @@
     {{ _self.nav_loop(pages, theme_config) }}
   </ul>
 </nav>
+<nav class="header-nav mobile">
+  <ul {{ tree ? 'class="tree"' : '' }}>
+    {{ _self.nav_loop(pages, theme_config, false) }}
+  </ul>
+</nav>
+

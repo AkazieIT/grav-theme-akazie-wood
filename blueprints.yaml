@@ -2,91 +2,201 @@ name: "Akazie - Wood"
 version: 0.9.0
 description: "This is a theme of Akazie IT GmbH and is intended for simple websites without great features"
 icon: id-card-o
-keywords: akazieit, akazie, wood, carpenter, simple, chargeable
+keywords: akazieit, akazie, wood, carpenter, simple, chargeable, schreiner, holz, zimmerei, zimmermann, wald
 author:
   name: Akazie IT GmbH
   email: info@akazie.com
   url: https://akazie.com
-homepage: https://github.com/Memurame/grav-theme-akazie-wood
-bugs: https://github.com/Memurame/grav-theme-akazie-wood/issues
+homepage: https://github.com/AkazieIT/grav-theme-akazie-wood
+bugs: https://github.com/AkazieIT/grav-theme-akazie-wood/issues
 license: MIT
-demo: https://akazie.hirter.dev/grav/akazie-wood
+demo: https://demo.akazie.com/akazie-wood
 dependencies:
   - { name: grav, version: '>=1.6.0' }
 form:
   validation: loose
   fields:
-    site_section:
+    layout_section:
       type: section
-      title: THEME_AKAZIEWOOD.THEME.SECTION.SITE
+      title: THEME_AKAZIEWOOD.THEME.SECTION.LAYOUT
       underline: true
       fields:
-        site.favicon:
-          type: file
-          label: THEME_AKAZIEWOOD.THEME.FIELDS.FAVICON.LABEL
-          size: large
-          destination: 'theme://images/favicon'
-          multiple: false
-          markdown: true
-          description: THEME_AKAZIEWOOD.THEME.FIELDS.FAVICON.DESCRIPTION
-          accept:
-            - image/*
-    header_section:
+        site:
+          type: fieldset
+          title: THEME_AKAZIEWOOD.THEME.FIELDSET.SITE
+          collapsed: false
+          collapsible: true
+          fields:
+            site.favicon:
+              type: file
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.FAVICON.LABEL
+              size: large
+              destination: 'theme://images/favicon'
+              multiple: false
+              markdown: true
+              description: THEME_AKAZIEWOOD.THEME.FIELDS.FAVICON.DESCRIPTION
+              accept:
+                - image/*
+        header:
+          type: fieldset
+          title: THEME_AKAZIEWOOD.THEME.FIELDSET.HEADER
+          collapsed: false
+          collapsible: true
+          fields:
+            header.logo:
+              type: file
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.LOGO.LABEL
+              size: large
+              destination: 'theme://images/logo'
+              multiple: false
+              markdown: true
+              description: THEME_AKAZIEWOOD.THEME.FIELDS.LOGO.DESCRIPTION
+              accept:
+                - image/*
+            header.fixed:
+              type: toggle
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.FIXED.LABEL
+              help: THEME_AKAZIEWOOD.THEME.FIELDS.FIXED.HELP
+              highlight: 1
+              default: 1
+              options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
+              validate:
+                type: bool
+            header.home:
+              type: toggle
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.LABEL
+              highlight: 1
+              default: 1
+              options:
+                1: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.1
+                0: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.0
+        footer:
+          type: fieldset
+          title: THEME_AKAZIEWOOD.THEME.FIELDSET.FOOTER
+          collapsed: false
+          collapsible: true
+          fields:
+            footer.home:
+              type: toggle
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.LABEL
+              highlight: 1
+              default: 1
+              options:
+                1: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.1
+                0: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.0
+            footer.address:
+              type: textarea
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.FOOTER_ADDRESS.LABEL
+              rows: 5
+              size: medium
+            footer.mail:
+              type: text
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.FOOTER_MAIL.LABEL
+              size: large
+    style_section:
       type: section
-      title: THEME_AKAZIEWOOD.THEME.SECTION.HEADER
+      title: THEME_AKAZIEWOOD.THEME.SECTION.STYLE
       underline: true
+      security: admin.super
       fields:
-        header.logo:
-          type: file
-          label: THEME_AKAZIEWOOD.THEME.FIELDS.LOGO.LABEL
-          size: large
-          destination: 'theme://images/logo'
-          multiple: false
-          markdown: true
-          description: THEME_AKAZIEWOOD.THEME.FIELDS.LOGO.DESCRIPTION
-          accept:
-            - image/*
-        header.fixed:
-          type: toggle
-          label: THEME_AKAZIEWOOD.THEME.FIELDS.FIXED.LABEL
-          help: THEME_AKAZIEWOOD.THEME.FIELDS.FIXED.HELP
-          highlight: 1
-          default: 1
-          options:
-            0: PLUGIN_ADMIN.DISABLED
-            1: PLUGIN_ADMIN.ENABLED
-          validate:
-            type: bool
-        header.home:
-          type: toggle
-          label: 'Startseiten-Link'
-          highlight: 1
-          default: 1
-          options:
-            1: 'Anzeigen'
-            0: 'Verstecken'
-    footer_section:
-      type: section
-      title: THEME_AKAZIEWOOD.THEME.SECTION.FOOTER
-      underline: true
-      fields:
-        footer.home:
-          type: toggle
-          label: 'Startseiten-Link'
-          highlight: 1
-          default: 1
-          options:
-            1: 'Anzeigen'
-            0: 'Verstecken'
-        footer.address:
-          type: textarea
-          label: 'Adresse im Footer'
-          rows: 5
-          size: medium
-        footer.mail:
-          type: text
-          label: 'Mail im Footer'
-          size: large
-    map_section:
-      type: section
+        style.color:
+          type: fieldset
+          title: THEME_AKAZIEWOOD.THEME.FIELDSET.COLOR
+          collapsed: false
+          collapsible: true
+          fields:
+            style.color.white:
+              type: colorpicker
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.WHITE.LABEL
+              default: '#ffffff'
+            style.color.black:
+              type: colorpicker
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.BLACK.LABEL
+              default: '#000000'
+            style.color.background:
+              type: fieldset
+              title: THEME_AKAZIEWOOD.THEME.FIELDSET.BG_COLOR
+              collapsed: false
+              collapsible: true
+              fields:
+                style.color.background.main:
+                  type: colorpicker
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.BG.MAIN.LABEL
+                  default: '#ffffff'
+                style.color.background.primary:
+                  type: colorpicker
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.BG.PRIMARY.LABEL
+                  default: '#486144'
+                style.color.background.secondary:
+                  type: colorpicker
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.BG.SECONDARY.LABEL
+                  default: '#121810'
+                style.color.background.nav.default:
+                  type: colorpicker
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.BG.NAV.LABEL
+                  default: '#ffffff'
+                style.color.background.nav.hover:
+                  type: colorpicker
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.BG.NAV_HOVER.LABEL
+                  default: '#486144'
+            style.color.text:
+              type: fieldset
+              title: THEME_AKAZIEWOOD.THEME.FIELDSET.TEXT_COLOR
+              collapsed: false
+              collapsible: true
+              fields:
+                style.color.text.main:
+                  type: colorpicker
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.TEXT.MAIN.LABEL
+                  default: '#000000'
+                style.color.text.primary:
+                  type: colorpicker
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.TEXT.PRIMARY.LABEL
+                  default: '#ffffff'
+                style.color.text.secondary:
+                  type: colorpicker
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.TEXT.SECONDARY.LABEL
+                  default: '#ffffff'
+                style.color.text.cta:
+                  type: colorpicker
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.TEXT.LINKS.LABEL
+                  default: '#8b0000'
+                style.color.text.nav.default:
+                  type: colorpicker
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.TEXT.NAV.LABEL
+                  default: '#000000'
+                style.color.text.nav.hover:
+                  type: colorpicker
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.TEXT.NAV_HOVER.LABEL
+                  default: '#ffffff'
+
+        style.font:
+          type: fieldset
+          title: THEME_AKAZIEWOOD.THEME.FIELDSET.FONT
+          collapsed: false
+          collapsible: true
+          fields:
+            style.fonts.import:
+              type: text
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.IMPORT.LABEL
+              default: 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway&display=swap'
+            style.fonts.main:
+              type: text
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.MAIN.LABEL
+              default: "'Open Sans', sans-serif"
+            style.fonts.footer:
+              type: text
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.FOOTER.LABEL
+              default: "'Raleway', sans-serif"
+            style.fonts.h:
+              type: text
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.TITLE.LABEL
+              default: "'Raleway', sans-serif"
+            style.fonts.nav:
+              type: text
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.NAV.LABEL
+              default: "'Montserrat', sans-serif"
+
 

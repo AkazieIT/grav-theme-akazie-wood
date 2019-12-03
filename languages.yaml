@@ -2,9 +2,16 @@ en:
   THEME_AKAZIEWOOD:
     THEME:
       SECTION:
-        SITE: 'Site settings'
-        HEADER: 'Header settings'
-        FOOTER: 'Footer settings'
+        LAYOUT: 'Site layout'
+        STYLE: 'Custom style (only for admins)'
+      FIELDSET:
+        HEADER: 'Header'
+        FOOTER: 'Footer'
+        SITE: 'Site'
+        COLOR: 'Color'
+        BG_COLOR: 'Background color'
+        TEXT_COLOR: 'Text color'
+        FONT: 'Fonts'
       FIELDS:
         FAVICON:
           LABEL: 'Favicon'
@@ -15,6 +22,55 @@ en:
         FIXED:
           LABEL: 'Fixed Header'
           HELP: 'If activated, the header will always be at the top of the browser window.'
+        HOME:
+          LABEL: 'Homelink'
+          OPTIONS:
+            0: "Show"
+            1: "Hidden"
+        FOOTER_ADDRESS:
+          LABEL: 'Address in footer'
+        FOOTER_MAIL:
+          LABEL: 'Mail in footer'
+        COLOR:
+          WHITE:
+            LABEL: 'White'
+          BLACK:
+            LABEL: 'Black'
+          BG:
+            MAIN:
+              LABEL: 'Main'
+            PRIMARY:
+              LABEL: 'Primary'
+            SECONDARY:
+              LABEL: 'Secondary'
+            NAV:
+              LABEL: 'Navigation'
+            NAV_HOVER:
+              LABEL: 'Navigation (hover)'
+          TEXT:
+            MAIN:
+              LABEL: 'Main'
+            PRIMARY:
+              LABEL: 'Primary'
+            SECONDARY:
+              LABEL: 'Secondary'
+            LINKS:
+              LABEL: 'Links'
+            NAV:
+              LABEL: 'Navigation'
+            NAV_HOVER:
+              LABEL: 'Navigation (hover)'
+        FONT:
+          IMPORT:
+            LABEL: 'Font import'
+          MAIN:
+            LABEL: 'Main'
+          FOOTER:
+            LABEL: 'Footer'
+          TITLE:
+            LABEL: 'Title'
+          NAV:
+            LABEL: 'Navigation'
     FRONTEND:
     ADMIN:
       TAB:
@@ -27,6 +83,22 @@ en:
         MAPSETTINGS: 'Map settings'
         MAPINFO: 'Map info'
       FIELDS:
+        MAP_LAT:
+          LABEL: 'Latitude'
+        MAP_LONG:
+          LABEL: 'Longitude'
+        MAP_ZOOM:
+          LABEL: 'Zoom'
+        MAP_CONTROLS:
+          LABEL: 'Controls'
+        MAP_STYLE:
+          LABEL: 'Map style'
+        MAP_DESC:
+          LABEL: 'Map description'
+        MAP_TITLE:
+          LABEL: 'Marker title'
+        MAP_WINDOW:
+          LABEL: 'Info window'
         TITLE:
           LABEL: "Title"
         SHOWTITLE:
@@ -35,11 +107,6 @@ en:
             0: "No"
             1: "Yes"
             2: "Only placeholder"
-        SLICE:
-          LABEL: "Limit text to 180 characters?"
-          OPTIONS:
-            0: "No"
-            1: "Yes"
         GALLERIE:
           LABEL: "Gallery"
         TEXT:
@@ -50,28 +117,14 @@ en:
           LABEL: "Slogan"
         REDIRECT:
           LABEL: "Select page"
-        BUTTONS:
-          LABEL: "Buttons"
-        TAXONOMY:
-          LABEL: "Taxonomy"
         IMAGE:
           LABEL: "Image"
         IMAGES:
           LABEL: "Images"
-        REFERENCE:
-          LABEL: 'select blog page'
         IMAGE_HEADER:
           LABEL: "Header image"
         DESCRIPTION:
           LABEL: "Description"
-        PREVIEW_IMAGE:
-          LABEL: "Image"
-          DESCRIPTION: "The pictures are reduced in a ratio of 4: 3 and cropped."
-        PREVIEW_TEXT:
-          LABEL: "Short introduction"
-          OPTIONS:
-            0: "No"
-            1: "Yes"
         YOUTUBE:
           LABEL: "Enter video ID"
           DESCRIPTION: "Example: `VkvUH8vRQfE`"
@@ -80,25 +133,19 @@ en:
           OPTIONS:
             1: "One column"
             2: "two columns"
-        PAGINATION:
-          LABEL: 'Pagination'
-          OPTIONS:
-            0: "No"
-            1: "Yes"
-        LIMIT:
-          LABEL: 'Max entries per page'
-          OPTIONS:
-            0: "Show all"
         SCALE:
-          LABEL: 'format'
+          LABEL: 'Format'
           OPTIONS:
             1: '4:3'
             2: '16:9 (Full HD)'
             3: '2.35:1 (Widescreen)'
-        ICON:
-          LABEL: 'Fontawesome Icon'
-          DESCRIPTION: '[to the Fontawesome Icons](https://fontawesome.com/icons?d=gallery&s=solid&m=free&target=_blank) (Free & Solid)'
-        BUTTONLABEL:
-          LABEL: 'Button name'
-          HELP: 'This is the name of the button that links to the other entries. If empty, the button will not be displayed.'
+        PERSONS:
+          LABEL: 'Persons'
+        NAME:
+          LABEL: 'Name'
+        POSITION:
+          LABEL: 'Position'
+        EMAIL:
+          LABEL: 'Mail'
+
 

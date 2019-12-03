@@ -28,19 +28,19 @@ form:
                       fields:
                         header.map.latitude:
                           type: text
-                          label: Latitude
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MAP_LAT.LABEL
                           size: small
                           validate:
                             required
                         header.map.longitude:
                           type: text
-                          label: Longitude
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MAP_LONG.LABEL
                           size: small
                           validate:
                             required
                         header.map.zoom:
                           type: select
-                          label: Zoom
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MAP_ZOOM.LABEL
                           default: 15
                           size: small
                           options:
@@ -66,7 +66,7 @@ form:
                             20: 20 (Buildings)
                         header.map.controls:
                           type: toggle
-                          label: Controls
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MAP_CONTROLS.LABEL
                           highlight: 0
                           default: 0
                           options:
@@ -99,16 +99,16 @@ form:
                         header.map.description:
                           type: text
                           style: vertical
-                          label: Map description
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MAP_DESC.LABEL
                         header.map.markertitle:
                           type: text
                           style: vertical
-                          label: Marker title
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MAP_TITLE.LABEL
                         header.map.infowindow:
                           type: textarea
                           rows: 4
                           style: vertical
-                          label: Info window
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MAP_WINDOW.LABEL
 
 
             settings:
