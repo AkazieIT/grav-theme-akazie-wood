@@ -1,0 +1,24 @@
+<article class="modular section-map col-12 {% if page.header.column == 2 %}col-md-12{% else %}col-md-6{% endif %}">
+    {% if page.header.showtitle == 1 %}<h2 class="heading">{{ page.header.title }}</h2>{% endif %}
+    {% set image = page.header.image | first %}
+    {% if page.header.scale == 1 %}
+        {% set scale = 3 / 4 %}
+    {% elseif page.header.scale == 2 %}
+        {% set scale = 9 / 16 %}
+    {% elseif page.header.scale == 3 %}
+        {% set scale = 1 / 2.35 %}
+    {% endif %}
+    <div class="media-container {% if page.header.showtitle == 2 %}title-placeholder{% endif %}">
+        <div class="js-map media" data-scale="{{ scale }}"
+             map-style='{{ page.header.map.style }}'
+             map-controls='{{ page.header.map.controls }}'
+             map-lat='{{ page.header.map.latitude }}'
+             map-markertitle='{{ page.header.map.markertitle }}'
+             map-infowindow='<div class="poi-info-window gm-style"><div class="title">{{ page.header.map.markertitle }}</div><div class="address">{{ page.header.map.infowindow|nl2br }}</div></div>'
+             map-lon='{{ page.header.map.longitude }}'
+             map-zoom='{{ page.header.map.zoom }}'></div>
+        {% if page.header.map.description %}<div class="caption">{{ page.header.map.description }}</div>{% endif %}
+    </div>
+
+
+</article>

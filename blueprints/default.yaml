@@ -1,0 +1,37 @@
+title: default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        inhalt:
+          type: tab
+          title: THEME_AKAZIEWOOD.ADMIN.TAB.CONTENT
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+            header.image:
+              type: filepicker
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE_HEADER.LABEL
+              preview_images: true
+            content:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.CONTENT
+              underline: true
+              fields:
+                content:
+                  type: markdown
+                  validate:
+                    type: textarea
+            media:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
+              underline: true
+              fields:
+                header.media_order:
+                  type: pagemedia
+                  label: PLUGIN_ADMIN.PAGE_MEDIA

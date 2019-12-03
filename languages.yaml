@@ -1,0 +1,151 @@
+en:
+  THEME_AKAZIEWOOD:
+    THEME:
+      SECTION:
+        LAYOUT: 'Site layout'
+        STYLE: 'Custom style (only for admins)'
+      FIELDSET:
+        HEADER: 'Header'
+        FOOTER: 'Footer'
+        SITE: 'Site'
+        COLOR: 'Color'
+        BG_COLOR: 'Background color'
+        TEXT_COLOR: 'Text color'
+        FONT: 'Fonts'
+      FIELDS:
+        FAVICON:
+          LABEL: 'Favicon'
+          DESCRIPTION: 'Used instead of `theme: // images / favicon.png`'
+        LOGO:
+          LABEL: 'Own logo'
+          DESCRIPTION: 'Used instead of `theme://images/logo.png` verwendet'
+        FIXED:
+          LABEL: 'Fixed Header'
+          HELP: 'If activated, the header will always be at the top of the browser window.'
+        HOME:
+          LABEL: 'Homelink'
+          OPTIONS:
+            0: "Show"
+            1: "Hidden"
+        FOOTER_ADDRESS:
+          LABEL: 'Address in footer'
+        FOOTER_MAIL:
+          LABEL: 'Mail in footer'
+        COLOR:
+          WHITE:
+            LABEL: 'White'
+          BLACK:
+            LABEL: 'Black'
+          BG:
+            MAIN:
+              LABEL: 'Main'
+            PRIMARY:
+              LABEL: 'Primary'
+            SECONDARY:
+              LABEL: 'Secondary'
+            NAV:
+              LABEL: 'Navigation'
+            NAV_HOVER:
+              LABEL: 'Navigation (hover)'
+          TEXT:
+            MAIN:
+              LABEL: 'Main'
+            PRIMARY:
+              LABEL: 'Primary'
+            SECONDARY:
+              LABEL: 'Secondary'
+            LINKS:
+              LABEL: 'Links'
+            NAV:
+              LABEL: 'Navigation'
+            NAV_HOVER:
+              LABEL: 'Navigation (hover)'
+        FONT:
+          IMPORT:
+            LABEL: 'Font import'
+          MAIN:
+            LABEL: 'Main'
+          FOOTER:
+            LABEL: 'Footer'
+          TITLE:
+            LABEL: 'Title'
+          NAV:
+            LABEL: 'Navigation'
+    FRONTEND:
+    ADMIN:
+      TAB:
+        CONTENT: "Content"
+      SECTION:
+        CONTENT: "Pages content"
+        SETTINGS: "Settings"
+        PREVIEW: "Preview"
+        MEDIA: 'Media'
+        MAPSETTINGS: 'Map settings'
+        MAPINFO: 'Map info'
+      FIELDS:
+        MAP_LAT:
+          LABEL: 'Latitude'
+        MAP_LONG:
+          LABEL: 'Longitude'
+        MAP_ZOOM:
+          LABEL: 'Zoom'
+        MAP_CONTROLS:
+          LABEL: 'Controls'
+        MAP_STYLE:
+          LABEL: 'Map style'
+        MAP_DESC:
+          LABEL: 'Map description'
+        MAP_TITLE:
+          LABEL: 'Marker title'
+        MAP_WINDOW:
+          LABEL: 'Info window'
+        TITLE:
+          LABEL: "Title"
+        SHOWTITLE:
+          LABEL: "Show title?"
+          OPTIONS:
+            0: "No"
+            1: "Yes"
+            2: "Only placeholder"
+        GALLERIE:
+          LABEL: "Gallery"
+        TEXT:
+          LABEL: "Text"
+        HEADING:
+          LABEL: "Heading"
+        SLOGAN:
+          LABEL: "Slogan"
+        REDIRECT:
+          LABEL: "Select page"
+        IMAGE:
+          LABEL: "Image"
+        IMAGES:
+          LABEL: "Images"
+        IMAGE_HEADER:
+          LABEL: "Header image"
+        DESCRIPTION:
+          LABEL: "Description"
+        YOUTUBE:
+          LABEL: "Enter video ID"
+          DESCRIPTION: "Example: `VkvUH8vRQfE`"
+        COLUMN:
+          LABEL: 'content width'
+          OPTIONS:
+            1: "One column"
+            2: "two columns"
+        SCALE:
+          LABEL: 'Format'
+          OPTIONS:
+            1: '4:3'
+            2: '16:9 (Full HD)'
+            3: '2.35:1 (Widescreen)'
+        PERSONS:
+          LABEL: 'Persons'
+        NAME:
+          LABEL: 'Name'
+        POSITION:
+          LABEL: 'Position'
+        EMAIL:
+          LABEL: 'Mail'
+
+

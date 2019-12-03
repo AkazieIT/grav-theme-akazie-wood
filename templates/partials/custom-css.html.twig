@@ -1,0 +1,85 @@
+<style>
+  html, body{
+    font-family: {{ theme_var('style.fonts.main') }};
+    color: {{ theme_var('style.color.text.main') }};
+  }
+  .wrapper{
+    background-color: {{ theme_var('style.color.background.main') }};
+  }
+  h1, h2, h3, h4, h5, h6{
+    font-family: {{ theme_var('style.fonts.h') }};
+  }
+  header.site-header{
+    background-color: {{ theme_var('style.color.background.nav.default') }};
+  }
+  header.site-header div.header-inner nav.header-nav.desktop ul li a{
+    background-color: {{ theme_var('style.color.white') }};
+    color: {{ theme_var('style.color.black') }};
+  }
+  header.site-header div.header-inner nav.header-nav.desktop ul li a{
+    background-color: {{ theme_var('style.color.background.nav.default') }};
+    color: {{ theme_var('style.color.text.nav.default') }};
+    font-family: {{ theme_var('style.fonts.nav') }};
+  }
+  header.site-header div.header-inner nav.header-nav.desktop ul li a.active,
+  header.site-header div.header-inner nav.header-nav.desktop ul li a:hover{
+    background-color: {{ theme_var('style.color.background.nav.hover') }};
+    color: {{ theme_var('style.color.text.nav.hover') }};
+  }
+  footer.site-footer .footer-main{
+    font-family: {{ theme_var('style.fonts.footer') }};
+  }
+  .markdown ol li::before, .markdown ul:not(.sociallinks) li::before{
+    background-color: {{ theme_var('style.color.background.primary') }};
+  }
+  .markdown blockquote{
+    background-color: {{ theme_var('style.color.background.secondary') }};
+    border: 1px solid {{ theme_var('style.color.background.secondary') }};
+    color: {{ theme_var('style.color.text.secondary') }};
+  }
+  .markdown code{
+    color: {{ theme_var('style.color.text.cta') }};
+  }
+  a{
+    color: {{ theme_var('style.color.text.cta') }};
+  }
+  a:hover{
+    color: {{ theme_var('style.color.text.cta') }};
+  }
+  .screen-image .image-caption{
+    color: {{ theme_var('style.color.white') }};
+  }
+  main.site-content .modular.section-image .caption,
+  main.site-content .modular.section-map .caption{
+    background-color: {{ theme_var('style.color.black') }};
+    color: {{ theme_var('style.color.white') }};
+  }
+  main.site-content .modular.section-gallery .gallery>article{
+    border: 14px solid {{ theme_var('style.color.white') }};
+  }
+  footer.site-footer{
+    background-color: {{ theme_var('style.color.background.secondary') }};
+  }
+  footer.site-footer .footer-top{
+    background-color: {{ theme_var('style.color.background.primary') }};
+  }
+  footer.site-footer .footer-main .footer-navigation ul li a{
+    color: {{ theme_var('style.color.text.secondary') }};
+  }
+  footer.site-footer .footer-main .footer-adress,
+  footer.site-footer .footer-main .footer-email{
+    color: {{ theme_var('style.color.text.secondary') }};
+  }
+  header.site-header div.header-inner div.mobile-toggle .pull span{
+    background-color: {{ theme_var('style.color.background.nav.hover') }};
+  }
+  header.site-header div.header-inner nav.header-nav.mobile{
+    background-color: {{ theme_var('style.color.background.nav.default') }};
+  }
+  header.site-header div.header-inner nav.header-nav.mobile ul li a{
+    color: {{ theme_var('style.color.text.nav.default') }};
+  }
+  header.site-header div.header-inner nav.header-nav.mobile ul li a.active{
+    color: {{ theme_var('style.color.background.nav.hover') }};
+  }
+</style>

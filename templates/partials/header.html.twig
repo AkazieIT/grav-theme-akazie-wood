@@ -1,0 +1,25 @@
+{% set logo = theme_var('header.favicon') %}
+
+<header class="site-header  {{ theme_var('header.fixed') ? 'fixed' : '' }}">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="{{ home_url}}">
+        {% if logo %}
+          {% set logo_file = (logo|first).name %}
+          <img src="{{ url('theme://images/logo/' ~ logo_file)  }}" alt="{{ site.name }}" />
+        {% else %}
+          <img src="{{ url('theme://images/logo.png')  }}" alt="{{ site.name }}" />
+        {% endif %}
+      </a>
+    </div>
+    <div class="mobile-toggle">
+      <div class="pull">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    {% include 'partials/navigation.html.twig' %}
+  </div>
+</header>

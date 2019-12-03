@@ -1,0 +1,53 @@
+title: team
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        inhalt:
+          type: tab
+          title: THEME_AKAZIEWOOD.ADMIN.TAB.CONTENT
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+            content:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.CONTENT
+              underline: true
+              fields:
+                header.personen:
+                  name: personen
+                  type: list
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.PERSONS.LABEL
+                  collapsed: true
+                  fields:
+                    .name:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.NAME.LABEL
+                      validate:
+                        required: true
+                    .position:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.POSITION.LABEL
+                    .email:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.EMAIL.LABEL
+                    .text:
+                      type: textarea
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION.LABEL
+                      rows: 4
+                    .image:
+                      type: file
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE.LABEL
+                      destination: 'self@'
+                      accept:
+                      - image/*
+
+
+
+
+

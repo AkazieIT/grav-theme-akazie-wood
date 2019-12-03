@@ -1,0 +1,13 @@
+<section class="contact row">
+  <article class="col-12 col-lg-6">
+    <div id="js-map"
+         map-style='{{ page.header.map.style }}'
+         map-controls='{{ page.header.map.controls }}'
+         map-lat='{{ page.header.map.latitude }}'
+         map-lon='{{ page.header.map.longitude }}'
+         map-zoom='{{ page.header.map.zoom }}'></div>
+  </article>
+  <article class="col-12 col-lg-6 markdown">
+    {{ page.header.text | markdown }}
+  </article>
+</section>

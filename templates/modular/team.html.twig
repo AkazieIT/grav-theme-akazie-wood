@@ -1,0 +1,26 @@
+<section class="modular section-teamlist col-12">
+  <div class="container">
+    <div class="row">
+      {% for person in page.header.personen %}
+        <article class="person col-12 col-lg-6">
+          <div class="person-image">
+            {% set image = person.image|first %}
+            {{ page.media[image.name].cropZoom(500,500).html }}
+          </div>
+          <div class="person-detail">
+            <h4 class="person-name">{{ person.name }}</h4>
+            <span class="person-position">{{ person.position }}</span>
+            <span class="person-email">
+          <a href="mailto:{{ person.email }}">
+            {{ person.email }}
+          </a>
+        </span>
+            <span class="person-text">{{ person.text }}</span>
+          </div>
+        </article>
+
+      {% endfor %}
+    </div>
+  </div>
+
+</section>

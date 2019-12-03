@@ -1,0 +1,62 @@
+title: unterseiten
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        inhalt:
+          type: tab
+          title: THEME_AKAZIEWOOD.ADMIN.TAB.CONTENT
+          fields:
+            content:
+              type: section
+              underline: true
+              fields:
+                header.title:
+                  type: text
+                  autofocus: true
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+                header.image:
+                  type: filepicker
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE_HEADER.LABEL
+                  preview_images: true
+            media:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
+              underline: true
+              fields:
+                header.media_order:
+                  type: pagemedia
+            settings:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.SETTINGS
+              underline: true
+              fields:
+                header.content.items:
+                  type: select
+                  label: PLUGIN_ADMIN.ITEMS
+                  default: '@self.modular'
+                  options:
+                    '@self.modular': Modular Children
+
+                header.content.order.by:
+                  type: select
+                  label: PLUGIN_ADMIN.ORDER_BY
+                  default: folder
+                  options:
+                    folder: PLUGIN_ADMIN.FOLDER
+                    title: PLUGIN_ADMIN.TITLE
+                    date: PLUGIN_ADMIN.DATE
+                    default: PLUGIN_ADMIN.DEFAULT
+
+                header.content.order.dir:
+                  type: select
+                  label: PLUGIN_ADMIN.ORDER
+                  default: asc
+                  options:
+                    asc: PLUGIN_ADMIN.ASCENDING
+                    desc: PLUGIN_ADMIN.DESCENDING
+
