@@ -21,7 +21,9 @@
       {{ theme_config.footer.address | nl2br }}
     </div>
     <div class="footer-email">
-      {{ theme_config.footer.mail | nl2br }}
+      <a href="mailto:{{ theme_config.footer.mail|safe_email }}">
+        {{ theme_config.footer.mail }}
+      </a>
     </div>
   </div>
 </footer>

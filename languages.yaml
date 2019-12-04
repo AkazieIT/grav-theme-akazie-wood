@@ -12,7 +12,11 @@ en:
         BG_COLOR: 'Background color'
         TEXT_COLOR: 'Text color'
         FONT: 'Fonts'
+        VARIOUS: 'Various'
+        MAP: 'Google map'
       FIELDS:
+        MAP_API:
+          LABEL: 'API-key'
         FAVICON:
           LABEL: 'Favicon'
           DESCRIPTION: 'Used instead of `theme: // images / favicon.png`'
@@ -147,5 +151,160 @@ en:
           LABEL: 'Position'
         EMAIL:
           LABEL: 'Mail'
+de:
+  THEME_AKAZIEWOOD:
+    THEME:
+      SECTION:
+        LAYOUT: 'Seiten Design'
+        STYLE: 'Benutzerdefinierte Anpassungen (nur für Superadmins)'
+      FIELDSET:
+        HEADER: 'Kopfbereich'
+        FOOTER: 'Fussbereich'
+        SITE: 'Seite'
+        COLOR: 'Farben'
+        BG_COLOR: 'Hintergrundfarben'
+        TEXT_COLOR: 'Textfarben'
+        FONT: 'Schriften'
+        VARIOUS: 'Diverses'
+        MAP: 'Google Map'
+      FIELDS:
+        MAP_API:
+          LABEL: 'API-Schlüssel'
+        FAVICON:
+          LABEL: 'Favicon'
+          DESCRIPTION: 'Benutzen anstelle von `theme: // images / favicon.png`'
+        LOGO:
+          LABEL: 'Eigenes Logo'
+          DESCRIPTION: 'Benutzen anstelle von `theme://images/logo.png` verwendet'
+        FIXED:
+          LABEL: 'Fixierte Navigation'
+          HELP: 'Wenn aktiviert wird die Navigation immer oben im Browser angezeigt.'
+        HOME:
+          LABEL: 'Startseiten-Link'
+          OPTIONS:
+            0: "Anzeigen"
+            1: "Verstecken"
+        FOOTER_ADDRESS:
+          LABEL: 'Adresse im Footer'
+        FOOTER_MAIL:
+          LABEL: 'Mail im Footer'
+        COLOR:
+          WHITE:
+            LABEL: 'Weiss'
+          BLACK:
+            LABEL: 'Schwarz'
+          BG:
+            MAIN:
+              LABEL: 'Hauptfarbe'
+            PRIMARY:
+              LABEL: 'Erste Farbe'
+            SECONDARY:
+              LABEL: 'Zweite Farbe'
+            NAV:
+              LABEL: 'Navigation'
+            NAV_HOVER:
+              LABEL: 'Navigation (hover)'
+          TEXT:
+            MAIN:
+              LABEL: 'Hauptfarbe'
+            PRIMARY:
+              LABEL: 'Erste Farbe'
+            SECONDARY:
+              LABEL: 'Zweite Farbe'
+            LINKS:
+              LABEL: 'Links'
+            NAV:
+              LABEL: 'Navigation'
+            NAV_HOVER:
+              LABEL: 'Navigation (hover)'
+        FONT:
+          IMPORT:
+            LABEL: 'Schriften import'
+          MAIN:
+            LABEL: 'Hauptschrift'
+          FOOTER:
+            LABEL: 'Footer'
+          TITLE:
+            LABEL: 'Überschriften'
+          NAV:
+            LABEL: 'Navigation'
+    FRONTEND:
+    ADMIN:
+      TAB:
+        CONTENT: "Inhalt"
+      SECTION:
+        CONTENT: "Seiteninhalt"
+        SETTINGS: "Einstellungen"
+        PREVIEW: "Vorschau"
+        MEDIA: 'Medien'
+        MAPSETTINGS: 'Map Einstellungen'
+        MAPINFO: 'Map Info'
+      FIELDS:
+        MAP_LAT:
+          LABEL: 'Breitengrad'
+        MAP_LONG:
+          LABEL: 'Längengrad'
+        MAP_ZOOM:
+          LABEL: 'Zoom'
+        MAP_CONTROLS:
+          LABEL: 'Schaltflächen'
+        MAP_STYLE:
+          LABEL: 'Map Style'
+        MAP_DESC:
+          LABEL: 'Map Beschreibung'
+        MAP_TITLE:
+          LABEL: 'Marker Titel'
+        MAP_WINDOW:
+          LABEL: 'Info Fenster'
+        TITLE:
+          LABEL: "Titel"
+        SHOWTITLE:
+          LABEL: "Titel anzeigen?"
+          OPTIONS:
+            0: "Nein"
+            1: "Ja"
+            2: "Nur Abstand benutzen"
+        GALLERIE:
+          LABEL: "Bildergallerie"
+        TEXT:
+          LABEL: "Text"
+        HEADING:
+          LABEL: "Überschrift"
+        SLOGAN:
+          LABEL: "Slogan"
+        REDIRECT:
+          LABEL: "Seite auswählen"
+        IMAGE:
+          LABEL: "Bild"
+        IMAGES:
+          LABEL: "Bilder"
+        IMAGE_HEADER:
+          LABEL: "Titelbild"
+        DESCRIPTION:
+          LABEL: "Beschreibung"
+        YOUTUBE:
+          LABEL: "Vidoe ID eingeben"
+          DESCRIPTION: "Beispiel: `VkvUH8vRQfE`"
+        COLUMN:
+          LABEL: 'Element Breite'
+          OPTIONS:
+            1: "Eine Spalte"
+            2: "Zwei Spalten"
+        SCALE:
+          LABEL: 'Format'
+          OPTIONS:
+            1: '4:3'
+            2: '16:9 (Full HD)'
+            3: '2.35:1 (Widescreen)'
+        PERSONS:
+          LABEL: 'Personen'
+        NAME:
+          LABEL: 'Name'
+        POSITION:
+          LABEL: 'Position'
+        EMAIL:
+          LABEL: 'Mail'
+
+
 
 

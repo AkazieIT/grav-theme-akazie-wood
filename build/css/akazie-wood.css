@@ -17252,6 +17252,7 @@ a:not([link]):hover {
 .wrapper {
   display: -webkit-box;
   display: flex;
+  display: -ms-flexbox;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-flow: column;
@@ -17440,7 +17441,7 @@ header.site-header div.header-inner div.mobile-toggle .pull.open span:nth-child(
 
 main.site-content {
   -webkit-box-flex: 1;
-          flex: 1;
+          flex: 1 1 auto;
 }
 
 main.site-content .page {

@@ -143,6 +143,7 @@ a:not([link]){
 
 .wrapper{
   display: flex;
+  display: -ms-flexbox;
   flex-flow: column;
   height: 100%;
 }
@@ -317,7 +318,7 @@ header.site-header{
   }
 }
 main.site-content{
-  flex: 1;
+  flex:1 1 auto;
   .page{
     margin-top: $distance !important;
     @include media-breakpoint-down(md) {

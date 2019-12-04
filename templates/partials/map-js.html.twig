@@ -1,0 +1,40 @@
+<script>
+  function drawMaps(){
+    var map = [],
+      marker = [],
+      infowindow = [],
+      style = [];
+    $('.js-map').each(function( i ){
+      if(this.getAttribute('map-style')){
+        style = JSON.parse(this.getAttribute('map-style'));
+      }
+
+      var cords = {lat: Number(this.getAttribute('map-lat')), lng: Number(this.getAttribute('map-lon'))};
+
+      mapOptions = {
+        zoom: Number(this.getAttribute('map-zoom')),
+        center: cords,
+        disableDefaultUI: Boolean(this.getAttribute('map-controls')),
+        styles: style
+      };
+
+      map[i] = new google.maps.Map(this, mapOptions);
+      marker[i] = new google.maps.Marker({
+        position: cords,
+        map: map[i],
+        title: String(this.getAttribute('map-markertitle'))
+      });
+      infowindow[i] = new google.maps.InfoWindow({
+        content: this.getAttribute('map-infowindow')
+      });
+      marker[i].addListener('click', function() {
+        infowindow[i].open(map[i], marker[i]);
+      });
+
+    });
+  }
+</script>
+
+{% block javascripts %}
+  {% do assets.addJs('https://maps.googleapis.com/maps/api/js?key=' ~ theme_var('map.apikey') ~ '&callback=drawMaps',{'priority':0, 'group':'bottom'}) %}
+{% endblock %}

@@ -1,7 +1,7 @@
 name: "Akazie Wood"
-version: 0.9.0
+version: 0.9.1
 description: "This is a theme of Akazie IT GmbH and is intended for simple websites without great features"
-icon: id-card-o
+icon: smile-o
 keywords: akazieit, akazie, wood, carpenter, simple, chargeable, schreiner, holz, zimmerei, zimmermann, wald
 author:
   name: Akazie IT GmbH
@@ -21,6 +21,16 @@ form:
       title: THEME_AKAZIEWOOD.THEME.SECTION.LAYOUT
       underline: true
       fields:
+        map:
+          type: fieldset
+          title: THEME_AKAZIEWOOD.THEME.FIELDSET.MAP
+          collapsed: false
+          collapsible: true
+          fields:
+            map.apikey:
+              type: text
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.MAP_API.LABEL
+              size: large
         site:
           type: fieldset
           title: THEME_AKAZIEWOOD.THEME.FIELDSET.SITE
@@ -53,17 +63,6 @@ form:
               description: THEME_AKAZIEWOOD.THEME.FIELDS.LOGO.DESCRIPTION
               accept:
                 - image/*
-            header.fixed:
-              type: toggle
-              label: THEME_AKAZIEWOOD.THEME.FIELDS.FIXED.LABEL
-              help: THEME_AKAZIEWOOD.THEME.FIELDS.FIXED.HELP
-              highlight: 1
-              default: 1
-              options:
-                0: PLUGIN_ADMIN.DISABLED
-                1: PLUGIN_ADMIN.ENABLED
-              validate:
-                type: bool
             header.home:
               type: toggle
               label: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.LABEL
@@ -198,5 +197,22 @@ form:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.NAV.LABEL
               default: "'Montserrat', sans-serif"
+        various:
+          type: fieldset
+          title: THEME_AKAZIEWOOD.THEME.FIELDSET.VARIOUS
+          collapsed: false
+          collapsible: true
+          fields:
+            header.fixed:
+              type: toggle
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.FIXED.LABEL
+              help: THEME_AKAZIEWOOD.THEME.FIELDS.FIXED.HELP
+              highlight: 1
+              default: 1
+              options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
+              validate:
+                type: bool
 
 

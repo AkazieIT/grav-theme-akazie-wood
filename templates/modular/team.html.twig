@@ -11,7 +11,7 @@
             <h4 class="person-name">{{ person.name }}</h4>
             <span class="person-position">{{ person.position }}</span>
             <span class="person-email">
-          <a href="mailto:{{ person.email }}">
+          <a href="mailto:{{ person.email|safe_email }}">
             {{ person.email }}
           </a>
         </span>
