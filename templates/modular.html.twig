@@ -1,9 +1,10 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
+  {% set collection = page.collection() %}
   <section class="page section-modular">
     <div class="row">
-      {% for module in page.collection() %}
+      {% for module in collection %}
         {{ module.content }}
       {% endfor %}
     </div>

@@ -71,6 +71,8 @@ form:
               options:
                 1: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.1
                 0: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.0
+              validate:
+                type: bool
         footer:
           type: fieldset
           title: THEME_AKAZIEWOOD.THEME.FIELDSET.FOOTER
@@ -85,6 +87,8 @@ form:
               options:
                 1: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.1
                 0: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.0
+              validate:
+                type: bool
             footer.address:
               type: textarea
               label: THEME_AKAZIEWOOD.THEME.FIELDS.FOOTER_ADDRESS.LABEL
@@ -94,6 +98,23 @@ form:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.FOOTER_MAIL.LABEL
               size: large
+            footer.impressum.enabled:
+              type: toggle
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.IMPRESSUM.ENABLED.LABEL
+              highlight: 0
+              default: 0
+              options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
+              validate:
+                type: bool
+            footer.impressum.link:
+              type: pages
+              size: medium
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.IMPRESSUM.LINK.LABEL
+              show_all: false
+              show_modular: false
+              show_root: false
     style_section:
       type: section
       title: THEME_AKAZIEWOOD.THEME.SECTION.STYLE
@@ -110,10 +131,14 @@ form:
               type: colorpicker
               label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.WHITE.LABEL
               default: '#ffffff'
+              validate:
+                required: true
             style.color.black:
               type: colorpicker
               label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.BLACK.LABEL
               default: '#000000'
+              validate:
+                required: true
             style.color.background:
               type: fieldset
               title: THEME_AKAZIEWOOD.THEME.FIELDSET.BG_COLOR
@@ -124,22 +149,32 @@ form:
                   type: colorpicker
                   label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.BG.MAIN.LABEL
                   default: '#ffffff'
+                  validate:
+                    required: true
                 style.color.background.primary:
                   type: colorpicker
                   label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.BG.PRIMARY.LABEL
                   default: '#486144'
+                  validate:
+                    required: true
                 style.color.background.secondary:
                   type: colorpicker
                   label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.BG.SECONDARY.LABEL
                   default: '#121810'
+                  validate:
+                    required: true
                 style.color.background.nav.default:
                   type: colorpicker
                   label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.BG.NAV.LABEL
                   default: '#ffffff'
+                  validate:
+                    required: true
                 style.color.background.nav.hover:
                   type: colorpicker
                   label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.BG.NAV_HOVER.LABEL
                   default: '#486144'
+                  validate:
+                    required: true
             style.color.text:
               type: fieldset
               title: THEME_AKAZIEWOOD.THEME.FIELDSET.TEXT_COLOR
@@ -150,26 +185,38 @@ form:
                   type: colorpicker
                   label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.TEXT.MAIN.LABEL
                   default: '#000000'
+                  validate:
+                    required: true
                 style.color.text.primary:
                   type: colorpicker
                   label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.TEXT.PRIMARY.LABEL
                   default: '#ffffff'
+                  validate:
+                    required: true
                 style.color.text.secondary:
                   type: colorpicker
                   label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.TEXT.SECONDARY.LABEL
                   default: '#ffffff'
+                  validate:
+                    required: true
                 style.color.text.cta:
                   type: colorpicker
                   label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.TEXT.LINKS.LABEL
                   default: '#8b0000'
+                  validate:
+                    required: true
                 style.color.text.nav.default:
                   type: colorpicker
                   label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.TEXT.NAV.LABEL
                   default: '#000000'
+                  validate:
+                    required: true
                 style.color.text.nav.hover:
                   type: colorpicker
                   label: THEME_AKAZIEWOOD.THEME.FIELDS.COLOR.TEXT.NAV_HOVER.LABEL
                   default: '#ffffff'
+                  validate:
+                    required: true
 
         style.font:
           type: fieldset
@@ -181,22 +228,32 @@ form:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.IMPORT.LABEL
               default: 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway&display=swap'
+              validate:
+                required: true
             style.fonts.main:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.MAIN.LABEL
               default: "'Open Sans', sans-serif"
+              validate:
+                required: true
             style.fonts.footer:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.FOOTER.LABEL
               default: "'Raleway', sans-serif"
+              validate:
+                required: true
             style.fonts.h:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.TITLE.LABEL
               default: "'Raleway', sans-serif"
+              validate:
+                required: true
             style.fonts.nav:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.NAV.LABEL
               default: "'Montserrat', sans-serif"
+              validate:
+                required: true
         various:
           type: fieldset
           title: THEME_AKAZIEWOOD.THEME.FIELDSET.VARIOUS
@@ -214,5 +271,14 @@ form:
                 1: PLUGIN_ADMIN.ENABLED
               validate:
                 type: bool
+            header.nav.length:
+              type: text
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.NAV.LENGTH.LABEL
+              default: 5
+              size: small
+              validate:
+                type: int
+                required: true
+
 
 

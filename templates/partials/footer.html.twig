@@ -3,9 +3,9 @@
   <div class="footer-main">
     <div class="footer-navigation">
       <ul>
-        {% for p in pages.children.visible %}
+        {% for p in pages.children.visible | slice(0, (theme_var('header.nav.length'))) %}
           {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
-          {% if (p.home() and theme_config.footer.home) or p.home() == false %}
+          {% if (p.home() and theme_var('footer.home')) or p.home() == false %}
             <li>
               <a href="{{ p.url }}" class="{{ active_page }}" link>
                 {{ p.menu }}
@@ -18,11 +18,17 @@
 
     </div>
     <div class="footer-adress">
-      {{ theme_config.footer.address | nl2br }}
+      {{ theme_var('footer.address') | nl2br }}
     </div>
     <div class="footer-email">
-      <a href="mailto:{{ theme_config.footer.mail|safe_email }}">
-        {{ theme_config.footer.mail }}
+      {% if theme_var('footer.impressum.enabled') %}
+        <a href="{{ base_url }}{{ theme_var('footer.impressum.link') }}">
+          Impressum
+        </a>
+        &nbsp;|&nbsp;
+      {% endif %}
+      <a href="mailto:{{ theme_var('footer.mail')|safe_email }}">
+        {{ theme_var('footer.mail') }}
       </a>
     </div>
   </div>

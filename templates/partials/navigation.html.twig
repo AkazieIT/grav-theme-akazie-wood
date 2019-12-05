@@ -1,6 +1,9 @@
 {% macro nav_loop(page, theme_config, reverse = true) %}
-  {% set arr = reverse ? page.children.visible | reverse : page.children.visible %}
-  {% for p in arr %}
+  {% set arr = page.children.visible | slice(0, (theme_var('header.nav.length'))) %}
+  {% if reverse %}
+    {% set arr = arr | reverse %}
+  {% endif %}
+  {% for p in arr  %}
     {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
     {% if p.children.visible.count > 0 %}
       <li>

@@ -19,7 +19,7 @@ form:
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.CONTENT
               underline: true
               fields:
-                header.text:
+                content:
                   type: markdown
                   validate:
                     type: textarea

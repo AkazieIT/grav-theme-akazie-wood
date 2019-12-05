@@ -4,7 +4,7 @@
   html, body{
     width: 100%;
     height: 100%;
-    font-size: 1rem;
+    font-size: 18px;
   }
 }
 
@@ -126,6 +126,7 @@ a:not([link]){
       font-size: 4em;
       font-weight: 700;
       text-transform: uppercase;
+      letter-spacing: 5px;
       @include media-breakpoint-down(md) {
         font-size: 2.5em;
       }
@@ -174,6 +175,7 @@ header.site-header{
     display: flex;
     div.logo{
       margin-left: 1rem;
+      z-index: 500;
       img{
         margin-top: $nav-height / 20;
         height: $nav-height - ($nav-height / 10);
@@ -199,7 +201,7 @@ header.site-header{
               padding: 0 20px;
               display: block;
               text-decoration: none;
-              font-size: 14px;
+              font-size: 16px;
               &:hover, &.active{
 
               }
@@ -209,16 +211,20 @@ header.site-header{
       }
       &.mobile {
         display: none;
-        margin-top: 60px;
         background-color: lightgrey;
         width: 100%;
         height: 100vh;
         position: absolute;
         top: 0;
-        padding-top: 2rem;
+
+        //padding-top: 2rem;
         ul{
           padding: 0;
           margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
           li{
             list-style: none;
             display: block;
@@ -254,6 +260,7 @@ header.site-header{
       top: 18px;
       right: 15px;
       display: none;
+      z-index: 500;
       @include media-breakpoint-down(md) {
         display: block;
       }
@@ -321,17 +328,18 @@ main.site-content{
   flex:1 1 auto;
   .page{
     margin-top: $distance !important;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(xl) {
       padding-left: 1rem;
       padding-right: 1rem;
     }
   }
-  .page.section-modular{
+  .page.section-modular,
+  .page.section-default{
     @include make-container-max-widths();
     margin: 0 auto;
   }
   .modular{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     h2.heading{
       margin-top: 0;
@@ -390,7 +398,6 @@ main.site-content{
         margin-bottom: 10px;
       }
       &-email{
-        font-style: italic;
         display: block;
         margin-bottom: 10px;
       }
@@ -428,7 +435,7 @@ main.site-content{
     }
   }
   .modular.section-gallery{
-    margin-bottom: 0;
+    margin-bottom: 34px;
     h2.heading{
       margin-bottom: 1rem;
     }

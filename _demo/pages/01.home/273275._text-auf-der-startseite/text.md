@@ -1,6 +1,6 @@
 ---
-title: 'Text rechts, Bild links'
-column: '1'
+title: 'Text auf der Startseite'
+column: '2'
 showtitle: '1'
 ---
 

@@ -35,4 +35,33 @@ form:
               fields:
                 header.media_order:
                   type: pagemedia
+            settings:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.SETTINGS
+              underline: true
+              fields:
+                header.content.items:
+                  type: select
+                  label: PLUGIN_ADMIN.ITEMS
+                  default: '@self.modular'
+                  options:
+                    '@self.modular': Modular Children
+
+                header.content.order.by:
+                  type: select
+                  label: PLUGIN_ADMIN.ORDER_BY
+                  default: folder
+                  options:
+                    folder: PLUGIN_ADMIN.FOLDER
+                    title: PLUGIN_ADMIN.TITLE
+                    date: PLUGIN_ADMIN.DATE
+                    default: PLUGIN_ADMIN.DEFAULT
+
+                header.content.order.dir:
+                  type: select
+                  label: PLUGIN_ADMIN.ORDER
+                  default: asc
+                  options:
+                    asc: PLUGIN_ADMIN.ASCENDING
+                    desc: PLUGIN_ADMIN.DESCENDING
 

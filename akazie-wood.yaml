@@ -1,11 +1,15 @@
 enabled: true
 header:
   fixed: true
-  home: '1'
+  home: true
+  nav:
+    length: 5
 footer:
-  home: '1'
+  home: true
   address: "Akazie IT GmbH\r\nSchanzenstrasse 10d\r\n3775 Lenk"
   mail: info@akazie.com
+  impressum:
+    enabled: false
 style:
   color:
     white: '#ffffff'

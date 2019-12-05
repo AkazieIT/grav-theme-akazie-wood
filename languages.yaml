@@ -15,6 +15,14 @@ en:
         VARIOUS: 'Various'
         MAP: 'Google map'
       FIELDS:
+        NAV:
+          LENGTH:
+            LABEL: 'Number Max. Navigation points'
+        IMPRESSUM:
+          ENABLED:
+            LABEL: 'Show impressum'
+          LINK:
+            LABEL: 'Link to the imprint'
         MAP_API:
           LABEL: 'API-key'
         FAVICON:
@@ -168,11 +176,19 @@ de:
         VARIOUS: 'Diverses'
         MAP: 'Google Map'
       FIELDS:
+        NAV:
+          LENGTH:
+            LABEL: 'Anzahl Max. Navigationspunkte'
+        IMPRESSUM:
+          ENABLED:
+            LABEL: 'Impressum anzeigen?'
+          LINK:
+            LABEL: 'Link zum Impressum'
         MAP_API:
           LABEL: 'API-Schlüssel'
         FAVICON:
           LABEL: 'Favicon'
-          DESCRIPTION: 'Benutzen anstelle von `theme: // images / favicon.png`'
+          DESCRIPTION: 'Benutzen anstelle von `theme://images/favicon.png`'
         LOGO:
           LABEL: 'Eigenes Logo'
           DESCRIPTION: 'Benutzen anstelle von `theme://images/logo.png` verwendet'

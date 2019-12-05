@@ -32,7 +32,7 @@
   --breakpoint-sm: 576px;
   --breakpoint-md: 870px;
   --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
+  --breakpoint-xl: 1220px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -569,7 +569,7 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .container {
     max-width: 1280px;
   }
@@ -601,7 +601,7 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1280px;
   }
@@ -1482,7 +1482,7 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .col-xl {
     flex-basis: 0;
     -webkit-box-flex: 1;
@@ -2003,7 +2003,7 @@ pre code {
   }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1219.98px) {
   .table-responsive-xl {
     display: block;
     width: 100%;
@@ -3282,7 +3282,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .dropdown-menu-xl-left {
     right: auto;
     left: 0;
@@ -4545,7 +4545,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1219.98px) {
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
     padding-right: 0;
@@ -4553,7 +4553,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .navbar-expand-xl {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -5665,7 +5665,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .list-group-horizontal-xl {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -6137,7 +6137,7 @@ a.close.disabled {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .modal-xl {
     max-width: 1140px;
   }
@@ -7065,7 +7065,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .d-xl-none {
     display: none !important;
   }
@@ -7703,7 +7703,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .flex-xl-row {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -7876,7 +7876,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .float-xl-left {
     float: left !important;
   }
@@ -9522,7 +9522,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .m-xl-0 {
     margin: 0 !important;
   }
@@ -9937,7 +9937,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .text-xl-left {
     text-align: left !important;
   }
@@ -17094,7 +17094,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 :root html, :root body {
   width: 100%;
   height: 100%;
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 /* ##################################
@@ -17230,6 +17230,7 @@ a:not([link]):hover {
   font-size: 4em;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 @media (max-width: 991.98px) {
@@ -17286,6 +17287,7 @@ header.site-header div.header-inner {
 
 header.site-header div.header-inner div.logo {
   margin-left: 1rem;
+  z-index: 500;
 }
 
 header.site-header div.header-inner div.logo img {
@@ -17321,23 +17323,26 @@ header.site-header div.header-inner nav.header-nav.desktop ul li a {
   padding: 0 20px;
   display: block;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 header.site-header div.header-inner nav.header-nav.mobile {
   display: none;
-  margin-top: 60px;
   background-color: lightgrey;
   width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
-  padding-top: 2rem;
 }
 
 header.site-header div.header-inner nav.header-nav.mobile ul {
   padding: 0;
   margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 header.site-header div.header-inner nav.header-nav.mobile ul li {
@@ -17373,6 +17378,7 @@ header.site-header div.header-inner div.mobile-toggle {
   top: 18px;
   right: 15px;
   display: none;
+  z-index: 500;
 }
 
 @media (max-width: 991.98px) {
@@ -17446,45 +17452,45 @@ main.site-content {
 
 main.site-content .page {
   margin-top: 30px !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-@media (max-width: 991.98px) {
-  main.site-content .page {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-main.site-content .page.section-modular {
+main.site-content .page.section-modular,
+main.site-content .page.section-default {
   margin: 0 auto;
 }
 
 @media (min-width: 576px) {
-  main.site-content .page.section-modular {
+  main.site-content .page.section-modular,
+  main.site-content .page.section-default {
     max-width: 540px;
   }
 }
 
 @media (min-width: 870px) {
-  main.site-content .page.section-modular {
+  main.site-content .page.section-modular,
+  main.site-content .page.section-default {
     max-width: 872px;
   }
 }
 
 @media (min-width: 992px) {
-  main.site-content .page.section-modular {
+  main.site-content .page.section-modular,
+  main.site-content .page.section-default {
     max-width: 960px;
   }
 }
 
-@media (min-width: 1200px) {
-  main.site-content .page.section-modular {
+@media (min-width: 1220px) {
+  main.site-content .page.section-modular,
+  main.site-content .page.section-default {
     max-width: 1280px;
   }
 }
 
 main.site-content .modular {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 main.site-content .modular h2.heading {
@@ -17569,7 +17575,6 @@ main.site-content .modular.section-teamlist .person-position {
 }
 
 main.site-content .modular.section-teamlist .person-email {
-  font-style: italic;
   display: block;
   margin-bottom: 10px;
 }
@@ -17611,7 +17616,7 @@ main.site-content .modular.section-map .caption {
 }
 
 main.site-content .modular.section-gallery {
-  margin-bottom: 0;
+  margin-bottom: 34px;
 }
 
 main.site-content .modular.section-gallery h2.heading {
