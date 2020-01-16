@@ -1,3 +1,14 @@
+# v0.9.2
+## 10-12-2019
+
+1. [](#new)
+    * File for custom CSS
+    * Enable and disable custom css in theme config
+1. [](#improved)
+    * Update README
+    * Update .gitignore
+    * Move custom icon and logo
+
 # v0.9.1
 ## 05-12-2019
 

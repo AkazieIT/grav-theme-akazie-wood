@@ -1,5 +1,5 @@
 name: "Akazie Wood"
-version: 0.9.1
+version: 0.9.2
 description: "This is a theme of Akazie IT GmbH and is intended for simple websites without great features"
 icon: smile-o
 keywords: akazieit, akazie, wood, carpenter, simple, chargeable, schreiner, holz, zimmerei, zimmermann, wald
@@ -41,7 +41,7 @@ form:
               type: file
               label: THEME_AKAZIEWOOD.THEME.FIELDS.FAVICON.LABEL
               size: large
-              destination: 'theme://images/favicon'
+              destination: 'theme://custom/favicon'
               multiple: false
               markdown: true
               description: THEME_AKAZIEWOOD.THEME.FIELDS.FAVICON.DESCRIPTION
@@ -57,7 +57,7 @@ form:
               type: file
               label: THEME_AKAZIEWOOD.THEME.FIELDS.LOGO.LABEL
               size: large
-              destination: 'theme://images/logo'
+              destination: 'theme://custom/logo'
               multiple: false
               markdown: true
               description: THEME_AKAZIEWOOD.THEME.FIELDS.LOGO.DESCRIPTION
@@ -279,6 +279,16 @@ form:
               validate:
                 type: int
                 required: true
+            style.css:
+              type: toggle
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.CUSTOMCSS.LABEL
+              highlight: 0
+              default: 0
+              options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
+              validate:
+                type: bool
 
 
 

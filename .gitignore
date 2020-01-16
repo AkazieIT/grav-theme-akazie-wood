@@ -12,5 +12,5 @@ node_modules
 scss/core
 js/core
 package-lock.json
-images/favicon
-images/logo
+custom/
+!custom/css/.gitkeep

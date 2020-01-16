@@ -20,3 +20,21 @@ Show it on the [demo site](https://demo.akazie.com/akazie-wood)
 	```
 
 Alternatively, you can install `Akazie - Wood` via the Grav Admin interface.
+
+## Theme settings
+
+It is possible to change various theme settings:
+
+* Upload your own logo and favicon
+* Change the colors of the theme
+* Change the font
+* Add the Google maps API key
+* Add your own CSS file
+* Fixed header
+* Limit numbers ob navigation links
+* Manage impressum visibility
+
+These settings can be changed directly in the backend without time-consuming changes via FTP
+
+Optionally, in the theme folder `/custom/css`, 
+the file `custom.css` can be used to define your own styles and to override the existing formatting.

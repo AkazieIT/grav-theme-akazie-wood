@@ -35,3 +35,4 @@ style:
     footer: '''Raleway'', sans-serif'
     h: '''Raleway'', sans-serif'
     nav: '''Montserrat'', sans-serif'
+  css: false
