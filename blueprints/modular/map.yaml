@@ -83,6 +83,7 @@ form:
                             1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.1
                             2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.2
                             3: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.3
+                            4: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.4
                         header.map.style:
                           type: textarea
                           style: vertical
@@ -109,6 +110,14 @@ form:
                           rows: 4
                           style: vertical
                           label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MAP_WINDOW.LABEL
+                        header.map.description_position:
+                          type: select
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION_POS.LABEL
+                          default: 1
+                          size: medium
+                          options:
+                            1: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION_POS.OPTIONS.1
+                            2: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION_POS.OPTIONS.2
 
 
             settings:

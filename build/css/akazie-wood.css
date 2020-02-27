@@ -1,7 +1,7 @@
 /*!
  * akazie-wood - v1.0.0
  * @author Tom Hirter
- * Copyright (c) 2019
+ * Copyright (c) 2020
  */
 /*
  * Bootstrap
@@ -17598,13 +17598,20 @@ main.site-content .modular.section-map .media {
   position: relative;
 }
 
-main.site-content .modular.section-image .caption,
-main.site-content .modular.section-map .caption {
+main.site-content .modular.section-image .caption_1,
+main.site-content .modular.section-map .caption_1 {
   position: absolute;
   bottom: 0;
   width: 100%;
   opacity: 0.8;
   padding: 5px;
+}
+
+main.site-content .modular.section-image .caption_2,
+main.site-content .modular.section-map .caption_2 {
+  opacity: 0.8;
+  padding-top: 5px;
+  font-size: 16px;
 }
 
 @media (max-width: 991.98px) {

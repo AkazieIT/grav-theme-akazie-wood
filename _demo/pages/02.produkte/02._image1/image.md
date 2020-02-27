@@ -1,7 +1,8 @@
 ---
 title: Image1
 description: 'Das ist eine kleine Beschreibung des Bildes'
-scale: '1'
+description_position: '1'
+scale: '4'
 column: '1'
 showtitle: '2'
 image:

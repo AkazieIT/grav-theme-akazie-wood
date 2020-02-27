@@ -9,6 +9,7 @@ map:
     description: 'Besuchen Sie uns an der schönen Lenk.'
     markertitle: 'Akazie IT GmbH'
     infowindow: "Schanzenstrasse 10d\r\n3775 Lenk"
+    description_position: '2'
     connect: '0'
 scale: '1'
 column: '1'

@@ -421,11 +421,19 @@ main.site-content{
       position: relative;
     }
     .caption{
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      opacity: 0.8;
-      padding: 5px;
+      &_1{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        opacity: 0.8;
+        padding: 5px;
+      }
+      &_2{
+        opacity: 0.8;
+        padding-top: 5px;
+        font-size: 16px;
+      }
+
     }
     @include media-breakpoint-down(md) {
       .caption{

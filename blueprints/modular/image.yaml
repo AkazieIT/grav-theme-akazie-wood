@@ -29,6 +29,14 @@ form:
                   type: textarea
                   rows: 2
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION.LABEL
+                header.description_position:
+                  type: select
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION_POS.LABEL
+                  default: 1
+                  size: medium
+                  options:
+                    1: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION_POS.OPTIONS.1
+                    2: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION_POS.OPTIONS.2
                 header.scale:
                   type: select
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.LABEL
@@ -38,6 +46,7 @@ form:
                     1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.1
                     2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.2
                     3: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.3
+                    4: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.4
             settings:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.SETTINGS

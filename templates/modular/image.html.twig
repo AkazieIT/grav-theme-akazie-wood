@@ -7,13 +7,25 @@
         {% set scale = 9 / 16 %}
     {% elseif page.header.scale == 3 %}
         {% set scale = 1 / 2.35 %}
+    {% elseif page.header.scale == 4 %}
+        {% set scale = 1 / 1 %}
     {% endif %}
     <div class="media-container {% if page.header.showtitle == 2 %}title-placeholder{% endif %}">
         <div class="media" data-scale="{{ scale }}" style="background-image: url('{{ page.media[image.name].cropResize(1280,720).url }}')">
 
         </div>
-        {% if page.header.description %}<div class="caption">{{ page.header.description }}</div>{% endif %}
+        {% if page.header.description %}
+            {% if page.header.description_position == 1 %}
+                <div class="caption_1">{{ page.header.description }}</div>
+            {% endif %}
+
+        {% endif %}
     </div>
+    {% if page.header.description %}
+      {% if page.header.description_position == 2 %}
+        <div class="caption_2">{{ page.header.description }}</div>
+      {% endif %}
+    {% endif %}
 
 
 </article>

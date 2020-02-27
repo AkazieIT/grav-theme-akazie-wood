@@ -1,3 +1,12 @@
+# v0.9.3
+## 27.02.2020
+
+1. [](#budfix)
+    * Fix custom logo path
+1. [](#improved)
+    * Image with ration 1:1 possible
+    * Position of the image description can be selected on each image and map
+    * Update demo pages
 # v0.9.2
 ## 10-12-2019
 

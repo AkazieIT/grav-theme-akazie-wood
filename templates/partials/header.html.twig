@@ -6,7 +6,7 @@
       <a href="{{ home_url}}">
         {% if logo %}
           {% set logo_file = (logo|first).name %}
-          <img src="{{ url('theme://images/logo/' ~ logo_file)  }}" alt="{{ site.name }}" />
+          <img src="{{ url('theme://custom/logo/' ~ logo_file)  }}" alt="{{ site.name }}" />
         {% else %}
           <img src="{{ url('theme://images/logo.png')  }}" alt="{{ site.name }}" />
         {% endif %}

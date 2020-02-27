@@ -139,6 +139,11 @@ en:
           LABEL: "Header image"
         DESCRIPTION:
           LABEL: "Description"
+        DESCRIPTION_POS:
+          LABEL: 'Position of the image description'
+          OPTIONS:
+            1: 'Description in the picture'
+            2: 'Description under the picture'
         YOUTUBE:
           LABEL: "Enter video ID"
           DESCRIPTION: "Example: `VkvUH8vRQfE`"
@@ -153,6 +158,7 @@ en:
             1: '4:3'
             2: '16:9 (Full HD)'
             3: '2.35:1 (Widescreen)'
+            4: '1:1 (Square)'
         PERSONS:
           LABEL: 'Persons'
         NAME:
@@ -302,6 +308,11 @@ de:
           LABEL: "Titelbild"
         DESCRIPTION:
           LABEL: "Beschreibung"
+        DESCRIPTION_POS:
+          LABEL: 'Position der Bildbeschreibung'
+          OPTIONS:
+            1: 'Beschreibung im Bild'
+            2: 'Beschreibung unter dem Bild'
         YOUTUBE:
           LABEL: "Vidoe ID eingeben"
           DESCRIPTION: "Beispiel: `VkvUH8vRQfE`"
@@ -316,6 +327,7 @@ de:
             1: '4:3'
             2: '16:9 (Full HD)'
             3: '2.35:1 (Widescreen)'
+            4: '1:1 (Quadratisch)'
         PERSONS:
           LABEL: 'Personen'
         NAME:
