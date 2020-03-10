@@ -17314,16 +17314,26 @@ header.site-header div.header-inner nav.header-nav.desktop ul {
   list-style-type: none;
 }
 
-header.site-header div.header-inner nav.header-nav.desktop ul li {
-  float: right;
-}
-
 header.site-header div.header-inner nav.header-nav.desktop ul li a {
   line-height: 60px;
   padding: 0 20px;
   display: block;
   text-decoration: none;
   font-size: 16px;
+}
+
+header.site-header div.header-inner nav.header-nav.desktop ul.nav-lvl1 > li {
+  float: right;
+}
+
+header.site-header div.header-inner nav.header-nav.desktop ul.nav-lvl2 {
+  position: absolute;
+  display: none;
+}
+
+header.site-header div.header-inner nav.header-nav.desktop ul.nav-lvl2 > li > a {
+  text-align: left;
+  min-width: 200px;
 }
 
 header.site-header div.header-inner nav.header-nav.mobile {
@@ -17338,11 +17348,7 @@ header.site-header div.header-inner nav.header-nav.mobile {
 header.site-header div.header-inner nav.header-nav.mobile ul {
   padding: 0;
   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 header.site-header div.header-inner nav.header-nav.mobile ul li {
@@ -17364,13 +17370,37 @@ header.site-header div.header-inner nav.header-nav.mobile ul li img {
 
 header.site-header div.header-inner nav.header-nav.mobile ul li a {
   color: #486144;
-  font-size: 30px;
+  font-size: 28px;
   font-family: 'Cabin', serif;
   text-decoration: none !important;
 }
 
 header.site-header div.header-inner nav.header-nav.mobile ul li a.active {
   font-weight: bold;
+}
+
+header.site-header div.header-inner nav.header-nav.mobile ul.nav-lvl1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header.site-header div.header-inner nav.header-nav.mobile ul.nav-lvl1 > li > a {
+  text-transform: uppercase;
+}
+
+header.site-header div.header-inner nav.header-nav.mobile ul.nav-lvl2 {
+  display: none;
+}
+
+header.site-header div.header-inner nav.header-nav.mobile ul.nav-lvl2 > li {
+  margin-bottom: 0;
+}
+
+header.site-header div.header-inner nav.header-nav.mobile ul.nav-lvl2 > li > a {
+  font-size: 22px;
 }
 
 header.site-header div.header-inner div.mobile-toggle {

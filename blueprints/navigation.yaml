@@ -1,0 +1,31 @@
+title: weiterleitung
+
+rules:
+  slug:
+    pattern: '[a-zA-Zа-яA-Я0-9_\-]+'
+    min: 1
+    max: 200
+
+form:
+  validation: loose
+
+  fields:
+
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: Titel
+
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              label: Titel
+
+
+
+

@@ -13,7 +13,19 @@ $('.pull').click(function() {
   }
 });
 
+$('.nav-lvl1 > li > a').click(function(e){
+  if($(this).parent().has('.nav-lvl2').length){
+    e.preventDefault();
+    $(this).parent().find('.nav-lvl2').toggle();
+  }
+});
+
 $(document).ready(function() {
+
+  var subActive = $('nav.mobile .nav-lvl2').find('.active');
+  if(subActive.length){
+    $(subActive).closest('ul').show();
+  }
 
   $(window).on('resize',function() {
 

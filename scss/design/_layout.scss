@@ -195,7 +195,6 @@ header.site-header{
           margin: 0;
           list-style-type: none;
           li{
-            float: right;
             a{
               line-height: $nav-height;
               padding: 0 20px;
@@ -204,6 +203,21 @@ header.site-header{
               font-size: 16px;
               &:hover, &.active{
 
+              }
+            }
+          }
+          &.nav-lvl1{
+            > li{
+              float: right;
+            }
+          }
+          &.nav-lvl2{
+            position: absolute;
+            display: none;
+            > li{
+              >a{
+                text-align: left;
+                min-width: 200px;
               }
             }
           }
@@ -221,10 +235,7 @@ header.site-header{
         ul{
           padding: 0;
           margin: 0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          width: 100%;
           li{
             list-style: none;
             display: block;
@@ -244,11 +255,31 @@ header.site-header{
             }
             a{
               color: $color_primary;
-              font-size: 30px;
+              font-size: 28px;
               font-family: 'Cabin', serif;
               text-decoration: none !important;
               &.active{
                 font-weight: bold;
+              }
+            }
+          }
+          &.nav-lvl1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            > li{
+              > a{
+                text-transform: uppercase;
+              }
+            }
+          }
+          &.nav-lvl2{
+            display: none;
+            > li{
+              margin-bottom: 0;
+              > a{
+                font-size: 22px;
               }
             }
           }

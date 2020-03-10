@@ -1,0 +1,6 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+  {% set child = page.children.visible %}
+  <meta http-equiv="refresh" content="0; url={{ base_url_absolute  ~ child.nth(1).url }}" />
+{% endblock %}

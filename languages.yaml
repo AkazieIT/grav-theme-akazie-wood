@@ -36,6 +36,9 @@ en:
         FIXED:
           LABEL: 'Fixed Header'
           HELP: 'If activated, the header will always be at the top of the browser window.'
+        SUBNAV:
+          LABEL: 'Sub navigation'
+          HELP: 'Allows to have another navigation level.'
         HOME:
           LABEL: 'Homelink'
           OPTIONS:
@@ -205,6 +208,9 @@ de:
         FIXED:
           LABEL: 'Fixierte Navigation'
           HELP: 'Wenn aktiviert wird die Navigation immer oben im Browser angezeigt.'
+        SUBNAV:
+          LABEL: 'Unternavigation'
+          HELP: 'Ermöglicht es eine weitere Navigations Ebene zu haben.'
         HOME:
           LABEL: 'Startseiten-Link'
           OPTIONS:
