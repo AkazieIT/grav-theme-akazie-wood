@@ -1,3 +1,9 @@
+# v0.9.5
+## 14.03.2020
+
+1. [](#bugfix)
+    * Change screenshot
+    
 # v0.9.4
 ## 10.03.2020
 
@@ -8,7 +14,7 @@
 # v0.9.3
 ## 27.02.2020
 
-1. [](#budfix)
+1. [](#bugfix)
     * Fix custom logo path
 1. [](#improved)
     * Image with ration 1:1 possible
