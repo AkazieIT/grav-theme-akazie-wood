@@ -4,12 +4,14 @@ header:
   home: true
   nav:
     length: 5
+  subnav: true
 footer:
   home: true
-  address: "Akazie IT GmbH\r\nSchanzenstrasse 10d\r\n3775 Lenk"
-  mail: info@akazie.com
+  address: "Domain GmbH\r\nHauptstrasse 35\r\n3000 Bern"
+  mail: info@domain.ch
   impressum:
     enabled: false
+    link: /home
 style:
   color:
     white: '#ffffff'
@@ -30,9 +32,11 @@ style:
         default: '#000000'
         hover: '#ffffff'
   fonts:
-    import: 'https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,600|Raleway:400,600,700'
+    import: 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway&display=swap'
     main: '''Open Sans'', sans-serif'
     footer: '''Raleway'', sans-serif'
     h: '''Raleway'', sans-serif'
     nav: '''Montserrat'', sans-serif'
   css: false
+map:
+  apikey: none

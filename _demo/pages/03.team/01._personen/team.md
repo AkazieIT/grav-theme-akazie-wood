@@ -2,49 +2,49 @@
 title: Personen
 personen:
     -
-        name: 'Thomas Hirter'
+        name: 'Franz Gfeller'
         position: Webentwicklung
-        email: thomas.hirter@akazie.com
-        text: 'Tom ist verantwortlich für die Umsetzung von Webseiten und Erstellung von Produktkonfigurationen'
+        email: gfeller@domain.ch
+        text: 'Franz ist verantwortlich für die Umsetzung von Webseiten und Erstellung von Produktkonfigurationen'
         image:
-            user/pages/03.team/01._personen/Bild-gross-akazie.jpg:
-                name: Bild-gross-akazie.jpg
-                type: image/jpeg
-                size: 2047469
-                path: user/pages/03.team/01._personen/Bild-gross-akazie.jpg
+            user/pages/03.team/01._personen/user4.png:
+                name: user4.png
+                type: image/png
+                size: 13883
+                path: user/pages/03.team/01._personen/user4.png
     -
-        name: 'Lorenz Fehr'
+        name: 'Seraf Senape'
         position: Geschäftsführer
-        email: lorenz.fehr@akazie.com
-        text: 'Lorenz ist gelernter Schreiner-meister und hat die Firma im Jahr 2004 gegründet. Und besitzt nun schon 20 Jahre Berufs-erfahrung.'
+        email: seraf@domain.ch
+        text: 'Seraf ist gelernter Schreiner-meister und hat die Firma im Jahr 2004 gegründet. Und besitzt nun schon 20 Jahre Berufs-erfahrung.'
         image:
-            user/pages/03.team/01._personen/lorenz_fehr.jpg:
-                name: lorenz_fehr.jpg
-                type: image/jpeg
-                size: 49792
-                path: user/pages/03.team/01._personen/lorenz_fehr.jpg
+            user/pages/03.team/01._personen/user3.png:
+                name: user3.png
+                type: image/png
+                size: 26116
+                path: user/pages/03.team/01._personen/user3.png
     -
-        name: 'Iris Wyss'
+        name: 'Hildegard Lattur'
         position: Marketing
-        email: iris.wyss@akazie.com
-        text: 'Iris ist verantworlich für das Marketing von Akazie Holz. Und berät Sie auch gerne wenn sie Fragen bezüglich des Design haben.'
+        email: hildegard@domain.ch
+        text: 'Hildegard ist verantworlich für das Marketing von Akazie Holz. Und berät Sie auch gerne wenn sie Fragen bezüglich des Design haben.'
         image:
-            user/pages/03.team/01._personen/iris_wyss.jpg:
-                name: iris_wyss.jpg
-                type: image/jpeg
-                size: 32476
-                path: user/pages/03.team/01._personen/iris_wyss.jpg
+            user/pages/03.team/01._personen/user1.png:
+                name: user1.png
+                type: image/png
+                size: 13746
+                path: user/pages/03.team/01._personen/user1.png
     -
-        name: 'Tim von Felten'
-        position: 'Lernender IMD, 3. Lehrjahr'
-        email: tim.vonfelten@akazie.com
-        text: 'Tim ist aktuell im 3 Lehrjahr zum IMD EFZ.'
+        name: 'Thorwald Brunner'
+        position: Reinigungskraft
+        email: thorwald@domain.ch
+        text: 'Thorwald ist unser Putzdienst.'
         image:
-            user/pages/03.team/01._personen/tim_von_felten.jpg:
-                name: tim_von_felten.jpg
-                type: image/jpeg
-                size: 35235
-                path: user/pages/03.team/01._personen/tim_von_felten.jpg
+            user/pages/03.team/01._personen/user2.png:
+                name: user2.png
+                type: image/png
+                size: 39638
+                path: user/pages/03.team/01._personen/user2.png
 page_container: container
 ---
 

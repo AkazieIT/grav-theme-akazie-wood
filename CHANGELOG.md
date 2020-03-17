@@ -1,3 +1,11 @@
+# v0.9.6
+## 17.03.2020
+
+1. [](#improved)
+    * Change error layout
+    * Open navigation on hoover
+    * Change default settings
+    * Change demo pages
 # v0.9.5
 ## 14.03.2020
 

@@ -209,6 +209,12 @@ header.site-header{
           &.nav-lvl1{
             > li{
               float: right;
+              &:hover{
+                .nav-lvl2{
+                  display: block !important;
+                }
+
+              }
             }
           }
           &.nav-lvl2{

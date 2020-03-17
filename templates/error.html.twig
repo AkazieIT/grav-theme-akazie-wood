@@ -1,12 +1,15 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-	<div id="error">
-		<div>
-			<h1>{{ 'ERROR'|t }} {{ page.header.http_response_code }}</h1>
-			<p>
-				{{ page.content }}
-			</p>
+	<section class="page section-default">
+		<div class="row">
+			<article class="modular section-text col-12">
+				<h2 class="heading">{{ 'ERROR'|t }} {{ page.header.http_response_code }}</h2>
+				<div class="markdown {% if page.header.showtitle == 2 %}title-placeholder{% endif %}">
+					{{ page.content | markdown }}
+				</div>
+
+			</article>
 		</div>
-	</div>
+	</section>
 {% endblock %}
