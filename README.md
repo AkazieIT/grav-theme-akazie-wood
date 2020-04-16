@@ -29,6 +29,7 @@ It is possible to change various theme settings:
 * Change the colors of the theme
 * Change the font
 * Add the Google maps API key
+* Choose your Map (Google map or Open street map)
 * Add your own CSS file
 * Fixed header
 * Limit numbers ob navigation links
