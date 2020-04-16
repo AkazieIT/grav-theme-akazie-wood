@@ -69,8 +69,10 @@
       {% endblock %}
     </div>
 
-    {% if theme_var('map.apikey') %}
-      {%  include 'partials/map-js.html.twig' %}
+    {% if theme_var('map.apikey') and theme_var('map.type') == 'google' %}
+      {%  include 'partials/map-google-js.html.twig' %}
+    {% elseif theme_var('map.apikey') and theme_var('map.type') == 'osm' %}
+        {%  include 'partials/map-osm-js.html.twig' %}
     {% endif %}
     {% block bottom %}
       {{ assets.js('bottom')|raw }}

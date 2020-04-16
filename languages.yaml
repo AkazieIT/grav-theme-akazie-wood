@@ -89,6 +89,7 @@ en:
           NAV:
             LABEL: 'Navigation'
     FRONTEND:
+      LOAD: "Page is loading"
     ADMIN:
       TAB:
         CONTENT: "Content"
@@ -261,6 +262,7 @@ de:
           NAV:
             LABEL: 'Navigation'
     FRONTEND:
+      LOAD: "Seite wird geladen"
     ADMIN:
       TAB:
         CONTENT: "Inhalt"

@@ -5,7 +5,9 @@
   "main": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dep": "gulp dep-update",
+    "build": "gulp build",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,11 @@
   },
   "homepage": "https://github.com/Memurame/grav-theme-akazie-wood#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.9.0",
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.3.1",
+    "@babel/types": "^7.9.5",
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@popperjs/core": "^2.3.3",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.0",
     "lg-autoplay": "^1.0.4",
     "lg-fullscreen": "^1.1.0",
     "lg-hash": "^1.0.4",
@@ -32,13 +36,13 @@
     "lightgallery": "^1.6.12"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "@babel/core": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/register": "^7.0.0",
-    "autoprefixer": "^9.1.5",
-    "babel-loader": "^8.0.6",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/register": "^7.9.0",
+    "autoprefixer": "^9.7.6",
+    "babel-loader": "^8.1.0",
     "del": "^3.0.0",
+    "gulp": "^4.0.2",
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
     "gulp-header": "^2.0.5",
@@ -48,7 +52,7 @@
     "gulp-strip-comments": "^2.5.2",
     "gulp-uglify": "^3.0.1",
     "vinyl-named": "^1.1.0",
-    "webpack": "^4.20.2",
+    "webpack": "^4.42.1",
     "webpack-stream": "^4.0.3"
   }
 }

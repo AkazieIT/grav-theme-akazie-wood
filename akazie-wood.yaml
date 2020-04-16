@@ -40,3 +40,4 @@ style:
   css: false
 map:
   apikey: none
+  type: google

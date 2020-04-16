@@ -27,6 +27,14 @@ form:
           collapsed: false
           collapsible: true
           fields:
+            map.type:
+              type: select
+              label: "Map"
+              default: google
+              size: large
+              options:
+                google: "Google Map"
+                osm: "OPen Street Map"
             map.apikey:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.MAP_API.LABEL

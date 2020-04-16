@@ -2,5 +2,13 @@
 
 {% block content %}
   {% set child = page.children.visible %}
-  <meta http-equiv="refresh" content="0; url={{ base_url_absolute  ~ child.nth(1).url }}" />
+  <meta http-equiv="refresh" content="0; url={{ base_url_absolute  ~ child.nth(1).route }}" />
+  <section class="page section-default">
+    <div class="row">
+      <article class="modular section-text col-12 text-center">
+        <h1>{{ "THEME_AKAZIEWOOD.FRONTEND.LOAD" | t  }}</h1>
+        <i class="fas fa-spinner fa-3x fa-spin"></i>
+      </article>
+    </div>
+  </section>
 {% endblock %}

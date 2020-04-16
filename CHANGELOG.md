@@ -3,6 +3,10 @@
 
 1. [](#bugfix)
     * Fix favicon path
+    * Redirect to sub path
+1. [](#improved)
+    * Update npm dependencies
+    
 
 # v0.9.6
 ## 17.03.2020
