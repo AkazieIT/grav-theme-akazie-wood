@@ -1,16 +1,79 @@
 <script type="text/javascript">
-    var map = new ol.Map({
-        target: 'js-map',
-        layers: [
-            new ol.layer.Tile({
-                source: new ol.source.OSM()
-            })
-        ],
-        view: new ol.View({
-            center: ol.proj.fromLonLat([37.41, 8.82]),
-            zoom: 4
-        })
-    });
+    function osm(){
+        var map = [];
+        $('.js-map').each(function( i ){
+
+            var self = this;
+            map[i] = new ol.Map({
+                controls: ol.control.defaults({
+                    zoom: this.getAttribute('map-controls'),
+                    rotate: this.getAttribute('map-controls'),
+                    attribution: this.getAttribute('map-controls')}),
+                target: this,
+                layers: [
+                    new ol.layer.Tile({
+                        source: new ol.source.OSM()
+                    })
+                ],
+                view: new ol.View({
+                    center: ol.proj.fromLonLat([this.getAttribute('map-lon'), this.getAttribute('map-lat')]),
+                    zoom: Number(this.getAttribute('map-zoom'))
+                })
+            });
+
+            var marker =  new ol.Feature({
+                geometry: new ol.geom.Point(ol.proj.fromLonLat([this.getAttribute('map-lon'), this.getAttribute('map-lat')])),
+                population: 4000,
+                rainfall: 500
+            });
+            marker.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                    anchor: [0.5, 46],
+                    anchorXUnits: 'fraction',
+                    anchorYUnits: 'pixels',
+                    src: 'user/themes/akazie-wood/images/icon.png'
+                })
+            }));
+
+            var vectorSource = new ol.source.Vector({
+                features: [marker]
+            });
+
+            var markerVectorLayer = new ol.layer.Vector({
+                source: vectorSource,
+            });
+
+            var element = $(this).find('.js-map-popup')[0];
+            var popup = new ol.Overlay({
+                element: element,
+                positioning: 'bottom-center',
+                stopEvent: false,
+                offset: [0, -50]
+            });
+
+            map[i].addLayer(markerVectorLayer);
+            map[i].addOverlay(popup);
+            map[i].on('click', function(evt) {
+                var feature = map[i].forEachFeatureAtPixel(evt.pixel,
+                    function(feature) {
+                        return feature;
+                    });
+                if (feature) {
+                    var coordinates = feature.getGeometry().getCoordinates();
+                    popup.setPosition(coordinates);
+                    $(element).popover({
+                        placement: 'top',
+                        html: true,
+                        content: "<b>"+self.getAttribute('map-markertitle')+"</b><br>"+self.getAttribute('map-infowindow')
+                    });
+                    $(element).popover('show');
+                } else {
+                    $(element).popover('hide');
+                }
+            });
+        });
+    }
+
 </script>
 
 

@@ -37,8 +37,24 @@
         <div class="media-container">
             <div class="js-map media" data-scale="{{ scale }}" id="js-map"
                  map-lat='{{ page.header.map.latitude }}'
-                 map-lon='{{ page.header.map.longitude }}'></div>
+                 map-lon='{{ page.header.map.longitude }}'
+                 map-zoom='{{ page.header.map.zoom }}'
+                 map-markertitle='{{ page.header.map.markertitle }}'
+                 map-infowindow='{{ page.header.map.infowindow | nl2br}}'
+                 map-controls='{{ page.header.map.controls }}'><div class="js-map-popup" id="popup"></div></div>
+            {% if page.header.map.description %}
+                {% if page.header.map.description_position == 1 %}
+                    <div class="caption_1">{{ page.header.map.description }}</div>
+                {% endif %}
+
+            {% endif %}
         </div>
+        {% if page.header.map.description %}
+            {% if page.header.map.description_position == 2 %}
+                <div class="caption_2">{{ page.header.map.description }}</div>
+            {% endif %}
+
+        {% endif %}
     {% endif %}
 
 </article>

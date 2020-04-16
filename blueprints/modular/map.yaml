@@ -67,11 +67,11 @@ form:
                         header.map.controls:
                           type: toggle
                           label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MAP_CONTROLS.LABEL
-                          highlight: 0
-                          default: 0
+                          highlight: 1
+                          default: 1
                           options:
-                            0: An
-                            1: Aus
+                            0: Aus
+                            1: An
                           validate:
                             type: bool
                         header.scale:
@@ -87,7 +87,7 @@ form:
                         header.map.style:
                           type: textarea
                           style: vertical
-                          label: Map style
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MAP_STYLE.LABEL
                           rows: 8
                 column2:
                   type: column

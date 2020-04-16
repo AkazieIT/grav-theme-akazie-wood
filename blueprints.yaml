@@ -34,7 +34,7 @@ form:
               size: large
               options:
                 google: "Google Map"
-                osm: "OPen Street Map"
+                osm: "Open Street Map"
             map.apikey:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.MAP_API.LABEL

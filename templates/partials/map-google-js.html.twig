@@ -14,7 +14,7 @@
       mapOptions = {
         zoom: Number(this.getAttribute('map-zoom')),
         center: cords,
-        disableDefaultUI: Boolean(this.getAttribute('map-controls')),
+        disableDefaultUI: Boolean(!this.getAttribute('map-controls')),
         styles: style
       };
 

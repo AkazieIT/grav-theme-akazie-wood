@@ -26,7 +26,7 @@ en:
           LINK:
             LABEL: 'Link to the imprint'
         MAP_API:
-          LABEL: 'API-key'
+          LABEL: 'API-key (onle with GoogleMaps)'
         FAVICON:
           LABEL: 'Favicon'
           DESCRIPTION: 'Used instead of `theme: // images / favicon.png`'
@@ -110,7 +110,7 @@ en:
         MAP_CONTROLS:
           LABEL: 'Controls'
         MAP_STYLE:
-          LABEL: 'Map style'
+          LABEL: 'Map style (only with Google Maps)'
         MAP_DESC:
           LABEL: 'Map description'
         MAP_TITLE:
@@ -199,7 +199,7 @@ de:
           LINK:
             LABEL: 'Link zum Impressum'
         MAP_API:
-          LABEL: 'API-Schlüssel'
+          LABEL: 'API-Schlüssel (nur wenn Google Maps)'
         FAVICON:
           LABEL: 'Favicon'
           DESCRIPTION: 'Benutzen anstelle von `theme://images/favicon.png`'
@@ -283,7 +283,7 @@ de:
         MAP_CONTROLS:
           LABEL: 'Schaltflächen'
         MAP_STYLE:
-          LABEL: 'Map Style'
+          LABEL: 'Map Style (nur wenn Google Map)'
         MAP_DESC:
           LABEL: 'Map Beschreibung'
         MAP_TITLE:

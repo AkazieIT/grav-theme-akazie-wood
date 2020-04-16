@@ -11,7 +11,7 @@ map:
     infowindow: "Hauptstrasse 35\r\n3000 Bern"
     description_position: '2'
     connect: '0'
-scale: '1'
+scale: '2'
 column: '1'
 showtitle: '0'
 ---

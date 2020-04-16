@@ -1,11 +1,13 @@
 # v0.9.7
-## 17.03.2020
+## 16.04.2020
 
 1. [](#bugfix)
     * Fix favicon path
-    * Redirect to sub path
+    * Redirect to sub path (navigation)
 1. [](#improved)
     * Update npm dependencies
+1. [](#new)
+    * Open Street Map added as an alternative to Google Map
     
 
 # v0.9.6
