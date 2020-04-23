@@ -94,6 +94,17 @@ a:not([link]){
   }
 }
 
+.color-new-line{
+  word-wrap: break-word
+}
+.color-new-line-mobile{
+  @include media-breakpoint-down(md) {
+    span{
+      display: block;
+    }
+  }
+}
+
 /* ##################################
  Layout
 ###################################*/

@@ -20,6 +20,10 @@ en:
         NAV:
           LENGTH:
             LABEL: 'Number Max. Navigation points'
+        MARKDOWNTITLE:
+            LABEL: 'Markdown on Apply Title'
+        MARKDOWNTITLENEWLINE:
+          LABEL: 'New line when changing colors'
         IMPRESSUM:
           ENABLED:
             LABEL: 'Show impressum'
@@ -96,6 +100,7 @@ en:
       SECTION:
         CONTENT: "Pages content"
         SETTINGS: "Settings"
+        HIDENSETTINGS: "Settings for Admin"
         PREVIEW: "Preview"
         MEDIA: 'Media'
         MAPSETTINGS: 'Map settings'
@@ -193,6 +198,10 @@ de:
         NAV:
           LENGTH:
             LABEL: 'Anzahl Max. Navigationspunkte'
+        MARKDOWNTITLE:
+            LABEL: 'Markdown beim Titel Anwenden'
+        MARKDOWNTITLENEWLINE:
+          LABEL: 'Bei Farbwechsel neue Zeile'
         IMPRESSUM:
           ENABLED:
             LABEL: 'Impressum anzeigen?'
@@ -269,6 +278,7 @@ de:
       SECTION:
         CONTENT: "Seiteninhalt"
         SETTINGS: "Einstellungen"
+        HIDENSETTINGS: "Administrator Einstellungen"
         PREVIEW: "Vorschau"
         MEDIA: 'Medien'
         MAPSETTINGS: 'Map Einstellungen'

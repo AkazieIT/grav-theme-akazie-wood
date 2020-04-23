@@ -19,7 +19,7 @@
       {% endif %}
       <link rel="shortcut icon" href="/favicon.ico">
       <link rel="canonical" href="{{ page.url(true, true) }}" />
-      <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+      <title>{% if header.title and page.header.markdown.title == false %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
       {% if theme_var('style.fonts.import') %}
         <link href="{{ theme_var('style.fonts.import') }}" rel="stylesheet">
       {% endif %}
@@ -43,8 +43,12 @@
       {% if page.template == 'home' %}
         {% set image = page.header.image %}
         <div class="screen-image screen-fullscreen" style="background-image: url('{{ image ? page.media[image].cropZoom(1920,1080).url : theme_url ~ '/images/home.jpg' }}')">
-          <div class="image-caption">
-            <h1>{{ page.header.title }}</h1>
+          <div class="image-caption color-new-line  {% if page.header.markdown.newlineoncolorchangemobile %}color-new-line-mobile{% endif %}">
+                {% if page.header.markdown.title %}
+                  {{ page.header.title | markdown }}
+                {% else %}
+                  <h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
+                {% endif %}
             <p>{{ page.header.text }}</p>
           </div>
         </div>
@@ -52,7 +56,7 @@
         {% set image = page.header.image %}
         <div class="screen-image screen-top" style="background-image: url('{{ image  ? page.media[image].cropZoom(1920,450).url : theme_url ~ '/images/home.jpg' }}')">
           <div class="image-caption">
-            <h1>{{ page.header.title }}</h1>
+            <h1 style="word-wrap: break-word ">{{ page.header.title }}</h1>
           </div>
         </div>
       {% endif %}
@@ -68,11 +72,11 @@
         {%  include 'partials/footer.html.twig' %}
       {% endblock %}
     </div>
-
+    
     {% if theme_var('map.apikey') and theme_var('map.type') == 'google' %}
       {%  include 'partials/map-google-js.html.twig' %}
-    {% elseif theme_var('map.apikey') and theme_var('map.type') == 'osm' %}
-        {%  include 'partials/map-osm-js.html.twig' %}
+    {% elseif theme_var('map.type') == 'osm' %}
+      {%  include 'partials/map-osm-js.html.twig' %}
     {% endif %}
     {% block bottom %}
       {{ assets.js('bottom')|raw }}

@@ -16815,6 +16815,16 @@ a:not([link]):hover {
   }
 }
 
+.color-new-line {
+  word-wrap: break-word;
+}
+
+@media (max-width: 991.98px) {
+  .color-new-line-mobile span {
+    display: block;
+  }
+}
+
 /* ##################################
  Layout
 ###################################*/

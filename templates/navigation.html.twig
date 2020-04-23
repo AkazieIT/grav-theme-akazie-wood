@@ -2,7 +2,7 @@
 
 {% block content %}
   {% set child = page.children.visible %}
-  <meta http-equiv="refresh" content="0; url={{ base_url_absolute  ~ child.nth(1).route }}" />
+  <meta http-equiv="refresh" content="0; url={{ base_url_absolute  ~ child.nth(0).route }}" />
   <section class="page section-default">
     <div class="row">
       <article class="modular section-text col-12 text-center">

@@ -1,9 +1,14 @@
 # v0.9.8
-## 16.04.2020
+## 23.04.2020
 
+1. [](#new)
+    * Markdown can now be switched on for the title on the start page
 1. [](#improved)
     * Update README
-
+    * Change marker image
+1. [](#bugfix)
+    * Redirect to first page (navigation blueprint)
+    * line break on h1
 # v0.9.7
 ## 16.04.2020
 
