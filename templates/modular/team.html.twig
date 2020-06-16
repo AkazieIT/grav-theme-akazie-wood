@@ -1,4 +1,5 @@
 <section class="modular section-teamlist col-12">
+{% if page.header.showtitle == 1 %}<h2 class="heading headingteam">{{ page.header.title }}</h2>{% endif %}
   <div class="container">
     <div class="row">
       {% for person in page.header.personen %}
@@ -10,13 +11,23 @@
           <div class="person-detail">
             <h4 class="person-name">{{ person.name }}</h4>
             <span class="person-position">{{ person.position }}</span>
+            {% if page.header.contactbutton == 0 %}
             <span class="person-email">
-          <a href="mailto:{{ person.email|safe_email }}">
-            {{ person.email }}
-          </a>
-        </span>
+              <a href="mailto:{{ person.email|safe_email }}">
+                {{ person.email }}
+              </a>
+            </span>
+            {% endif %}
             <span class="person-text">{{ person.text }}</span>
+            {% if page.header.contactbutton == 1 %}
+              <span class="person-email">
+                <a class="teamemail" href="mailto:{{ person.email|safe_email }}">
+                  {{ page.header.contacttext }}
+                </a>
+              </span>
+          {% endif %}
           </div>
+
         </article>
 
       {% endfor %}

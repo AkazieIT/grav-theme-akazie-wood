@@ -130,6 +130,13 @@ en:
             0: "No"
             1: "Yes"
             2: "Only placeholder"
+        CONTACTBUTTON:
+          LABEL: "Show contact button?"
+          OPTIONS:
+            0: "No"
+            1: "Yes"
+        CONTACTTEXT:
+          LABEL: "Contact Button text"
         GALLERIE:
           LABEL: "Gallery"
         TEXT:
@@ -170,12 +177,23 @@ en:
             4: '1:1 (Square)'
         PERSONS:
           LABEL: 'Persons'
+        BUTTONS:
+          LABEL: 'Buttons'
+        NEWWINDOW:
+          LABEL: 'Open in new Window?'
+          OPTIONS:
+            0: 'no'
+            1: 'yes'
+        URLS:
+          LABEL: 'URL'
         NAME:
           LABEL: 'Name'
         POSITION:
           LABEL: 'Position'
         EMAIL:
           LABEL: 'Mail'
+        FIXWIDTH:
+          LABEL: "Fixe Breite"
 de:
   THEME_AKAZIEWOOD:
     THEME:
@@ -354,7 +372,3 @@ de:
           LABEL: 'Position'
         EMAIL:
           LABEL: 'Mail'
-
-
-
-

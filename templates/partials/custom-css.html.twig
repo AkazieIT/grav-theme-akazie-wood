@@ -81,4 +81,14 @@
   header.site-header div.header-inner nav.header-nav.mobile ul li a.active{
     color: {{ theme_var('style.color.background.nav.hover') }};
   }
+  a.linksbutton, a.teamemail {
+    background-color:{{ theme_var('style.color.background.primary') }};
+    color:{{ theme_var('style.color.text.primary') }};
+    border:1px solid {{ theme_var('style.color.background.primary') }};
+  }
+  a.linksbutton:hover, a.teamemail:hover {
+    background-color: {{ theme_var('style.color.background.secondary') }};
+    color:{{ theme_var('style.color.text.secondary') }};
+    border: 1px solid {{ theme_var('style.color.text.secondary') }};
+  }
 </style>

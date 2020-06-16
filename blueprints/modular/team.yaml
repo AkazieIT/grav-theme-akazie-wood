@@ -46,8 +46,27 @@ form:
                       destination: 'self@'
                       accept:
                       - image/*
-
-
-
-
-
+            settings:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.SETTINGS
+              underline: true
+              fields:
+                header.showtitle:
+                  type: select
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.LABEL
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.0
+                    1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.1
+                header.contactbutton:
+                  type: select
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.CONTACTBUTTON.LABEL
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: THEME_AKAZIEWOOD.ADMIN.FIELDS.CONTACTBUTTON.OPTIONS.0
+                    1: THEME_AKAZIEWOOD.ADMIN.FIELDS.CONTACTBUTTON.OPTIONS.1
+                header.contacttext:
+                  type: text
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.CONTACTTEXT.LABEL

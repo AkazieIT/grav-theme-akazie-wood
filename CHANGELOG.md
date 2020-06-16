@@ -1,3 +1,9 @@
+# v0.9.8.1
+## 16.06.2020
+
+1. [](#new)
+    * Alternative view for modular team page with buttons
+    * New modular content type called button list
 # v0.9.8
 ## 23.04.2020
 
@@ -19,7 +25,7 @@
     * Update npm dependencies
 1. [](#new)
     * Open Street Map added as an alternative to Google Map
-    
+
 
 # v0.9.6
 ## 17.03.2020
@@ -34,14 +40,14 @@
 
 1. [](#bugfix)
     * Change screenshot
-    
+
 # v0.9.4
 ## 10.03.2020
 
 1. [](#new)
     * Navigation mit Unternavigation möglich.
     * Neuer Blueprint für Navigationspunkte mit Unternavigation.
-    
+
 # v0.9.3
 ## 27.02.2020
 

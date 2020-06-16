@@ -1,0 +1,48 @@
+title: text
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        inhalt:
+          type: tab
+          title: THEME_AKAZIEWOOD.ADMIN.TAB.CONTENT
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+            header.fixedwidth:
+              type: text
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FIXWIDTH.LABEL
+            content:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.CONTENT
+              underline: true
+              fields:
+                header.buttons:
+                  name: buttons
+                  type: list
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BUTTONS.LABEL
+                  collapsed: true
+                  fields:
+                    .name:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.NAME.LABEL
+                      validate:
+                        required: true
+                    .link:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.URLS.LABEL
+                      validate:
+                        required: true
+                    .newwindow:
+                          type: select
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.NEWWINDOW.LABEL
+                          highlight: 1
+                          default: 1
+                          options:
+                            0: THEME_AKAZIEWOOD.ADMIN.FIELDS.NEWWINDOW.OPTIONS.0
+                            1: THEME_AKAZIEWOOD.ADMIN.FIELDS.NEWWINDOW.OPTIONS.1

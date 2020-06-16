@@ -1,5 +1,5 @@
 name: "Akazie Wood"
-version: 0.9.8
+version: 0.9.8.1
 description: "This is a theme of Akazie IT GmbH and is intended for simple websites without great features"
 icon: smile-o
 keywords: akazieit, akazie, wood, carpenter, simple, chargeable, schreiner, holz, zimmerei, zimmermann, wald
@@ -308,6 +308,3 @@ form:
                 1: PLUGIN_ADMIN.ENABLED
               validate:
                 type: bool
-
-
-

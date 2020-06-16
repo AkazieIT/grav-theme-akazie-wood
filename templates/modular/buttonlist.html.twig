@@ -1,0 +1,10 @@
+<article class="modular section-buttonlist col-12 col-md-12">
+    <h2 class="heading">{{ page.header.title }}</h2>
+    <div class="markdown buttonlist">
+    {% for button in page.header.buttons %}
+
+  <a class="linksbutton" target="{% if button.newwindow == 1 %}_blank{% endif %}" href="{{ button.link }}" style="{% if page.header.fixedwidth %}width:{{ page.header.fixedwidth }}{% endif %}">{{ button.name }}</a>
+
+    {% endfor %}
+    </div>
+</article>

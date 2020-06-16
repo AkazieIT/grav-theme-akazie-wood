@@ -404,6 +404,19 @@ main.site-content{
       margin-bottom: 0;
     }
   }
+  .modular.section-buttonlist{
+    a.linksbutton {
+      text-align:center;
+      height:60px;
+      display:inline-block;
+      padding-top:15px;
+      padding-left:20px;
+      padding-right:20px;
+      margin-right:25px;
+      margin-bottom:25px;
+      border-radius: 25px;
+    }
+  }
   .modular.section-teamlist{
     padding: 0;
     .person{
@@ -448,6 +461,17 @@ main.site-content{
       &-email{
         display: block;
         margin-bottom: 10px;
+        .teamemail {
+            text-align:center;
+            height:40px;
+            width:150px;
+            display:inline-block;
+            padding-top:6px;
+            margin-right:25px;
+            margin-bottom:25px;
+            border-radius: 15px;
+            margin-top:20px;
+        }
       }
       &-text{
         display: block;
