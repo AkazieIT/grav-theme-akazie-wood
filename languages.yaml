@@ -193,7 +193,7 @@ en:
         EMAIL:
           LABEL: 'Mail'
         FIXWIDTH:
-          LABEL: "Fixe Breite"
+          LABEL: "Fixed Width"
 de:
   THEME_AKAZIEWOOD:
     THEME:
@@ -326,6 +326,13 @@ de:
             0: "Nein"
             1: "Ja"
             2: "Nur Abstand benutzen"
+        CONTACTBUTTON:
+          LABEL: "Kontaktbutton anzeigen"
+          OPTIONS:
+            0: "Nein"
+            1: "Ja"
+        CONTACTTEXT:
+          LABEL: "Kontaktbutton Text"
         GALLERIE:
           LABEL: "Bildergallerie"
         TEXT:
@@ -366,9 +373,20 @@ de:
             4: '1:1 (Quadratisch)'
         PERSONS:
           LABEL: 'Personen'
+        BUTTONS:
+          LABEL: 'Buttons'
+        NEWWINDOW:
+          LABEL: 'In neuem Fenster oeffnen?'
+          OPTIONS:
+            0: 'Nein'
+            1: 'Ja'
+        URLS:
+          LABEL: 'URL'
         NAME:
           LABEL: 'Name'
         POSITION:
           LABEL: 'Position'
         EMAIL:
           LABEL: 'Mail'
+        FIXWIDTH:
+          LABEL: "Fixe Breite"
