@@ -1,4 +1,10 @@
-# v0.9.8.1
+# v0.9.82
+## 16.06.2020
+1. [](#bugfix)
+    * versioning fix
+    * translation fixes
+
+# v0.9.81
 ## 16.06.2020
 
 1. [](#new)
