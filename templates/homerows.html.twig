@@ -1,0 +1,61 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+  <section class="page section-homerows">
+    <div class="row">
+      <article class="modular section-text col-12 col-md-8 homerowscard">
+        <div class="markdown {% if page.header.showtitle == 2 %}title-placeholder{% endif %}">
+          {{ page.content | markdown }}
+        </div>
+
+      </article>
+      <article class="modular section-text col-12 col-md-4 chat">
+        <div class="markdown first">
+         {{ page.header.sectiontwo | markdown }}
+        </div>
+      <div class="markdown second">
+       chat
+      </div>
+      </article>
+    </div>
+  </section>
+  <section class="page section-titleinst">
+    <div class="row">
+      <article class="modular section-text col-12 col-md-12">
+        <div class="markdown">
+        <a href="#institutionen">{{ page.header.continue | markdown }}</a>
+        <a href="#institutionen"><img src="{{ url('theme://custom/images/pfeildown.svg')  }}" class="pfeildownimg" alt="weiter" /></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+  <section class="page section-secondrows">
+   <a name="institutionen"></a>
+    <div class="row">
+      <article class="modular section-text col-12 col-md-4 first">
+          <div class="markdown">
+          {{ page.media.files | first }}
+              {{ page.header.rowone | markdown }}
+          </div>
+      </article>
+      <div class="mobbgdiv first col-12 col-md-12">
+      </div>
+      <article class="modular section-text col-12 col-md-4 second">
+          <div class="markdown">
+          {{ page.media.files | slice(1,2)|first }}
+              {{ page.header.rowtwo | markdown }}
+          </div>
+      </article>
+      <div class="mobbgdiv second col-12 col-md-12">
+      </div>
+      <article class="modular section-text col-12 col-md-4 third">
+          <div class="markdown">
+          {{ page.media.files | slice(2,2)|first }}
+              {{ page.header.rowthree | markdown }}
+          </div>
+      </article>
+    </div>
+  </section>
+
+{% endblock %}
