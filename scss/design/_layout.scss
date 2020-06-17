@@ -404,7 +404,7 @@ main.site-content{
       margin-bottom: 0;
     }
   }
-  .modular.section-buttonlist{
+  .modular{
     a.linksbutton {
       text-align:center;
       height:60px;
@@ -462,15 +462,15 @@ main.site-content{
         display: block;
         margin-bottom: 10px;
         .teamemail {
-            text-align:center;
-            height:40px;
-            width:150px;
-            display:inline-block;
-            padding-top:6px;
-            margin-right:25px;
-            margin-bottom:25px;
-            border-radius: 15px;
-            margin-top:20px;
+          text-align:center;
+          height:45px;
+          width:150px;
+          display:inline-block;
+          padding-top:8px;
+          margin-right:25px;
+          margin-bottom:25px;
+          border-radius: 18px;
+          margin-top:20px;
         }
       }
       &-text{
@@ -583,4 +583,15 @@ footer.site-footer{
       }
     }
   }
+}
+a.button {
+  text-align:center;
+  height:45px;
+  width:150px;
+  display:inline-block;
+  padding-top:8px;
+  margin-right:25px;
+  margin-bottom:25px;
+  border-radius: 18px;
+  margin-top:20px;
 }

@@ -7,8 +7,9 @@
     {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
     {% if p.children.visible.count > 0 and theme_config.header.subnav %}
       <li>
+    <a href="{{ p.url }}" class="{{ active_page }} onlymobile">{% if theme_var('nav.expanded') == '1' %}<span class="plussign">+</span><span class="minussign" style="display:none;">-</span>&nbsp;&nbsp;{% endif %}</a>
         <a href="{{ p.url }}" class="{{ active_page }}" link>
-          {{ p.menu }}
+        {{ p.menu }}
         </a>
         <ul class="nav-lvl2">
           {{ _self.nav_loop(p, theme_config, false) }}
@@ -36,4 +37,3 @@
     {{ _self.nav_loop(pages, theme_config, false) }}
   </ul>
 </nav>
-

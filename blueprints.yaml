@@ -1,5 +1,5 @@
 name: "Akazie Wood"
-version: 0.9.82
+version: 0.9.85
 description: "This is a theme of Akazie IT GmbH and is intended for simple websites without great features"
 icon: smile-o
 keywords: akazieit, akazie, wood, carpenter, simple, chargeable, schreiner, holz, zimmerei, zimmermann, wald
@@ -39,6 +39,19 @@ form:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.MAP_API.LABEL
               size: large
+        nav:
+          type: fieldset
+          title: THEME_AKAZIEWOOD.THEME.FIELDSET.NAV
+          collapsed: false
+          collapsible: true
+          fields:
+            nav.expanded:
+              type: select
+              label: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.EXPANDABLE
+              default: 0
+              options:
+                0: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.OPTIONS.0
+                1: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.OPTIONS.1
         site:
           type: fieldset
           title: THEME_AKAZIEWOOD.THEME.FIELDSET.SITE

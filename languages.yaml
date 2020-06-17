@@ -8,6 +8,12 @@ en:
         HEADER: 'Header'
         FOOTER: 'Footer'
         SITE: 'Site'
+        NAV: 'Navigation'
+        NAVI:
+          EXPANDABLE: 'Clickable main nav / expandable mobile'
+          OPTIONS:
+            0: 'No'
+            1: 'yes'
         COLOR: 'Color'
         BG_COLOR: 'Background color'
         TEXT_COLOR: 'Text color'
@@ -105,6 +111,12 @@ en:
         MEDIA: 'Media'
         MAPSETTINGS: 'Map settings'
         MAPINFO: 'Map info'
+        CONTINUE: 'Continue text'
+        SECTIONTWO: 'Section 2 right'
+        ROW:
+          ONE: 'Row one'
+          TWO: 'Row two'
+          THREE: 'Row three'
       FIELDS:
         MAP_LAT:
           LABEL: 'Latitude'
@@ -124,6 +136,8 @@ en:
           LABEL: 'Info window'
         TITLE:
           LABEL: "Title"
+        SUBTITLE:
+          LABEL: "Subtitel"
         SHOWTITLE:
           LABEL: "Show title?"
           OPTIONS:
@@ -193,7 +207,7 @@ en:
         EMAIL:
           LABEL: 'Mail'
         FIXWIDTH:
-          LABEL: "Fixed Width"
+          LABEL: "Fixe Breite"
 de:
   THEME_AKAZIEWOOD:
     THEME:
@@ -204,6 +218,12 @@ de:
         HEADER: 'Kopfbereich'
         FOOTER: 'Fussbereich'
         SITE: 'Seite'
+        NAV: 'Navigation'
+        NAVI:
+          EXPANDABLE: 'Klickbare Main Nav / Expandable auf Mobile'
+          OPTIONS:
+            0: 'Nein'
+            1: 'Ja'
         COLOR: 'Farben'
         BG_COLOR: 'Hintergrundfarben'
         TEXT_COLOR: 'Textfarben'
@@ -301,6 +321,12 @@ de:
         MEDIA: 'Medien'
         MAPSETTINGS: 'Map Einstellungen'
         MAPINFO: 'Map Info'
+        CONTINUE: 'Weiter text'
+        SECTIONTWO: 'Sektion 2 rechts'
+        ROW:
+          ONE: 'Zeile eins'
+          TWO: 'Zeile zwei'
+          THREE: 'Zeile drei'
       FIELDS:
         MAP_LAT:
           LABEL: 'Breitengrad'

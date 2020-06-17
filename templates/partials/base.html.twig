@@ -33,7 +33,7 @@
     {% endblock head %}
 
   </head>
-  <body class="{{ page.header.body_classes }}">
+<body class="{{ page.header.body_classes }}{% if theme_var('nav.expanded') == '1' %} navexpanded{% endif %}">
     <div class="wrapper">
       {% block header %}
         {% include 'partials/header.html.twig' %}
@@ -72,7 +72,7 @@
         {%  include 'partials/footer.html.twig' %}
       {% endblock %}
     </div>
-    
+
     {% if theme_var('map.apikey') and theme_var('map.type') == 'google' %}
       {%  include 'partials/map-google-js.html.twig' %}
     {% elseif theme_var('map.type') == 'osm' %}

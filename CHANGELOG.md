@@ -1,8 +1,18 @@
+# v0.9.85
+## 16.06.2020
+
+1. [](#bugfix)
+    * navigation also clickable
+1. [](#new)
+    * new content type for start page
+
 # v0.9.82
 ## 16.06.2020
+
 1. [](#bugfix)
     * versioning fix
     * translation fixes
+
 
 # v0.9.81
 ## 16.06.2020
@@ -10,6 +20,8 @@
 1. [](#new)
     * Alternative view for modular team page with buttons
     * New modular content type called button list
+
+
 # v0.9.8
 ## 23.04.2020
 
