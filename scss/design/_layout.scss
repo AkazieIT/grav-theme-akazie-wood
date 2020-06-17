@@ -216,6 +216,9 @@ header.site-header{
 
               }
             }
+            a.onlymobile {
+              display:none;
+            }
           }
           &.nav-lvl1{
             > li{
