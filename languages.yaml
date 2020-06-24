@@ -32,9 +32,14 @@ en:
           LABEL: 'New line when changing colors'
         IMPRESSUM:
           ENABLED:
-            LABEL: 'Show impressum'
+            LABEL: 'Show imprint'
           LINK:
             LABEL: 'Link to the imprint'
+        DATENSCHUTZ:
+          ENABLED:
+            LABEL: 'Show data policy'
+          LINK:
+            LABEL: 'Link to the policy'
         MAP_API:
           LABEL: 'API-key (onle with GoogleMaps)'
         FAVICON:
@@ -245,6 +250,11 @@ de:
             LABEL: 'Impressum anzeigen?'
           LINK:
             LABEL: 'Link zum Impressum'
+        DATENSCHUTZ:
+          ENABLED:
+            LABEL: 'Datenschutz anzeigen?'
+          LINK:
+            LABEL: 'Link zum Datenschutz'
         MAP_API:
           LABEL: 'API-Schlüssel (nur wenn Google Maps)'
         FAVICON:

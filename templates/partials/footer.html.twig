@@ -21,15 +21,21 @@
       {{ theme_var('footer.address') | nl2br }}
     </div>
     <div class="footer-email">
-      {% if theme_var('footer.impressum.enabled') %}
-        <a href="{{ base_url }}{{ theme_var('footer.impressum.link') }}">
-          Impressum
-        </a>
-        &nbsp;|&nbsp;
-      {% endif %}
       <a href="mailto:{{ theme_var('footer.mail')|safe_email }}">
         {{ theme_var('footer.mail') }}
       </a>
+      {% if theme_var('footer.impressum.enabled') %}
+        &nbsp;|&nbsp;
+        <a href="{{ base_url }}{{ theme_var('footer.impressum.link') }}">
+          Impressum
+        </a>
+      {% endif %}
+      {% if theme_var('footer.datenschutz.enabled') %}
+        &nbsp;|&nbsp;
+        <a href="{{ base_url }}{{ theme_var('footer.datenschutz.link') }}">
+          Datenschutz
+        </a>
+      {% endif %}
     </div>
   </div>
 </footer>

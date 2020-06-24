@@ -136,6 +136,23 @@ form:
               show_all: false
               show_modular: false
               show_root: false
+            footer.datenschutz.enabled:
+              type: toggle
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.DATENSCHUTZ.ENABLED.LABEL
+              highlight: 0
+              default: 0
+              options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
+              validate:
+                type: bool
+            footer.datenschutz.link:
+              type: pages
+              size: medium
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.DATENSCHUTZ.LINK.LABEL
+              show_all: false
+              show_modular: false
+              show_root: false
     style_section:
       type: section
       title: THEME_AKAZIEWOOD.THEME.SECTION.STYLE
