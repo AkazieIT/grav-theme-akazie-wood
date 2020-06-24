@@ -1,3 +1,10 @@
+# v0.9.86
+## 24.06.2020
+
+1. [](#new)
+    * added choosable data policy link in footer
+
+
 # v0.9.85
 ## 16.06.2020
 
