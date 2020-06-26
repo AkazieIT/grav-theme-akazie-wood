@@ -18,9 +18,12 @@ form:
   fields:
     layout_section:
       type: section
-      title: THEME_AKAZIEWOOD.THEME.SECTION.LAYOUT
+      title: "Site layout"
       underline: true
       fields:
+        theme_info:
+          type: display
+          label: "<strong>Please note:</strong><br /> this section will only display correctly when the theme is activated."
         map:
           type: fieldset
           title: THEME_AKAZIEWOOD.THEME.FIELDSET.MAP

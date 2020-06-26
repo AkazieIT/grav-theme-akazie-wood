@@ -14,3 +14,7 @@ js/core
 package-lock.json
 custom/
 !custom/css/.gitkeep
+
+# OZ themes
+blueprints/homerows.yaml
+templates/homerows.html.twig
