@@ -23,6 +23,14 @@ form:
                   type: markdown
                   validate:
                     type: textarea
+            media:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
+              underline: true
+              fields:
+                header.media_order:
+                  type: pagemedia
+                  label: PLUGIN_ADMIN.PAGE_MEDIA
             settings:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.SETTINGS
@@ -53,5 +61,3 @@ form:
                     column2:
                       type: column
                       fields:
-
-

@@ -1,3 +1,10 @@
+# v0.9.87
+## 03.07.2020
+
+1. [](#new)
+    * added page media functionality in modular text content
+
+
 # v0.9.86
 ## 24.06.2020
 
