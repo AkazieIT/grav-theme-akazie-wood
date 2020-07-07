@@ -15,7 +15,7 @@ Show it on the [demo site](https://demo.akazie.com/akazie-wood)
    - Alternatively, download this repository, unzip it, rename the folder to `akazie-wood`, and place it in the `user/themes/` directory of your Grav install
 2. Edit `user/config/system.yaml` to contain the following:
 	```yaml
-	pages:
+    pages:
       theme: akazie-wood
 	```
 
@@ -32,10 +32,12 @@ It is possible to change various theme settings:
 * Choose your Map (Google map or Open street map)
 * Add your own CSS file
 * Fixed header
-* Limit numbers ob navigation links
-* Manage impressum visibility
+* Limit numbers of navigation links
+* Manage imprint and data policy visibility
+* Add a full screen custom footer
+* Add parallax scrolling
 
 These settings can be changed directly in the backend without time-consuming changes via FTP
 
-Optionally, in the theme folder `/custom/css`, 
+Optionally, in the theme folder `/custom/css`,
 the file `custom.css` can be used to define your own styles and to override the existing formatting.
