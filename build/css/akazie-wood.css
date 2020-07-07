@@ -17437,6 +17437,22 @@ footer.site-footer .footer-main .footer-navigation ul li a:hover, footer.site-fo
   text-decoration: underline !important;
 }
 
+footer.site-footer .footer-main .container.footerpage {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px);
+}
+
+footer.site-footer .footer-main .container.footerpage ul {
+  padding: 0;
+}
+
+footer.site-footer .footer-main .container.footerpage ul li {
+  list-style-type: none;
+}
+
 footer.site-footer .footer-main.fullscreen {
   min-height: 100vh;
   padding-top: 60px;

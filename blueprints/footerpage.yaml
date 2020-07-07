@@ -1,0 +1,45 @@
+title: default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        inhalt:
+          type: tab
+          title: THEME_AKAZIEWOOD.ADMIN.TAB.CONTENT
+          fields:
+            header.leftsize1:
+              type: markdown
+              validate:
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+            header.leftsize2:
+              type: markdown
+              validate:
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+            header.row1titel:
+              type: text
+              label: titel
+            header.row1content:
+              name: zeile1
+              type: list
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.PERSONS.LABEL
+              collapsed: true
+              fields:
+                .text:
+                  type: text
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION.LABEL
+                .link:
+                  type: text
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION.LABEL
+            header.row2titel:
+              type: text
+              label: titel
+            header.row3titel:
+              type: text
+              label: titel
+            header.row3content:
+              type: markdown
+              validate:
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL

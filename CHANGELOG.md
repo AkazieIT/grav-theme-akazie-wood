@@ -4,6 +4,7 @@
 1. [](#new)
     * added optional full screen footer
     * added option for fullscreen parallax background
+    * added template for full screen footer
 
 
 # v0.9.87

@@ -210,6 +210,23 @@ en:
             4: '1:1 (Square)'
         PERSONS:
           LABEL: 'Persons'
+        FOOTERTEXT:
+          LEFT1:
+            LABEL: 'Text left'
+          RIGHTNAV:
+            LABEL: 'Navigation title'
+          RIGHTCONTACT:
+            LABEL: 'Contact title'
+            CONTENT:
+              LABEL: 'Contact Content'
+          SOCIALMEDIA:
+            LABEL: 'Social media / links title'
+            DESC:
+              LABEL: 'Social Media links'
+            TITLE:
+              LABEL: 'Title'
+            LINK:
+              LABEL: 'Link'
         BUTTONS:
           LABEL: 'Buttons'
         NEWWINDOW:
@@ -437,6 +454,23 @@ de:
             4: '1:1 (Quadratisch)'
         PERSONS:
           LABEL: 'Personen'
+        FOOTERTEXT:
+          LEFT1:
+            LABEL: 'Text links'
+          RIGHTNAV:
+            LABEL: 'Navigation Titel'
+          RIGHTCONTACT:
+            LABEL: 'Kontakt Titel'
+            CONTENT:
+              LABEL: 'Kontakt Text'
+          SOCIALMEDIA:
+            LABEL: 'Social Media / Links Titel'
+            DESC:
+              LABEL: 'Social Media Links'
+            TITLE:
+              LABEL: 'Titel'
+            LINK:
+              LABEL: 'Link'
         BUTTONS:
           LABEL: 'Buttons'
         NEWWINDOW:

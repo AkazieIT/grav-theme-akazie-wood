@@ -3,11 +3,74 @@
 <footer class="site-footer {% if theme_var('footer.fullscreen.enabled') %}fullscreen{% endif %}">
 {% if theme_var('footer.fullscreen.enabled') == 0 %}<div class="footer-top"></div>{% endif %}
   <div class="footer-main {% if theme_var('footer.fullscreen.enabled') %}fullscreen{% endif %}">
+
+  {% set footerpage = pages.find(theme_var('footer.fullscreen.link')) %}
+
+
   {% if theme_var('footer.fullscreen.enabled') %}
-    {% set content = pages.find(theme_var('footer.fullscreen.link')).content %}
-     {% if content %}
-       {{ content|markdown }}
-     {% endif %}
+
+
+    {% if footerpage.template == 'footerpage' %}
+
+
+    <div class="container footerpage">
+      <div class="row">
+        <article class="col-12 col-md-6">
+        <div class="container">
+          <div>{{ footerpage.header.leftsize1 | markdown }}</div>
+        </div>
+        </article>
+        <article class="col-12 col-md-6">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <h4>{{ footerpage.header.row1titel }}</h4>
+                <div>
+                  <ul>
+                    {% for links in footerpage.header.row1content %}
+                    <li><a href="{{ links.link }}" target="_blank">{{ links.text }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <h4>{{ footerpage.header.row2titel }}</h4>
+                <div>
+                <ul>
+                  {% for page in pages.children.visible %}
+                      <li>
+                          <a href="{{ page.url }}">
+                              {{ page.menu }}
+                          </a>
+                      </li>
+                  {% endfor %}
+                </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <h4>{{ footerpage.header.row3titel }}</h4>
+                <div>{{ footerpage.header.row3content | markdown }}</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    {% else %}
+          {% set content = footerpage.content %}
+           {% if content %}
+             {{ content|markdown }}
+           {% endif %}
+    {% endif %}
 
   {% else %}
     <div class="footer-navigation">

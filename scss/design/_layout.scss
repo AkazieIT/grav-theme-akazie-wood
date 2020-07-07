@@ -589,6 +589,19 @@ footer.site-footer{
         }
       }
     }
+    .container.footerpage {
+      display:flex;
+      text-align:left;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 100px);
+      ul {
+        padding:0;
+        li {
+          list-style-type: none;
+        }
+      }
+    }
   }
   .footer-main.fullscreen {
     min-height: 100vh;
