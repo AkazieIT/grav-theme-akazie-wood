@@ -16941,6 +16941,10 @@ a:not([link]):hover {
   display: -ms-flexbox;
   flex-flow: column;
   height: 100%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header.site-header {
@@ -17431,6 +17435,11 @@ footer.site-footer .footer-main .footer-navigation ul li a {
 
 footer.site-footer .footer-main .footer-navigation ul li a:hover, footer.site-footer .footer-main .footer-navigation ul li a.active {
   text-decoration: underline !important;
+}
+
+footer.site-footer .footer-main.fullscreen {
+  min-height: 100vh;
+  padding-top: 60px;
 }
 
 a.button {

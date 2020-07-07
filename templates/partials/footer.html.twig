@@ -1,6 +1,15 @@
-<footer class="site-footer">
-  <div class="footer-top"></div>
-  <div class="footer-main">
+
+
+<footer class="site-footer {% if theme_var('footer.fullscreen.enabled') %}fullscreen{% endif %}">
+{% if theme_var('footer.fullscreen.enabled') == 0 %}<div class="footer-top"></div>{% endif %}
+  <div class="footer-main {% if theme_var('footer.fullscreen.enabled') %}fullscreen{% endif %}">
+  {% if theme_var('footer.fullscreen.enabled') %}
+    {% set content = pages.find(theme_var('footer.fullscreen.link')).content %}
+     {% if content %}
+       {{ content|markdown }}
+     {% endif %}
+
+  {% else %}
     <div class="footer-navigation">
       <ul>
         {% for p in pages.children.visible | slice(0, (theme_var('header.nav.length'))) %}
@@ -37,5 +46,9 @@
         </a>
       {% endif %}
     </div>
+  {% endif %}
+
   </div>
+
+
 </footer>

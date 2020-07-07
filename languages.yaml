@@ -40,11 +40,23 @@ en:
             LABEL: 'Show data policy'
           LINK:
             LABEL: 'Link to the policy'
+        FULLSCREEN:
+          FOOTERLABEL: 'Fullscreen footer'
+          ENABLED:
+            LABEL: 'Show fullscreen footer'
+          LINK:
+            LABEL: 'Link to the footer'
+          BGCOLOR:
+            LABEL: 'Background color for fullscreen footer'
         MAP_API:
           LABEL: 'API-key (onle with GoogleMaps)'
         FAVICON:
           LABEL: 'Favicon'
           DESCRIPTION: 'Used instead of `theme: // images / favicon.png`'
+        PARALLAX:
+          LABEL: 'Use parallax full screen background?'
+          HEADER:
+            LABEL: 'Show the background behind header'
         LOGO:
           LABEL: 'Own logo'
           DESCRIPTION: 'Used instead of `theme://images/logo.png` verwendet'
@@ -61,6 +73,8 @@ en:
             1: "Hidden"
         FOOTER_ADDRESS:
           LABEL: 'Address in footer'
+        FOOTERCOMPACT:
+          LABEL: 'Compact footer'
         FOOTER_MAIL:
           LABEL: 'Mail in footer'
         COLOR:
@@ -255,11 +269,23 @@ de:
             LABEL: 'Datenschutz anzeigen?'
           LINK:
             LABEL: 'Link zum Datenschutz'
+        FULLSCREEN:
+          FOOTERLABEL: 'Fullscreen footer'
+          ENABLED:
+            LABEL: 'Fullscreen Footer anzeigen?'
+          LINK:
+            LABEL: 'Link zum Footer'
+          BGCOLOR:
+            LABEL: 'Hintergrundfarbe für Vollbild-Footer'
         MAP_API:
           LABEL: 'API-Schlüssel (nur wenn Google Maps)'
         FAVICON:
           LABEL: 'Favicon'
           DESCRIPTION: 'Benutzen anstelle von `theme://images/favicon.png`'
+        PARALLAX:
+          LABEL: 'Full Screen Parallax Background benutzen?'
+          HEADER:
+            LABEL: 'Show the background behind header'
         LOGO:
           LABEL: 'Eigenes Logo'
           DESCRIPTION: 'Benutzen anstelle von `theme://images/logo.png` verwendet'
@@ -276,6 +302,8 @@ de:
             1: "Verstecken"
         FOOTER_ADDRESS:
           LABEL: 'Adresse im Footer'
+        FOOTERCOMPACT:
+          LABEL: 'Kompakter Footer'
         FOOTER_MAIL:
           LABEL: 'Mail im Footer'
         COLOR:

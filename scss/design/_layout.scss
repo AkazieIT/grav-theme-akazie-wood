@@ -158,6 +158,10 @@ a:not([link]){
   display: -ms-flexbox;
   flex-flow: column;
   height: 100%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header.site-header{
   height: $nav-height;
@@ -585,6 +589,10 @@ footer.site-footer{
         }
       }
     }
+  }
+  .footer-main.fullscreen {
+    min-height: 100vh;
+    padding-top:60px;
   }
 }
 a.button {

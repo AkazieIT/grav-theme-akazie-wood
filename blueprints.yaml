@@ -1,5 +1,5 @@
 name: "Akazie Wood"
-version: 0.9.87
+version: 0.9.88
 description: "This is a theme of Akazie IT GmbH and is intended for simple websites without great features"
 icon: smile-o
 keywords: akazieit, akazie, wood, carpenter, simple, chargeable, schreiner, holz, zimmerei, zimmermann, wald
@@ -71,6 +71,26 @@ form:
               description: THEME_AKAZIEWOOD.THEME.FIELDS.FAVICON.DESCRIPTION
               accept:
                 - image/*
+            site.parallax:
+              type: toggle
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.PARALLAX.LABEL
+              highlight: 0
+              default: 0
+              options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
+              validate:
+                type: bool
+            site.parallaxheader:
+              type: toggle
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.PARALLAX.HEADER.LABEL
+              highlight: 0
+              default: 0
+              options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
+              validate:
+                type: bool
         header:
           type: fieldset
           title: THEME_AKAZIEWOOD.THEME.FIELDSET.HEADER
@@ -103,59 +123,92 @@ form:
           collapsed: false
           collapsible: true
           fields:
-            footer.home:
-              type: toggle
-              label: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.LABEL
-              highlight: 1
-              default: 1
-              options:
-                1: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.1
-                0: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.0
-              validate:
-                type: bool
-            footer.address:
-              type: textarea
-              label: THEME_AKAZIEWOOD.THEME.FIELDS.FOOTER_ADDRESS.LABEL
-              rows: 5
-              size: medium
-            footer.mail:
-              type: text
-              label: THEME_AKAZIEWOOD.THEME.FIELDS.FOOTER_MAIL.LABEL
-              size: large
-            footer.impressum.enabled:
-              type: toggle
-              label: THEME_AKAZIEWOOD.THEME.FIELDS.IMPRESSUM.ENABLED.LABEL
-              highlight: 0
-              default: 0
-              options:
-                0: PLUGIN_ADMIN.DISABLED
-                1: PLUGIN_ADMIN.ENABLED
-              validate:
-                type: bool
-            footer.impressum.link:
-              type: pages
-              size: medium
-              label: THEME_AKAZIEWOOD.THEME.FIELDS.IMPRESSUM.LINK.LABEL
-              show_all: false
-              show_modular: false
-              show_root: false
-            footer.datenschutz.enabled:
-              type: toggle
-              label: THEME_AKAZIEWOOD.THEME.FIELDS.DATENSCHUTZ.ENABLED.LABEL
-              highlight: 0
-              default: 0
-              options:
-                0: PLUGIN_ADMIN.DISABLED
-                1: PLUGIN_ADMIN.ENABLED
-              validate:
-                type: bool
-            footer.datenschutz.link:
-              type: pages
-              size: medium
-              label: THEME_AKAZIEWOOD.THEME.FIELDS.DATENSCHUTZ.LINK.LABEL
-              show_all: false
-              show_modular: false
-              show_root: false
+            footer.compact:
+              type: fieldset
+              title: THEME_AKAZIEWOOD.THEME.FIELDS.FOOTERCOMPACT.LABEL
+              collapsed: false
+              collapsible: true
+              fields:
+                footer.home:
+                  type: toggle
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.LABEL
+                  highlight: 1
+                  default: 1
+                  options:
+                    1: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.1
+                    0: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.0
+                  validate:
+                    type: bool
+                footer.address:
+                  type: textarea
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.FOOTER_ADDRESS.LABEL
+                  rows: 5
+                  size: medium
+                footer.mail:
+                  type: text
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.FOOTER_MAIL.LABEL
+                  size: large
+                footer.impressum.enabled:
+                  type: toggle
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.IMPRESSUM.ENABLED.LABEL
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: PLUGIN_ADMIN.DISABLED
+                    1: PLUGIN_ADMIN.ENABLED
+                  validate:
+                    type: bool
+                footer.impressum.link:
+                  type: pages
+                  size: medium
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.IMPRESSUM.LINK.LABEL
+                  show_all: false
+                  show_modular: false
+                  show_root: false
+                footer.datenschutz.enabled:
+                  type: toggle
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.DATENSCHUTZ.ENABLED.LABEL
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: PLUGIN_ADMIN.DISABLED
+                    1: PLUGIN_ADMIN.ENABLED
+                  validate:
+                    type: bool
+                footer.datenschutz.link:
+                  type: pages
+                  size: medium
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.DATENSCHUTZ.LINK.LABEL
+                  show_all: false
+                  show_modular: false
+                  show_root: false
+            footer.fullscreen:
+              type: fieldset
+              title: THEME_AKAZIEWOOD.THEME.FIELDS.FULLSCREEN.FOOTERLABEL
+              collapsed: false
+              collapsible: true
+              fields:
+                footer.fullscreen.enabled:
+                  type: toggle
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.FULLSCREEN.ENABLED.LABEL
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: PLUGIN_ADMIN.DISABLED
+                    1: PLUGIN_ADMIN.ENABLED
+                  validate:
+                    type: bool
+                footer.fullscreen.link:
+                  type: pages
+                  size: medium
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.FULLSCREEN.LINK.LABEL
+                  show_all: false
+                  show_modular: false
+                  show_root: false
+                footer.fullscreen.bgcolor:
+                  type: colorpicker
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.FULLSCREEN.BGCOLOR.LABEL
+                  default: '#ffffff'
     style_section:
       type: section
       title: THEME_AKAZIEWOOD.THEME.SECTION.STYLE
