@@ -18,7 +18,7 @@
               </a>
             </span>
             {% endif %}
-            <span class="person-text">{{ person.text }}</span>
+            <span class="person-text">{{ person.text | markdown }}</span>
             {% if page.header.contactbutton == 1 %}
               <span class="person-email">
                 <a class="teamemail" href="mailto:{{ person.email|safe_email }}">

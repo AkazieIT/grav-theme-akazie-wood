@@ -17233,7 +17233,7 @@ main.site-content .modular a.linksbutton {
   padding-right: 20px;
   margin-right: 25px;
   margin-bottom: 25px;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 main.site-content .modular.section-teamlist {
@@ -17311,7 +17311,7 @@ main.site-content .modular.section-teamlist .person-email .teamemail {
   padding-top: 8px;
   margin-right: 25px;
   margin-bottom: 25px;
-  border-radius: 18px;
+  border-radius: 10px;
   margin-top: 20px;
 }
 
@@ -17466,6 +17466,6 @@ a.button {
   padding-top: 8px;
   margin-right: 25px;
   margin-bottom: 25px;
-  border-radius: 18px;
+  border-radius: 10px;
   margin-top: 20px;
 }
