@@ -23,6 +23,21 @@ form:
                   type: filepicker
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE_HEADER.LABEL
                   preview_images: true
+                header.claimswitch:
+                  type: toggle
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.CLAIMSWITCH.LABEL
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: PLUGIN_ADMIN.DISABLED
+                    1: PLUGIN_ADMIN.ENABLED
+                  validate:
+                    type: bool
+                header.claim:
+                  type: textarea
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.CLAIM.LABEL
+                  rows: 5
+                  size: medium
             media:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
@@ -59,4 +74,3 @@ form:
                   options:
                     asc: PLUGIN_ADMIN.ASCENDING
                     desc: PLUGIN_ADMIN.DESCENDING
-

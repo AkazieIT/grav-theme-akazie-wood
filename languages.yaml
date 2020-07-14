@@ -186,6 +186,10 @@ en:
           LABEL: "Images"
         IMAGE_HEADER:
           LABEL: "Header image"
+        CLAIM:
+          LABEL: "Claim"
+        CLAIMSWITCH:
+          LABEL: "Show claim instead of title?"
         DESCRIPTION:
           LABEL: "Description"
         DESCRIPTION_POS:
@@ -430,6 +434,10 @@ de:
           LABEL: "Bilder"
         IMAGE_HEADER:
           LABEL: "Titelbild"
+        CLAIM:
+          LABEL: "Claim"
+        CLAIMSWITCH:
+          LABEL: "Claim anstelle Titel anzeigen?"
         DESCRIPTION:
           LABEL: "Beschreibung"
         DESCRIPTION_POS:

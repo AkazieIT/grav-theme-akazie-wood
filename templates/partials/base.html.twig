@@ -34,7 +34,9 @@
 
   </head>
 <body class="{{ page.header.body_classes }}{% if theme_var('nav.expanded') == '1' %} navexpanded{% endif %}">
-    <div class="wrapper">
+      {% if theme_var('site.parallax') == 0 %}<div class="wrapper">{% else %}
+        <div class="wrapper" style="background-image: url('{{ page.header.image  ? page.media[page.header.image].url : theme_url ~ '/images/home.jpg' }}')">
+      {% endif %}
       {% block header %}
         {% include 'partials/header.html.twig' %}
       {% endblock %}
@@ -42,22 +44,28 @@
 
       {% if page.template == 'home' %}
         {% set image = page.header.image %}
-        <div class="screen-image screen-fullscreen" style="background-image: url('{{ image ? page.media[image].cropZoom(1920,1080).url : theme_url ~ '/images/home.jpg' }}')">
-          <div class="image-caption color-new-line  {% if page.header.markdown.newlineoncolorchangemobile %}color-new-line-mobile{% endif %}">
+      {% if theme_var('site.parallax') == 0 %}<div class="screen-image screen-fullscreen" style="background-image: url('{{ image ? page.media[image].cropZoom(1920,1080).url : theme_url ~ '/images/home.jpg' }}')">{% else %}
+        <div class="screen-image screen-fullscreen">
+      {% endif %}
+          <div class="image-caption color-new-line  {% if page.header.markdown.newlineoncolorchangemobile %}color-new-line-mobile{% endif %}{% if page.header.claimswitch == true %} claim{% endif %}">
                 {% if page.header.markdown.title %}
                   {{ page.header.title | markdown }}
                 {% else %}
-                  <h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
+                {% if page.header.claimswitch == false %}<h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
+              {% else %}<h3 class="claim">{{ page.header.claim | nl2br }}</h3>{% endif %}
                 {% endif %}
             <p>{{ page.header.text }}</p>
           </div>
         </div>
       {% else %}
         {% set image = page.header.image %}
-        <div class="screen-image screen-top" style="background-image: url('{{ image  ? page.media[image].cropZoom(1920,450).url : theme_url ~ '/images/home.jpg' }}')">
-          <div class="image-caption">
-            <h1 style="word-wrap: break-word ">{{ page.header.title }}</h1>
-          </div>
+        {% if theme_var('site.parallax') == 0 %}<div class="screen-image screen-top" style="background-image: url('{{ image  ? page.media[image].cropZoom(1920,450).url : theme_url ~ '/images/home.jpg' }}')">{% else %}
+          <div class="screen-image screen-top">
+        {% endif %}
+
+      <div class="image-caption{% if page.header.claimswitch == true %} claim{% endif %}">
+          {% if page.header.claimswitch == false %}<h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
+        {% else %}<h3 class="claim">{{ page.header.claim | nl2br }}</h3>{% endif %}          </div>
         </div>
       {% endif %}
 
