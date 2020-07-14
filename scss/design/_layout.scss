@@ -161,7 +161,7 @@ a:not([link]){
       }
       margin-left: auto;
       margin-right: auto;
-      margin-top: 130px;
+      margin-top: 190px - $nav-height;
       font-size:2.2em;
       letter-spacing:2px;
       padding-left:15px;
@@ -399,6 +399,16 @@ header.site-header{
         }
       }
     }
+  }
+}
+header.site-header.fittowidth{
+  .header-inner {
+  max-width:1280px;
+  @include media-breakpoint-down(lg) {
+    max-width:960px;
+  }
+  margin-left:auto;
+  margin-right:auto;
   }
 }
 main.site-content{

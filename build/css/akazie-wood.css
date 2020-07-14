@@ -17190,6 +17190,18 @@ header.site-header div.header-inner div.mobile-toggle .pull.open span:nth-child(
   left: 50%;
 }
 
+header.site-header.fittowidth .header-inner {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1219.98px) {
+  header.site-header.fittowidth .header-inner {
+    max-width: 960px;
+  }
+}
+
 main.site-content {
   flex: 1 1 auto;
 }

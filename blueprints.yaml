@@ -55,6 +55,17 @@ form:
               options:
                 0: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.OPTIONS.0
                 1: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.OPTIONS.1
+            nav.fittocontent:
+              type: select
+              label: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.FITTOCONTENT
+              default: 0
+              options:
+                0: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.OPTIONS.0
+                1: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.OPTIONS.1
+            nav.navheight:
+              type: text
+              label: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.NAVHEIGHT
+              default: 60
         site:
           type: fieldset
           title: THEME_AKAZIEWOOD.THEME.FIELDSET.SITE
