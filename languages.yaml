@@ -221,6 +221,8 @@ en:
             LABEL: 'Text left'
           RIGHTNAV:
             LABEL: 'Navigation title'
+          UPSIGN:
+            LABEL: 'Scroll up text'
           RIGHTCONTACT:
             LABEL: 'Contact title'
             CONTENT:
@@ -471,6 +473,8 @@ de:
             LABEL: 'Text links'
           RIGHTNAV:
             LABEL: 'Navigation Titel'
+          UPSIGN:
+            LABEL: 'Scroll up text'
           RIGHTCONTACT:
             LABEL: 'Kontakt Titel'
             CONTENT:

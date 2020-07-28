@@ -17495,6 +17495,13 @@ footer.site-footer .footer-main .container.footerpage ul li {
   list-style-type: none;
 }
 
+footer.site-footer .footer-main .container.footerpage .upfootertext {
+  position: fixed;
+  text-align: center;
+  bottom: 50px;
+  display: none;
+}
+
 footer.site-footer .footer-main.fullscreen {
   min-height: 100vh;
   padding-top: 60px;

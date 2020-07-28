@@ -16,14 +16,14 @@
     <div class="container footerpage">
       <div class="row">
         <article class="col-12 col-md-6">
-        <div class="container">
+        <div class="container leftfootercontent">
           <div>{{ footerpage.header.leftsize1 | markdown }}</div>
         </div>
         </article>
         <article class="col-12 col-md-6">
           <div class="container">
             <div class="row">
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-md-4 rightfootercontent">
                 <h4>{{ footerpage.header.row1titel }}</h4>
                 <div>
                   <ul>
@@ -33,7 +33,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-md-4 rightfootercontent">
                 <h4>{{ footerpage.header.row2titel }}</h4>
                 <div>
                 <ul>
@@ -47,7 +47,7 @@
                 </ul>
                 </div>
               </div>
-              <div class="col-12 col-md-4">
+              <div class="col-12 col-md-4 rightfootercontent">
                 <h4>{{ footerpage.header.row3titel }}</h4>
                 <div>{{ footerpage.header.row3content | markdown }}</div>
               </div>
@@ -56,6 +56,13 @@
         </article>
 
       </div>
+      {% if footerpage.header.upsignon == 0 %}
+
+      <div class="upfootertext">
+        <a href="#"><img src="{{ url('theme://images/up.svg') }}" /><br />
+        {{ footerpage.header.upsign }}</a>
+      </div>
+      {% endif %}
     </div>
 
 

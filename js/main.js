@@ -39,6 +39,15 @@ $('.nav-lvl1 > li > a').click(function(e){
 
 $(document).ready(function() {
 
+
+  $(window).scroll(function() {
+     if($(window).scrollTop() + $(window).height() > $(document).height() - 300) {
+       $('.upfootertext').show();
+     }
+     if($(window).scrollTop() + $(window).height() < $(document).height() - 300) {
+       $('.upfootertext').hide();
+     }
+  });
 /*
   var subActive = $('nav.mobile .nav-lvl2').find('.active');
   if(subActive.length){

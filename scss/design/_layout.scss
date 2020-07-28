@@ -633,6 +633,12 @@ footer.site-footer{
           list-style-type: none;
         }
       }
+      .upfootertext {
+        position: fixed;
+        text-align: center;
+        bottom: 50px;
+        display:none;
+      }
     }
   }
   .footer-main.fullscreen {
