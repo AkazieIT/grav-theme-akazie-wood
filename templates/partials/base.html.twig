@@ -33,7 +33,7 @@
     {% endblock head %}
 
   </head>
-<body class="{{ page.header.body_classes }}{% if theme_var('nav.expanded') == '1' %} navexpanded{% endif %}">
+<body class="{{ page.header.body_classes }}{% if theme_var('nav.expanded') == '1' %} navexpanded{% endif %} {{ page.slug }}">
       {% if theme_var('site.parallax') == 0 %}<div class="wrapper">{% else %}
         <div class="wrapper" style="background-image: url('{{ page.header.image  ? page.media[page.header.image].url : theme_url ~ '/images/home.jpg' }}')">
       {% endif %}
