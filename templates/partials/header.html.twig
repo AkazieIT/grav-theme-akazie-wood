@@ -1,14 +1,14 @@
 {% set logo = theme_var('header.logo') %}
 
-<header class="site-header  {{ theme_var('header.fixed') ? 'fixed' : '' }}">
-  <div class="header-inner">
+<header class="site-header  {{ theme_var('header.fixed') ? 'fixed' : '' }} {% if theme_var('nav.fittocontent') == '1' %}fittowidth{% endif %}">
+<div class="header-inner">
     <div class="logo">
       <a href="{{ home_url}}">
         {% if logo %}
           {% set logo_file = (logo|first).name %}
-          <img src="{{ url('theme://custom/logo/' ~ logo_file)  }}" alt="{{ site.name }}" />
+          <img id="headerlogo" src="{{ url('theme://custom/logo/' ~ logo_file)  }}" alt="{{ site.name }}" />
         {% else %}
-          <img src="{{ url('theme://images/logo.png')  }}" alt="{{ site.name }}" />
+          <img id="headerlogo" src="{{ url('theme://images/logo.png')  }}" alt="{{ site.name }}" />
         {% endif %}
       </a>
     </div>
