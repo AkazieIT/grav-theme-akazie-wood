@@ -37,6 +37,14 @@ $('.nav-lvl1 > li > a').click(function(e){
   }
 });
 
+$('#scrolltopbutton').click(function(e){
+  e.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: 0
+    }, 2000);
+});
+
 $(document).ready(function() {
 
 
