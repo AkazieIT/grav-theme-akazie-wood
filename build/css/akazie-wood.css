@@ -17266,6 +17266,10 @@ main.site-content .modular.section-text *:last-child {
   margin-bottom: 0;
 }
 
+main.site-content .modular.section-text .bgbox {
+  padding: 30px;
+}
+
 main.site-content .modular a.linksbutton {
   text-align: center;
   height: 60px;

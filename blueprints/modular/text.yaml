@@ -58,6 +58,26 @@ form:
                             0: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.0
                             1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.1
                             2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.2
+                        header.boxenabled:
+                          type: toggle
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BOX.ENABLED.LABEL
+                          highlight: 0
+                          default: 0
+                          options:
+                            0: PLUGIN_ADMIN.DISABLED
+                            1: PLUGIN_ADMIN.ENABLED
+                        header.boxbgcolor:
+                          type: colorpicker
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BOX.BGCOLOR.LABEL
+                          default: '#ffffff'
+                        header.boxcolor:
+                          type: colorpicker
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BOX.COLOR.LABEL
+                          default: '#ffffff'
+                        header.boxcorners:
+                          type: text
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BOX.ROUNDCORNERS.LABEL
+                          default: 0
                     column2:
                       type: column
                       fields:

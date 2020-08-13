@@ -139,6 +139,15 @@ en:
           TWO: 'Row two'
           THREE: 'Row three'
       FIELDS:
+        BOX:
+          BGCOLOR:
+            LABEL: 'background color'
+          COLOR:
+            LABEL: 'color'
+          ROUNDCORNERS:
+            LABEL: 'border radius'
+          ENABLED:
+            LABEL: 'show as box'
         MAP_LAT:
           LABEL: 'Latitude'
         MAP_LONG:
@@ -393,6 +402,15 @@ de:
           TWO: 'Zeile zwei'
           THREE: 'Zeile drei'
       FIELDS:
+        BOX:
+          BGCOLOR:
+            LABEL: 'Hintergrundfarbe'
+          COLOR:
+            LABEL: 'Farbe'
+          ROUNDCORNERS:
+            LABEL: 'Box Radius'
+          ENABLED:
+            LABEL: 'Als Box darstellen'
         MAP_LAT:
           LABEL: 'Breitengrad'
         MAP_LONG:
