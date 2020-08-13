@@ -1,3 +1,9 @@
+# v0.9.89
+## 07.07.2020
+
+1. [](#new)
+    * added modular textbox
+
 # v0.9.88
 ## 07.07.2020
 
@@ -5,7 +11,6 @@
     * added optional full screen footer
     * added option for fullscreen parallax background
     * added template for full screen footer
-
 
 # v0.9.87
 ## 03.07.2020
