@@ -592,7 +592,9 @@ main.site-content{
   }
 }
 footer.site-footer{
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   width: 100%;
   .footer-top{
     height: 30px;
@@ -641,6 +643,12 @@ footer.site-footer{
         text-align: center;
         bottom: 50px;
         display:none;
+      }
+    }
+    .container.footerpage.alignbottom {
+      align-items: flex-end;
+      .row {
+        margin-bottom:50px;
       }
     }
   }

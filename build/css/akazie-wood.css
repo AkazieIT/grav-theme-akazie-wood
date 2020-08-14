@@ -17441,6 +17441,9 @@ main.site-content .modular.section-gallery .gallery > article {
 }
 
 footer.site-footer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   width: 100%;
 }
 
@@ -17504,6 +17507,14 @@ footer.site-footer .footer-main .container.footerpage .upfootertext {
   text-align: center;
   bottom: 50px;
   display: none;
+}
+
+footer.site-footer .footer-main .container.footerpage.alignbottom {
+  align-items: flex-end;
+}
+
+footer.site-footer .footer-main .container.footerpage.alignbottom .row {
+  margin-bottom: 50px;
 }
 
 footer.site-footer .footer-main.fullscreen {

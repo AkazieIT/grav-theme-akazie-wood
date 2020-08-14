@@ -52,3 +52,26 @@ form:
             header.upsign:
               type: text
               label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.UPSIGN.LABEL
+            header.footerbg:
+              type: file
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.FOOTERBG.LABEL
+              size: large
+              destination: 'theme://custom/logo'
+              multiple: false
+              markdown: true
+              description: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.FOOTERBG.DESCRIPTION
+              accept:
+                - image/*
+            header.nofullscreen:
+              type: toggle
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.NOFULLSCREEN.LABEL
+              highlight: 0
+              default: 0
+              options:
+                1: PLUGIN_ADMIN.DISABLED
+                0: PLUGIN_ADMIN.ENABLED
+              validate:
+                type: bool
+            header.bgheight:
+              type: text
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.BGHEIGHT.LABEL

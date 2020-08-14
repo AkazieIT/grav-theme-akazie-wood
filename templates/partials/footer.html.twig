@@ -1,10 +1,10 @@
+{% set footerpage = pages.find(theme_var('footer.fullscreen.link')) %}
 
 
-<footer class="site-footer {% if theme_var('footer.fullscreen.enabled') %}fullscreen{% endif %}">
+<footer class="site-footer {% if theme_var('footer.fullscreen.enabled') and footerpage.header.nofullscreen != 1 %}fullscreen{% endif %}" {% if theme_var('footer.fullscreen.enabled') and footerpage.header.footerbg %}style="background-image:url('{{ url('theme://custom/logo/' ~ (footerpage.header.footerbg | first).name) }}');"{% endif %}>
 {% if theme_var('footer.fullscreen.enabled') == 0 %}<div class="footer-top"></div>{% endif %}
-  <div class="footer-main {% if theme_var('footer.fullscreen.enabled') %}fullscreen{% endif %}">
+  <div class="footer-main {% if theme_var('footer.fullscreen.enabled') and footerpage.header.nofullscreen != 1 %}fullscreen{% endif %}">
 
-  {% set footerpage = pages.find(theme_var('footer.fullscreen.link')) %}
 
 
   {% if theme_var('footer.fullscreen.enabled') %}
@@ -13,7 +13,7 @@
     {% if footerpage.template == 'footerpage' %}
 
 
-    <div class="container footerpage">
+  <div class="container footerpage{% if footerpage.header.nofullscreen == 1 %} alignbottom{% endif %}" {% if footerpage.header.nofullscreen == 1 %}style="height:{{ footerpage.header.bgheight }}"{% endif %}>
       <div class="row">
         <article class="col-12 col-md-6">
         <div class="container leftfootercontent">
@@ -59,7 +59,7 @@
       {% if footerpage.header.upsignon == 0 %}
 
       <div class="upfootertext">
-        <a href="#" id="scrolltopbutton"><img src="{{ url('theme://images/up.svg') }}" /><br />
+        <a href="#"><img src="{{ url('theme://images/up.svg') }}" /><br />
         {{ footerpage.header.upsign }}</a>
       </div>
       {% endif %}

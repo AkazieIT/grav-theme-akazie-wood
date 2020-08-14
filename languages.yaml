@@ -232,6 +232,13 @@ en:
             LABEL: 'Navigation title'
           UPSIGN:
             LABEL: 'Scroll up text'
+          FOOTERBG:
+            LABEL: 'Custom background image'
+            DESCRIPTION: 'Replace the page bg image with a custom image'
+          NOFULLSCREEN:
+            LABEL: 'Fullscreen'
+          BGHEIGHT:
+            LABEL: 'Footer height'
           RIGHTCONTACT:
             LABEL: 'Contact title'
             CONTENT:
@@ -493,6 +500,13 @@ de:
             LABEL: 'Navigation Titel'
           UPSIGN:
             LABEL: 'Scroll up text'
+          FOOTERBG:
+            LABEL: 'Eigenes Backgroundbild'
+            DESCRIPTION: 'Das Seiten-Backgroundbild mit eigenem Bild ersetzen'
+          NOFULLSCREEN:
+            LABEL: 'Fullscreen'
+          BGHEIGHT:
+            LABEL: 'Footer Höhe'
           RIGHTCONTACT:
             LABEL: 'Kontakt Titel'
             CONTENT:
