@@ -87,7 +87,8 @@ $(document).ready(function() {
     $('.youtube-iframe').css('height', youtubeheight);
 
     $('.gallery').find('article').each(function(i, v){
-      let imageheight = $(this).width() * 3/4;
+      scale = $(this).data('scale');
+      let imageheight = $(this).width() * scale;
       $(this).css('height', imageheight);
     });
     $('.section-image, .section-map').find('[data-scale]').each(function(i, v){

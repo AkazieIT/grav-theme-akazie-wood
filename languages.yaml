@@ -201,6 +201,8 @@ en:
           LABEL: "Claim"
         CLAIMSWITCH:
           LABEL: "Show claim instead of title?"
+        REMOVEHEADER:
+          LABEL: "Remove header entirely?"
         DESCRIPTION:
           LABEL: "Description"
         DESCRIPTION_POS:
@@ -469,6 +471,8 @@ de:
           LABEL: "Claim"
         CLAIMSWITCH:
           LABEL: "Claim anstelle Titel anzeigen?"
+        REMOVEHEADER:
+          LABEL: "Header ganz ausblenden?"
         DESCRIPTION:
           LABEL: "Beschreibung"
         DESCRIPTION_POS:

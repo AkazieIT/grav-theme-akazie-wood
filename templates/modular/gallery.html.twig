@@ -1,8 +1,18 @@
+{% if page.header.scale == 2 %}
+    {% set scale = 9 / 16 %}
+{% elseif page.header.scale == 3 %}
+    {% set scale = 1 / 2.35 %}
+{% elseif page.header.scale == 4 %}
+    {% set scale = 1 / 1 %}
+{% else %}
+    {% set scale = 3 / 4 %}
+{% endif %}
+
 <article class="modular section-gallery col-12 {% if page.header.column == 2 %}col-md-12{% else %}col-md-6{% endif %}">
     {% if page.header.showtitle == 1 %}<h2 class="heading">{{ page.header.title }}</h2>{% endif %}
     <div class="gallery {% if page.header.showtitle == 2 %}title-placeholder{% endif %}">
         {% for img in page.header.gallerie | split(',')%}
-            <article style="background-image: url('{{ page.media[img].cropZoom(400,400).url }}')" data-src="{{ page.media[img].cropResize(1280,720).url }}"></article>
+            <article style="background-image: url('{{ page.media[img].cropZoom(400,400).url }}')" data-src="{{ page.media[img].cropResize(1920,1080).url }}" data-scale="{{ scale }}"></article>
         {% endfor %}
     </div>
 </article>

@@ -16966,6 +16966,10 @@ a:not([link]):hover {
   }
 }
 
+.screen-image .image-caption.removeheader {
+  display: none;
+}
+
 .wrapper {
   display: flex;
   display: -ms-flexbox;
