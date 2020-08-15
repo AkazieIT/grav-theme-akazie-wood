@@ -6,6 +6,8 @@
     * added some footer functions (bg image, fullscreen can be turned off)
     * added aspect ratio functionality of gallery
     * added possibility to remove header in modular content
+    * added possibility to center column
+    * added possibility to create narrow centered columns
 
 # v0.9.88
 ## 07.07.2020
