@@ -16838,6 +16838,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   max-width: 800px;
   display: inline-block;
   text-align: left;
+  width: 100%;
 }
 
 /* ##################################
