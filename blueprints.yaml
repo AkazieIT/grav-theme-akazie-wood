@@ -124,8 +124,8 @@ form:
               highlight: 1
               default: 1
               options:
-                1: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.1
-                0: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.0
+                1: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.0
+                0: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.1
               validate:
                 type: bool
         footer:
