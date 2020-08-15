@@ -427,6 +427,9 @@ main.site-content{
   .page.section-default{
     @include make-container-max-widths();
     margin: 0 auto;
+    div article.centertext {
+      text-align:center;
+    }
   }
   .modular{
     margin-bottom: 3rem;

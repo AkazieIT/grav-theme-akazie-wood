@@ -17249,6 +17249,11 @@ main.site-content .page.section-default {
   }
 }
 
+main.site-content .page.section-modular div article.centertext,
+main.site-content .page.section-default div article.centertext {
+  text-align: center;
+}
+
 main.site-content .modular {
   margin-bottom: 3rem;
 }
