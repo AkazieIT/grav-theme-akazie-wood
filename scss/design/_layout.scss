@@ -63,6 +63,11 @@
     p{margin: 0;}
   }
 }
+.markdown.centermark {
+  max-width: 800px;
+  display: inline-block;
+  text-align: left;
+}
 
 /* ##################################
  Typografie
@@ -427,7 +432,7 @@ main.site-content{
   .page.section-default{
     @include make-container-max-widths();
     margin: 0 auto;
-    div article.centertext {
+    div article.centertext, div article.centermark {
       text-align:center;
     }
   }
@@ -438,6 +443,9 @@ main.site-content{
       margin-top: 0;
       margin-bottom: 1rem;
       display: inline-block;
+    }
+    h2.heading.centermark {
+      display:block;
     }
     @include media-breakpoint-down(md) {
       padding-left: 1rem;

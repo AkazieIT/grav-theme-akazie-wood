@@ -16834,6 +16834,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin: 0;
 }
 
+.markdown.centermark {
+  max-width: 800px;
+  display: inline-block;
+  text-align: left;
+}
+
 /* ##################################
  Typografie
 ###################################*/
@@ -17249,8 +17255,9 @@ main.site-content .page.section-default {
   }
 }
 
-main.site-content .page.section-modular div article.centertext,
-main.site-content .page.section-default div article.centertext {
+main.site-content .page.section-modular div article.centertext, main.site-content .page.section-modular div article.centermark,
+main.site-content .page.section-default div article.centertext,
+main.site-content .page.section-default div article.centermark {
   text-align: center;
 }
 
@@ -17262,6 +17269,10 @@ main.site-content .modular h2.heading {
   margin-top: 0;
   margin-bottom: 1rem;
   display: inline-block;
+}
+
+main.site-content .modular h2.heading.centermark {
+  display: block;
 }
 
 @media (max-width: 991.98px) {

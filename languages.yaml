@@ -220,6 +220,7 @@ en:
           OPTIONS:
             1: "One column"
             2: "two columns"
+            3: "One column centered"
         SCALE:
           LABEL: 'Format'
           OPTIONS:
@@ -492,6 +493,7 @@ de:
           OPTIONS:
             1: "Eine Spalte"
             2: "Zwei Spalten"
+            3: "Eine Spalte zentriert"
         SCALE:
           LABEL: 'Format'
           OPTIONS:
