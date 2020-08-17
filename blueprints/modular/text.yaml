@@ -50,6 +50,7 @@ form:
                             1: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.OPTIONS.1
                             2: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.OPTIONS.2
                             3: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.OPTIONS.3
+                            4: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.OPTIONS.4
                         header.showtitle:
                           type: select
                           label: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.LABEL

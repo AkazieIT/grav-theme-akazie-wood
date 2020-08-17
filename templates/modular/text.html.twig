@@ -1,4 +1,4 @@
-<article class="modular section-text col-12 {% if page.header.column == 2 or page.header.column == 3 %}col-md-12{% else %}col-md-6{% endif %}{% if page.header.centertext == 1 %} centertext{% endif %}{% if page.header.column == 3 %} centermark{% endif %}">
+<article class="modular section-text col-12 {% if page.header.column == 2 or page.header.column == 3 %}col-md-12{% elseif page.header.column == 4 %}col-md-4{% else %}col-md-6{% endif %}{% if page.header.centertext == 1 %} centertext{% endif %}{% if page.header.column == 3 %} centermark{% endif %}">
     {% if page.header.showtitle == 1 %}<h2 class="heading{% if page.header.column == 3 %} centermark{% endif %}">{{ page.header.title }}</h2>{% endif %}
   <div class="markdown {% if page.header.showtitle == 2 %}title-placeholder{% endif %}{% if page.header.column == 3 %} centermark{% endif %}{% if page.header.boxenabled == 1 %} bgbox{% endif %}" {% if page.header.boxenabled == 1 %}style="background-color:{{page.header.boxbgcolor}};color:{{page.header.boxcolor}};border-radius:{{page.header.boxcorners}}"{% endif %}>
         {{ page.content | markdown }}

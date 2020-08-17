@@ -38,6 +38,16 @@ form:
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.CLAIM.LABEL
                   rows: 5
                   size: medium
+                header.claimasmarkdown:
+                  type: toggle
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.CLAIMASMARKDOWN.LABEL
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: PLUGIN_ADMIN.DISABLED
+                    1: PLUGIN_ADMIN.ENABLED
+                  validate:
+                    type: bool
                 header.removeheader:
                   type: toggle
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.REMOVEHEADER.LABEL
