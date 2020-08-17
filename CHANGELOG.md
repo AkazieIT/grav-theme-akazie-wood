@@ -8,6 +8,7 @@
     * added possibility to remove header in modular content
     * added possibility to center column
     * added possibility to create narrow centered columns
+    * added 1/3 width rows in modular text 
 
 # v0.9.88
 ## 07.07.2020

@@ -9,10 +9,15 @@
 {% endif %}
 
 <article class="modular section-gallery col-12 {% if page.header.column == 2 %}col-md-12{% else %}col-md-6{% endif %}">
-    {% if page.header.showtitle == 1 %}<h2 class="heading">{{ page.header.title }}</h2>{% endif %}
+{% if page.header.showtitle == 1 and page.header.boxenabled == 0 %}<h2 class="heading">{{ page.header.title }}</h2>{% endif %}
+{% if page.header.boxenabled == 1 %} <div class="gallerywrapper bgbox" style="background-color:{{page.header.boxbgcolor}};color:{{page.header.boxcolor}};border-radius:{{page.header.boxcorners}}">{% endif %}
+{% if page.header.showtitle == 1 and page.header.boxenabled == 1 %}<h2 class="heading centermark">{{ page.header.title }}</h2>{% endif %}
+  <a href="{{page.header.boxbuttonlabel}}" class="boxbutton impressionen gallerybutton">{{page.header.boxbuttontext}}</a>
+
     <div class="gallery {% if page.header.showtitle == 2 %}title-placeholder{% endif %}">
         {% for img in page.header.gallerie | split(',')%}
-            <article style="background-image: url('{{ page.media[img].cropZoom(400,400).url }}')" data-src="{{ page.media[img].cropResize(1920,1080).url }}" data-scale="{{ scale }}"></article>
+      <article style="background-image: url('{{ page.media[img].cropZoom(400,400).url }}');{% if page.header.boxenabled == 1 %}border-radius:{{page.header.boxcorners}};{% endif %}" data-src="{{ page.media[img].cropResize(1920,1080).url }}" data-scale="{{ scale }}"></article>
         {% endfor %}
     </div>
+  {% if page.header.boxenabled == 1 %}</div>{% endif %}
 </article>
