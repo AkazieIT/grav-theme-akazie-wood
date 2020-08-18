@@ -23,6 +23,9 @@
       {% if theme_var('style.fonts.import') %}
         <link href="{{ theme_var('style.fonts.import') }}" rel="stylesheet">
       {% endif %}
+      {% if theme_var('style.fonts.customhtml') %}
+        {{ theme_var('style.fonts.customhtml') }}
+      {% endif %}
       {% block assets deferred %}
         {{ assets.css()|raw }}
         {{ assets.js()|raw }}

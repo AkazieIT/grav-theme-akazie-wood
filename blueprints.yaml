@@ -359,6 +359,10 @@ form:
               default: "'Montserrat', sans-serif"
               validate:
                 required: true
+            style.fonts.customhtml:
+              type: text
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.CUSTOMHTML.LABEL
+              default: ""
         various:
           type: fieldset
           title: THEME_AKAZIEWOOD.THEME.FIELDSET.VARIOUS

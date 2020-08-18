@@ -119,6 +119,8 @@ en:
             LABEL: 'Title'
           NAV:
             LABEL: 'Navigation'
+          CUSTOMHTML:
+            LABEL: 'Custom HTML in head'
     FRONTEND:
       LOAD: "Page is loading"
     ADMIN:
@@ -397,6 +399,8 @@ de:
             LABEL: 'Überschriften'
           NAV:
             LABEL: 'Navigation'
+          CUSTOMHTML:
+            LABEL: 'Custom HTML im head'
     FRONTEND:
       LOAD: "Seite wird geladen"
     ADMIN:
