@@ -17483,6 +17483,28 @@ main.site-content .modular.section-gallery .gallerywrapper .gallerybutton {
   margin-top: 180px;
 }
 
+@media (max-width: 1219.98px) {
+  main.site-content .modular.section-gallery .gallerywrapper .gallerybutton {
+    margin-top: 110px;
+  }
+}
+
+@media (max-width: 869.98px) {
+  main.site-content .modular.section-gallery .gallerywrapper .gallery {
+    margin-top: 10px;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  main.site-content .modular.section-gallery .gallerywrapper .gallerybutton {
+    margin-top: 10px;
+    float: none;
+  }
+  main.site-content .modular.section-gallery .gallerywrapper .gallerybutton > article {
+    width: 100%;
+  }
+}
+
 footer.site-footer {
   background-size: cover;
   background-repeat: no-repeat;

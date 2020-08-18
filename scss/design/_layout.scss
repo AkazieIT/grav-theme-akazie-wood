@@ -623,6 +623,26 @@ main.site-content{
         float:left;
         margin-top:180px;
       }
+      @include media-breakpoint-down(lg) {
+        .gallerybutton{
+          margin-top:110px;
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        .gallery {
+          margin-top:10px;
+          flex-wrap:nowrap;
+          padding-left:10px;
+          padding-right:10px;
+        }
+        .gallerybutton{
+          margin-top:10px;
+          float:none;
+          > article{
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }
