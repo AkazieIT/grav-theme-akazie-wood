@@ -17574,6 +17574,10 @@ footer.site-footer .footer-main .container.footerpage .upfootertext {
   display: none;
 }
 
+footer.site-footer .footer-main .container.footerpage .row {
+  width: 100%;
+}
+
 footer.site-footer .footer-main .container.footerpage.alignbottom {
   align-items: flex-end;
 }
