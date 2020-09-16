@@ -168,8 +168,10 @@ en:
           LABEL: 'Info window'
         TITLE:
           LABEL: "Title"
+        ALT:
+          LABEL: "Alt Tag"
         SUBTITLE:
-          LABEL: "Subtitel"
+          LABEL: "Subtitle"
         SHOWTITLE:
           LABEL: "Show title?"
           OPTIONS:
@@ -448,6 +450,8 @@ de:
           LABEL: 'Info Fenster'
         TITLE:
           LABEL: "Titel"
+        ALT:
+          LABEL: "Alt Tag"
         SHOWTITLE:
           LABEL: "Titel anzeigen?"
           OPTIONS:

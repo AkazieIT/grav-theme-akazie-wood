@@ -6,7 +6,7 @@
         <article class="person col-12 col-lg-6">
           <div class="person-image">
             {% set image = person.image|first %}
-            {{ page.media[image.name].cropZoom(500,500).html }}
+            <img src="{{ page.media[image.name].cropZoom(500,500).url }}" alt="{{ person.name }}" title="{{ person.name }}" />
           </div>
           <div class="person-detail">
             <h4 class="person-name">{{ person.name }}</h4>
