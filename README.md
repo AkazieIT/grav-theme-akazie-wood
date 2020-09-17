@@ -18,6 +18,7 @@ Show it on the [demo site](https://demo.akazie.com/akazie-wood)
     pages:
       theme: akazie-wood
 	```
+3. For production sites please activate cache. ** If you do not activate cache, you will have very long load times because of the responsive images in the modular/image module **
 
 Alternatively, you can install `Akazie - Wood` via the Grav Admin interface.
 
@@ -36,6 +37,7 @@ It is possible to change various theme settings:
 * Manage imprint and data policy visibility
 * Add a full screen custom footer
 * Add parallax scrolling
+* much more
 
 These settings can be changed directly in the backend without time-consuming changes via FTP
 
