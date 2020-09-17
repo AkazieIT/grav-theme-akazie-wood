@@ -1,5 +1,5 @@
-<article class="modular section-image col-12 {% if page.header.column == 2 %}col-md-12{% else %}col-md-6{% endif %}">
-    {% if page.header.showtitle == 1 %}<h2 class="heading">{{ page.header.title }}</h2>{% endif %}
+<article class="modular section-image col-12 {% if page.header.column == 2 or page.header.column == 3 %}col-md-12{% elseif page.header.column == 4 %}col-md-4{% else %}col-md-6{% endif %}{% if page.header.column == 3 %} centermark{% endif %}">
+    {% if page.header.showtitle == 1 %}<h2 class="heading{% if page.header.column == 3 %} centermark{% endif %}">{{ page.header.title }}</h2>{% endif %}
     {% set image = page.header.image | first %}
     {% if page.header.scale == 1 %}
         {% set resize = 1280 * 3 / 4 %}
@@ -10,7 +10,7 @@
     {% elseif page.header.scale == 4 %}
         {% set resize = 1280 %}
     {% endif %}
-    <div class="media-container {% if page.header.showtitle == 2 %}title-placeholder{% endif %}">
+    <div class="media-container {% if page.header.showtitle == 2 %}title-placeholder{% endif %}{% if page.header.column == 3 %} centermark{% endif %}">
         <img class="media" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ page.media[image.name].cropZoom(1280,resize).url }}" />
 
         {% if page.header.description %}
