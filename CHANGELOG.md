@@ -5,6 +5,8 @@
     * changed modular images to media image
     * added option for alt and title tags in media image
     * added alt and title tag for team member images
+    * added 1/3 width rows in modular images
+    * added narrow centered images
 
 
 # v0.9.89
