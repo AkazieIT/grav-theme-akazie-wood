@@ -8,6 +8,7 @@
     * added 1/3 width rows in modular images
     * added narrow centered images
     * added picture tag for SEO
+    * added links to modular images
 
 
 # v0.9.89

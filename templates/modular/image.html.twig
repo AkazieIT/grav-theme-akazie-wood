@@ -11,6 +11,9 @@
         {% set resize = 1 %}
     {% endif %}
     <div class="media-container {% if page.header.showtitle == 2 %}title-placeholder{% endif %}{% if page.header.column == 3 %} centermark{% endif %}">
+    {% if page.header.link %}
+      <a href="{{ page.header.link }}" {% if page.header.window == 1 %}target="_blank"{% endif %}>
+    {% endif %}
 
 {% if page.header.column == 1 or page.header.column == 3  %}
         <picture>
@@ -35,6 +38,7 @@
             {% endif %}
 
         {% endif %}
+    {% if page.header.link %}</a>{% endif %}
     </div>
     {% if page.header.description %}
       {% if page.header.description_position == 2 %}

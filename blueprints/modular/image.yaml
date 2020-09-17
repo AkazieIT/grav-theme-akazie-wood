@@ -50,6 +50,17 @@ form:
                     2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.2
                     3: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.3
                     4: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.4
+                header.link:
+                  type: text
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.LINK.LABEL
+                header.window:
+                  type: select
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.LABEL
+                  default: 1
+                  size: medium
+                  options:
+                    0: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.OPTIONS.0
+                    1: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.OPTIONS.1
             settings:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.SETTINGS

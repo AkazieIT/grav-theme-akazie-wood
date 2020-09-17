@@ -235,6 +235,13 @@ en:
             2: '16:9 (Full HD)'
             3: '2.35:1 (Widescreen)'
             4: '1:1 (Square)'
+        WINDOW:
+          LABEL: 'Open in same window?'
+          OPTIONS:
+            0: 'Same window'
+            1: 'New tab'
+        LINK:
+          LABEL: 'Link URL (no link generated if left empty)'
         PERSONS:
           LABEL: 'Persons'
         FOOTERTEXT:
@@ -515,6 +522,13 @@ de:
             2: '16:9 (Full HD)'
             3: '2.35:1 (Widescreen)'
             4: '1:1 (Quadratisch)'
+        WINDOW:
+          LABEL: 'Im selben Fenster öffnen?'
+          OPTIONS:
+            0: 'Selbes Fenster'
+            1: 'Neuer Tab'
+        LINK:
+          LABEL: 'Link URL (es wird kein Link generiert wenn leer gelassen)'
         PERSONS:
           LABEL: 'Personen'
         FOOTERTEXT:
