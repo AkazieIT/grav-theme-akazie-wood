@@ -2,17 +2,33 @@
     {% if page.header.showtitle == 1 %}<h2 class="heading{% if page.header.column == 3 %} centermark{% endif %}">{{ page.header.title }}</h2>{% endif %}
     {% set image = page.header.image | first %}
     {% if page.header.scale == 1 %}
-        {% set resize = 1280 * 3 / 4 %}
+        {% set resize = 3 / 4 %}
     {% elseif page.header.scale == 2 %}
-        {% set resize = 1280 * 9 / 16 %}
+        {% set resize = 9 / 16 %}
     {% elseif page.header.scale == 3 %}
-        {% set resize = 1280 * 1 / 2.35 %}
+        {% set resize = 1 / 2.35 %}
     {% elseif page.header.scale == 4 %}
-        {% set resize = 1280 %}
+        {% set resize = 1 %}
     {% endif %}
     <div class="media-container {% if page.header.showtitle == 2 %}title-placeholder{% endif %}{% if page.header.column == 3 %} centermark{% endif %}">
-        <img class="media" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ page.media[image.name].cropZoom(1280,resize).url }}" />
 
+{% if page.header.column == 1 or page.header.column == 3  %}
+        <picture>
+        <source media="(min-width:992px)" srcset="{{ page.media[image.name].cropZoom(1250,1250 * resize).url }} 1x, {{ page.media[image.name].cropZoom(2500,2500 * resize).url }} 2x">
+        <source media="(min-width:870px)" srcset="{{ page.media[image.name].cropZoom(840,840 * resize).url }} 1x, {{ page.media[image.name].cropZoom(1680,1680 * resize).url }} 2x">
+        <source media="(min-width:500px)" srcset="{{ page.media[image.name].cropZoom(510,510 * resize).url }} 1x, {{ page.media[image.name].cropZoom(1020,1020 * resize).url }} 2x">
+          <source media="(max-width:499px)" srcset="{{ page.media[image.name].cropZoom(450,450 * resize).url }} 1x, {{ page.media[image.name].cropZoom(900,900 * resize).url }} 2x">
+          <img class="media" style="width:100%;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ page.media[image.name].cropZoom(1280,resize).url }}" />
+        </picture>
+{% else %}
+        <picture>
+          <source media="(min-width:1220px)" srcset="{{ page.media[image.name].cropZoom(610,610 * resize).url }} 1x, {{ page.media[image.name].cropZoom(900,900 * resize).url }} 2x">
+          <source media="(min-width:992px)" srcset="{{ page.media[image.name].cropZoom(450,450 * resize).url }} 1x, {{ page.media[image.name].cropZoom(800,800 * resize).url }} 2x">
+          <source media="(min-width:500px)" srcset="{{ page.media[image.name].cropZoom(510,510 * resize).url }} 1x, {{ page.media[image.name].cropZoom(900,900 * resize).url }} 2x">
+          <source media="(max-width:499px)" srcset="{{ page.media[image.name].cropZoom(450,450 * resize).url }} 1x, {{ page.media[image.name].cropZoom(900,900 * resize).url }} 2x">
+          <img class="media" style="width:100%;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ page.media[image.name].cropZoom(1280,resize).url }}" />
+        </picture>
+{% endif %}
         {% if page.header.description %}
             {% if page.header.description_position == 1 %}
                 <div class="caption_1">{{ page.header.description }}</div>

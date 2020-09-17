@@ -7,6 +7,7 @@
     * added alt and title tag for team member images
     * added 1/3 width rows in modular images
     * added narrow centered images
+    * added picture tag for SEO
 
 
 # v0.9.89
