@@ -58,3 +58,5 @@ Currently actively supported plugins:
 ## Notice
 
 If you use Langswitcher and decide to uninstall Langswitcher, please deactivate Langswitcher before removing it.
+
+Modular Image frames come with automatic resizing with <picture> tags. For production sites please activate cache and set purge and clear times to every month or longer. Also set "Clear image cache by default" to "No".
