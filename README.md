@@ -9,7 +9,7 @@
 
 Show it on the [demo site](https://demo.akazie.com/akazie-wood)
 
-## Intstallation
+## Installation
 
 1. From the root of your Grav installation, run `bin/gpm install akazie-wood`.
    - Alternatively, download this repository, unzip it, rename the folder to `akazie-wood`, and place it in the `user/themes/` directory of your Grav install
@@ -43,3 +43,18 @@ These settings can be changed directly in the backend without time-consuming cha
 
 Optionally, in the theme folder `/custom/css`,
 the file `custom.css` can be used to define your own styles and to override the existing formatting.
+
+
+
+## Plugin support
+
+Currently actively supported plugins:
+- Langswitcher
+- Form
+- Cookie Consent
+- Sitemap
+
+
+## Notice
+
+If you use Langswitcher and decide to uninstall Langswitcher, please deactivate Langswitcher before removing it.

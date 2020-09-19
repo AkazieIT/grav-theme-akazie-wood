@@ -726,3 +726,10 @@ a.button {
   border-radius: 10px;
   margin-top:20px;
 }
+.langswitcher {
+  position: fixed !important;
+  bottom: 20px;
+  left: 0px;
+  top: auto !important;
+  z-index:10;
+}

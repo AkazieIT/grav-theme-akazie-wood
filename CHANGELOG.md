@@ -1,5 +1,11 @@
+# v0.9.91
+## 19.09.2020
+
+1. [](#new)
+    * added support for LangSwitcher
+
 # v0.9.90
-## 07.07.2020
+## 17.09.2020
 
 1. [](#new)
     * changed modular images to media image
@@ -12,7 +18,7 @@
 
 
 # v0.9.89
-## 07.07.2020
+## 10.09.2020
 
 1. [](#new)
     * added modular textbox
