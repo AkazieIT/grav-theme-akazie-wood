@@ -1,4 +1,4 @@
-<article class="modular section-image col-12 {% if page.header.column == 2 or page.header.column == 3 %}col-md-12{% elseif page.header.column == 4 %}col-md-4{% elseif page.header.column == 5 %}col-md-8{% else %}col-md-6{% endif %}{% if page.header.column == 3 %} centermark{% endif %}">
+<article class="modular section-image col-12 {% if page.header.column == 2 or page.header.column == 3 %}col-md-12{% elseif page.header.column == 4 %}col-md-4{% elseif page.header.column == 5 %}col-md-8{% elseif page.header.column == 6 %}col-md-3{% elseif page.header.column == 7 %}col-md-2{% else %}col-md-6{% endif %}{% if page.header.column == 3 %} centermark{% endif %}">
     {% if page.header.showtitle == 1 %}<h2 class="heading{% if page.header.column == 3 %} centermark{% endif %}">{{ page.header.title }}</h2>{% endif %}
     {% set image = page.header.image | first %}
     {% if page.header.scale == 1 %}
