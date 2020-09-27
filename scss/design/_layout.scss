@@ -733,3 +733,30 @@ a.button {
   top: auto !important;
   z-index:10;
 }
+
+.breaktitle {
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .breakwrap {
+    padding-top:65px;
+    padding-bottom:50px;
+    padding-left:15px;
+    padding-right:15px;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    max-width:1280px;
+    @include media-breakpoint-down(lg) {
+      max-width:960px;
+      padding-top:42px;
+      padding-bottom:30px;
+    }
+    h1 {
+      font-size:3em;
+      @include media-breakpoint-down(lg) {
+        font-size:2em;
+      }
+    }
+  }
+}

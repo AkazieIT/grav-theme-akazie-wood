@@ -17610,3 +17610,36 @@ a.button {
   top: auto !important;
   z-index: 10;
 }
+
+.breaktitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.breaktitle .breakwrap {
+  padding-top: 65px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 1 1 auto;
+  max-width: 1280px;
+}
+
+@media (max-width: 1219.98px) {
+  .breaktitle .breakwrap {
+    max-width: 960px;
+    padding-top: 42px;
+    padding-bottom: 30px;
+  }
+}
+
+.breaktitle .breakwrap h1 {
+  font-size: 3em;
+}
+
+@media (max-width: 1219.98px) {
+  .breaktitle .breakwrap h1 {
+    font-size: 2em;
+  }
+}
