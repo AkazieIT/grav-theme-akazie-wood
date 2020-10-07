@@ -1,3 +1,16 @@
+# v0.9.93
+## 07.10.2020
+
+1. [](#new)
+    * added possibility to deactivate image caching (deactivated by default)
+    * added new teams layout possibility
+
+# v0.9.92
+## 01.10.2020
+
+1. [](#new)
+    * added new breaktitle element
+
 # v0.9.91
 ## 19.09.2020
 

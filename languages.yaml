@@ -25,6 +25,9 @@ en:
       FIELDS:
         CUSTOMCSS:
           LABEL: 'Use custom CSS file'
+        IMAGESIZING:
+          LABEL: 'Use dynamic image resizing with picture tag (make sure to activate caching)'
+          HELP: 'For production sites please activate cache and set purge and clear times to every month or longer. Also set "Clear image cache by default" to "No" **If you do not activate cache, you will have very long load times because of the responsive images in the modular/image module.**'
         NAV:
           LENGTH:
             LABEL: 'Number Max. Navigation points'
@@ -317,6 +320,9 @@ de:
       FIELDS:
         CUSTOMCSS:
           LABEL: 'Benutzerdefinierte CSS Datei'
+        IMAGESIZING:
+          LABEL: 'Image Resizing mit picture Tag (cache aktivieren!)'
+          HELP: 'For production sites please activate cache and set purge and clear times to every month or longer. Also set "Clear image cache by default" to "No" **If you do not activate cache, you will have very long load times because of the responsive images in the modular/image module.**'
         NAV:
           LENGTH:
             LABEL: 'Anzahl Max. Navigationspunkte'

@@ -18,9 +18,8 @@ Show it on the [demo site](https://demo.akazie.com/akazie-wood)
     pages:
       theme: akazie-wood
 	```
-3. For production sites please activate cache and set purge and clear times to every month or longer. Also set "Clear image cache by default" to "No" **If you do not activate cache, you will have very long load times because of the responsive images in the modular/image module.**
 
-Alternatively, you can install `Akazie - Wood` via the Grav Admin interface. **Please activate cache.**
+Alternatively, you can install `Akazie - Wood` via the Grav Admin interface.
 
 ## Theme settings
 
@@ -58,5 +57,3 @@ Currently actively supported plugins:
 ## Notice
 
 If you use Langswitcher and decide to uninstall Langswitcher, please deactivate Langswitcher before removing it.
-
-Modular Image frames come with automatic resizing with <picture> tags. For production sites please activate cache and set purge and clear times to every month or longer. Also set "Clear image cache by default" to "No".
