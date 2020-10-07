@@ -188,6 +188,11 @@ en:
           OPTIONS:
             0: "No"
             1: "Yes"
+        TEXTPOS:
+          LABEL: "Text position"
+          OPTIONS:
+            0: "right"
+            1: "below"
         CONTACTTEXT:
           LABEL: "Contact Button text"
         GALLERIE:
@@ -481,6 +486,11 @@ de:
           OPTIONS:
             0: "Nein"
             1: "Ja"
+        TEXTPOS:
+          LABEL: "Text Position"
+          OPTIONS:
+            0: "rechts"
+            1: "darunter"
         CONTACTTEXT:
           LABEL: "Kontaktbutton Text"
         GALLERIE:
