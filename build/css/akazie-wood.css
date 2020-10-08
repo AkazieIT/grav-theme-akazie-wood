@@ -17330,7 +17330,23 @@ main.site-content .modular.section-teamlist .person-image {
   }
 }
 
-main.site-content .modular.section-teamlist .person-image img {
+main.site-content .modular.section-teamlist .person-image picture, main.site-content .modular.section-teamlist .person-image img {
+  width: inherit;
+}
+
+main.site-content .modular.section-teamlist .person-imagefull {
+  width: 95%;
+  margin-left: 10px;
+}
+
+@media (max-width: 575.98px) {
+  main.site-content .modular.section-teamlist .person-imagefull {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+main.site-content .modular.section-teamlist .person-imagefull picture, main.site-content .modular.section-teamlist .person-imagefull img {
   width: inherit;
 }
 
@@ -17350,6 +17366,10 @@ main.site-content .modular.section-teamlist .person-detail {
     padding-left: 0;
     padding-top: 15px;
   }
+}
+
+main.site-content .modular.section-teamlist .person-detail .mtop {
+  margin-top: 20px;
 }
 
 main.site-content .modular.section-teamlist .person-name {

@@ -3,14 +3,35 @@
   <div class="container">
     <div class="row">
       {% for person in page.header.personen %}
-        <article class="person col-12 col-lg-6">
-          <div class="person-image">
+    <article class="person col-12 {% if page.header.textpos == 0 %}col-lg-6{% else %}col-lg-4{% endif %}">
+
+
+        <div class="person-image{% if page.header.textpos == 1 %}full{% endif %}">
             {% set image = person.image|first %}
-            <img src="{{ page.media[image.name].cropZoom(500,500).url }}" alt="{{ person.name }}" title="{{ person.name }}" />
+
+            {% if theme_var('header.imagesizing') == 1 %}
+              <picture>
+              <source media="(min-width:1220px)" srcset="{{ page.media[image.name].cropZoom(358,358).url }} 1x, {{ page.media[image.name].cropZoom(716,716).url }} 2x">
+              <source media="(min-width:992px)" srcset="{{ page.media[image.name].cropZoom(261,261).url }} 1x, {{ page.media[image.name].cropZoom(522,522).url }} 2x">
+              <source media="(min-width:870px)" srcset="{{ page.media[image.name].cropZoom(742,742).url }} 1x, {{ page.media[image.name].cropZoom(1484,1484).url }} 2x">
+              <source media="(min-width:500px)" srcset="{{ page.media[image.name].cropZoom(538,538).url }} 1x, {{ page.media[image.name].cropZoom(1076,1076).url }} 2x">
+              <source media="(max-width:499px)" srcset="{{ page.media[image.name].cropZoom(370,370).url }} 1x, {{ page.media[image.name].cropZoom(740,740).url }} 2x">
+                <img class="media" style="width:inherit;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ page.media[image.name].cropZoom(700,700).url }}" />
+              </picture>
+            {% else %}
+              <img src="{{ page.media[image.name].cropZoom(500,500).url }}" alt="{{ person.name }}" title="{{ person.name }}" />
+            {% endif %}
+
           </div>
           <div class="person-detail">
+          {% if page.header.textpos == 1 %}
+            <span class="person-position mtop">{{ person.position }}</span>
+            <h4 class="person-name">{{ person.name }}</h4>
+          {% else %}
             <h4 class="person-name">{{ person.name }}</h4>
             <span class="person-position">{{ person.position }}</span>
+          {% endif %}
+
             {% if page.header.contactbutton == 0 %}
             <span class="person-email">
               <a href="mailto:{{ person.email|safe_email }}">
@@ -27,7 +48,6 @@
               </span>
           {% endif %}
           </div>
-
         </article>
 
       {% endfor %}

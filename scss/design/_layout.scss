@@ -489,7 +489,18 @@ main.site-content{
         @include media-breakpoint-down(xs) {
           width: 100%;
         }
-        img{
+        picture, img{
+          width: inherit;
+        }
+      }
+      &-imagefull{
+        width: 95%;
+        margin-left:10px;
+        @include media-breakpoint-down(xs) {
+          width: 100%;
+          margin-left:0px;
+        }
+        picture, img{
           width: inherit;
         }
       }
@@ -502,6 +513,9 @@ main.site-content{
         @include media-breakpoint-down(xs) {
           padding-left: 0;
           padding-top: 15px;
+        }
+        .mtop {
+          margin-top:20px;
         }
       }
       &-name{
