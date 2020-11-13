@@ -1,3 +1,10 @@
+# v0.9.932
+## 13.11.2020
+
+1. [](#bugfix)
+    * resolution bugfix for image.html.twig
+
+
 # v0.9.93
 ## 07.10.2020
 
