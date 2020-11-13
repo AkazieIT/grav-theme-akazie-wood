@@ -14,8 +14,9 @@
     {% if page.header.link %}
       <a href="{{ page.header.link }}" {% if page.header.window == 1 %}target="_blank"{% endif %}>
     {% endif %}
+
 {% if theme_var('header.imagesizing') == 1 %}
-    {% if page.header.column == 1 or page.header.column == 3  %}
+    {% if page.header.column == 2 or page.header.column == 3  %}
             <picture>
             <source media="(min-width:992px)" srcset="{{ page.media[image.name].cropZoom(1250,1250 * resize).url }} 1x, {{ page.media[image.name].cropZoom(2500,2500 * resize).url }} 2x">
             <source media="(min-width:870px)" srcset="{{ page.media[image.name].cropZoom(840,840 * resize).url }} 1x, {{ page.media[image.name].cropZoom(1680,1680 * resize).url }} 2x">
