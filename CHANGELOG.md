@@ -1,3 +1,10 @@
+# v0.9.95
+## 26.11.2020
+
+1. [](#new)
+    * added possibility to add JavaScript to footer
+
+
 # v0.9.932
 ## 13.11.2020
 

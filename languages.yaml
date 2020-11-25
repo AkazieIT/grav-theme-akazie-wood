@@ -45,6 +45,10 @@ en:
             LABEL: 'Show data policy'
           LINK:
             LABEL: 'Link to the policy'
+        VARIOUS:
+          FOOTERLABEL: 'Various footer stuff'
+        FOOTER_JAVASCRIPT:
+          LABEL: 'Add Javascript to footer'
         FULLSCREEN:
           FOOTERLABEL: 'Fullscreen footer'
           ENABLED:
@@ -345,6 +349,10 @@ de:
             LABEL: 'Datenschutz anzeigen?'
           LINK:
             LABEL: 'Link zum Datenschutz'
+        VARIOUS:
+          FOOTERLABEL: 'Verschiedene Footer-Funktionen'
+        FOOTER_JAVASCRIPT:
+          LABEL: 'Javascript-Code zum Footer hinzufügen'
         FULLSCREEN:
           FOOTERLABEL: 'Fullscreen footer'
           ENABLED:
