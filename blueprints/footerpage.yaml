@@ -14,64 +14,104 @@ form:
               type: markdown
               validate:
               label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.LEFT1.LABEL
-            header.row1titel:
-              type: text
-              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.SOCIALMEDIA.LABEL
-            header.row1content:
-              name: zeile1
-              type: list
-              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.SOCIALMEDIA.DESC.LABEL
-              collapsed: true
+            cols:
+              type: fieldset
+              title: THEME_AKAZIEWOOD.THEME.FIELDSET.COLS
+              collapsed: false
+              collapsible: true
               fields:
-                .text:
+                col1:
+                  type: fieldset
+                  title: THEME_AKAZIEWOOD.THEME.FIELDSET.COL.1
+                  collapsed: false
+                  collapsible: true
+                  fields:
+                    header.row1titel:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.SOCIALMEDIA.LABEL
+                    header.row1content:
+                      name: zeile1
+                      type: list
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.SOCIALMEDIA.DESC.LABEL
+                      collapsed: true
+                      fields:
+                        .text:
+                          type: text
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.SOCIALMEDIA.TITLE.LABEL
+                        .link:
+                          type: text
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.SOCIALMEDIA.LINK.LABEL
+                col2:
+                  type: fieldset
+                  title: THEME_AKAZIEWOOD.THEME.FIELDSET.COL.2
+                  collapsed: false
+                  collapsible: true
+                  fields:
+                    header.row2show:
+                      type: toggle
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.NONAV.LABEL
+                      highlight: 0
+                      default: 0
+                      options:
+                        1: PLUGIN_ADMIN.DISABLED
+                        0: PLUGIN_ADMIN.ENABLED
+                      validate:
+                        type: bool
+                    header.row2titel:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.RIGHTNAV.LABEL
+                col3:
+                  type: fieldset
+                  title: THEME_AKAZIEWOOD.THEME.FIELDSET.COL.3
+                  collapsed: false
+                  collapsible: true
+                  fields:
+                    header.row3titel:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.RIGHTCONTACT.LABEL
+                    header.row3content:
+                      type: markdown
+                      validate:
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.RIGHTCONTACT.CONTENT.LABEL
+            settings:
+              type: fieldset
+              title: THEME_AKAZIEWOOD.THEME.FIELDSET.SETTINGS
+              collapsed: false
+              collapsible: true
+              fields:
+                header.upsignon:
+                  type: toggle
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.UPSIGN.LABEL
+                  highlight: 1
+                  default: 1
+                  options:
+                    1: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.1
+                    0: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.0
+                  validate:
+                    type: bool
+                header.upsign:
                   type: text
-                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.SOCIALMEDIA.TITLE.LABEL
-                .link:
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.UPSIGN.LABEL
+                header.footerbg:
+                  type: file
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.FOOTERBG.LABEL
+                  size: large
+                  destination: 'theme://custom/logo'
+                  multiple: false
+                  markdown: true
+                  description: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.FOOTERBG.DESCRIPTION
+                  accept:
+                    - image/*
+                header.nofullscreen:
+                  type: toggle
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.NOFULLSCREEN.LABEL
+                  highlight: 0
+                  default: 0
+                  options:
+                    1: PLUGIN_ADMIN.DISABLED
+                    0: PLUGIN_ADMIN.ENABLED
+                  validate:
+                    type: bool
+                header.bgheight:
                   type: text
-                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.SOCIALMEDIA.LINK.LABEL
-            header.row2titel:
-              type: text
-              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.RIGHTNAV.LABEL
-            header.row3titel:
-              type: text
-              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.RIGHTCONTACT.LABEL
-            header.row3content:
-              type: markdown
-              validate:
-              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.RIGHTCONTACT.CONTENT.LABEL
-            header.upsignon:
-              type: toggle
-              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.UPSIGN.LABEL
-              highlight: 1
-              default: 1
-              options:
-                1: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.1
-                0: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.0
-              validate:
-                type: bool
-            header.upsign:
-              type: text
-              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.UPSIGN.LABEL
-            header.footerbg:
-              type: file
-              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.FOOTERBG.LABEL
-              size: large
-              destination: 'theme://custom/logo'
-              multiple: false
-              markdown: true
-              description: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.FOOTERBG.DESCRIPTION
-              accept:
-                - image/*
-            header.nofullscreen:
-              type: toggle
-              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.NOFULLSCREEN.LABEL
-              highlight: 0
-              default: 0
-              options:
-                1: PLUGIN_ADMIN.DISABLED
-                0: PLUGIN_ADMIN.ENABLED
-              validate:
-                type: bool
-            header.bgheight:
-              type: text
-              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.BGHEIGHT.LABEL
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.BGHEIGHT.LABEL

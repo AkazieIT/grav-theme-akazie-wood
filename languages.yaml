@@ -6,6 +6,12 @@ en:
         STYLE: 'Custom style (only for admins)'
       FIELDSET:
         HEADER: 'Header'
+        COLS: 'Footer columns right'
+        COL:
+          1: 'First column'
+          2: 'Second column'
+          3: 'Third column'
+        SETTINGS: 'Footer settings'
         FOOTER: 'Footer'
         SITE: 'Site'
         NAV: 'Navigation'
@@ -262,6 +268,8 @@ en:
         FOOTERTEXT:
           LEFT1:
             LABEL: 'Text left'
+          NONAV:
+            LABEL: 'Show navigation?'
           RIGHTNAV:
             LABEL: 'Navigation title'
           UPSIGN:
@@ -309,6 +317,12 @@ de:
         LAYOUT: 'Seiten Design'
         STYLE: 'Benutzerdefinierte Anpassungen (nur für Superadmins)'
       FIELDSET:
+        COLS: 'Footer Spalten rechts'
+        COL:
+          1: 'Erste Spalte'
+          2: 'Zweite Spalte'
+          3: 'Dritte Spalte'
+        SETTINGS: 'Footer Einstellungen'
         HEADER: 'Kopfbereich'
         FOOTER: 'Fussbereich'
         SITE: 'Seite'
@@ -564,6 +578,8 @@ de:
         FOOTERTEXT:
           LEFT1:
             LABEL: 'Text links'
+          NONAV:
+            LABEL: 'Navigation anzeigen?'
           RIGHTNAV:
             LABEL: 'Navigation Titel'
           UPSIGN:

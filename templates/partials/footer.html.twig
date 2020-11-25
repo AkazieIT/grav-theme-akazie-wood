@@ -15,15 +15,15 @@
 
   <div class="container footerpage{% if footerpage.header.nofullscreen == 1 %} alignbottom{% endif %}" {% if footerpage.header.nofullscreen == 1 %}style="height:{{ footerpage.header.bgheight }}"{% endif %}>
       <div class="row">
-        <article class="col-12 col-md-6">
+        <article class="col-12 {% if footerpage.header.row2show != 1 %}col-md-6{% else %}col-md-8{% endif %}">
         <div class="container leftfootercontent">
           <div>{{ footerpage.header.leftsize1 | markdown }}</div>
         </div>
         </article>
-        <article class="col-12 col-md-6">
+        <article class="col-12 {% if footerpage.header.row2show != 1 %}col-md-6{% else %}col-md-4{% endif %}">
           <div class="container">
             <div class="row">
-              <div class="col-12 col-md-4 rightfootercontent">
+              <div class="col-12 {% if footerpage.header.row2show != 1 %}col-md-4{% else %}col-md-6{% endif %} rightfootercontent">
                 <h4>{{ footerpage.header.row1titel }}</h4>
                 <div>
                   <ul>
@@ -33,6 +33,7 @@
                   </ul>
                 </div>
               </div>
+              {% if footerpage.header.row2show != 1 %}
               <div class="col-12 col-md-4 rightfootercontent">
                 <h4>{{ footerpage.header.row2titel }}</h4>
                 <div>
@@ -47,7 +48,8 @@
                 </ul>
                 </div>
               </div>
-              <div class="col-12 col-md-4 rightfootercontent">
+             {% endif %}
+              <div class="col-12 {% if footerpage.header.row2show != 1 %}col-md-4{% else %}col-md-6{% endif %} rightfootercontent">
                 <h4>{{ footerpage.header.row3titel }}</h4>
                 <div>{{ footerpage.header.row3content | markdown }}</div>
               </div>
