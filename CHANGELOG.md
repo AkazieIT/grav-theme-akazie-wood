@@ -3,6 +3,7 @@
 
 1. [](#new)
     * added possibility to add JavaScript to footer
+    * added possibility to remove footer navigation in footerpage
 
 
 # v0.9.932
