@@ -55,6 +55,8 @@ en:
           FOOTERLABEL: 'Various footer stuff'
         FOOTER_JAVASCRIPT:
           LABEL: 'Add Javascript to footer'
+        HEADER_JAVASCRIPT:
+          LABEL: 'Add (Javascript) tracking code to header'
         FULLSCREEN:
           FOOTERLABEL: 'Fullscreen footer'
           ENABLED:
@@ -367,6 +369,8 @@ de:
           FOOTERLABEL: 'Verschiedene Footer-Funktionen'
         FOOTER_JAVASCRIPT:
           LABEL: 'Javascript-Code zum Footer hinzufügen'
+        HEADER_JAVASCRIPT:
+          LABEL: '(Javascript-) TrackingCode zum Header hinzufügen'
         FULLSCREEN:
           FOOTERLABEL: 'Fullscreen footer'
           ENABLED:

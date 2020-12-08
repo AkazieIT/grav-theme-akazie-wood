@@ -128,6 +128,11 @@ form:
                 0: THEME_AKAZIEWOOD.THEME.FIELDS.HOME.OPTIONS.1
               validate:
                 type: bool
+            header.javascript:
+              type: textarea
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.HEADER_JAVASCRIPT.LABEL
+              rows: 2
+              size: large
         footer:
           type: fieldset
           title: THEME_AKAZIEWOOD.THEME.FIELDSET.FOOTER

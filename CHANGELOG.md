@@ -1,9 +1,10 @@
 # v0.9.95
-## 26.11.2020
+## 8.12.2020
 
 1. [](#new)
     * added possibility to add JavaScript to footer
     * added possibility to remove footer navigation in footerpage
+    * added possibility to add tracking code right after the start of header
 
 
 # v0.9.932
