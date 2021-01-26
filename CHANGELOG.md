@@ -1,3 +1,10 @@
+# v0.9.94
+## 28.01.2021
+
+1. [](#bugfix)
+    * added compatibility for grav 1.7
+
+
 # v0.9.935
 ## 8.12.2020
 
