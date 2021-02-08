@@ -1,7 +1,7 @@
 /*!
  * akazie-wood - v1.0.0
  * @author Tom Hirter
- * Copyright (c) 2020
+ * Copyright (c) 2021
  */
 /*
  * Bootstrap
@@ -16986,6 +16986,23 @@ a:not([link]):hover {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  /* safari may need this */
+}
+
+.wrapper::before {
+  content: ' ';
+  display: block;
+  background-position: center;
+  background-size: cover;
+  height: 110vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: -10;
 }
 
 header.site-header {

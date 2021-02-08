@@ -193,6 +193,24 @@ a:not([link]){
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover; /* safari may need this */
+
+}
+
+.wrapper::before {
+  content: ' ';
+  display: block;
+  //background-image: url('https://images.unsplash.com/photo-1427694012323-fb5e8b0c165b');
+  background-position: center;
+  background-size: cover;
+  height: 110vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: -10; // This is pretty important.
 }
 header.site-header{
   height: $nav-height;

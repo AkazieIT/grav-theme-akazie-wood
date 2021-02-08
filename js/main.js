@@ -46,6 +46,17 @@ $('#scrolltopbutton').click(function(e){
 });
 
 $(document).ready(function() {
+/* IOS BG Hack */
+if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
+  $('head').append('<style>.wrapper::before {background-image: '+ $('.wrapper').css('background-image') +';}</style>');
+  $('.wrapper').css('background-color', 'transparent');
+  $('.wrapper').css('background-image', 'none');
+  /*
+  $('.site-header').css('background-color', 'transparent');
+  $('.site-header').css('background-image', 'none');
+  */
+}
+
 
 
   $(window).scroll(function() {

@@ -1,3 +1,11 @@
+# v0.9.941
+## 08.02.2021
+
+1. [](#bugfix)
+    * fixed background issue with iOS
+
+
+
 # v0.9.94
 ## 28.01.2021
 
