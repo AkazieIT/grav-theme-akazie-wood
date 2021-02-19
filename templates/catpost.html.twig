@@ -1,0 +1,15 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+  <section class="page section-default">
+    <div class="row">
+      <article class="modular section-text col-12">
+        {% if page.header.showtitle == 1 %}<h2 class="heading">{{ page.header.title }}</h2>{% endif %}
+        <div class="markdown {% if page.header.showtitle == 2 %}title-placeholder{% endif %}">
+          {{ page.content | markdown }}
+        </div>
+
+      </article>
+    </div>
+  </section>
+{% endblock %}
