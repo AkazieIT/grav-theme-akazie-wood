@@ -1,4 +1,12 @@
 # v0.9.941
+## 23.02.2021
+
+1. [](#new)
+    * added compatibility to cascade-filters (akazie fork)
+
+
+
+# v0.9.941
 ## 08.02.2021
 
 1. [](#bugfix)
