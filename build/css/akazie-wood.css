@@ -17709,3 +17709,12 @@ ul.catfilter li a.button:hover {
   background-color: #969696;
   font-weight: normal;
 }
+
+.list-item.h-entry {
+  height: 300px;
+}
+
+.list-item.h-entry img {
+  float: left;
+  margin-right: 30px;
+}

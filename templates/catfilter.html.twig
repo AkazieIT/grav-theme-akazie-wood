@@ -11,7 +11,6 @@
 <div class="sidebar column is-narrow">
 	{% set taxlist = cascadeFilters.get() %} {# get texonomy list #}
 	{% set queries = uri.query(null, true) %} {# get queries as Array #}
-	<a href="{{ page.url }}" class="button">Clean all filters </a>
 	{% if taxlist %}
 		{% for key, values in taxlist %}
     <div class="catfilterwrap">
@@ -28,6 +27,8 @@
       </div>
 		{% endfor %}
 	{% endif %}
+
+	<a href="{{ page.url }}" class="button">Clean all filters </a>
 </div>
 
 
