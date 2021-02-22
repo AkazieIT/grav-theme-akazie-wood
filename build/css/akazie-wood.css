@@ -17680,3 +17680,32 @@ a.button {
     font-size: 2em;
   }
 }
+
+/* Category filters
+------------------------------*/
+.catfilterwrap {
+  display: inline-block;
+  padding: 10px;
+}
+
+ul.catfilter {
+  display: inline-block;
+  padding-left: 0px;
+}
+
+ul.catfilter li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+ul.catfilter li a.button {
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding: 5px 15px;
+}
+
+ul.catfilter li a.button:hover {
+  background-color: #969696;
+  font-weight: normal;
+}

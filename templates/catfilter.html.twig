@@ -14,16 +14,18 @@
 	<a href="{{ page.url }}" class="button">Clean all filters </a>
 	{% if taxlist %}
 		{% for key, values in taxlist %}
+    <div class="catfilterwrap">
 			<p>
 				{{ key }}
 			</p>
-			<ul class="is-clearfix">
+			<ul class="is-clearfix catfilter">
 				{% for tax in values|keys %}
-					<li style="float: left; margin: 5px">
+					<li>
 						{{ f.genQueryUrl(queries|sort,key,tax, page.url, cascadeFilters) }}
 					</li>
 				{% endfor %}
 			</ul>
+      </div>
 		{% endfor %}
 	{% endif %}
 </div>

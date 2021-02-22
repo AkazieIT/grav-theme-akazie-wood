@@ -28,11 +28,27 @@ form:
                   validate:
                     type: textarea
             header.taxonomy:
-              type: taxonomy
-              label: PLUGIN_ADMIN.TAXONOMY
-              multiple: true
+              unset@: true
+            header.taxonomy.category:
+              type: selectize
+              label: Category
+              classes: fancy
+              default: 'Wohnung'
               validate:
-                type: array
+                type: commalist
+            header.taxonomy.tag:
+              type: selectize
+              label: Tag
+              classes: fancy
+              default: 'WLAN'
+              validate:
+                type: commalist
+            header.taxonomy.author:
+              type: selectize
+              label: Author
+              classes: fancy
+              validate:
+                type: commalist
             media:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA

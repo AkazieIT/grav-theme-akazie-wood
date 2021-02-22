@@ -1,6 +1,8 @@
 en:
   THEME_AKAZIEWOOD:
     THEME:
+      BLOG:
+        CONTINUE_READING: 'Continue reading'
       SECTION:
         LAYOUT: 'Site layout'
         STYLE: 'Custom style (only for admins)'
@@ -315,6 +317,8 @@ en:
 de:
   THEME_AKAZIEWOOD:
     THEME:
+      BLOG:
+        CONTINUE_READING: 'Weiterlesen'
       SECTION:
         LAYOUT: 'Seiten Design'
         STYLE: 'Benutzerdefinierte Anpassungen (nur für Superadmins)'

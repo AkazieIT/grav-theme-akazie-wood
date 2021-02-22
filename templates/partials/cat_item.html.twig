@@ -53,12 +53,12 @@
     {% elseif truncate and page.summary != page.content %}
         <div class="p-summary e-content">
             {{ page.summary|raw }}
-            <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+            <p><a href="{{ page.url }}">{{ 'THEME_AKAZIEWOOD.THEME.BLOG.CONTINUE_READING'|t }}</a></p>
         </div>
     {% elseif truncate %}
         <div class="p-summary e-content">
             {{ page.content|raw }}
-            <p><a href="{{ page.url }}">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a></p>
+            <p><a href="{{ page.url }}">{{ 'THEME_AKAZIEWOOD.THEME.BLOG.CONTINUE_READING'|t }}</a></p>
         </div>
     {% else %}
         <div class="e-content">
