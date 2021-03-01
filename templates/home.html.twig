@@ -6,7 +6,7 @@
     <section class="page section-modular">
       <div class="row">
         {% for module in collection %}
-          {{ module.content }}
+          {{ module.content | markdown }}
         {% endfor %}
       </div>
     </section>
