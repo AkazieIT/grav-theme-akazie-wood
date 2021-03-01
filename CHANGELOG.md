@@ -1,8 +1,12 @@
-# v0.9.941
-## 23.02.2021
+# v0.9.942
+## 01.03.2021
+
+1. [](#bugfix)
+    * fixed another issue with home.html.twig and grav 1.7
+
 
 1. [](#new)
-    * added compatibility to cascade-filters (akazie fork)
+    * started working on compatibility with cascade-filters (akazie fork). still in beta (nott suited for live environments)
 
 
 
