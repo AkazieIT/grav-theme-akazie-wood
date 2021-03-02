@@ -1,13 +1,13 @@
 <style>
   html, body{
-    font-family: {{ theme_var('style.fonts.main') }};
+    font-family: {{ theme_var('style.fonts.main') | raw }};
     color: {{ theme_var('style.color.text.main') }};
   }
   .wrapper{
     background-color: {{ theme_var('style.color.background.main') }};
   }
   h1, h2, h3, h4, h5, h6{
-    font-family: {{ theme_var('style.fonts.h') }};
+    font-family: {{ theme_var('style.fonts.h') | raw }};
   }
   {% if theme_var('site.parallaxheader') %}
   header.site-header{
@@ -30,7 +30,7 @@
 
   header.site-header div.header-inner nav.header-nav.desktop ul li a{
     color: {{ theme_var('style.color.text.nav.default') }};
-    font-family: {{ theme_var('style.fonts.nav') }};
+    font-family: {{ theme_var('style.fonts.nav') | raw }};
   }
   header.site-header div.header-inner nav.header-nav.desktop ul li a.active,
   header.site-header div.header-inner nav.header-nav.desktop ul li a:hover{
@@ -38,7 +38,7 @@
     color: {{ theme_var('style.color.text.nav.hover') }};
   }
   footer.site-footer .footer-main{
-    font-family: {{ theme_var('style.fonts.footer') }};
+    font-family: {{ theme_var('style.fonts.footer') | raw }};
   }
   .markdown ol li::before, .markdown ul:not(.sociallinks) li::before{
     background-color: {{ theme_var('style.color.background.primary') }};
@@ -102,12 +102,12 @@
   {% if theme_var('site.parallaxheader') %}
   header.site-header div.header-inner nav.header-nav.mobile ul li a{
     color: {{ theme_var('style.color.black') }};
-    font-family: {{ theme_var('style.fonts.nav') }};
+    font-family: {{ theme_var('style.fonts.nav') | raw }};
   }
   {% else %}
   header.site-header div.header-inner nav.header-nav.mobile ul li a{
     color: {{ theme_var('style.color.text.nav.default') }};
-    font-family: {{ theme_var('style.fonts.nav') }};
+    font-family: {{ theme_var('style.fonts.nav') | raw }};
   }
   {% endif %}
 

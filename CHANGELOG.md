@@ -1,3 +1,10 @@
+# v0.9.943
+## 02.03.2021
+
+1. [](#bugfix)
+    * fixed another issue with grav 1.7
+
+
 # v0.9.942
 ## 01.03.2021
 
