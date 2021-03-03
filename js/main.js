@@ -118,7 +118,7 @@ if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
 /* image padding function */
 $(document).ready(function() {
 $('section.section-modular').find('div.row').each(function() {
-  console.log('each');
+  console.log($(this).children().length );
   if ($(this).children().length == 2) {
     console.log('length');
     $(this).children('article:first-child').children('.media-container').css('padding-right','5%');
