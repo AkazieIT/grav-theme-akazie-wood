@@ -119,11 +119,9 @@ if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
 $(document).ready(function() {
 $('section.section-modular').find('div.row').each(function() {
   console.log($(this).children().length );
-  if ($(this).children().length == 2) {
-    console.log('length');
-    $(this).children('article:first-child').children('.media-container').css('padding-right','5%');
-    $(this).children('article:last-child').children('.media-container').css('padding-right','5%');
-  }
+    $(this).children('article.col-md-6:nth-odd').children('.media-container').css('padding-right','5%');
+    $(this).children('article.col-md-6:nth-even').children('.media-container').css('padding-left','5%');
+
 });
 
 });
