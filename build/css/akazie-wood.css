@@ -17071,6 +17071,13 @@ header.site-header div.header-inner nav.header-nav.desktop ul li a.onlymobile {
 
 header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a {
   height: 60px;
+  margin-left: 30px;
+}
+
+@media (max-width: 1780px) {
+  header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a {
+    margin-right: 30px;
+  }
 }
 
 header.site-header div.header-inner nav.header-nav.desktop ul.nav-lvl1 > li {
