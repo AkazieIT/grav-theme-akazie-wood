@@ -168,10 +168,10 @@
 
   {% if theme_var('site.maxwidth') != 1280 and theme_var('site.maxwidth') >= 999 and theme_var('site.maxwidth') < 2001  %}
     @media (min-width: 1220px) {
-      .image-caption.claim h3 { max-width: {{ theme_var('site.maxwidth') }}; }
-      header.site-header.fittowidth .header-inner { max-width: {{ theme_var('site.maxwidth') }}; }
-      .breaktitle .breakwrap { max-width: {{ theme_var('site.maxwidth') }}; }
-      main.site-content .page.section-default, main.site-content .page.section-modular  { max-width: {{ theme_var('site.maxwidth') }}; }
+      .image-caption.claim h3 { max-width: {{ theme_var('site.maxwidth') }}px; }
+      header.site-header.fittowidth .header-inner { max-width: {{ theme_var('site.maxwidth') }}px; }
+      .breaktitle .breakwrap { max-width: {{ theme_var('site.maxwidth') }}px; }
+      main.site-content .page.section-default, main.site-content .page.section-modular  { max-width: {{ theme_var('site.maxwidth') }}px; }
     }
   {% endif %}
 
