@@ -21,6 +21,8 @@ en:
           EXPANDABLE: 'Clickable main nav / expandable mobile'
           FITTOCONTENT: 'Fit navigation width to content'
           NAVHEIGHT: 'Navigation height (60-205)'
+          MOBNAVHEIGHT: 'Mobile Navigation height (60-300)'
+          MOBNAVENABLED: 'Mobile Navigation custom height'
           OPTIONS:
             0: 'No'
             1: 'yes'
@@ -352,6 +354,8 @@ de:
           EXPANDABLE: 'Klickbare Main Nav / Expandable auf Mobile'
           FITTOCONTENT: 'Breite der Navigation auf Contentbreite'
           NAVHEIGHT: 'Navigation Höhe (60-205)'
+          MOBNAVHEIGHT: 'Mobile Nav Höhe (60-300)'
+          MOBNAVENABLED: 'Separate Höhe für Mobile Nav'
           OPTIONS:
             0: 'Nein'
             1: 'Ja'
