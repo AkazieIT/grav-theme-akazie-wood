@@ -273,6 +273,11 @@ header.site-header{
               display:none;
             }
           }
+          li.specialbutton {
+            a {
+              height:60px;
+            }
+          }
           &.nav-lvl1{
             > li{
               float: right;
