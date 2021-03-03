@@ -17761,6 +17761,12 @@ ul.catfilter li a.button:hover {
   height: 100%;
 }
 
+@media (max-width: 992px) {
+  .immositstart div.row article img {
+    padding-left: 10%;
+  }
+}
+
 @media (min-width: 992px) {
   .immositstart div.row article:first-child {
     padding-left: 10vw;
@@ -17771,6 +17777,7 @@ ul.catfilter li a.button:hover {
   }
   .immositstart div.row article:first-child .markdown p {
     margin-top: 40vh;
+    font-size: 25px;
   }
 }
 
