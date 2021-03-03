@@ -8,19 +8,22 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
       {% include 'partials/metadata.html.twig' %}
       {% if favicon %}
-        {% set favicon_file = (favicon|first).name %}
-        <link rel="icon" type="image/png" href="{{ url('theme://custom/favicon/' ~ favicon_file) }}" sizes="32x32" />
+        {% set favicon_file = (favicon | first).name %}
+        <link rel="icon" type="image/png" href="{{ url('theme://custom/favicon/' ~ favicon_file) }}" sizes="32x32"/>
         <link rel="apple-touch-icon" href="{{ url('theme://custom/favicon/' ~ favicon_file) }}">
       {% else %}
-        <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" sizes="32x32" />
+        <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" sizes="32x32"/>
         <link rel="apple-touch-icon" href="{{ url('theme://images/favicon.png') }}">
       {% endif %}
       <link rel="shortcut icon" href="/favicon.ico">
-      <link rel="canonical" href="{{ page.url(true, true) }}" />
-      <title>{% if header.title and page.header.markdown.title == false %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+      <link rel="canonical" href="{{ page.url(true, true) }}"/>
+      <title>
+        {% if header.title and page.header.markdown.title == false %}{{ header.title|e('html') }}
+          |
+        {% endif %}{{ site.title|e('html') }}</title>
       {% if theme_var('style.fonts.import') %}
         <link href="{{ theme_var('style.fonts.import') }}" rel="stylesheet">
       {% endif %}
@@ -37,71 +40,94 @@
     {% endblock head %}
 
   </head>
-<body class="{{ page.header.body_classes }}{% if theme_var('nav.expanded') == '1' %} navexpanded{% endif %} page-{{ page.slug }}">
-{% if config.plugins.langswitcher.enabled %}
-{% include 'partials/langswitcher.html.twig' %}
-{% endif %}
+  <body class="{{ page.header.body_classes }}{% if theme_var('nav.expanded') == '1' %} navexpanded{% endif %} page-{{ page.slug }}">
+    {% if config.plugins.langswitcher.enabled %}
+      {% include 'partials/langswitcher.html.twig' %}
+    {% endif %}
 
-      {% if theme_var('site.parallax') == 0 %}<div class="wrapper">{% else %}
+    {% if theme_var('site.parallax') == 0 %}
+      <div class="wrapper">
+      {% else %}
         <div class="wrapper" style="background-image: url('{{ page.header.image  ? page.media[page.header.image].url : theme_url ~ '/images/home.jpg' }}')">
-      {% endif %}
-      {% block header %}
-        {% include 'partials/header.html.twig' %}
-      {% endblock %}
+        {% endif %}
+        {% block header %}
+          {% include 'partials/header.html.twig' %}
+        {% endblock %}
 
-
-      {% if page.template == 'home' and page.header.kundencode != 'immosit' %}
-        {% set image = page.header.image %}
-        {% if theme_var('site.parallax') == 0 %}<div class="screen-image screen-fullscreen{% if page.header.removeheader == true %} removeheader{% endif %}"  {% if page.header.removeheader != true %}style="background-image: url('{{ image ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"{% endif %}>{% else %}
-        <div class="screen-image screen-fullscreen">
-      {% elseif page.header.kundencode == 'immosit' %}
-        {# set image = page.header.image #}
-        <div class="screen-image screen-fullscreen">
-      {% endif %}
-    <div class="image-caption color-new-line  {% if page.header.markdown.newlineoncolorchangemobile %}color-new-line-mobile{% endif %}{% if page.header.claimswitch == true %} claim{% endif %}{% if page.header.removeheader == true %} removeheader{% endif %}">
+        {% if page.template == 'home' and page.header.kundencode != 'immosit' %}
+          {% set image = page.header.image %}
+          {% if theme_var('site.parallax') == 0 %}
+            <div class="screen-image screen-fullscreen{% if page.header.removeheader == true %} removeheader{% endif %}"
+              {% if page.header.removeheader != true %}
+              style="background-image: url('{{ image ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"
+              {% endif %}>
+            {% else %}
+              <div class="screen-image screen-fullscreen">
+              {% endif %}
+              <div
+                class="image-caption color-new-line  {% if page.header.markdown.newlineoncolorchangemobile %}color-new-line-mobile{% endif %}{% if page.header.claimswitch == true %} claim{% endif %}{% if page.header.removeheader == true %} removeheader{% endif %}">
                 {% if page.header.markdown.title %}
                   {{ page.header.title | markdown }}
                 {% else %}
-                {% if page.header.claimswitch == false %}<h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
-              {% else %}{% if page.header.claimasmarkdown == false %}<h3 class="claim">{{ page.header.claim | nl2br }}</h3>{% else %}<div class="claim">{{ page.header.claim | markdown }}</div>{% endif %}{% endif %}
+                  {% if page.header.claimswitch == false %}
+                    <h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
+                  {% else %}
+                    {% if page.header.claimasmarkdown == false %}
+                      <h3 class="claim">{{ page.header.claim | nl2br }}</h3>
+                    {% else %}
+                      <div class="claim">{{ page.header.claim | markdown }}</div>
+                    {% endif %}
+                  {% endif %}
                 {% endif %}
-            <p>{{ page.header.text }}</p>
+                <p>{{ page.header.text }}</p>
+              </div>
+            </div>
+          {% else %}
+            {% set image = page.header.image %}
+            {% if theme_var('site.parallax') == 0 %}
+              <div
+                class="screen-image screen-top{% if page.header.removeheader == true %} removeheader{% endif %}"
+                {% if page.header.removeheader != true %}
+                style="background-image: url('{{ image  ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"
+                {% endif %}>
+              {% else %}
+                <div class="screen-image screen-top">
+                {% endif %}
+
+                <div class="image-caption{% if page.header.claimswitch == true %} claim{% endif %}{% if page.header.removeheader == true %} removeheader{% endif %}">
+                  {% if page.header.claimswitch == false %}
+                    <h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
+                  {% else %}
+                    {% if page.header.claimasmarkdown == false %}
+                      <h3 class="claim">{{ page.header.claim | nl2br }}</h3>
+                    {% else %}
+                      <div class="claim">{{ page.header.claim | markdown }}</div>
+                    {% endif %}
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+
+            {% block main %}
+              <main class="site-content">
+                {% block content %}{% endblock %}
+              </main>
+            {% endblock %}
+
+            {% block footer %}
+              {% include 'partials/footer.html.twig' %}
+            {% endblock %}
           </div>
-        </div>
-      {% else %}
-        {% set image = page.header.image %}
-      {% if theme_var('site.parallax') == 0 %}<div class="screen-image screen-top{% if page.header.removeheader == true %} removeheader{% endif %}" {% if page.header.removeheader != true %}style="background-image: url('{{ image  ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"{% endif %}>{% else %}
-          <div class="screen-image screen-top">
-        {% endif %}
 
-      <div class="image-caption{% if page.header.claimswitch == true %} claim{% endif %}{% if page.header.removeheader == true %} removeheader{% endif %}">
-          {% if page.header.claimswitch == false %}<h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
-        {% else %}{% if page.header.claimasmarkdown == false %}<h3 class="claim">{{ page.header.claim | nl2br }}</h3>{% else %}<div class="claim">{{ page.header.claim | markdown }}</div>{% endif %}{% endif %}          </div>
-        </div>
-      {% endif %}
+          {% if theme_var('map.apikey')and theme_var('map.type') == 'google' %}
+            {%  include 'partials/map-google-js.html.twig' %}
+          {% elseif theme_var('map.type') == 'osm' %}
+            {%  include 'partials/map-osm-js.html.twig' %}
+          {% endif %}
+          {% block bottom %}
+            {{ assets.js('bottom')|raw }}
+            {{ theme_var('footer.javascript.code')|raw }}
+          {% endblock %}
 
-
-      {% block main %}
-        <main class="site-content">
-          {% block content %}{% endblock %}
-        </main>
-      {% endblock %}
-
-      {% block footer %}
-        {%  include 'partials/footer.html.twig' %}
-      {% endblock %}
-    </div>
-
-    {% if theme_var('map.apikey') and theme_var('map.type') == 'google' %}
-      {%  include 'partials/map-google-js.html.twig' %}
-    {% elseif theme_var('map.type') == 'osm' %}
-      {%  include 'partials/map-osm-js.html.twig' %}
-    {% endif %}
-    {% block bottom %}
-      {{ assets.js('bottom')|raw }}
-      {{ theme_var('footer.javascript.code')|raw }}
-    {% endblock %}
-
-
-  </body>
-</html>
+        </body>
+      </html>
