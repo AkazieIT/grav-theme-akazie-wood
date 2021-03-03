@@ -225,6 +225,8 @@ en:
           LABEL: "Images"
         IMAGE_HEADER:
           LABEL: "Header image"
+        KUNDENCODE:
+          LABEL: "Client code (leave empty)"
         CLAIM:
           LABEL: "Claim"
         CLAIMSWITCH:
@@ -539,6 +541,8 @@ de:
           LABEL: "Bilder"
         IMAGE_HEADER:
           LABEL: "Titelbild"
+        KUNDENCODE:
+          LABEL: "Kundencode (leer lassen)"
         CLAIM:
           LABEL: "Claim"
         CLAIMSWITCH:

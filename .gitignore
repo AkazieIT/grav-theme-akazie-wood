@@ -18,3 +18,5 @@ custom/
 # OZ themes
 blueprints/homerows.yaml
 templates/homerows.html.twig
+blueprints/fewohome.yaml
+templates/fewohome.html.twig

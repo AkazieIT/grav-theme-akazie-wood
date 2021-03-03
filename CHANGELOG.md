@@ -1,3 +1,10 @@
+# v0.9.944
+## 02.03.2021
+
+1. [](#new)
+    * multiple improvements and added features
+
+
 # v0.9.943
 ## 02.03.2021
 

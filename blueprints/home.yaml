@@ -35,6 +35,9 @@ form:
               fields:
                 header.media_order:
                   type: pagemedia
+            header.kundencode:
+              type: text
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.KUNDENCODE.LABEL
             settings:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.SETTINGS
