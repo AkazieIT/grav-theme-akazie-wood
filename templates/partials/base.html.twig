@@ -57,7 +57,7 @@
 
 
     {% if  page.header.kundencode != 'immosit' %}
-    
+
         {% if page.template == 'home' %}
           {% set image = page.header.image %}
           {% if theme_var('site.parallax') == 0 %}
@@ -131,7 +131,7 @@
                       <article class="modular section-image col-12 col-md-6">
                         <div class="media-container ">
                           {% set image = page.header.image %}
-                          <img class="media" title="{{ page.header.title }}" alt="Immosit" src="{{ page.media[image].cropZoom(500,500).url }}" />
+                          <img class="media startimg" title="{{ page.header.title }}" alt="Immosit" src="{{ page.media[image].cropZoom(500,500).url }}" />
 
                         </div>
                       </article>
