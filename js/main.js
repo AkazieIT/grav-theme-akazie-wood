@@ -3,10 +3,12 @@ $(".gallery").lightGallery();
 $('.pull').click(function() {
   $(this).toggleClass('open');
   if($(this).hasClass('open')){
+    if($(this).parents('.stickybottom').length == 1) { $('header').addClass('fixed'); }
     $('.header-nav.mobile').show().attr('aria-hidden', 'false');
     $('.content, .footer, .screen-image').hide();
     $('.page-header').attr('menu', 'open');
   } else {
+    if($(this).parents('.stickybottom').length == 1) { $('header').removeClass('fixed'); }
     $('.header-nav.mobile').hide().attr('aria-hidden', 'true');
     $('.content, .footer, .screen-image').show();
     $('.page-header').attr('menu', 'close');
