@@ -93,8 +93,10 @@ form:
                     0: PLUGIN_ADMIN.DISABLED
                     1: PLUGIN_ADMIN.ENABLED
                 nav.stickybottomcode:
-                  type: textfield
-                  label: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.stickybottomcode
+                  type: textarea
+                  label: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.STICKYBOTTOMCODE
+                  rows: 4
+                  size: large
             nav.button:
               type: fieldset
               title: THEME_AKAZIEWOOD.THEME.FIELDS.BUTTON.LABEL

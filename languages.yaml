@@ -7,6 +7,7 @@ en:
         LAYOUT: 'Site layout'
         STYLE: 'Custom style (only for admins)'
       FIELDSET:
+        MOBILENAV: 'Mobile Navigation'
         HEADER: 'Header'
         COLS: 'Footer columns right'
         COL:
@@ -23,6 +24,8 @@ en:
           NAVHEIGHT: 'Navigation height (60-205)'
           MOBNAVHEIGHT: 'Mobile Navigation height (60-300)'
           MOBNAVENABLED: 'Mobile Navigation custom height'
+          STICKYBOTTOM: 'Sticky Menü am Bottom einfügen (und Hamburger Menü entfernen!)'
+          STICKYBOTTOMCODE: 'HTML code für sticky bottom'
           OPTIONS:
             0: 'No'
             1: 'yes'
@@ -340,6 +343,7 @@ de:
         LAYOUT: 'Seiten Design'
         STYLE: 'Benutzerdefinierte Anpassungen (nur für Superadmins)'
       FIELDSET:
+        MOBILENAV: 'Mobile Navigation'
         COLS: 'Footer Spalten rechts'
         COL:
           1: 'Erste Spalte'
@@ -356,6 +360,8 @@ de:
           NAVHEIGHT: 'Navigation Höhe (60-205)'
           MOBNAVHEIGHT: 'Mobile Nav Höhe (60-300)'
           MOBNAVENABLED: 'Separate Höhe für Mobile Nav'
+          STICKYBOTTOM: 'Add sticky Menu to bottom (and remove hamburger top left!)'
+          STICKYBOTTOMCODE: 'HTML code for sticky bottom'
           OPTIONS:
             0: 'Nein'
             1: 'Ja'
