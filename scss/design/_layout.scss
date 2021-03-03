@@ -861,11 +861,15 @@ ul.catfilter {
 }
 
 .immositstart {
+  @media (min-width: 992px) {
+    min-height: 800px;
+  }
   padding-top:160px;
   div.row {
     article {
       img {
         width:100%;
+        padding:5%;
         height:auto;
       }
     }

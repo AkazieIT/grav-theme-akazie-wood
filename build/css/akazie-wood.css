@@ -17754,7 +17754,14 @@ ul.catfilter li a.button:hover {
   padding-top: 160px;
 }
 
+@media (min-width: 992px) {
+  .immositstart {
+    min-height: 800px;
+  }
+}
+
 .immositstart div.row article img {
   width: 100%;
+  padding: 5%;
   height: auto;
 }
