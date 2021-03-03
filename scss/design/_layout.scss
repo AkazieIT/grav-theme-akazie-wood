@@ -869,7 +869,7 @@ ul.catfilter {
         width:auto;
         padding-left:10%;
         @media (max-width: 992px) {
-          padding-left:10%;
+          padding-left:0;
         }
         padding-right:0;
         height:100%;
@@ -894,5 +894,5 @@ div.screen-fullscreen {
   @media (min-width: 992px) {
     min-height: 800px;
   }
-  overflow:hidden;
+  /* overflow:hidden; */
 }

@@ -17763,7 +17763,7 @@ ul.catfilter li a.button:hover {
 
 @media (max-width: 992px) {
   .immositstart div.row article img {
-    padding-left: 10%;
+    padding-left: 0;
   }
 }
 
@@ -17782,7 +17782,7 @@ ul.catfilter li a.button:hover {
 }
 
 div.screen-fullscreen {
-  overflow: hidden;
+  /* overflow:hidden; */
 }
 
 @media (min-width: 992px) {

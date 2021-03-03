@@ -100,6 +100,8 @@ if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
 
   $(window).on('resize',function() {
 
+      paddingImages();
+      
     let youtube = $('.youtube-iframe');
     let youtubeheight = youtube.width() * 10/16;
     $('.youtube-iframe').css('height', youtubeheight);
@@ -120,7 +122,6 @@ if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
 
   osm();
 
-  paddingImages();
 
 
 });
