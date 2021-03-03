@@ -118,7 +118,7 @@ if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
 /* image padding function */
 $(document).ready(function() {
 console.log('done');
-$('secton.secton-modular row').each(function() {
+$('secton.secton-modular .row').each(function() {
   console.log('each');
   if($(this).children().length() == 2) {
     console.log('length');
