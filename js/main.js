@@ -46,6 +46,9 @@ $('#scrolltopbutton').click(function(e){
 });
 
 $(document).ready(function() {
+
+paddingImages();
+
 /* IOS BG Hack */
 if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
   $('head').append('<style>.wrapper::before {background-image: '+ $('.wrapper').css('background-image') +';}</style>');
@@ -113,18 +116,21 @@ if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
 
   osm();
 
-});
-
-/* image padding function */
-$(document).ready(function() {
-$('section.section-modular').find('div.row').each(function() {
-  console.log($(this).children().length );
-    $(this).children('article.col-md-6:nth-child(odd)').children('.media-container').each(function() {
-      $(this).css('padding-right',$(this).data('padding'));
-    });
-    $(this).children('article.col-md-6:nth-child(even)').children('.media-container').each(function() {
-      $(this).css('padding-left',$(this).data('padding'));
-    });
-});
 
 });
+
+
+function paddingImages() {
+if(window.innerWidth > 869) {
+  $('section.section-modular').find('div.row').each(function() {
+    console.log($(this).children().length );
+      $(this).children('article.col-md-6:nth-child(odd)').children('.media-container').each(function() {
+        $(this).css('padding-right',$(this).data('padding'));
+      });
+      $(this).children('article.col-md-6:nth-child(even)').children('.media-container').each(function() {
+        $(this).css('padding-left',$(this).data('padding'));
+      });
+  });
+}
+
+}
