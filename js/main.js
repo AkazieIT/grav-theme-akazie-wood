@@ -3,11 +3,13 @@ $(".gallery").lightGallery();
 $('.pull').click(function() {
   $(this).toggleClass('open');
   if($(this).hasClass('open')){
-    if($('.stickybottom').find(this).length == 1) { $('header').addClass('fixed'); }
+    console.log('open');
+    if($('.stickybottom').find(this).length == 1) { $('header').addClass('fixed'); console.log('ok');}
     $('.header-nav.mobile').show().attr('aria-hidden', 'false');
     $('.content, .footer, .screen-image').hide();
     $('.page-header').attr('menu', 'open');
   } else {
+    console.log('closed');
     if($('.stickybottom').find(this).length == 1) { $('header').removeClass('fixed'); }
     $('.header-nav.mobile').hide().attr('aria-hidden', 'true');
     $('.content, .footer, .screen-image').show();
