@@ -37,6 +37,23 @@
     background-color: {{ theme_var('style.color.background.nav.hover') }};
     color: {{ theme_var('style.color.text.nav.hover') }};
   }
+
+  header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a{
+
+    background-color:{{ theme_var('style.color.background.secondary') }};
+    color:{{ theme_var('style.color.text.secondary') }};
+  }
+  header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a.active,
+  header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a:hover{
+
+    color:{{ theme_var('style.color.background.secondary') }};
+    background-color:{{ theme_var('style.color.text.secondary') }};
+  }
+
+
+
+
+
   footer.site-footer .footer-main{
     font-family: {{ theme_var('style.fonts.footer') | raw }};
   }
@@ -141,17 +158,7 @@
      margin-top: {{ theme_var('nav.navheight') / 20 }}px !important;
      height: {{ theme_var('nav.navheight') - (theme_var('nav.navheight') / 10) }}px !important; }
   header.site-header  div.header-inner ul li a { line-height: {{ theme_var('nav.navheight') }}px !important; }
-  header.site-header  div.header-inner ul li.specialbutton a {
-    line-height: 60px !important;
-    background-color:{{ theme_var('style.color.background.secondary') }};
-    color:{{ theme_var('style.color.text.secondary') }};
-
-  }
-  header.site-header  div.header-inner ul li.specialbutton a:hover {
-    color:{{ theme_var('style.color.background.secondary') }};
-    background-color:{{ theme_var('style.color.text.secondary') }};
-
-  }
+  header.site-header  div.header-inner ul li.specialbutton a {    line-height: 60px !important;  }
   header.site-header  div.header-inner ul li.specialbutton { margin-top: {{ (theme_var('nav.navheight') / 2) - 30 }}px; }
   .image-caption{ padding-top: {{ theme_var('nav.navheight') }}px !important; }
   .image-caption.claim h3 {
