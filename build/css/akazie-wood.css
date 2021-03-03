@@ -17753,7 +17753,7 @@ ul.catfilter li a.button:hover {
 .bookinghover {
   z-index: 3;
   width: 75vw;
-  height: 140px;
+  height: 120px;
   position: absolute;
   top: 56%;
   left: 15%;
@@ -17779,6 +17779,8 @@ ul.catfilter li a.button:hover {
 
 .bookinghover ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bookinghover ul li {

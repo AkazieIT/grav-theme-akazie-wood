@@ -862,7 +862,7 @@ ul.catfilter {
 .bookinghover {
   z-index:3;
   width: 75vw;
-  height:140px;
+  height:120px;
   position:absolute;
   top: 56%;
   @media (max-height: 890px) {
@@ -877,6 +877,8 @@ ul.catfilter {
   }
   ul {
     display:flex;
+    justify-content: center;
+    align-items:center;
     li {
       flex-grow: 1;
       display:inline-block;
