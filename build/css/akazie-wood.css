@@ -17782,7 +17782,7 @@ ul.catfilter li a.button:hover {
 }
 
 div.screen-fullscreen {
-  /* overflow:hidden; */
+  overflow: hidden;
 }
 
 @media (min-width: 992px) {
