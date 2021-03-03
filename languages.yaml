@@ -258,7 +258,7 @@ en:
             6: "1/4 full width"
             7: "1/6 full width"
         MARGINRIGHT:
-          LABEL: "padding right"
+          LABEL: "padding"
         SCALE:
           LABEL: 'Format'
           OPTIONS:
@@ -579,7 +579,7 @@ de:
             6: "1/4 von voller Breite"
             7: "1/6 von voller Breite"
         MARGINRIGHT:
-          LABEL: "padding rechts"
+          LABEL: "padding"
         SCALE:
           LABEL: 'Format'
           OPTIONS:
