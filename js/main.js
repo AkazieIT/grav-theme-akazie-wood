@@ -117,8 +117,8 @@ if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
 
 /* image padding function */
 $(document).ready(function() {
-console.log('done');
-$('section.section-modular .row').each(function() {
+console.log($('section.section-modular div.row'));
+$('section.section-modular').find('div.row').each(function() {
   console.log('each');
   if($(this).children().length() == 2) {
     console.log('length');
