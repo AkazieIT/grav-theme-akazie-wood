@@ -66,18 +66,35 @@ form:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.NAVHEIGHT
               default: 60
-            nav.mobileheightenabled:
-              type: toggle
-              label: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.MOBNAVENABLED
-              highlight: 0
-              default: 0
-              options:
-                0: PLUGIN_ADMIN.DISABLED
-                1: PLUGIN_ADMIN.ENABLED
-            nav.mobilenavheight:
-              type: text
-              label: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.MOBNAVHEIGHT
-              default: 60
+            nav.mobile:
+              type: fieldset
+              title:  THEME_AKAZIEWOOD.THEME.FIELDSET.MOBILENAV
+              collapsed: false
+              collapsible: true
+              fields:
+                nav.mobileheightenabled:
+                  type: toggle
+                  label: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.MOBNAVENABLED
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: PLUGIN_ADMIN.DISABLED
+                    1: PLUGIN_ADMIN.ENABLED
+                nav.mobilenavheight:
+                  type: text
+                  label: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.MOBNAVHEIGHT
+                  default: 60
+                nav.stickybottom:
+                  type: toggle
+                  label: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.STICKYBOTTOM
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: PLUGIN_ADMIN.DISABLED
+                    1: PLUGIN_ADMIN.ENABLED
+                nav.stickybottomcode:
+                  type: textfield
+                  label: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.stickybottomcode
             nav.button:
               type: fieldset
               title: THEME_AKAZIEWOOD.THEME.FIELDS.BUTTON.LABEL
