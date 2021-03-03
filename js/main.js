@@ -117,9 +117,11 @@ if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
 
 /* image padding function */
 $(document).ready(function() {
-
+console.log('done');
 $('secton.secton-modular row').each(function() {
+  console.log('each');
   if($(this).children().length() == 2) {
+    console.log('length');
     $(this).children('article:first-child').children('.media-container').css('padding-right','5%');
     $(this).children('article:last-child').children('.media-container').css('padding-right','5%');
   }
