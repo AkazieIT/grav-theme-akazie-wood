@@ -52,7 +52,10 @@
 
       {% if page.template == 'home' and page.header.kundencode != 'immosit' %}
         {% set image = page.header.image %}
-      {% if theme_var('site.parallax') == 0 %}<div class="screen-image screen-fullscreen{% if page.header.removeheader == true %} removeheader{% endif %}"  {% if page.header.removeheader != true %}style="background-image: url('{{ image ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"{% endif %}>{% else %}
+        {% if theme_var('site.parallax') == 0 %}<div class="screen-image screen-fullscreen{% if page.header.removeheader == true %} removeheader{% endif %}"  {% if page.header.removeheader != true %}style="background-image: url('{{ image ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"{% endif %}>{% else %}
+        <div class="screen-image screen-fullscreen">
+      {% else if page.header.kundencode == 'immosit' %}
+        {# set image = page.header.image #}
         <div class="screen-image screen-fullscreen">
       {% endif %}
     <div class="image-caption color-new-line  {% if page.header.markdown.newlineoncolorchangemobile %}color-new-line-mobile{% endif %}{% if page.header.claimswitch == true %} claim{% endif %}{% if page.header.removeheader == true %} removeheader{% endif %}">
