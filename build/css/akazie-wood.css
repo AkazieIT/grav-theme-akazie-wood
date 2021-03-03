@@ -17756,14 +17756,15 @@ ul.catfilter li a.button:hover {
 
 .immositstart div.row article img {
   width: auto;
-  padding: 5%;
+  padding-left: 10%;
+  padding-right: 0;
   height: 100%;
 }
 
 @media (min-width: 992px) {
   .immositstart div.row article:first-child {
-    padding-left: 15vw;
-    padding-top: calc(10vh + 160px);
+    padding-left: 5vw;
+    padding-top: calc(5vh + 160px);
   }
 }
 
