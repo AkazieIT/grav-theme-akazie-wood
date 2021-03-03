@@ -176,6 +176,7 @@
   {% if( theme_var('nav.mobileheightenabled') ) %}
   @media (max-width:992px) {
     header.site-header { height:{{ theme_var('nav.mobilenavheight') }}px;  }
+    header.site-header div.header-inner div.logo img { height:{{ theme_var('nav.mobilenavheight') - 10 }}px; }
   }
   {% endif %}
   footer.site-footer .footer-main .container.footerpage .upfootertext a {
