@@ -173,7 +173,7 @@
 
   .screen-image.screen-top.removeheader { height: {{ theme_var('nav.navheight') }}px; }
   {% endif %}
-  {% if( {{ theme_var('nav.mobileheightenabled') }}) %}
+  {% if( theme_var('nav.mobileheightenabled') ) %}
   @media (max-width:992px) {
     header.site-header { height:{{ theme_var('nav.mobilenavheight') }}  }
   }
