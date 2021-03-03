@@ -166,5 +166,11 @@
     background-color:{{ theme_var('style.color.background.primary') }};
   }
 
+  {% if theme_var('site.maxwidth') != 1280 and theme_var('site.maxwidth') >= 999 and theme_var('site.maxwidth') < 2001  %}
+    .image-caption.claim h3 { max-width: {{ theme_var('site.maxwidth') }}; }
+    header.site-header.fittowidth .header-inner { {{ theme_var('site.maxwidth') }}; }
+    .breaktitle .breakwrap { {{ theme_var('site.maxwidth') }}; }
+
+  {% endif %}
 
 </style>

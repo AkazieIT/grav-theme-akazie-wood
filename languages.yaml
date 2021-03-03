@@ -31,6 +31,8 @@ en:
         VARIOUS: 'Various'
         MAP: 'Google map'
       FIELDS:
+        MAXWIDTH:
+          LABEL: 'max content width (1000-2000 / default 1280)'
         CUSTOMCSS:
           LABEL: 'Use custom CSS file'
         IMAGESIZING:
@@ -349,6 +351,8 @@ de:
         VARIOUS: 'Diverses'
         MAP: 'Google Map'
       FIELDS:
+        MAXWIDTH:
+          LABEL: 'Maximale Breite des Contents (1000-2000 / Standard 1280)'
         CUSTOMCSS:
           LABEL: 'Benutzerdefinierte CSS Datei'
         IMAGESIZING:

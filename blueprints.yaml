@@ -102,6 +102,10 @@ form:
                 1: PLUGIN_ADMIN.ENABLED
               validate:
                 type: bool
+            site.maxwidth:
+              type: text
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.MAXWIDTH
+              default: 1280
         header:
           type: fieldset
           title: THEME_AKAZIEWOOD.THEME.FIELDSET.HEADER
