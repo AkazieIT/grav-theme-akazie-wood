@@ -17769,7 +17769,7 @@ ul.catfilter li a.button:hover {
   .immositstart div.row article:first-child h2 {
     font-size: 60px;
   }
-  .immositstart div.row article:last-child {
+  .immositstart div.row article:first-child .markdown p {
     margin-top: 40vh;
   }
 }
