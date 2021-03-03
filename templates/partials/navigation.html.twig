@@ -29,7 +29,7 @@
 
 <nav class="header-nav desktop">
   <ul class="nav-lvl1" {{ tree ? 'class="tree"' : '' }}>
-    <li><a href="{{ p.url }}">{{ nav.button.text }}</li>
+    <li><a href="">{{ theme_var('nav.button.text') }}</li>
     {{ _self.nav_loop(pages, theme_config) }}
   </ul>
 
@@ -37,7 +37,7 @@
 <nav class="header-nav mobile">
   <ul class="nav-lvl1" {{ tree ? 'class="tree"' : '' }}>
     {{ _self.nav_loop(pages, theme_config, false) }}
-      <li><a href="{{ p.url }}" class="onlymobile">{{ nav.button.text }}</a></li>
+      <li><a href="" class="onlymobile">{{ theme_var('nav.button.text') }}</a></li>
   </ul>
 
 </nav>
