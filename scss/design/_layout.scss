@@ -873,8 +873,11 @@ ul.catfilter {
       }
       @media (min-width: 992px) {
         &:first-child {
-          padding-left:5vw;
+          padding-left:10vw;
           padding-top:calc(5vh + 160px);
+          h2 {
+            font-size: 60px;
+          }
         }
       }
     }

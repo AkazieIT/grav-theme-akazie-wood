@@ -17763,8 +17763,11 @@ ul.catfilter li a.button:hover {
 
 @media (min-width: 992px) {
   .immositstart div.row article:first-child {
-    padding-left: 5vw;
+    padding-left: 10vw;
     padding-top: calc(5vh + 160px);
+  }
+  .immositstart div.row article:first-child h2 {
+    font-size: 60px;
   }
 }
 
