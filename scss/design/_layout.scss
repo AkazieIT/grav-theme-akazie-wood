@@ -859,6 +859,13 @@ ul.catfilter {
   margin-right:30px;
   }
 }
+.bookinghover {
+  width: 75vw;
+  height:100px;
+  position:absolute;
+  top: 60vw;
+  left:5%;
+}
 
 .immositstart {
 
@@ -894,5 +901,5 @@ div.screen-fullscreen {
   @media (min-width: 992px) {
     min-height: 800px;
   }
-   overflow:hidden; 
+   overflow:hidden;
 }

@@ -17750,6 +17750,14 @@ ul.catfilter li a.button:hover {
   margin-right: 30px;
 }
 
+.bookinghover {
+  width: 75vw;
+  height: 100px;
+  position: absolute;
+  top: 60vw;
+  left: 5%;
+}
+
 .immositstart {
   padding-top: 160px;
 }
