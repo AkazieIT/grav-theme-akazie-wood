@@ -17778,6 +17778,7 @@ ul.catfilter li a.button:hover {
 }
 
 .bookinghover ul {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
