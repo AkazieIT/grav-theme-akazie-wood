@@ -20,7 +20,7 @@ en:
         NAVI:
           EXPANDABLE: 'Clickable main nav / expandable mobile'
           FITTOCONTENT: 'Fit navigation width to content'
-          NAVHEIGHT: 'Navigation height (60-150)'
+          NAVHEIGHT: 'Navigation height (60-205)'
           OPTIONS:
             0: 'No'
             1: 'yes'
@@ -338,7 +338,7 @@ de:
         NAVI:
           EXPANDABLE: 'Klickbare Main Nav / Expandable auf Mobile'
           FITTOCONTENT: 'Breite der Navigation auf Contentbreite'
-          NAVHEIGHT: 'Navigation Höhe (60-150)'
+          NAVHEIGHT: 'Navigation Höhe (60-205)'
           OPTIONS:
             0: 'Nein'
             1: 'Ja'
