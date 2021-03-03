@@ -874,10 +874,13 @@ ul.catfilter {
       @media (min-width: 992px) {
         &:first-child {
           padding-left:10vw;
-          padding-top:calc(5vh + 160px);
+          padding-top:10vh;
           h2 {
             font-size: 60px;
           }
+        }
+        &:last-child {
+          margin-top:40vh;
         }
       }
     }

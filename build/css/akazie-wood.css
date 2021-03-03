@@ -17764,10 +17764,13 @@ ul.catfilter li a.button:hover {
 @media (min-width: 992px) {
   .immositstart div.row article:first-child {
     padding-left: 10vw;
-    padding-top: calc(5vh + 160px);
+    padding-top: 10vh;
   }
   .immositstart div.row article:first-child h2 {
     font-size: 60px;
+  }
+  .immositstart div.row article:last-child {
+    margin-top: 40vh;
   }
 }
 
