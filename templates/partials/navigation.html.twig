@@ -29,7 +29,9 @@
 
 <nav class="header-nav desktop">
   <ul class="nav-lvl1" {{ tree ? 'class="tree"' : '' }}>
-    <li class="specialbutton"><a href="">{{ theme_var('nav.button.text') }}{{ theme_var('nav.button.enabled') }}{{ theme_var('nav.button.link') }}</li>
+  {% if theme_var('nav.button.enabled') %}
+    <li class="specialbutton"><a href="{{ theme_var('nav.button.link') }}">{{ theme_var('nav.button.text') }}</li>
+  {% endif %}
     {{ _self.nav_loop(pages, theme_config) }}
   </ul>
 
@@ -37,7 +39,9 @@
 <nav class="header-nav mobile">
   <ul class="nav-lvl1" {{ tree ? 'class="tree"' : '' }}>
     {{ _self.nav_loop(pages, theme_config, false) }}
-      <li class="specialbutton"><a href="" class="onlymobile">{{ theme_var('nav.button.text') }}</a></li>
+    {% if theme_var('nav.button.enabled') %}
+      <li class="specialbutton"><a href="{{ theme_var('nav.button.link') }}" class="onlymobile">{{ theme_var('nav.button.text') }}</a></li>
+    {% endif %}
   </ul>
 
 </nav>
