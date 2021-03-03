@@ -114,3 +114,15 @@ if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
   osm();
 
 });
+
+/* image padding function */
+$(document).ready(function() {
+
+$('secton.secton-modular row').each(function() {
+  if($(this).children().length() == 2) {
+    $(this).children('article:first-child').children('.media-container').css('padding-right','5%');
+    $(this).children('article:last-child').children('.media-container').css('padding-right','5%');
+  }
+});
+
+});
