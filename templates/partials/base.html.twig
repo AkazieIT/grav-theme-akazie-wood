@@ -50,7 +50,7 @@
       {% endblock %}
 
 
-      {% if page.template == 'home' %}
+      {% if page.template == 'home' and theme_var('header.kundencode') != 'immosit' %}
         {% set image = page.header.image %}
       {% if theme_var('site.parallax') == 0 %}<div class="screen-image screen-fullscreen{% if page.header.removeheader == true %} removeheader{% endif %}"  {% if page.header.removeheader != true %}style="background-image: url('{{ image ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"{% endif %}>{% else %}
         <div class="screen-image screen-fullscreen">
