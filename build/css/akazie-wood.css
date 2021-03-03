@@ -17168,7 +17168,7 @@ header.site-header div.header-inner nav.header-nav.mobile ul.nav-lvl2 > li > a {
   font-size: 22px;
 }
 
-header.site-header div.header-inner div.mobile-toggle {
+div.mobile-toggle {
   position: absolute;
   top: 18px;
   right: 15px;
@@ -17177,12 +17177,12 @@ header.site-header div.header-inner div.mobile-toggle {
 }
 
 @media (max-width: 991.98px) {
-  header.site-header div.header-inner div.mobile-toggle {
+  div.mobile-toggle {
     display: block;
   }
 }
 
-header.site-header div.header-inner div.mobile-toggle .pull {
+div.mobile-toggle .pull {
   width: 40px;
   height: 30px;
   position: relative;
@@ -17191,7 +17191,7 @@ header.site-header div.header-inner div.mobile-toggle .pull {
   cursor: pointer;
 }
 
-header.site-header div.header-inner div.mobile-toggle .pull span {
+div.mobile-toggle .pull span {
   display: block;
   position: absolute;
   height: 5px;
@@ -17202,33 +17202,33 @@ header.site-header div.header-inner div.mobile-toggle .pull span {
   transition: .25s ease-in-out;
 }
 
-header.site-header div.header-inner div.mobile-toggle .pull span:nth-child(1) {
+div.mobile-toggle .pull span:nth-child(1) {
   top: 0px;
 }
 
-header.site-header div.header-inner div.mobile-toggle .pull span:nth-child(2), header.site-header div.header-inner div.mobile-toggle .pull span:nth-child(3) {
+div.mobile-toggle .pull span:nth-child(2), div.mobile-toggle .pull span:nth-child(3) {
   top: 12px;
 }
 
-header.site-header div.header-inner div.mobile-toggle .pull span:nth-child(4) {
+div.mobile-toggle .pull span:nth-child(4) {
   top: 24px;
 }
 
-header.site-header div.header-inner div.mobile-toggle .pull.open span:nth-child(1) {
+div.mobile-toggle .pull.open span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
 
-header.site-header div.header-inner div.mobile-toggle .pull.open span:nth-child(2) {
+div.mobile-toggle .pull.open span:nth-child(2) {
   transform: rotate(45deg);
 }
 
-header.site-header div.header-inner div.mobile-toggle .pull.open span:nth-child(3) {
+div.mobile-toggle .pull.open span:nth-child(3) {
   transform: rotate(-45deg);
 }
 
-header.site-header div.header-inner div.mobile-toggle .pull.open span:nth-child(4) {
+div.mobile-toggle .pull.open span:nth-child(4) {
   top: 18px;
   width: 0%;
   left: 50%;
