@@ -17751,11 +17751,24 @@ ul.catfilter li a.button:hover {
 }
 
 .bookinghover {
+  z-index: 3;
   width: 75vw;
-  height: 100px;
+  height: 140px;
   position: absolute;
-  top: 60vw;
-  left: 5%;
+  top: 56%;
+  left: 15%;
+}
+
+@media (max-height: 890px) {
+  .bookinghover {
+    top: 70%;
+  }
+}
+
+@media (max-height: 680px) {
+  .bookinghover {
+    top: 500px;
+  }
 }
 
 .immositstart {

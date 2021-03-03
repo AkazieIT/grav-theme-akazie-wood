@@ -860,11 +860,18 @@ ul.catfilter {
   }
 }
 .bookinghover {
+  z-index:3;
   width: 75vw;
-  height:100px;
+  height:140px;
   position:absolute;
-  top: 60vw;
-  left:5%;
+  top: 56%;
+  @media (max-height: 890px) {
+      top:70%;
+  }
+  @media (max-height: 680px) {
+      top:500px;
+  }
+  left:15%;
 }
 
 .immositstart {
