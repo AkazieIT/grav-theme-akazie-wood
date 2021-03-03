@@ -96,7 +96,7 @@
                   <div class="media-container " data-padding="22%" style="padding-left: 22%;">
                     {% set image = page.header.image %}
                     {{ image.url }}
-                    <img class="media" title="{{ page.header.title }}" alt="Immosit" src="{{ image ? page.media[image].url : theme_url ~ '/images/home.jpg' }}" />
+                    <img class="media" title="{{ page.header.title }}" alt="Immosit" src="{{ page.media[image].url }}" />
 
                   </div>
                 </article>
