@@ -29,15 +29,15 @@
 
 <nav class="header-nav desktop">
   <ul class="nav-lvl1" {{ tree ? 'class="tree"' : '' }}>
-    {{ _self.nav_loop(pages, theme_config) }}
     <li>test2</li>
+    {{ _self.nav_loop(pages, theme_config) }}
   </ul>
 
 </nav>
 <nav class="header-nav mobile">
   <ul class="nav-lvl1" {{ tree ? 'class="tree"' : '' }}>
-    {{ _self.nav_loop(pages, theme_config, false) }}
     <li>test</li>
+    {{ _self.nav_loop(pages, theme_config, false) }}
   </ul>
 
 </nav>
