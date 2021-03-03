@@ -94,8 +94,7 @@
                 </article>
                 <article class="modular section-image col-12 col-md-6">
                   <div class="media-container " data-padding="22%" style="padding-left: 22%;">
-                    {% set image = page.header.image %}
-                    <img class="media" title="{{ page.header.title }}" alt="Immosit" src="{{ page.media[image.name].cropZoom(1280,1280).url }}" />
+                    <img class="media" title="{{ page.header.title }}" alt="Immosit" src="{{ page.header.image.cropZoom(1280,1280).url }}" />
 
                   </div>
                 </article>
