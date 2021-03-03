@@ -861,9 +861,7 @@ ul.catfilter {
 }
 
 .immositstart {
-  @media (min-width: 992px) {
-    min-height: 800px;
-  }
+
   padding-top:160px;
   div.row {
     article {
@@ -874,4 +872,10 @@ ul.catfilter {
       }
     }
   }
+}
+div.screen-fullscreen {
+  @media (min-width: 992px) {
+    min-height: 800px;
+  }
+  overflow:hidden;
 }
