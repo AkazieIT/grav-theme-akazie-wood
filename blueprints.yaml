@@ -104,7 +104,7 @@ form:
                 type: bool
             site.maxwidth:
               type: text
-              label: THEME_AKAZIEWOOD.THEME.FIELDS.MAXWIDTH
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.MAXWIDTH.LABEL
               default: 1280
         header:
           type: fieldset
