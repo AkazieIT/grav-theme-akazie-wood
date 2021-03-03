@@ -862,7 +862,8 @@ ul.catfilter {
 
 .immositstart {
   padding-top:160px;
-  div {
+  div.row {
+    width:100%;
     article {
       padding:0;
     }
