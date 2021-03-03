@@ -868,6 +868,9 @@ ul.catfilter {
       img {
         width:auto;
         padding-left:10%;
+        @media (max-width: 992px) {
+          padding-left:10%;
+        }
         padding-right:0;
         height:100%;
       }
@@ -880,6 +883,7 @@ ul.catfilter {
           }
           .markdown p {
             margin-top:40vh;
+            font-size:25px;
           }
         }
       }
