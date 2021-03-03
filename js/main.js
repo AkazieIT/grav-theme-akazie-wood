@@ -119,8 +119,8 @@ if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
 $(document).ready(function() {
 $('section.section-modular').find('div.row').each(function() {
   console.log($(this).children().length );
-    $(this).children('article.col-md-6:nth-odd').children('.media-container').css('padding-right','5%');
-    $(this).children('article.col-md-6:nth-even').children('.media-container').css('padding-left','5%');
+    $(this).children('article.col-md-6:nth-child(odd)').children('.media-container').css('padding-right','5%');
+    $(this).children('article.col-md-6:nth-child(even)').children('.media-container').css('padding-left','5%');
 
 });
 
