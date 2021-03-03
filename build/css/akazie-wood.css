@@ -17762,3 +17762,8 @@ ul.catfilter li a.button:hover {
 .immositstart div.row article {
   padding: 0;
 }
+
+.immositstart div.row article img {
+  width: 100%;
+  height: auto;
+}
