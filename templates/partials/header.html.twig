@@ -12,6 +12,7 @@
         {% endif %}
       </a>
     </div>
+    {% if theme_var('nav.fittocontent') %}{% else %}
     <div class="mobile-toggle">
       <div class="pull">
         <span></span>
@@ -20,6 +21,7 @@
         <span></span>
       </div>
     </div>
+    {% endif %}
     {% include 'partials/navigation.html.twig' %}
   </div>
 </header>
