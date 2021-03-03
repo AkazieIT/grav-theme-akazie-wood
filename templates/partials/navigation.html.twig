@@ -15,7 +15,6 @@
           {{ _self.nav_loop(p, theme_config, false) }}
         </ul>
       </li>
-      <p>test2</p>
     {% else %}
       {% if (p.home() and theme_config.header.home and p.header.markdown.title == false) or p.home() == false %}
         <li>
@@ -23,7 +22,6 @@
             {{ p.menu }}
           </a>
         </li>
-        <p>test</p>
       {% endif %}
     {% endif %}
   {% endfor %}
@@ -33,9 +31,13 @@
   <ul class="nav-lvl1" {{ tree ? 'class="tree"' : '' }}>
     {{ _self.nav_loop(pages, theme_config) }}
   </ul>
+
+  <p>test</p>
 </nav>
 <nav class="header-nav mobile">
   <ul class="nav-lvl1" {{ tree ? 'class="tree"' : '' }}>
     {{ _self.nav_loop(pages, theme_config, false) }}
   </ul>
+
+  <p>test2</p>
 </nav>
