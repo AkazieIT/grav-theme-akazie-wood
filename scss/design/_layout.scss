@@ -866,9 +866,15 @@ ul.catfilter {
   div.row {
     article {
       img {
-        width:100%;
+        width:auto;
         padding:5%;
-        height:auto;
+        height:100%;
+      }
+      @media (min-width: 992px) {
+        &:first-child {
+          padding-left:15vw;
+          padding-top:calc(10vh + 160px);
+        }
       }
     }
   }
