@@ -31,6 +31,14 @@ en:
         VARIOUS: 'Various'
         MAP: 'Google map'
       FIELDS:
+        BUTTON:
+          LABEL: 'Custom Nav button'
+          LINK:
+            LABEL: 'Button link'
+          ENABLED:
+            LABEL: 'Custom nav button enabled?'
+          TEXT:
+            LABEL: 'Custom nav button text'
         MAXWIDTH:
           LABEL: 'max content width (1000-2000 / default 1280)'
         CUSTOMCSS:
@@ -354,6 +362,14 @@ de:
         VARIOUS: 'Diverses'
         MAP: 'Google Map'
       FIELDS:
+        BUTTON:
+          LABEL: 'Spezialbutton in der Navigation'
+          LINK:
+            LABEL: 'Spezialbutton Link'
+          ENABLED:
+            LABEL: 'Spezialbutton aktiviert?'
+          TEXT:
+            LABEL: 'Spezialbutton Text'
         MAXWIDTH:
           LABEL: 'Maximale Breite des Contents (1000-2000 / Standard 1280)'
         CUSTOMCSS:

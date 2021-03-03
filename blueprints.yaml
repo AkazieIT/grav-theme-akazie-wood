@@ -92,7 +92,7 @@ form:
                     label: THEME_AKAZIEWOOD.THEME.FIELDS.BUTTON.LINK.LABEL
                     show_all: false
                     show_modular: false
-                    show_root: false
+                    show_root: true
         site:
           type: fieldset
           title: THEME_AKAZIEWOOD.THEME.FIELDSET.SITE
