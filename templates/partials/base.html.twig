@@ -82,26 +82,6 @@
                 <p>{{ page.header.text }}</p>
               </div>
             </div>
-          {% elseif page.header.kundencode == 'immosit' %}
-          <div class="screen-image screen-fullscreen">
-            <section class="page section-modular immositstart">
-              <div class="row">
-                <article class="modular section-text col-12 col-md-6">
-                  <h2 class="heading">{{page.header.title | raw}}</h2>
-                  <div class="markdown ">
-                      {{page.header.text | markdown}}
-                  </div>
-                </article>
-                <article class="modular section-image col-12 col-md-6">
-                  <div class="media-container ">
-                    {% set image = page.header.image %}
-                    <img class="media" title="{{ page.header.title }}" alt="Immosit" src="{{ page.media[image].cropZoom(500,500).url }}" />
-
-                  </div>
-                </article>
-              </div>
-            </section>
-          </div>
           {% else %}
             {% set image = page.header.image %}
             {% if theme_var('site.parallax') == 0 %}
@@ -130,6 +110,27 @@
 
             {% block main %}
               <main class="site-content">
+                {% if page.header.kundencode == 'immosit' %}
+                <div class="screen-image screen-fullscreen">
+                  <section class="page section-modular immositstart">
+                    <div class="row">
+                      <article class="modular section-text col-12 col-md-6">
+                        <h2 class="heading">{{page.header.title | raw}}</h2>
+                        <div class="markdown ">
+                            {{page.header.text | markdown}}
+                        </div>
+                      </article>
+                      <article class="modular section-image col-12 col-md-6">
+                        <div class="media-container ">
+                          {% set image = page.header.image %}
+                          <img class="media" title="{{ page.header.title }}" alt="Immosit" src="{{ page.media[image].cropZoom(500,500).url }}" />
+
+                        </div>
+                      </article>
+                    </div>
+                  </section>
+                </div>
+              {% endif %}
                 {% block content %}{% endblock %}
               </main>
             {% endblock %}
