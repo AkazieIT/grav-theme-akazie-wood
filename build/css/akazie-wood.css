@@ -17697,6 +17697,20 @@ a.button {
   }
 }
 
+div.stickybottom {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  div.stickybottom {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
 /* Category filters
 ------------------------------*/
 .catfilterwrap {
