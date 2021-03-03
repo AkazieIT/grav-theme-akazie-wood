@@ -17791,6 +17791,16 @@ ul.catfilter li a.button:hover {
   list-style-type: none;
 }
 
+.bookinghovermobile {
+  display: none;
+}
+
+@media (max-width: 1070px) {
+  .bookinghovermobile {
+    display: inline-block;
+  }
+}
+
 .immositstart {
   padding-top: 160px;
 }
