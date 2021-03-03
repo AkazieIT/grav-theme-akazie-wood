@@ -17753,3 +17753,7 @@ ul.catfilter li a.button:hover {
 .immositstart {
   padding-top: 160px;
 }
+
+.immositstart div article {
+  padding: 0;
+}
