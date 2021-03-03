@@ -38,13 +38,16 @@
     color: {{ theme_var('style.color.text.nav.hover') }};
   }
 
-  header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a{
+  header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a,
+    header.site-header div.header-inner nav.header-nav.mobile ul li.specialbutton a{
 
     background-color:{{ theme_var('style.color.background.secondary') }};
     color:{{ theme_var('style.color.text.secondary') }};
   }
   header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a.active,
-  header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a:hover{
+  header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a:hover,
+  header.site-header div.header-inner nav.header-nav.mobile ul li.specialbutton a.active,
+  header.site-header div.header-inner nav.header-nav.mobile ul li.specialbutton a:hover{
 
     color:{{ theme_var('style.color.background.secondary') }};
     background-color:{{ theme_var('style.color.text.secondary') }};

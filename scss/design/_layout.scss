@@ -345,6 +345,11 @@ header.site-header{
               }
             }
           }
+          li.specialbutton {
+            a {
+              height:60px;
+            }
+          }
           &.nav-lvl1{
             position: absolute;
             top: 50%;
