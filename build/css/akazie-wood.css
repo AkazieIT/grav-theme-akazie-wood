@@ -17772,7 +17772,7 @@ ul.catfilter li a.button:hover {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1070px) {
   .bookinghover {
     display: none;
   }

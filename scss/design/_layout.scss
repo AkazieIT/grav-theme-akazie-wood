@@ -873,7 +873,7 @@ ul.catfilter {
       top:500px;
   }
   left:15%;
-  @media (max-width: 992px) {
+  @media (max-width: 1070px) {
     display:none;
   }
   ul {
@@ -888,6 +888,13 @@ ul.catfilter {
     }
   }
 }
+.bookinghovermobile {
+  display:none;
+  @media (max-width: 1070px) {
+    display:inline-block;
+  }
+}
+
 
 .immositstart {
 
