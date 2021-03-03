@@ -116,6 +116,8 @@ if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
 
   osm();
 
+  paddingImages();
+
 
 });
 

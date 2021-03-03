@@ -66,6 +66,33 @@ form:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.NAVHEIGHT
               default: 60
+            nav.button:
+              type: fieldset
+              title: THEME_AKAZIEWOOD.THEME.FIELDS.BUTTON.LABEL
+              collapsed: false
+              collapsible: true
+              fields:
+                nav.button.enabled:
+                  type: toggle
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.BUTTON.ENABLED.LABEL
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: PLUGIN_ADMIN.DISABLED
+                    1: PLUGIN_ADMIN.ENABLED
+                  validate:
+                    type: bool
+                nav.button.text:
+                  type: text
+                  label: THEME_AKAZIEWOOD.THEME.FIELDS.BUTTON.TEXT.LABEL
+                  default: ''
+                nav.button.link:
+                    type: pages
+                    size: medium
+                    label: THEME_AKAZIEWOOD.THEME.FIELDS.BUTTON.LINK.LABEL
+                    show_all: false
+                    show_modular: false
+                    show_root: false
         site:
           type: fieldset
           title: THEME_AKAZIEWOOD.THEME.FIELDSET.SITE
