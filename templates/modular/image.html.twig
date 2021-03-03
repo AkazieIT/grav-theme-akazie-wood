@@ -9,6 +9,8 @@
         {% set resize = 1 / 2.35 %}
     {% elseif page.header.scale == 4 %}
         {% set resize = 1 %}
+    {% elseif page.header.scale == 5 %}
+        {% set scale = 4 / 3 %}
     {% endif %}
     <div class="media-container {% if page.header.showtitle == 2 %}title-placeholder{% endif %}{% if page.header.column == 3 %} centermark{% endif %}">
     {% if page.header.link %}

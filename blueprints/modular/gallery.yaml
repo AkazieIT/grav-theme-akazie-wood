@@ -59,6 +59,7 @@ form:
                             2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.2
                             3: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.3
                             4: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.4
+                            5: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.5
                         header.boxenabled:
                           type: toggle
                           label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BOX.ENABLED.LABEL
@@ -85,7 +86,7 @@ form:
                         header.boxbuttonlabel:
                           type: text
                           label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.SOCIALMEDIA.LINK.LABEL
-                          default: 
+                          default:
                     column2:
                       type: column
                       fields:

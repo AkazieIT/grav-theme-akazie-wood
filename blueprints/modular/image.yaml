@@ -50,6 +50,7 @@ form:
                     2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.2
                     3: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.3
                     4: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.4
+                    4: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.5
                 header.link:
                   type: text
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.LINK.LABEL

@@ -84,6 +84,7 @@ form:
                             2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.2
                             3: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.3
                             4: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.4
+                            5: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.5
                         header.map.style:
                           type: textarea
                           style: vertical
@@ -147,5 +148,3 @@ form:
                             0: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.0
                             1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.1
                             2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.2
-
-

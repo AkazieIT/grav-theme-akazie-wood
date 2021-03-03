@@ -264,6 +264,7 @@ en:
             2: '16:9 (Full HD)'
             3: '2.35:1 (Widescreen)'
             4: '1:1 (Square)'
+            5: '3:4 (portrait)'
         WINDOW:
           LABEL: 'Open in same window?'
           OPTIONS:
@@ -582,6 +583,7 @@ de:
             2: '16:9 (Full HD)'
             3: '2.35:1 (Widescreen)'
             4: '1:1 (Quadratisch)'
+            5: '3:4 (Hochformat)'
         WINDOW:
           LABEL: 'Im selben Fenster öffnen?'
           OPTIONS:

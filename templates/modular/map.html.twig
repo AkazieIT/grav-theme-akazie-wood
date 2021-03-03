@@ -9,6 +9,8 @@
         {% set scale = 1 / 2.35 %}
     {% elseif page.header.scale == 4 %}
         {% set scale = 1 / 1 %}
+    {% elseif page.header.scale == 5 %}
+        {% set scale = 4 / 3 %}
     {% endif %}
     {% if theme_var('map.type') == 'google' %}
         <div class="media-container {% if page.header.showtitle == 2 %}title-placeholder{% endif %}">

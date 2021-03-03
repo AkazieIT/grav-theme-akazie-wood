@@ -4,6 +4,8 @@
     {% set scale = 1 / 2.35 %}
 {% elseif page.header.scale == 4 %}
     {% set scale = 1 / 1 %}
+{% elseif page.header.scale == 5 %}
+    {% set scale = 4 / 3 %}
 {% else %}
     {% set scale = 3 / 4 %}
 {% endif %}
