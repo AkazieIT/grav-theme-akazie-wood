@@ -54,7 +54,11 @@
           {% include 'partials/header.html.twig' %}
         {% endblock %}
 
-        {% if page.template == 'home' and page.header.kundencode != 'immosit' %}
+
+
+    {% if  page.header.kundencode != 'immosit' %}
+    
+        {% if page.template == 'home' %}
           {% set image = page.header.image %}
           {% if theme_var('site.parallax') == 0 %}
             <div class="screen-image screen-fullscreen{% if page.header.removeheader == true %} removeheader{% endif %}"
@@ -82,6 +86,8 @@
                 <p>{{ page.header.text }}</p>
               </div>
             </div>
+
+
           {% else %}
             {% set image = page.header.image %}
             {% if theme_var('site.parallax') == 0 %}
@@ -106,7 +112,9 @@
                   {% endif %}
                 </div>
               </div>
-            {% endif %}
+          {% endif %}
+
+      {% endif %}
 
             {% block main %}
               <main class="site-content">
