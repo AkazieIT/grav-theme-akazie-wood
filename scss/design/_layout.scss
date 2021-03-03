@@ -878,9 +878,9 @@ ul.catfilter {
           h2 {
             font-size: 60px;
           }
-        }
-        &:last-child {
-          margin-top:40vh;
+          .markdown p {
+            margin-top:40vh;
+          }
         }
       }
     }
