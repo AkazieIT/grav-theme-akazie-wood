@@ -17771,6 +17771,22 @@ ul.catfilter li a.button:hover {
   }
 }
 
+@media (max-width: 992px) {
+  .bookinghover {
+    display: none;
+  }
+}
+
+.bookinghover ul {
+  display: flex;
+}
+
+.bookinghover ul li {
+  flex-grow: 1;
+  display: inline-block;
+  list-style-type: none;
+}
+
 .immositstart {
   padding-top: 160px;
 }

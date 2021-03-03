@@ -872,6 +872,17 @@ ul.catfilter {
       top:500px;
   }
   left:15%;
+  @media (max-width: 992px) {
+    display:none;
+  }
+  ul {
+    display:flex;
+    li {
+      flex-grow: 1;
+      display:inline-block;
+      list-style-type: none;
+    }
+  }
 }
 
 .immositstart {
