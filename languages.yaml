@@ -290,6 +290,8 @@ en:
         PERSONS:
           LABEL: 'Persons'
         FOOTERTEXT:
+          BGHEIGHTMOBILE:
+            LABEL: 'Mobile height (if left empty, footer height will be used)'
           LEFT1:
             LABEL: 'Text left'
           NONAV:
@@ -626,6 +628,8 @@ de:
         PERSONS:
           LABEL: 'Personen'
         FOOTERTEXT:
+          BGHEIGHTMOBILE:
+            LABEL: 'Mobile Höhe (wenn leer gelassen wird die Footer Höhe verwendet)'
           LEFT1:
             LABEL: 'Text links'
           NONAV:
