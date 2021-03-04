@@ -906,7 +906,7 @@ ul.catfilter {
   }
 }
 .bookinghovermobile {
-  display:none;
+  display:none !important;
   margin-top:50px;
   @media (max-width: 992px) {
     display:inline-block;

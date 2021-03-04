@@ -17813,7 +17813,7 @@ ul.catfilter li a.button:hover {
 }
 
 .bookinghovermobile {
-  display: none;
+  display: none !important;
   margin-top: 50px;
 }
 
