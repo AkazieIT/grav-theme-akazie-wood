@@ -276,7 +276,10 @@ header.site-header{
           li.specialbutton {
             a {
               height:60px;
-                margin-left:30px;
+              margin-left:30px;
+              &:hover {
+                font-weight:normal;
+              }
               @media (max-width: 1780px) {
                 margin-right:30px;
               }
@@ -349,6 +352,9 @@ header.site-header{
             a {
               margin-top:50px;
               padding:20px;
+              &:hover {
+                font-weight:normal;
+              }
             }
           }
           &.nav-lvl1{
