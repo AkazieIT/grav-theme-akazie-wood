@@ -19,8 +19,11 @@ $('.stickybottomtoggle').click(function() {
 });
 
 function footerHeight() {
-  if($('.footer-main .footerpage').data('footerheightd')) { $('.footer-main .footerpage').css('height', $('.footer-main .footerpage').data('footerheightd'));}
-  if($('.footer-main .footerpage').data('footerheightm')) { $('.footer-main .footerpage').css('height', $('.footer-main .footerpage').data('footerheightm'));}
+  if($(window).width() < 992) {
+    if($('.footer-main .footerpage').data('footerheightm')) { $('.footer-main .footerpage').css('height', $('.footer-main .footerpage').data('footerheightm'));}
+  } else {
+    if($('.footer-main .footerpage').data('footerheightd')) { $('.footer-main .footerpage').css('height', $('.footer-main .footerpage').data('footerheightd'));}
+  }
 }
 
 function menuClick(menuSelector) {
