@@ -17776,17 +17776,12 @@ ul.catfilter li a.button:hover {
 
 @media (min-width: 1530px) {
   .bookinghover {
-    left: 20vw;
+    left: auto;
+    right: auto;
   }
 }
 
-@media (min-width: 1820px) {
-  .bookinghover {
-    left: 23vw;
-  }
-}
-
-@media (max-width: 1070px) {
+@media (max-width: 992px) {
   .bookinghover {
     display: none;
   }
@@ -17810,7 +17805,7 @@ ul.catfilter li a.button:hover {
   margin-top: 50px;
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 992px) {
   .bookinghovermobile {
     display: inline-block;
   }

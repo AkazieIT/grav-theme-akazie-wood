@@ -877,12 +877,11 @@ ul.catfilter {
   left:15vw;
 
   @media (min-width: 1530px) {
-  left:20vw;
+  left:auto;
+  right:auto;
   }
-  @media (min-width: 1820px) {
-  left:23vw;
-  }
-  @media (max-width: 1070px) {
+
+  @media (max-width: 992px) {
     display:none;
   }
   ul {
@@ -900,7 +899,7 @@ ul.catfilter {
 .bookinghovermobile {
   display:none;
   margin-top:50px;
-  @media (max-width: 1070px) {
+  @media (max-width: 992px) {
     display:inline-block;
   }
 }
