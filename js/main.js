@@ -19,7 +19,7 @@ $('.stickybottomtoggle').click(function() {
 });
 
 function footerHeight() {
-  if($(window).width() < 856) {
+  if($(window).width() < 855) {
     if($('.footer-main .footerpage').data('footerheightm')) { $('.footer-main .footerpage').css('height', $('.footer-main .footerpage').data('footerheightm'));}
   } else {
     if($('.footer-main .footerpage').data('footerheightd')) { $('.footer-main .footerpage').css('height', $('.footer-main .footerpage').data('footerheightd'));}
