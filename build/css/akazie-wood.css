@@ -17755,10 +17755,11 @@ ul.catfilter li a.button:hover {
   z-index: 3;
   width: 60vw;
   min-width: 880px;
+  max-width: 1054px;
   height: 105px;
   position: absolute;
   top: 56%;
-  left: 15%;
+  left: 15vw;
 }
 
 @media (max-height: 890px) {
@@ -17770,6 +17771,18 @@ ul.catfilter li a.button:hover {
 @media (max-height: 680px) {
   .bookinghover {
     top: 500px;
+  }
+}
+
+@media (min-width: 1530px) {
+  .bookinghover {
+    left: 20vw;
+  }
+}
+
+@media (min-width: 1820px) {
+  .bookinghover {
+    left: 23vw;
   }
 }
 

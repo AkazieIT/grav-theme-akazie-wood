@@ -864,6 +864,7 @@ ul.catfilter {
   z-index:3;
   width: 60vw;
   min-width:880px;
+  max-width:1054px;
   height:105px;
   position:absolute;
   top: 56%;
@@ -873,7 +874,14 @@ ul.catfilter {
   @media (max-height: 680px) {
       top:500px;
   }
-  left:15%;
+  left:15vw;
+
+  @media (min-width: 1530px) {
+  left:20vw;
+  }
+  @media (min-width: 1820px) {
+  left:23vw;
+  }
   @media (max-width: 1070px) {
     display:none;
   }
