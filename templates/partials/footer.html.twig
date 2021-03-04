@@ -37,6 +37,10 @@
               <div class="col-12 col-md-4 rightfootercontent">
                 <h4>{{ footerpage.header.row2titel }}</h4>
                 <div>
+
+
+
+                {% if page.header.row2content is empty %}
                 <ul>
                   {% for page in pages.children.visible %}
                       <li>
@@ -46,6 +50,13 @@
                       </li>
                   {% endfor %}
                 </ul>
+                {% else %}
+                  {{ page.header.row2content | markdown }}
+                {% endif %}
+
+
+
+
                 </div>
               </div>
              {% endif %}
