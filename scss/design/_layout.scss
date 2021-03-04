@@ -277,9 +277,6 @@ header.site-header{
             a {
               height:60px;
               margin-left:30px;
-              &:hover {
-                font-weight:normal;
-              }
               @media (max-width: 1780px) {
                 margin-right:30px;
               }
@@ -352,9 +349,6 @@ header.site-header{
             a {
               margin-top:50px;
               padding:20px;
-              &:hover {
-                font-weight:normal;
-              }
             }
           }
           &.nav-lvl1{
@@ -915,7 +909,7 @@ ul.catfilter {
   display:none !important;
   margin-top:50px;
   @media (max-width: 992px) {
-    display:inline-block;
+    display:inline-block !important;
   }
 }
 
