@@ -17847,9 +17847,9 @@ ul.catfilter li a.button:hover {
   }
 }
 
-@media (min-width: 992px) and (min-width: 2050px) {
+@media (min-width: 992px) and (min-width: 2000px) {
   .immositstart div.row article:first-child {
-    padding-left: 6vw;
+    padding-left: 5vw;
   }
 }
 
