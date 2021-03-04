@@ -19,7 +19,8 @@ $('.stickybottomtoggle').click(function() {
 });
 
 function footerHeight() {
-  
+  if($('.footer-main .footerpage').data('footerheightd')) { $('.footer-main .footerpage').css('height', $('.footer-main .footerpage').data('footerheightd'));}
+  if($('.footer-main .footerpage').data('footerheightm')) { $('.footer-main .footerpage').css('height', $('.footer-main .footerpage').data('footerheightm'));}
 }
 
 function menuClick(menuSelector) {
@@ -75,6 +76,7 @@ $('#scrolltopbutton').click(function(e){
 $(document).ready(function() {
 
 paddingImages();
+footerHeight();
 
 /* IOS BG Hack */
 if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
@@ -124,7 +126,7 @@ if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
   $(window).on('resize',function() {
 
       paddingImages();
-
+      footerHeight();
     let youtube = $('.youtube-iframe');
     let youtubeheight = youtube.width() * 10/16;
     $('.youtube-iframe').css('height', youtubeheight);
