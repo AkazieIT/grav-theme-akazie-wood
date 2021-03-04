@@ -122,3 +122,13 @@ form:
                 header.bgheightmobile:
                   type: text
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.BGHEIGHTMOBILE.LABEL
+                header.rightsidediv:
+                  type: toggle
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.RIGHTSIDEDIV.LABEL
+                  highlight: 0
+                  default: 0
+                  options:
+                    1: '2/3'
+                    0: '1/2'
+                  validate:
+                    type: bool
