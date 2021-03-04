@@ -40,7 +40,7 @@
 
 
 
-                {% if page.header.row2content is empty %}
+                {% if page.header.row2content is defined %}
                 <ul>
                   {% for page in pages.children.visible %}
                       <li>
