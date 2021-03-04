@@ -931,6 +931,9 @@ ul.catfilter {
       @media (min-width: 992px) {
         &:first-child {
           padding-left:10vw;
+          @media (min-width: 2050px) {
+            padding-left:6vw;
+          }
           padding-top:10vh;
           @media (max-width: 1220px) {
             padding-left:0px;
