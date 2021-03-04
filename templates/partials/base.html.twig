@@ -102,7 +102,7 @@
 
                 <div class="image-caption{% if page.header.claimswitch == true %} claim{% endif %}{% if page.header.removeheader == true %} removeheader{% endif %}">
 
-                  {% page.template != 'catfilter' %}
+                  {% if page.template != 'catfilter' %}
                     {% if page.header.claimswitch == false %}
                       <h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
                     {% else %}
