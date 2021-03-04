@@ -18,6 +18,10 @@ $('.stickybottomtoggle').click(function() {
 
 });
 
+function footerHeight() {
+  
+}
+
 function menuClick(menuSelector) {
 
   $(menuSelector).toggleClass('open');

@@ -13,7 +13,7 @@
     {% if footerpage.template == 'footerpage' %}
 
 
-  <div class="container footerpage{% if footerpage.header.nofullscreen == 1 %} alignbottom{% endif %}" {% if footerpage.header.nofullscreen == 1 %}style="height:{{ footerpage.header.bgheight }}"{% endif %}>
+  <div class="container footerpage{% if footerpage.header.nofullscreen == 1 %} alignbottom{% endif %}" {% if footerpage.header.nofullscreen == 1 %}data-footerheightd="{{ footerpage.header.bgheight }}" {% if footerpage.header.bgheightmobile is defined %}data-footerheightm="{{ footerpage.header.bgheightmobile }}"{% endif %}{% endif %}>
       <div class="row">
         <article class="col-12 {% if footerpage.header.row2show != 1 %}col-md-6{% else %}col-md-8{% endif %}">
         <div class="container leftfootercontent">
