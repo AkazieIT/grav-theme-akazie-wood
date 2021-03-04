@@ -17835,6 +17835,15 @@ ul.catfilter li a.button:hover {
     padding-left: 10vw;
     padding-top: 10vh;
   }
+}
+
+@media (min-width: 992px) and (min-width: 1220px) {
+  .immositstart div.row article:first-child {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 992px) {
   .immositstart div.row article:first-child h2 {
     font-size: 60px;
   }

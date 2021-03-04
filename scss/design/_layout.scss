@@ -925,6 +925,9 @@ ul.catfilter {
         &:first-child {
           padding-left:10vw;
           padding-top:10vh;
+          @media (min-width: 1220px) {
+            padding-left:0px;
+          }
           h2 {
             font-size: 60px;
           }
