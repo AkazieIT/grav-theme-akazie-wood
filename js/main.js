@@ -12,6 +12,12 @@ $('.stickybottommenu').click(function() {
 
 });
 
+$('.stickybottomtoggle').click(function() {
+
+  menuClick('.stickybottommenu');
+
+});
+
 function menuClick(menuSelector) {
 
   $(menuSelector).toggleClass('open');
