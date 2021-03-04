@@ -165,6 +165,11 @@ if(window.innerWidth > 869) {
         $(this).css('padding-left',$(this).data('padding'));
       });
   });
+} else {
+  $('section.section-modular').find('div.row').each(function() {
+        $(this).css('padding-right','0px');
+        $(this).css('padding-left','0px');
+  });
 }
 
 }
