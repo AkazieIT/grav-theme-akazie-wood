@@ -167,8 +167,12 @@ if(window.innerWidth > 869) {
   });
 } else {
   $('section.section-modular').find('div.row').each(function() {
+      $(this).children('article.col-md-6:nth-child(odd)').children('.media-container').each(function() {
         $(this).css('padding-right','0px');
+      });
+      $(this).children('article.col-md-6:nth-child(even)').children('.media-container').each(function() {
         $(this).css('padding-left','0px');
+      });
   });
 }
 
