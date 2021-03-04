@@ -3,12 +3,12 @@ $(".gallery").lightGallery();
 $('.pull').click(function() {
   $(this).toggleClass('open');
   if($(this).hasClass('open')){
-    if($('.stickybottom').find(this).length == 1) { $('header').addClass('fixed');}
+    if($('.stickybottom').find(this).length == 1) { $('header').addClass('fixed');  $('.stickybottomtoggle').show(); }
     $('.header-nav.mobile').show().attr('aria-hidden', 'false');
     $('.content, .footer, .screen-image').hide();
     $('.page-header').attr('menu', 'open');
   } else {
-    if($('.stickybottom').find(this).length == 1) { $('header').removeClass('fixed'); }
+    if($('.stickybottom').find(this).length == 1) { $('header').removeClass('fixed'); $('.stickybottomtoggle').hide();}
     $('.header-nav.mobile').hide().attr('aria-hidden', 'true');
     $('.content, .footer, .screen-image').show();
     $('.page-header').attr('menu', 'close');

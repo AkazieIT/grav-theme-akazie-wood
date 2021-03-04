@@ -376,6 +376,13 @@ header.site-header{
     }
   }
 }
+div.stickybottom-toggle {
+  position: fixed;
+  top: 18px;
+  right: 15px;
+  z-index: 1100;
+  display:none;
+}
 div.mobile-toggle{
   position: absolute;
   top: 18px;

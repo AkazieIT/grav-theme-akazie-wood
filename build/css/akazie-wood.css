@@ -17168,6 +17168,14 @@ header.site-header div.header-inner nav.header-nav.mobile ul.nav-lvl2 > li > a {
   font-size: 22px;
 }
 
+div.stickybottom-toggle {
+  position: fixed;
+  top: 18px;
+  right: 15px;
+  z-index: 1100;
+  display: none;
+}
+
 div.mobile-toggle {
   position: absolute;
   top: 18px;
