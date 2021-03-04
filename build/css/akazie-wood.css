@@ -17074,10 +17074,6 @@ header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a
   margin-left: 30px;
 }
 
-header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a:hover {
-  font-weight: normal;
-}
-
 @media (max-width: 1780px) {
   header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a {
     margin-right: 30px;
@@ -17147,10 +17143,6 @@ header.site-header div.header-inner nav.header-nav.mobile ul li a.active {
 header.site-header div.header-inner nav.header-nav.mobile ul li.specialbutton a {
   margin-top: 50px;
   padding: 20px;
-}
-
-header.site-header div.header-inner nav.header-nav.mobile ul li.specialbutton a:hover {
-  font-weight: normal;
 }
 
 header.site-header div.header-inner nav.header-nav.mobile ul.nav-lvl1 {
@@ -17827,7 +17819,7 @@ ul.catfilter li a.button:hover {
 
 @media (max-width: 992px) {
   .bookinghovermobile {
-    display: inline-block;
+    display: inline-block !important;
   }
 }
 
