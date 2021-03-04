@@ -40,7 +40,7 @@
 
 
 
-                {% if page.header.row2content is defined %}
+                {% if footerpage.header.row2content is empty %}
                 <ul>
                   {% for page in pages.children.visible %}
                       <li>
@@ -51,7 +51,7 @@
                   {% endfor %}
                 </ul>
                 {% else %}
-                  {{ page.header.row2content | markdown }}
+                  {{ footerpage.header.row2content | markdown }}
                 {% endif %}
 
 
