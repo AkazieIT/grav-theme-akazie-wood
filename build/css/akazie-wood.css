@@ -17751,6 +17751,7 @@ ul.catfilter li a.button:hover {
 }
 
 .bookinghover {
+  border-radius: 20px;
   z-index: 3;
   width: 60vw;
   min-width: 880px;
