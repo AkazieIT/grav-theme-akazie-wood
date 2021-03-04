@@ -293,9 +293,11 @@ en:
           LEFT1:
             LABEL: 'Text left'
           NONAV:
-            LABEL: 'Show navigation?'
+            LABEL: 'Show 2nd row?'
           RIGHTNAV:
-            LABEL: 'Navigation title'
+            LABEL: 'Title'
+            CONTENT:
+              LABEL: 'Show content instead of navigation (if left empty, there is a navigation shown)'
           UPSIGN:
             LABEL: 'Scroll up text'
           FOOTERBG:
@@ -627,9 +629,11 @@ de:
           LEFT1:
             LABEL: 'Text links'
           NONAV:
-            LABEL: 'Navigation anzeigen?'
+            LABEL: '2. Spalte anzeigen?'
           RIGHTNAV:
-            LABEL: 'Navigation Titel'
+            LABEL: 'Titel'
+            CONTENT:
+              LABEL: 'Content anstatt Navigation anzeigen (wenn leer gelassen, wird eine Navigation generiert)'
           UPSIGN:
             LABEL: 'Scroll up text'
           FOOTERBG:

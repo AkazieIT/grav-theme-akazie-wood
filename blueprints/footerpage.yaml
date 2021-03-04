@@ -60,6 +60,10 @@ form:
                     header.row2titel:
                       type: text
                       label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.RIGHTNAV.LABEL
+                    header.row2content:
+                      type: markdown
+                      validate:
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.RIGHTNAV.CONTENT.LABEL
                 col3:
                   type: fieldset
                   title: THEME_AKAZIEWOOD.THEME.FIELDSET.COL.3
@@ -115,3 +119,6 @@ form:
                 header.bgheight:
                   type: text
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.BGHEIGHT.LABEL
+                header.bgheightmobile:
+                  type: text
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.BGHEIGHTMOBILE.LABEL
