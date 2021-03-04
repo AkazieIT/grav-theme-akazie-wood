@@ -17793,6 +17793,7 @@ ul.catfilter li a.button:hover {
 
 .bookinghovermobile {
   display: none;
+  margin-top: 50px;
 }
 
 @media (max-width: 1070px) {
