@@ -31,7 +31,7 @@ form:
               type: taxonomy
               label: PLUGIN_ADMIN.TAXONOMY
               default: 'filterable'
-              multiple: true
+              multiple: false
 
             media:
               type: section
