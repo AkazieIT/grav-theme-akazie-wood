@@ -29,7 +29,8 @@ form:
                     type: textarea
             header.taxonomy:
               default:
-                raucher: ['nein]
+                preis: ['<100']
+                raucher: ['nein']
                 wlan: ['ja']
               options:
                 raucher: ['ja']
