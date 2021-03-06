@@ -2,7 +2,7 @@
 {% import 'partials/cascade-filters.html.twig' as f %}
 {% set queries = uri.query(null, true) %}
 {% if queries is empty %}
-    {% set collection = page.collection %}
+    {% set collection = page.children %}
 {% else %}
     {% set collection = taxonomy.findTaxonomy(queries) %}
 {% endif %}
