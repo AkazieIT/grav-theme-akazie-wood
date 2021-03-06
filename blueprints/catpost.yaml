@@ -27,19 +27,11 @@ form:
                   type: markdown
                   validate:
                     type: textarea
-      #      header.taxonomy:
-      #        type: taxonomy
-      #        label: PLUGIN_ADMIN.TAXONOMY
-      #        default: 'filterable'
-      #        multiple: false
-
-              header.taxlist:
-                type: selectize
-                size: large
-                label: Tag List
-                classes: fancy
-                validate:
-                  type: commalist
+            header.taxonomy:
+              type: taxonomy
+              label: PLUGIN_ADMIN.TAXONOMY
+              default: 'filterable'
+              multiple: false
             media:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
