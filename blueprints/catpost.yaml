@@ -33,7 +33,7 @@ form:
       #        default: 'filterable'
       #        multiple: false
 
-              header.taxonomy:
+              header.taxlist:
                 type: selectize
                 size: large
                 label: Tag List
