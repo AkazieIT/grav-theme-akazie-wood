@@ -28,14 +28,10 @@ form:
                   validate:
                     type: textarea
             header.taxonomy:
-              default:
-                preis: ['<100']
-                raucher: ['nein']
-                wlan: ['ja']
-              options:
-                raucher: ['ja']
-              validate:
-                type: commalist
+              type: taxonomy
+              label: PLUGIN_ADMIN.TAXONOMY
+              default: 'filterable'
+              multiple: false
             media:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
