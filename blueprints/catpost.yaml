@@ -28,10 +28,13 @@ form:
                   validate:
                     type: textarea
             header.taxonomy:
-              type: taxonomy
-              label: PLUGIN_ADMIN.TAXONOMY
-              default: 'filterable'
-              multiple: false
+              default:
+                raucher: ['nein]
+                wlan: ['ja']
+              options:
+                raucher: ['ja']
+              validate:
+                type: commalist
             media:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
