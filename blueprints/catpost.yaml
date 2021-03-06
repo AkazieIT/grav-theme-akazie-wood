@@ -27,19 +27,11 @@ form:
                   type: markdown
                   validate:
                     type: textarea
-  #          header.taxonomy:
-  #            type: taxonomy
-  #            label: PLUGIN_ADMIN.TAXONOMY
-  #            default: 'filterable'
-  #            multiple: true
-              header.taxonomy.tag:
-                type: toggle
-                label: 'wlan tag'
-                highlight: 0
-                default: 0
-                options:
-                  1: PLUGIN_ADMIN.DISABLED
-                  0: PLUGIN_ADMIN.ENABLED
+            header.taxonomy:
+              type: taxonomy
+              label: PLUGIN_ADMIN.TAXONOMY
+              default: 'filterable'
+              multiple: true
 
             media:
               type: section
