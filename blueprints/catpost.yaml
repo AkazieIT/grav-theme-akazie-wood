@@ -27,13 +27,28 @@ form:
                   type: markdown
                   validate:
                     type: textarea
-            header.taxonomy:
-              type: taxonomy
-              label: PLUGIN_ADMIN.TAXONOMY
-              default: 'filterable'
-              multiple: true
-              validate:
-                type: array
+  #          header.taxonomy:
+  #            type: taxonomy
+  #            label: PLUGIN_ADMIN.TAXONOMY
+  #            default: 'filterable'
+  #            multiple: true
+              header.taxonomy.tag:
+                type: toggle
+                label: 'wlan tag'
+                highlight: 0
+                default: 0
+                options:
+                  1: PLUGIN_ADMIN.DISABLED
+                  0: PLUGIN_ADMIN.ENABLED
+              header.taxonomy.raucher:
+                type: toggle
+                label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.NONAV.LABEL
+                highlight: 0
+                default: 0
+                options:
+                  1: PLUGIN_ADMIN.DISABLED
+                  0: PLUGIN_ADMIN.ENABLED
+
             media:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
