@@ -17781,6 +17781,14 @@ ul.catfilter li a.button:hover {
   flex-grow: 1;
 }
 
+.list-item.h-entry.oz-filteritem:nth-child(2) {
+  margin-right: 2%;
+}
+
+.list-item.h-entry.oz-filteritem:nth-child(3n+1) {
+  margin-right: 2%;
+}
+
 .catfiltercontainer {
   border-radius: 20px;
   margin-bottom: 30px;
