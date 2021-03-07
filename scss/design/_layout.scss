@@ -886,6 +886,11 @@ ul.catfilter {
   margin-right:30px;
   }
   &.oz-filteritem {
+    img {
+      float:none;
+      width:calc(100% - 60px);
+      margin:30px;
+    }
     flex-basis: 26%;
     flex-grow:1;
     margin-bottom:6%;

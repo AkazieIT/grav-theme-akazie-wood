@@ -17785,6 +17785,12 @@ ul.catfilter li a.button:hover {
   border-radius: 0px 50px;
 }
 
+.list-item.h-entry.oz-filteritem img {
+  float: none;
+  width: calc(100% - 60px);
+  margin: 30px;
+}
+
 @media (min-width: 1220px) {
   .list-item.h-entry.oz-filteritem:nth-child(3n - 1) {
     margin-right: 6%;
