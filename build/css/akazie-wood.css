@@ -17754,6 +17754,7 @@ div.stickybottom {
 ul.catfilter {
   display: inline-block;
   padding-left: 0px;
+  margin-bottom: 0px;
 }
 
 ul.catfilter li {
@@ -17860,7 +17861,7 @@ ul.catfilter li a.button.keyyes:hover {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .bookinghover {
