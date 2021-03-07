@@ -17309,6 +17309,12 @@ main.site-content .page.section-default.oz-itemcontainer {
   justify-content: space-between;
 }
 
+main.site-content .page.section-modular.oz-itemcontainer::after,
+main.site-content .page.section-default.oz-itemcontainer::after {
+  content: "";
+  flex: auto;
+}
+
 main.site-content .modular.section-angebotetext {
   margin-bottom: 0px;
 }

@@ -479,6 +479,10 @@ main.site-content{
     &.oz-itemcontainer {
       display:flex;
        justify-content: space-between;
+       &::after {
+          content: "";
+          flex: auto;
+       }
     }
   }
   .modular.section-angebotetext {
