@@ -8,6 +8,7 @@
 {% endif %}
 
 {% block content %}
+<section class="page section-default">
 <div class="row">
   <article class="modular section-text col-12">
     {% if page.header.showtitle == 1 %}<h2 class="heading">{{ page.header.title }}</h2>{% endif %}
@@ -17,6 +18,7 @@
 
   </article>
 </div>
+</section>
 <div class="sidebar column is-narrow catfiltercontainer">
 	{% set taxlist = cascadeFilters.get() %} {# get texonomy list #}
 	{% set queries = uri.query(null, true) %} {# get queries as Array #}
