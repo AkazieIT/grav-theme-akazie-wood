@@ -18,17 +18,36 @@
       {% if theme_var('header.kundencode') == 'immosit' %}
         <a href="{{ page.url }}" class="filterbutton u-url">{{ page.title }}</a>
         <div class="oz-filtericons">
-          <img src="{{ url('theme://custom/logo/smoking-ban-solid.svg')}}"/>
-          <img src="{{ url('theme://custom/logo/wifi-solid.svg')}}"/>
-          <img src="{{ url('theme://custom/logo/paw-solid.svg')}}"/>
-          <img src="{{ url('theme://custom/logo/washer-solid.svg')}}"/>
-          <img src="{{ url('theme://custom/logo/map-marker-smile-solid.svg')}}"/>
-          <img src="{{ url('theme://custom/logo/parking-solid.svg')}}"/>
-          <span class="tags">
               {% for tag in page.taxonomy.nichtraucher %}
-              <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="p-category">{{ tag }}</a>
+              {% if tag == 'ja' %}
+              <img src="{{ url('theme://custom/logo/smoking-ban-solid.svg')}}"/>
+              {% endif %}
               {% endfor %}
-          </span>
+              {% for tag in page.taxonomy.wlan %}
+              {% if tag == 'ja' %}
+              <img src="{{ url('theme://custom/logo/wifi-solid.svg')}}"/>
+              {% endif %}
+              {% endfor %}
+              {% for tag in page.taxonomy.haustiere %}
+              {% if tag == 'ja' %}
+              <img src="{{ url('theme://custom/logo/paw-solid.svg')}}"/>
+              {% endif %}
+              {% endfor %}
+              {% for tag in page.taxonomy.waschmaschine %}
+              {% if tag == 'ja' %}
+              <img src="{{ url('theme://custom/logo/washer-solid.svg')}}"/>
+              {% endif %}
+              {% endfor %}
+              {% for tag in page.taxonomy.zentrumsnah %}
+              {% if tag == 'ja' %}
+              <img src="{{ url('theme://custom/logo/map-marker-smile-solid.svg')}}"/>
+              {% endif %}
+              {% endfor %}
+              {% for tag in page.taxonomy.parking %}
+              {% if tag == 'ja' %}
+              <img src="{{ url('theme://custom/logo/parking-solid.svg')}}"/>
+              {% endif %}
+              {% endfor %}
         </div>
       {% else %}
 
