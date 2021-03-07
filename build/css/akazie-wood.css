@@ -17811,7 +17811,7 @@ ul.catfilter li a.button:hover {
   margin: 40px;
 }
 
-@media (min-width: 1220px) {
+@media (min-width: 870px) {
   .list-item.h-entry.oz-filteritem:nth-child(3n - 1) {
     margin-right: 6%;
   }
@@ -17820,7 +17820,7 @@ ul.catfilter li a.button:hover {
   }
 }
 
-@media (min-width: 870px) and (max-width: 1220px) {
+@media (min-width: 500px) and (max-width: 870px) {
   .list-item.h-entry.oz-filteritem:nth-child(2n - 1) {
     margin-right: 6%;
   }

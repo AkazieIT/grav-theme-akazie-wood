@@ -912,7 +912,7 @@ ul.catfilter {
     flex-basis: 26%;
     flex-grow:1;
     margin-bottom:6%;
-    @media (min-width:1220px) {
+    @media (min-width:870px) {
       &:nth-child(3n - 1) {
         margin-right:6%;
       }
@@ -920,7 +920,7 @@ ul.catfilter {
         margin-right:6%;
       }
     }
-    @media (min-width:870px) and (max-width:1220px) {
+    @media (min-width:500px) and (max-width:870px) {
       &:nth-child(2n - 1) {
         margin-right:6%;
       }
