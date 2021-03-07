@@ -8,7 +8,7 @@
       <a class="postbacklink" href="{{ base_url_absolute  ~ '/wohnungen' }}">
       <img src="{{ url('theme://custom/logo/arrow-to-top-solid.svg')}}"/></a>
       <h2 class="heading detail">{{ page.header.title }}</h2>
-      <div class="oz-filtericons">
+      <div class="oz-filtericons detailicons">
             {% for tag in page.taxonomy.nichtraucher %}
             {% if tag == 'ja' %}
             <img src="{{ url('theme://custom/logo/smoking-ban-solid.svg')}}"/>

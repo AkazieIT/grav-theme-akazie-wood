@@ -18028,3 +18028,9 @@ div.screen-fullscreen {
 h2.heading.detail {
   text-align: right;
 }
+
+.oz-filtericons.detailicons img {
+  height: 40px;
+  width: auto;
+  margin-left: 10px;
+}
