@@ -17306,6 +17306,7 @@ main.site-content .page.section-default div article.centermark {
 main.site-content .page.section-modular.oz-itemcontainer,
 main.site-content .page.section-default.oz-itemcontainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 

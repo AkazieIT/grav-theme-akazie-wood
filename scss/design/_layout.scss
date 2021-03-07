@@ -478,6 +478,7 @@ main.site-content{
     }
     &.oz-itemcontainer {
       display:flex;
+      flex-wrap:wrap;
        justify-content: space-between;
        &::after {
           content: "";
