@@ -17781,22 +17781,22 @@ ul.catfilter li a.button:hover {
 .list-item.h-entry.oz-filteritem {
   flex-basis: 26%;
   flex-grow: 1;
-  margin-bottom: 4%;
+  margin-bottom: 6%;
   border-radius: 0px 50px;
 }
 
 @media (min-width: 1220px) {
   .list-item.h-entry.oz-filteritem:nth-child(3n - 1) {
-    margin-right: 4%;
+    margin-right: 6%;
   }
   .list-item.h-entry.oz-filteritem:nth-child(3n - 2) {
-    margin-right: 4%;
+    margin-right: 6%;
   }
 }
 
 @media (min-width: 870px) and (max-width: 1220px) {
   .list-item.h-entry.oz-filteritem:nth-child(2n - 1) {
-    margin-right: 4%;
+    margin-right: 6%;
   }
 }
 
