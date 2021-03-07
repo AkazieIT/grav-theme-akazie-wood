@@ -17862,6 +17862,13 @@ ul.catfilter li a.button:hover {
   margin-right: 30px;
 }
 
+.catfiltercontainer {
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 20px;
+  height: 105px;
+}
+
 .bookinghover {
   border-radius: 20px;
   z-index: 3;

@@ -835,6 +835,7 @@ div.stickybottom {
 
 /* Category filters
 ------------------------------*/
+
 .catfilterwrap {
   display:inline-block;
   padding:10px;
@@ -871,6 +872,12 @@ ul.catfilter {
   float:left;
   margin-right:30px;
   }
+}
+.catfiltercontainer {
+  margin-left:5%;
+  margin-right:5%;
+  border-radius:20px;
+  height:105px;
 }
 .bookinghover {
   border-radius:20px;
