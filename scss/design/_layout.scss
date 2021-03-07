@@ -853,7 +853,6 @@ div.stickybottom {
 .catfilterwrap {
   display:inline-block;
   padding:10px;
-  display:flex;
 
 }
 ul.catfilter {
@@ -961,6 +960,8 @@ ul.catfilter {
   margin-bottom:30px;
   width:100%;
   text-align:center;
+
+  display:flex;
 }
 .bookinghover {
   border-radius:20px;
