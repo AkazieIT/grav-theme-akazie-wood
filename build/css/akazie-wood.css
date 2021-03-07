@@ -17793,6 +17793,8 @@ ul.catfilter li a.button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .list-item.h-entry.oz-filteritem .list-blog-header .oz-filtericons img {
