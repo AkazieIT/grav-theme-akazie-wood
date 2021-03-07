@@ -17773,7 +17773,6 @@ ul.catfilter li a.button:not(.keyyes) {
 }
 
 ul.catfilter li a.button:not(.keyyes):hover {
-  background-color: #969696;
   font-weight: normal;
 }
 
@@ -17785,7 +17784,6 @@ ul.catfilter li a.button.keyyes {
 }
 
 ul.catfilter li a.button.keyyes:hover {
-  background-color: #969696;
   font-weight: normal;
 }
 

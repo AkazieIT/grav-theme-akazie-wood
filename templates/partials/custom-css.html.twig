@@ -188,9 +188,11 @@
   }
 
   body ul.catfilter li a.button {
-    background-color:{{ theme_var('style.color.background.secondary') }};
-    color:{{ theme_var('style.color.text.primary') }};
-    border:1px solid {{ theme_var('style.color.background.primary') }};
+    background-color: transparent;
+    color:{{ theme_var('style.color.text.secondary') }};
+  }
+  body ul.catfilter li a.button:hover {
+    color:{{ theme_var('style.color.background.primary') }};
   }
   body ul.catfilter li a.button.is-active {
     background-color:{{ theme_var('style.color.background.primary') }};
@@ -199,8 +201,10 @@
 
     body ul.catfilter li a.button.keyyes {
       background-color:transparent;
-      color:{{ theme_var('style.color.text.primary') }};
-      border:none;
+      color:{{ theme_var('style.color.text.secondary') }};
+    }
+    body ul.catfilter li a.button.keyyes:hover {
+      background-color:{{ theme_var('style.color.text.secondary') }};
     }
     body ul.catfilter li a.button.is-active {
       background-color:{{ theme_var('style.color.white') }};
