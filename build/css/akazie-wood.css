@@ -18002,3 +18002,9 @@ div.screen-fullscreen {
   height: 35px;
   width: auto;
 }
+
+.postbacklink {
+  width: 70px;
+  height: auto;
+  transform: rotate(90);
+}
