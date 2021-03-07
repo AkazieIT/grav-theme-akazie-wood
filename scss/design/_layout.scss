@@ -478,6 +478,7 @@ main.site-content{
     }
     &.oz-itemcontainer {
       display:flex;
+      flex-wrap:wrap;
        justify-content: space-between;
        &::after {
           content: "";
@@ -881,15 +882,8 @@ ul.catfilter {
   margin-right:30px;
   }
   &.oz-filteritem {
-    flex-basis: 28%;
-    padding:30px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin: -12px 0 0 -12px;
-    width: calc(100% + 12px);
-    & > * {
-      margin: 12px 0 0 12px;
-    }
+    flex: 0 0 18%;
+    margin-bottom: 2%;
   }
 }
 

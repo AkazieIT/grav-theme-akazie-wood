@@ -17306,6 +17306,7 @@ main.site-content .page.section-default div article.centermark {
 main.site-content .page.section-modular.oz-itemcontainer,
 main.site-content .page.section-default.oz-itemcontainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -17776,16 +17777,8 @@ ul.catfilter li a.button:hover {
 }
 
 .list-item.h-entry.oz-filteritem {
-  flex-basis: 28%;
-  padding: 30px;
-  display: inline-flex;
-  flex-wrap: wrap;
-  margin: -12px 0 0 -12px;
-  width: calc(100% + 12px);
-}
-
-.list-item.h-entry.oz-filteritem > * {
-  margin: 12px 0 0 12px;
+  flex: 0 0 18%;
+  margin-bottom: 2%;
 }
 
 .catfiltercontainer {
