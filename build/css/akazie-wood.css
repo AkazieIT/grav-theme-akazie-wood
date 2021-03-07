@@ -17308,12 +17308,12 @@ main.site-content .page.section-default.oz-itemcontainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-main.site-content .page.section-modular.oz-itemcontainer::after,
-main.site-content .page.section-default.oz-itemcontainer::after {
-  content: "";
-  flex: auto;
+  /*
+       &::after {
+          content: "";
+          flex: auto;
+       }
+       */
 }
 
 main.site-content .modular.section-angebotetext {
