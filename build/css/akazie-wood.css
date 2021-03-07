@@ -17859,6 +17859,8 @@ ul.catfilter li a.button.keyyes:hover {
   margin-bottom: 30px;
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .bookinghover {
