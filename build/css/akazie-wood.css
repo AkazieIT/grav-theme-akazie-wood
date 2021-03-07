@@ -17303,6 +17303,15 @@ main.site-content .page.section-default div article.centermark {
   text-align: center;
 }
 
+main.site-content .modular.section-angebotetext {
+  margin-bottom: 0px;
+}
+
+main.site-content .modular.section-angebotetext h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
 main.site-content .modular {
   margin-bottom: 3rem;
 }
@@ -17322,15 +17331,6 @@ main.site-content .modular h2.heading.centermark {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
-
-main.site-content .modular .section-angebotetext {
-  margin-bottom: 0px;
-}
-
-main.site-content .modular .section-angebotetext h2 {
-  font-size: 40px;
-  margin-bottom: 50px;
 }
 
 main.site-content .modular.section-text *:last-child {
