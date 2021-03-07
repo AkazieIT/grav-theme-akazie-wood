@@ -17782,7 +17782,7 @@ ul.catfilter li a.button:hover {
   flex-basis: 26%;
   flex-grow: 1;
   margin-bottom: 2%;
-  border: 0px 50px;
+  border-radius: 0px 50px;
 }
 
 @media (min-width: 1220px) {
