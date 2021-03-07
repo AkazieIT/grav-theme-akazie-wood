@@ -17782,7 +17782,6 @@ ul.catfilter li a.button:hover {
   flex-basis: 26%;
   flex-grow: 1;
   margin-bottom: 6%;
-  border-radius: 0px 50px;
 }
 
 .list-item.h-entry.oz-filteritem .list-blog-header {
@@ -17793,6 +17792,7 @@ ul.catfilter li a.button:hover {
 .list-item.h-entry.oz-filteritem .list-blog-padding {
   margin-left: 40px;
   margin-right: 40px;
+  margin-bottom: 40px;
 }
 
 .list-item.h-entry.oz-filteritem img {

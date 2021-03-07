@@ -15,6 +15,10 @@
           {{ header_image_media.cropZoom(header_image_width, header_image_height).html|raw }}
       {% endif %}
       <div class="list-blog-header">
+      {% if theme_var('header.kundencode') == 'immosit' %}
+      {% else %}
+
+
           {#
           <span class="list-blog-date">
               <time class="dt-published" datetime="{{ page.date|date("c") }}">
@@ -48,8 +52,9 @@
               {% endfor %}
           </span>
           {% endif %}
-
+      {% endif %}
       </div>
+      {% if theme_var('header.kundencode') != 'immosit' %}
 
       <div class="list-blog-padding">
 
@@ -96,4 +101,5 @@
       {% endif %}
 
       </div>
+      {% endif %}
   </div>
