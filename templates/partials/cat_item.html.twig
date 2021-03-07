@@ -5,7 +5,11 @@
     {% set header_image_height = page.header.header_image_height|defined(300) %}
     {% set header_image_file = page.header.header_image_file %}
 
-  <div class="list-item h-entry oz-filteritem">
+    {% if theme_var('header.kundencode') == 'immosit' %}
+      <a class="list-item h-entry oz-filteritem" href="{{ page.url }}">
+    {% else %}
+      <div class="list-item h-entry oz-filteritem">
+    {% endif %}
       {% if header_image %}
           {% if header_image_file %}
               {% set header_image_media = page.media.images[header_image_file] %}
@@ -16,7 +20,7 @@
       {% endif %}
       <div class="list-blog-header">
       {% if theme_var('header.kundencode') == 'immosit' %}
-        <a href="{{ page.header.link }}" class="filterbutton u-url">{{ page.title }}</a>
+        <a href="{{ page.url }}" class="filterbutton u-url">{{ page.title }}</a>
       {% else %}
 
 
@@ -104,4 +108,8 @@
       </div>
       {% endif %}
 
-  </div>
+      {% if theme_var('header.kundencode') == 'immosit' %}
+        </a>
+      {% else %}
+        </div>
+      {% endif %}
