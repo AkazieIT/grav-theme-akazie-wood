@@ -8,7 +8,7 @@
 {% endif %}
 
 {% block content %}
-<div class="sidebar column is-narrow">
+<div class="sidebar column is-narrow catfiltercontainer">
 	{% set taxlist = cascadeFilters.get() %} {# get texonomy list #}
 	{% set queries = uri.query(null, true) %} {# get queries as Array #}
 	{% if taxlist %}
