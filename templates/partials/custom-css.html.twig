@@ -187,15 +187,15 @@
     color:{{ theme_var('style.color.text.nav.default') }};
   }
 
-  body ul.catfilter li a.button {
+  body ul.catfilter li a.button,  body ul.catfilter li a.button.filterreset {
     background-color: transparent;
     color:{{ theme_var('style.color.text.secondary') }};
   }
-  body ul.catfilter li a.button:hover {
-    color:{{ theme_var('style.color.background.primary') }};
+  body ul.catfilter li a.button:hover,   body ul.catfilter li a.button.filterreset:hover {
+    color:{{ theme_var('style.color.white') }};
   }
   body ul.catfilter li a.button.is-active {
-    background-color:{{ theme_var('style.color.background.primary') }};
+    background-color:{{ theme_var('style.color.white') }};
   }
 
 
@@ -206,9 +206,7 @@
     body ul.catfilter li a.button.keyyes:hover {
       background-color:{{ theme_var('style.color.text.secondary') }};
     }
-    body ul.catfilter li a.button.is-active {
-      background-color:{{ theme_var('style.color.white') }};
-    }
+
 
     body .catfiltercontainer { background-color:{{ theme_var('style.color.background.secondary') }}; }
 
