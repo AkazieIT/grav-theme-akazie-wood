@@ -35,3 +35,12 @@ form:
                 header.media_order:
                   type: pagemedia
                   label: PLUGIN_ADMIN.PAGE_MEDIA
+            header.showtitle:
+              type: select
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.LABEL
+              highlight: 1
+              default: 1
+              options:
+                0: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.0
+                1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.1
+                2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.2
