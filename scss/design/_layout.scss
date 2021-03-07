@@ -1070,8 +1070,15 @@ div.screen-fullscreen {
    width:auto;
  }
 
-.postbacklink img {
-  width:55px;
-  height:auto;
-  transform:rotate(90deg);
+.postbacklink {
+  margin-bottom:100px;
+  img {
+    width:45px;
+    height:auto;
+    transform:rotate(-90deg);
+  }
+}
+
+h2.heading.detail {
+  text-align:right;
 }

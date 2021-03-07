@@ -7,10 +7,7 @@
     <article class="modular section-text col-12 col-md-6">
       <a class="postbacklink" href="{{ base_url_absolute  ~ '/wohnungen' }}">
       <img src="{{ url('theme://custom/logo/arrow-to-top-solid.svg')}}"/></a>
-      <h2 class="heading">{{ page.header.title }}</h2>
-      <div class="markdown ">
-        {{ page.content | markdown }}
-      </div>
+      <h2 class="heading detail">{{ page.header.title }}</h2>
       <div class="oz-filtericons">
             {% for tag in page.taxonomy.nichtraucher %}
             {% if tag == 'ja' %}
@@ -43,6 +40,10 @@
             {% endif %}
             {% endfor %}
       </div>
+      <div class="markdown ">
+        {{ page.content | markdown }}
+      </div>
+
     </article>
     <article class="modular section-image col-12 col-md-6">
       <div class="media-container ">
