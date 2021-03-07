@@ -889,6 +889,12 @@ ul.catfilter {
     .list-blog-header {
       margin-left:40px;
       margin-right:40px;
+      .oz-filtericons {
+        img {
+          height:40px;
+          width:auto;
+        }
+      }
     }
     .list-blog-padding {
       margin-left:40px;

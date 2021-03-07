@@ -17789,6 +17789,11 @@ ul.catfilter li a.button:hover {
   margin-right: 40px;
 }
 
+.list-item.h-entry.oz-filteritem .list-blog-header .oz-filtericons img {
+  height: 40px;
+  width: auto;
+}
+
 .list-item.h-entry.oz-filteritem .list-blog-padding {
   margin-left: 40px;
   margin-right: 40px;
