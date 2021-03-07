@@ -6,6 +6,38 @@
   <div class="row">
     <article class="modular section-text col-12 col-md-6">
       <h2 class="heading">{{ page.header.title }}</h2>
+      <div class="oz-filtericons">
+            {% for tag in page.taxonomy.nichtraucher %}
+            {% if tag == 'ja' %}
+            <img src="{{ url('theme://custom/logo/smoking-ban-solid.svg')}}"/>
+            {% endif %}
+            {% endfor %}
+            {% for tag in page.taxonomy.wlan %}
+            {% if tag == 'ja' %}
+            <img src="{{ url('theme://custom/logo/wifi-solid.svg')}}"/>
+            {% endif %}
+            {% endfor %}
+            {% for tag in page.taxonomy.haustiere %}
+            {% if tag == 'ja' %}
+            <img src="{{ url('theme://custom/logo/paw-solid.svg')}}"/>
+            {% endif %}
+            {% endfor %}
+            {% for tag in page.taxonomy.waschmaschine %}
+            {% if tag == 'ja' %}
+            <img src="{{ url('theme://custom/logo/washer-solid.svg')}}"/>
+            {% endif %}
+            {% endfor %}
+            {% for tag in page.taxonomy.zentrumsnah %}
+            {% if tag == 'ja' %}
+            <img src="{{ url('theme://custom/logo/map-marker-smile-solid.svg')}}"/>
+            {% endif %}
+            {% endfor %}
+            {% for tag in page.taxonomy.parking %}
+            {% if tag == 'ja' %}
+            <img src="{{ url('theme://custom/logo/parking-solid.svg')}}"/>
+            {% endif %}
+            {% endfor %}
+      </div>
       <div class="markdown ">
         {{ page.content | markdown }}
       </div>
