@@ -14,11 +14,13 @@
 	{% if taxlist %}
 		{% for key, values in taxlist %}
     <div class="catfilterwrap">
-    {% if (key == 'preis') %}
+    {#
+    {% if (key == 'as' or key == 'zimmer') %}
 			<p>
 				{{ key }}
 			</p>
     {% endif %}
+    #}
 			<ul class="is-clearfix catfilter">
 				{% for tax in values|keys %}
 					<li>
