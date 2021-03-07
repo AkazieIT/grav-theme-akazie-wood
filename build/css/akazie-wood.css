@@ -17770,10 +17770,6 @@ ul.catfilter li a.button:hover {
   font-weight: normal;
 }
 
-.list-item.h-entry {
-  height: 400px;
-}
-
 .list-item.h-entry img {
   float: left;
   margin-right: 30px;
@@ -17782,6 +17778,7 @@ ul.catfilter li a.button:hover {
 .list-item.h-entry.oz-filteritem {
   flex-basis: 28%;
   margin: 2%;
+  padding: 30px;
 }
 
 .catfiltercontainer {

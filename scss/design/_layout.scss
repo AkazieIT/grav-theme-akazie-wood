@@ -876,7 +876,6 @@ ul.catfilter {
 
 }
 .list-item.h-entry {
-  height:400px;
   img {
   float:left;
   margin-right:30px;
@@ -884,6 +883,7 @@ ul.catfilter {
   &.oz-filteritem {
     flex-basis: 28%;
     margin:2%;
+    padding:30px;
   }
 }
 
