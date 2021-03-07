@@ -17770,6 +17770,7 @@ ul.catfilter li a.button:hover {
 .catfiltercontainer {
   border-radius: 20px;
   height: 105px;
+  margin-bottom: 30px;
 }
 
 .bookinghover {
