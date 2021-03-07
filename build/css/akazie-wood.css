@@ -17303,13 +17303,13 @@ main.site-content .page.section-default div article.centermark {
   text-align: center;
 }
 
+main.site-content .section-angebotetext {
+  margin-bottom: 0px;
+}
+
 main.site-content .section-angebotetext h2 {
   font-size: 40px;
   margin-bottom: 50px;
-}
-
-main.site-content .section-angebotetext p {
-  margin-bottom: 0px;
 }
 
 main.site-content .modular {
