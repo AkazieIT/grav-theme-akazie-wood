@@ -17306,6 +17306,7 @@ main.site-content .page.section-default div article.centermark {
 main.site-content .page.section-modular.oz-itemcontainer,
 main.site-content .page.section-default.oz-itemcontainer {
   display: flex;
+  justify-content: space-between;
 }
 
 main.site-content .modular.section-angebotetext {
@@ -17773,7 +17774,7 @@ ul.catfilter li a.button:hover {
 }
 
 .list-item.h-entry.oz-filteritem {
-  width: 33.2%;
+  flex-basis: 32%;
 }
 
 .catfiltercontainer {

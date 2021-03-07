@@ -478,6 +478,7 @@ main.site-content{
     }
     &.oz-itemcontainer {
       display:flex;
+       justify-content: space-between;
     }
   }
   .modular.section-angebotetext {
@@ -877,7 +878,7 @@ ul.catfilter {
   margin-right:30px;
   }
   &.oz-filteritem {
-    width: 33.2%;
+    flex-basis: 32%;
   }
 }
 
