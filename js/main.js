@@ -18,6 +18,17 @@ $('.stickybottomtoggle').click(function() {
 
 });
 
+$('.pull').click(function() {
+
+  menuClick('.pull');
+
+});
+
+$('.oz-filteritem').each(function() {
+
+  $(this).click(function() { console.log('test'); });
+});
+
 function footerHeight() {
   if($(window).width() < 855) {
     if($('.footer-main .footerpage').data('footerheightm')) { $('.footer-main .footerpage').css('height', $('.footer-main .footerpage').data('footerheightm'));}

@@ -5,7 +5,7 @@
     {% set header_image_height = page.header.header_image_height|defined(300) %}
     {% set header_image_file = page.header.header_image_file %}
 
-  <div class="list-item h-entry oz-filteritem">
+  <div class="list-item h-entry oz-filteritem" {% if theme_var('header.kundencode') == 'immosit' %}data-clickme="{{ page.url }}"{% endif %}>
       {% if header_image %}
           {% if header_image_file %}
               {% set header_image_media = page.media.images[header_image_file] %}
