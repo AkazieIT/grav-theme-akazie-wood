@@ -17778,6 +17778,7 @@ ul.catfilter li a.button:hover {
 
 .list-item.h-entry.oz-filteritem {
   flex-basis: 26%;
+  flex-grow: 1;
 }
 
 .catfiltercontainer {
