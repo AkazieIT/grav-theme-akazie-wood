@@ -885,6 +885,9 @@ ul.catfilter {
     &:nth-child(2n) {
       margin-right:3%;
     }
+    &:nth-child(3n + 1) {
+      margin-right:3%;
+    }
   }
 }
 

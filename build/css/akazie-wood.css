@@ -17783,6 +17783,10 @@ ul.catfilter li a.button:hover {
   margin-right: 3%;
 }
 
+.list-item.h-entry.oz-filteritem:nth-child(3n + 1) {
+  margin-right: 3%;
+}
+
 .catfiltercontainer {
   border-radius: 20px;
   margin-bottom: 30px;
