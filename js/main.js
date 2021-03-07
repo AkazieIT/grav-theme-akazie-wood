@@ -25,8 +25,11 @@ $('.pull').click(function() {
 });
 
 $('.oz-filteritem').each(function() {
+  $(this).css('cursor', 'pointer');
 
-  $(this).click(function() { console.log('test'); });
+  $(this).click(function() {
+    if($(this).data('clickme')) { window.location = $(this).data('clickme'); }
+  });
 });
 
 function footerHeight() {
