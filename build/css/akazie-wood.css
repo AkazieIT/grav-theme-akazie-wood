@@ -17766,7 +17766,6 @@ ul.catfilter li a.button:not(.keyyes) {
   height: auto;
   margin: 0px;
   padding-top: 9px;
-  padding-bottom: 9px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -17778,6 +17777,9 @@ ul.catfilter li a.button:not(.keyyes):hover {
 
 ul.catfilter li a.button.keyyes {
   padding: 5px;
+  width: auto;
+  height: auto;
+  margin: 0px;
 }
 
 ul.catfilter li a.button.keyyes:hover {
