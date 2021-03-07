@@ -477,13 +477,7 @@ main.site-content{
       text-align:center;
     }
   }
-  .section-angebotetext {
-    h2 {
-      font-size:40px;
-      margin-bottom:50px;
-    }
-    margin-bottom:0px;
-  }
+
   .modular{
     margin-bottom: 3rem;
 
@@ -498,6 +492,13 @@ main.site-content{
     @include media-breakpoint-down(md) {
       padding-left: 1rem;
       padding-right: 1rem;
+    }
+    .section-angebotetext {
+      h2 {
+        font-size:40px;
+        margin-bottom:50px;
+      }
+      margin-bottom:0px;
     }
   }
   .modular.section-text{
