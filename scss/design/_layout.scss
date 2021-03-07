@@ -884,11 +884,18 @@ ul.catfilter {
   &.oz-filteritem {
     flex-basis: 26%;
     flex-grow:1;
-    &:nth-child(2) {
-      margin-right:2%;
+    @media (min-width:1220px) {
+      &:nth-child(2) {
+        margin-right:2%;
+      }
+      &:nth-child(3n+1) {
+        margin-right:2%;
+      }
     }
-    &:nth-child(3n+1) {
-      margin-right:2%;
+    @media (max-width:1220px) and (min-width:870px) {
+      &:nth-child(3n+1) {
+        margin-right:2%;
+      }
     }
   }
 }

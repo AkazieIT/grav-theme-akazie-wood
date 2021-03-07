@@ -17781,12 +17781,19 @@ ul.catfilter li a.button:hover {
   flex-grow: 1;
 }
 
-.list-item.h-entry.oz-filteritem:nth-child(2) {
-  margin-right: 2%;
+@media (min-width: 1220px) {
+  .list-item.h-entry.oz-filteritem:nth-child(2) {
+    margin-right: 2%;
+  }
+  .list-item.h-entry.oz-filteritem:nth-child(3n+1) {
+    margin-right: 2%;
+  }
 }
 
-.list-item.h-entry.oz-filteritem:nth-child(3n+1) {
-  margin-right: 2%;
+@media (max-width: 1220px) and (min-width: 870px) {
+  .list-item.h-entry.oz-filteritem:nth-child(3n+1) {
+    margin-right: 2%;
+  }
 }
 
 .catfiltercontainer {
