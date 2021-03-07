@@ -478,6 +478,9 @@ form:
                 1: PLUGIN_ADMIN.ENABLED
               validate:
                 type: bool
+            header.kundencode:
+              type: text
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.KUNDENCODE.LABEL
             header.imagesizing:
               type: toggle
               label: THEME_AKAZIEWOOD.THEME.FIELDS.IMAGESIZING.LABEL
