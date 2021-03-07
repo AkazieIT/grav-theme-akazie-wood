@@ -17799,7 +17799,6 @@ ul.catfilter li a.button:hover {
   float: none;
   width: calc(100% - 80px);
   margin: 40px;
-  border-radius: 0px 50px;
 }
 
 @media (min-width: 1220px) {
