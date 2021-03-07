@@ -889,7 +889,7 @@ ul.catfilter {
     flex-basis: 26%;
     flex-grow:1;
     @media (min-width:1220px) {
-      &:nth-child(2) {
+      &:nth-child(2n) {
         margin-right:2%;
       }
       &:nth-child(3n - 2) {
