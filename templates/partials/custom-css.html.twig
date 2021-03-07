@@ -196,6 +196,17 @@
     background-color:{{ theme_var('style.color.background.primary') }};
   }
 
+
+    body ul.catfilter li a.button.keyyes {
+      background-color:transparent;
+      color:{{ theme_var('style.color.text.primary') }};
+      border:none;
+    }
+    body ul.catfilter li a.button.is-active {
+      background-color:{{ theme_var('style.color.white') }};
+    }
+
+
   {% if theme_var('site.maxwidth') != 1280 and theme_var('site.maxwidth') >= 999 and theme_var('site.maxwidth') < 2001  %}
     @media (min-width: 1220px) {
       .image-caption.claim h3 { max-width: {{ theme_var('site.maxwidth') }}px; }
