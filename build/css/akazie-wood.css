@@ -17780,7 +17780,8 @@ ul.catfilter li a.button:hover {
 }
 
 .list-item.h-entry.oz-filteritem {
-  flex-basis: 32%;
+  flex-basis: 28%;
+  margin: 2%;
 }
 
 .catfiltercontainer {
