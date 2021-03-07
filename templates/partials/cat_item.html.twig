@@ -24,6 +24,11 @@
           <img src="{{ url('theme://custom/logo/washer-solid.svg')}}"/>
           <img src="{{ url('theme://custom/logo/map-marker-smile-solid.svg')}}"/>
           <img src="{{ url('theme://custom/logo/parking-solid.svg')}}"/>
+          <span class="tags">
+              {% for tag in page.taxonomy.tag %}
+              <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="p-category">{{ tag }}</a>
+              {% endfor %}
+          </span>
         </div>
       {% else %}
 
