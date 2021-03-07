@@ -962,6 +962,7 @@ ul.catfilter {
   display:flex;
   align-items:center;
   justify-content: space-around;
+  flex-wrap:wrap;
 
   .filterreset {
     padding-top:15px;
