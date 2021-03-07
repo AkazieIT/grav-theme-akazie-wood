@@ -484,8 +484,10 @@ main.site-content{
        &::after {
           content: "";
           flex: auto;
+          flex-basis: 26%;
+          flex-grow:1;
        }
-       
+
     }
   }
   .modular.section-angebotetext {

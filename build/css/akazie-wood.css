@@ -17314,6 +17314,8 @@ main.site-content .page.section-modular.oz-itemcontainer::after,
 main.site-content .page.section-default.oz-itemcontainer::after {
   content: "";
   flex: auto;
+  flex-basis: 26%;
+  flex-grow: 1;
 }
 
 main.site-content .modular.section-angebotetext {
