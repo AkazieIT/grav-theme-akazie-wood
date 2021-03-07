@@ -17402,6 +17402,11 @@ main.site-content .page.section-default div article.centermark {
   text-align: center;
 }
 
+main.site-content .section-angebotetext h2 {
+  font-size: 40;
+  margin-bottom: 30px;
+}
+
 main.site-content .modular {
   margin-bottom: 3rem;
 }
