@@ -895,6 +895,15 @@ ul.catfilter {
       margin-right:40px;
       margin-bottom:40px;
     }
+    .filterbutton {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      height: 55px;
+      border-radius: 15px;
+      font-size: 22px;
+      padding-top: 14px;
+    }
     img {
       float:none;
       width:calc(100% - 80px);
