@@ -17844,6 +17844,8 @@ ul.catfilter li a.button:hover {
 .catfiltercontainer {
   border-radius: 20px;
   margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
 }
 
 .bookinghover {
