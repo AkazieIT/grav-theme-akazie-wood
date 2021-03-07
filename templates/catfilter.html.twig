@@ -19,6 +19,8 @@
   </article>
 </div>
 </section>
+<section class="page section-default">
+<div class="row">
 <div class="sidebar column is-narrow catfiltercontainer">
 	{% set taxlist = cascadeFilters.get() %} {# get texonomy list #}
 	{% set queries = uri.query(null, true) %} {# get queries as Array #}
@@ -45,7 +47,8 @@
 
 	<a href="{{ page.url }}" class="button">Filter zur&uuml;cksetzen</a>
 </div>
-
+</div>
+</section>
 
   <section class="page section-default">
 
