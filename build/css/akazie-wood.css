@@ -17751,10 +17751,6 @@ div.stickybottom {
   padding: 10px;
 }
 
-.catfilterwrap .filterreset {
-  padding-top: 15px;
-}
-
 ul.catfilter {
   display: inline-block;
   padding-left: 0px;
@@ -17866,6 +17862,10 @@ ul.catfilter li a.button.keyyes:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.catfiltercontainer .filterreset {
+  padding-top: 15px;
 }
 
 .bookinghover {
