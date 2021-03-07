@@ -17308,12 +17308,12 @@ main.site-content .page.section-default.oz-itemcontainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /*
-       &::after {
-          content: "";
-          flex: auto;
-       }
-       */
+}
+
+main.site-content .page.section-modular.oz-itemcontainer::after,
+main.site-content .page.section-default.oz-itemcontainer::after {
+  content: "";
+  flex: auto;
 }
 
 main.site-content .modular.section-angebotetext {
@@ -17785,13 +17785,13 @@ ul.catfilter li a.button:hover {
   .list-item.h-entry.oz-filteritem:nth-child(2) {
     margin-right: 2%;
   }
-  .list-item.h-entry.oz-filteritem:nth-child(3n+1) {
+  .list-item.h-entry.oz-filteritem:nth-child(3n - 2) {
     margin-right: 2%;
   }
 }
 
 @media (max-width: 1220px) and (min-width: 870px) {
-  .list-item.h-entry.oz-filteritem:nth-child(3n+1) {
+  .list-item.h-entry.oz-filteritem:nth-child(3n - 2) {
     margin-right: 2%;
   }
 }
