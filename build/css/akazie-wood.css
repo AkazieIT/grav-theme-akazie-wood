@@ -17765,7 +17765,9 @@ ul.catfilter li a.button {
   width: auto;
   height: auto;
   margin: 0px;
-  padding: 5px 15px;
+  padding-top: 9px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 ul.catfilter li a.button:hover {

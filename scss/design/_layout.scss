@@ -869,11 +869,14 @@ ul.catfilter {
       width:auto;
       height:auto;
       margin:0px;
-      padding:5px 15px;
+      padding-top:9px;
+      padding-left:15px;
+      padding-right:15px;
       &:hover {
         background-color:rgb(150,150,150);
         font-weight:normal;
       }
+
     }
 
   }
