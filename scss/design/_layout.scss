@@ -1090,8 +1090,10 @@ h2.heading.detail {
 }
 
 .oz-filtericons.detailicons {
+  width:100%;
+  text-align:right;
   img {
-    height:40px;
+    height:33px;
     width:auto;
     margin-left:10px;
   }

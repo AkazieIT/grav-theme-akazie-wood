@@ -18029,8 +18029,13 @@ h2.heading.detail {
   text-align: right;
 }
 
+.oz-filtericons.detailicons {
+  width: 100%;
+  text-align: right;
+}
+
 .oz-filtericons.detailicons img {
-  height: 40px;
+  height: 33px;
   width: auto;
   margin-left: 10px;
 }
