@@ -17751,6 +17751,10 @@ div.stickybottom {
   padding: 10px;
 }
 
+.catfilterwrap .filterreset {
+  padding-top: 15px;
+}
+
 ul.catfilter {
   display: inline-block;
   padding-left: 0px;

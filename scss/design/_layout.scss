@@ -853,7 +853,9 @@ div.stickybottom {
 .catfilterwrap {
   display:inline-block;
   padding:10px;
-
+  .filterreset {
+    padding-top:15px;
+  }
 }
 ul.catfilter {
 
