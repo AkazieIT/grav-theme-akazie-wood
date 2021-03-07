@@ -1072,6 +1072,12 @@ div.screen-fullscreen {
 
 .postbacklink {
   margin-bottom:100px;
+  @media (max-width:870px) {
+    margin-bottom:20px;
+  }
+  @media (max-width:500px) {
+    margin-bottom:0px;
+  }
   img {
     width:45px;
     height:auto;

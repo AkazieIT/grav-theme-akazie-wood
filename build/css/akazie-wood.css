@@ -18007,6 +18007,18 @@ div.screen-fullscreen {
   margin-bottom: 100px;
 }
 
+@media (max-width: 870px) {
+  .postbacklink {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .postbacklink {
+    margin-bottom: 0px;
+  }
+}
+
 .postbacklink img {
   width: 45px;
   height: auto;
