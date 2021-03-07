@@ -33,7 +33,7 @@
   --breakpoint-md: 870px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1220px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -56,7 +56,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -165,12 +165,12 @@ a:hover {
   text-decoration: underline;
 }
 
-a:not([href]):not([class]) {
+a:not([href]) {
   color: inherit;
   text-decoration: none;
 }
 
-a:not([href]):not([class]):hover {
+a:not([href]):hover {
   color: inherit;
   text-decoration: none;
 }
@@ -218,7 +218,6 @@ caption {
 
 th {
   text-align: inherit;
-  text-align: -webkit-match-parent;
 }
 
 label {
@@ -230,8 +229,9 @@ button {
   border-radius: 0;
 }
 
-button:focus:not(:focus-visible) {
-  outline: 0;
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 input,
@@ -541,12 +541,39 @@ pre code {
   overflow-y: scroll;
 }
 
-.container,
-.container-fluid,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl {
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 870px) {
+  .container {
+    max-width: 872px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -611,6 +638,7 @@ pre code {
 .col {
   flex-basis: 0;
   flex-grow: 1;
+  min-width: 0;
   max-width: 100%;
 }
 
@@ -818,6 +846,7 @@ pre code {
   .col-sm {
     flex-basis: 0;
     flex-grow: 1;
+    min-width: 0;
     max-width: 100%;
   }
   .row-cols-sm-1 > * {
@@ -984,6 +1013,7 @@ pre code {
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
+    min-width: 0;
     max-width: 100%;
   }
   .row-cols-md-1 > * {
@@ -1150,6 +1180,7 @@ pre code {
   .col-lg {
     flex-basis: 0;
     flex-grow: 1;
+    min-width: 0;
     max-width: 100%;
   }
   .row-cols-lg-1 > * {
@@ -1316,6 +1347,7 @@ pre code {
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;
+    min-width: 0;
     max-width: 100%;
   }
   .row-cols-xl-1 > * {
@@ -1871,6 +1903,11 @@ pre code {
   opacity: 1;
 }
 
+.form-control::-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
 .form-control::placeholder {
   color: #6c757d;
   opacity: 1;
@@ -2033,7 +2070,6 @@ textarea.form-control {
 .valid-tooltip {
   position: absolute;
   top: 100%;
-  left: 0;
   z-index: 5;
   display: none;
   max-width: 100%;
@@ -2044,11 +2080,6 @@ textarea.form-control {
   color: #fff;
   background-color: rgba(40, 167, 69, 0.9);
   border-radius: 0.25rem;
-}
-
-.form-row > .col > .valid-tooltip,
-.form-row > [class*="col-"] > .valid-tooltip {
-  left: 5px;
 }
 
 .was-validated :valid ~ .valid-feedback,
@@ -2080,7 +2111,7 @@ textarea.form-control {
 .was-validated .custom-select:valid, .custom-select.is-valid {
   border-color: #28a745;
   padding-right: calc(0.75em + 2.3125rem);
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right 0.75rem center/8px 10px no-repeat, #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem) no-repeat;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") #fff no-repeat center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 
 .was-validated .custom-select:valid:focus, .custom-select.is-valid:focus {
@@ -2139,7 +2170,6 @@ textarea.form-control {
 .invalid-tooltip {
   position: absolute;
   top: 100%;
-  left: 0;
   z-index: 5;
   display: none;
   max-width: 100%;
@@ -2150,11 +2180,6 @@ textarea.form-control {
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9);
   border-radius: 0.25rem;
-}
-
-.form-row > .col > .invalid-tooltip,
-.form-row > [class*="col-"] > .invalid-tooltip {
-  left: 5px;
 }
 
 .was-validated :invalid ~ .invalid-feedback,
@@ -2186,7 +2211,7 @@ textarea.form-control {
 .was-validated .custom-select:invalid, .custom-select.is-invalid {
   border-color: #dc3545;
   padding-right: calc(0.75em + 2.3125rem);
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right 0.75rem center/8px 10px no-repeat, #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e") center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem) no-repeat;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e") #fff no-repeat center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 
 .was-validated .custom-select:invalid:focus, .custom-select.is-invalid:focus {
@@ -3187,7 +3212,7 @@ input[type="button"].btn-block {
 .dropdown-item:hover, .dropdown-item:focus {
   color: #16181b;
   text-decoration: none;
-  background-color: #e9ecef;
+  background-color: #f8f9fa;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -3197,7 +3222,7 @@ input[type="button"].btn-block {
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
-  color: #adb5bd;
+  color: #6c757d;
   pointer-events: none;
   background-color: transparent;
 }
@@ -3384,6 +3409,12 @@ input[type="button"].btn-block {
   z-index: 4;
 }
 
+.input-group > .form-control:not(:last-child),
+.input-group > .custom-select:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .input-group > .form-control:not(:first-child),
 .input-group > .custom-select:not(:first-child) {
   border-top-left-radius: 0;
@@ -3396,23 +3427,14 @@ input[type="button"].btn-block {
 }
 
 .input-group > .custom-file:not(:last-child) .custom-file-label,
+.input-group > .custom-file:not(:last-child) .custom-file-label::after {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .input-group > .custom-file:not(:first-child) .custom-file-label {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-}
-
-.input-group:not(.has-validation) > .form-control:not(:last-child),
-.input-group:not(.has-validation) > .custom-select:not(:last-child),
-.input-group:not(.has-validation) > .custom-file:not(:last-child) .custom-file-label::after {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.input-group.has-validation > .form-control:nth-last-child(n + 3),
-.input-group.has-validation > .custom-select:nth-last-child(n + 3),
-.input-group.has-validation > .custom-file:nth-last-child(n + 3) .custom-file-label::after {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
 }
 
 .input-group-prepend,
@@ -3512,10 +3534,8 @@ input[type="button"].btn-block {
 
 .input-group > .input-group-prepend > .btn,
 .input-group > .input-group-prepend > .input-group-text,
-.input-group:not(.has-validation) > .input-group-append:not(:last-child) > .btn,
-.input-group:not(.has-validation) > .input-group-append:not(:last-child) > .input-group-text,
-.input-group.has-validation > .input-group-append:nth-last-child(n + 3) > .btn,
-.input-group.has-validation > .input-group-append:nth-last-child(n + 3) > .input-group-text,
+.input-group > .input-group-append:not(:last-child) > .btn,
+.input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
   border-top-right-radius: 0;
@@ -3534,12 +3554,9 @@ input[type="button"].btn-block {
 
 .custom-control {
   position: relative;
-  z-index: 1;
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
-  -webkit-print-color-adjust: exact;
-          color-adjust: exact;
 }
 
 .custom-control-inline {
@@ -3611,7 +3628,7 @@ input[type="button"].btn-block {
   width: 1rem;
   height: 1rem;
   content: "";
-  background: 50% / 50% 50% no-repeat;
+  background: no-repeat 50% / 50% 50%;
 }
 
 .custom-checkbox .custom-control-label::before {
@@ -3697,7 +3714,7 @@ input[type="button"].btn-block {
   line-height: 1.5;
   color: #495057;
   vertical-align: middle;
-  background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right 0.75rem center/8px 10px no-repeat;
+  background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   -webkit-appearance: none;
@@ -3766,7 +3783,6 @@ input[type="button"].btn-block {
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
   margin: 0;
-  overflow: hidden;
   opacity: 0;
 }
 
@@ -3796,7 +3812,6 @@ input[type="button"].btn-block {
   z-index: 1;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
-  overflow: hidden;
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
@@ -3833,7 +3848,7 @@ input[type="button"].btn-block {
 }
 
 .custom-range:focus {
-  outline: 0;
+  outline: none;
 }
 
 .custom-range:focus::-webkit-slider-thumb {
@@ -4026,8 +4041,11 @@ input[type="button"].btn-block {
   border-bottom: 1px solid #dee2e6;
 }
 
-.nav-tabs .nav-link {
+.nav-tabs .nav-item {
   margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link {
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
@@ -4066,13 +4084,11 @@ input[type="button"].btn-block {
   background-color: #007bff;
 }
 
-.nav-fill > .nav-link,
 .nav-fill .nav-item {
   flex: 1 1 auto;
   text-align: center;
 }
 
-.nav-justified > .nav-link,
 .nav-justified .nav-item {
   flex-basis: 0;
   flex-grow: 1;
@@ -4167,12 +4183,8 @@ input[type="button"].btn-block {
   height: 1.5em;
   vertical-align: middle;
   content: "";
-  background: 50% / 100% 100% no-repeat;
-}
-
-.navbar-nav-scroll {
-  max-height: 75vh;
-  overflow-y: auto;
+  background: no-repeat center center;
+  background-size: 100% 100%;
 }
 
 @media (max-width: 575.98px) {
@@ -4201,9 +4213,6 @@ input[type="button"].btn-block {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
     flex-wrap: nowrap;
-  }
-  .navbar-expand-sm .navbar-nav-scroll {
-    overflow: visible;
   }
   .navbar-expand-sm .navbar-collapse {
     display: flex !important;
@@ -4241,9 +4250,6 @@ input[type="button"].btn-block {
   .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
     flex-wrap: nowrap;
   }
-  .navbar-expand-md .navbar-nav-scroll {
-    overflow: visible;
-  }
   .navbar-expand-md .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
@@ -4279,9 +4285,6 @@ input[type="button"].btn-block {
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
     flex-wrap: nowrap;
-  }
-  .navbar-expand-lg .navbar-nav-scroll {
-    overflow: visible;
   }
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
@@ -4319,9 +4322,6 @@ input[type="button"].btn-block {
   .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
     flex-wrap: nowrap;
   }
-  .navbar-expand-xl .navbar-nav-scroll {
-    overflow: visible;
-  }
   .navbar-expand-xl .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
@@ -4358,10 +4358,6 @@ input[type="button"].btn-block {
 .navbar-expand > .container,
 .navbar-expand > .container-fluid, .navbar-expand > .container-sm, .navbar-expand > .container-md, .navbar-expand > .container-lg, .navbar-expand > .container-xl {
   flex-wrap: nowrap;
-}
-
-.navbar-expand .navbar-nav-scroll {
-  overflow: visible;
 }
 
 .navbar-expand .navbar-collapse {
@@ -4503,11 +4499,6 @@ input[type="button"].btn-block {
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
 
-.card > .card-header + .list-group,
-.card > .list-group + .card-footer {
-  border-top: 0;
-}
-
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
@@ -4546,6 +4537,10 @@ input[type="button"].btn-block {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
 }
 
+.card-header + .list-group .list-group-item:first-child {
+  border-top: 0;
+}
+
 .card-footer {
   padding: 0.75rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
@@ -4575,7 +4570,6 @@ input[type="button"].btn-block {
   bottom: 0;
   left: 0;
   padding: 1.25rem;
-  border-radius: calc(0.25rem - 1px);
 }
 
 .card-img,
@@ -4678,10 +4672,6 @@ input[type="button"].btn-block {
   }
 }
 
-.accordion {
-  overflow-anchor: none;
-}
-
 .accordion > .card {
   overflow: hidden;
 }
@@ -4712,12 +4702,16 @@ input[type="button"].btn-block {
   border-radius: 0.25rem;
 }
 
+.breadcrumb-item {
+  display: flex;
+}
+
 .breadcrumb-item + .breadcrumb-item {
   padding-left: 0.5rem;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-  float: left;
+  display: inline-block;
   padding-right: 0.5rem;
   color: #6c757d;
   content: "/";
@@ -5026,7 +5020,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 2;
   padding: 0.75rem 1.25rem;
   color: inherit;
 }
@@ -5195,8 +5188,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .progress-bar-animated {
-  -webkit-animation: 1s linear infinite progress-bar-stripes;
-          animation: 1s linear infinite progress-bar-stripes;
+  -webkit-animation: progress-bar-stripes 1s linear infinite;
+          animation: progress-bar-stripes 1s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -5579,13 +5572,15 @@ a.close.disabled {
 }
 
 .toast {
-  flex-basis: 350px;
   max-width: 350px;
+  overflow: hidden;
   font-size: 0.875rem;
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   opacity: 0;
   border-radius: 0.25rem;
 }
@@ -5615,8 +5610,6 @@ a.close.disabled {
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
 }
 
 .toast-body {
@@ -5841,7 +5834,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5954,7 +5947,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6233,7 +6226,7 @@ a.close.disabled {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: 50% / 100% 100% no-repeat;
+  background: no-repeat 50% / 100% 100%;
 }
 
 .carousel-control-prev-icon {
@@ -6317,8 +6310,8 @@ a.close.disabled {
   border: 0.25em solid currentColor;
   border-right-color: transparent;
   border-radius: 50%;
-  -webkit-animation: .75s linear infinite spinner-border;
-          animation: .75s linear infinite spinner-border;
+  -webkit-animation: spinner-border .75s linear infinite;
+          animation: spinner-border .75s linear infinite;
 }
 
 .spinner-border-sm {
@@ -6355,21 +6348,13 @@ a.close.disabled {
   background-color: currentColor;
   border-radius: 50%;
   opacity: 0;
-  -webkit-animation: .75s linear infinite spinner-grow;
-          animation: .75s linear infinite spinner-grow;
+  -webkit-animation: spinner-grow .75s linear infinite;
+          animation: spinner-grow .75s linear infinite;
 }
 
 .spinner-grow-sm {
   width: 1rem;
   height: 1rem;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .spinner-border,
-  .spinner-grow {
-    -webkit-animation-duration: 1.5s;
-            animation-duration: 1.5s;
-  }
 }
 
 .align-baseline {
@@ -7501,6 +7486,7 @@ button.bg-dark:focus {
 }
 
 .position-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -7520,8 +7506,9 @@ button.bg-dark:focus {
   z-index: 1030;
 }
 
-@supports (position: sticky) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -9668,7 +9655,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-break {
-  word-break: break-word !important;
   word-wrap: break-word !important;
 }
 
@@ -9949,7 +9935,8 @@ a.text-dark:hover, a.text-dark:focus {
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical,
 :root .fa-flip-both {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .fa-stack {
@@ -10017,6 +10004,10 @@ readers do not read off random characters that represent icons */
 
 .fa-adn:before {
   content: "\f170";
+}
+
+.fa-adobe:before {
+  content: "\f778";
 }
 
 .fa-adversal:before {
@@ -10315,14 +10306,6 @@ readers do not read off random characters that represent icons */
   content: "\f7e5";
 }
 
-.fa-bacteria:before {
-  content: "\e059";
-}
-
-.fa-bacterium:before {
-  content: "\e05a";
-}
-
 .fa-bahai:before {
   content: "\f666";
 }
@@ -10576,7 +10559,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-box-tissue:before {
-  content: "\e05b";
+  content: "\f95b";
 }
 
 .fa-boxes:before {
@@ -11071,10 +11054,6 @@ readers do not read off random characters that represent icons */
   content: "\f382";
 }
 
-.fa-cloudflare:before {
-  content: "\e07d";
-}
-
 .fa-cloudscale:before {
   content: "\f383";
 }
@@ -11348,7 +11327,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-dailymotion:before {
-  content: "\e052";
+  content: "\f952";
 }
 
 .fa-dashcube:before {
@@ -11361,10 +11340,6 @@ readers do not read off random characters that represent icons */
 
 .fa-deaf:before {
   content: "\f2a4";
-}
-
-.fa-deezer:before {
-  content: "\e077";
 }
 
 .fa-delicious:before {
@@ -11611,10 +11586,6 @@ readers do not read off random characters that represent icons */
   content: "\f282";
 }
 
-.fa-edge-legacy:before {
-  content: "\e078";
-}
-
 .fa-edit:before {
   content: "\f044";
 }
@@ -11788,7 +11759,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-faucet:before {
-  content: "\e005";
+  content: "\f905";
 }
 
 .fa-fax:before {
@@ -11952,7 +11923,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-firefox-browser:before {
-  content: "\e007";
+  content: "\f907";
 }
 
 .fa-first-aid:before {
@@ -12271,10 +12242,6 @@ readers do not read off random characters that represent icons */
   content: "\f3aa";
 }
 
-.fa-google-pay:before {
-  content: "\e079";
-}
-
 .fa-google-play:before {
   content: "\f3ab";
 }
@@ -12399,10 +12366,6 @@ readers do not read off random characters that represent icons */
   content: "\f3ad";
 }
 
-.fa-guilded:before {
-  content: "\e07e";
-}
-
 .fa-guitar:before {
   content: "\f7a6";
 }
@@ -12448,7 +12411,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-hand-holding-medical:before {
-  content: "\e05c";
+  content: "\f95c";
 }
 
 .fa-hand-holding-usd:before {
@@ -12504,7 +12467,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-hand-sparkles:before {
-  content: "\e05d";
+  content: "\f95d";
 }
 
 .fa-hand-spock:before {
@@ -12520,7 +12483,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-hands-wash:before {
-  content: "\e05e";
+  content: "\f95e";
 }
 
 .fa-handshake:before {
@@ -12528,11 +12491,11 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-handshake-alt-slash:before {
-  content: "\e05f";
+  content: "\f95f";
 }
 
 .fa-handshake-slash:before {
-  content: "\e060";
+  content: "\f960";
 }
 
 .fa-hanukiah:before {
@@ -12564,19 +12527,19 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-head-side-cough:before {
-  content: "\e061";
+  content: "\f961";
 }
 
 .fa-head-side-cough-slash:before {
-  content: "\e062";
+  content: "\f962";
 }
 
 .fa-head-side-mask:before {
-  content: "\e063";
+  content: "\f963";
 }
 
 .fa-head-side-virus:before {
-  content: "\e064";
+  content: "\f964";
 }
 
 .fa-heading:before {
@@ -12633,10 +12596,6 @@ readers do not read off random characters that represent icons */
 
 .fa-history:before {
   content: "\f1da";
-}
-
-.fa-hive:before {
-  content: "\e07f";
 }
 
 .fa-hockey-puck:before {
@@ -12720,7 +12679,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-house-user:before {
-  content: "\e065";
+  content: "\f965";
 }
 
 .fa-houzz:before {
@@ -12768,7 +12727,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-ideal:before {
-  content: "\e013";
+  content: "\f913";
 }
 
 .fa-igloo:before {
@@ -12811,20 +12770,12 @@ readers do not read off random characters that represent icons */
   content: "\f05a";
 }
 
-.fa-innosoft:before {
-  content: "\e080";
-}
-
 .fa-instagram:before {
   content: "\f16d";
 }
 
 .fa-instagram-square:before {
-  content: "\e055";
-}
-
-.fa-instalod:before {
-  content: "\e081";
+  content: "\f955";
 }
 
 .fa-intercom:before {
@@ -12980,7 +12931,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-laptop-house:before {
-  content: "\e066";
+  content: "\f966";
 }
 
 .fa-laptop-medical:before {
@@ -13144,7 +13095,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-lungs-virus:before {
-  content: "\e067";
+  content: "\f967";
 }
 
 .fa-lyft:before {
@@ -13316,7 +13267,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-microblog:before {
-  content: "\e01a";
+  content: "\f91a";
 }
 
 .fa-microchip:before {
@@ -13372,7 +13323,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-mixer:before {
-  content: "\e056";
+  content: "\f956";
 }
 
 .fa-mizuni:before {
@@ -13517,10 +13468,6 @@ readers do not read off random characters that represent icons */
 
 .fa-object-ungroup:before {
   content: "\f248";
-}
-
-.fa-octopus-deploy:before {
-  content: "\e082";
 }
 
 .fa-odnoklassniki:before {
@@ -13696,7 +13643,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-people-arrows:before {
-  content: "\e068";
+  content: "\f968";
 }
 
 .fa-people-carry:before {
@@ -13705,10 +13652,6 @@ readers do not read off random characters that represent icons */
 
 .fa-pepper-hot:before {
   content: "\f816";
-}
-
-.fa-perbyte:before {
-  content: "\e083";
 }
 
 .fa-percent:before {
@@ -13788,7 +13731,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-pied-piper-square:before {
-  content: "\e01e";
+  content: "\f91e";
 }
 
 .fa-piggy-bank:before {
@@ -13832,7 +13775,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-plane-slash:before {
-  content: "\e069";
+  content: "\f969";
 }
 
 .fa-play:before {
@@ -13936,11 +13879,11 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-pump-medical:before {
-  content: "\e06a";
+  content: "\f96a";
 }
 
 .fa-pump-soap:before {
-  content: "\e06b";
+  content: "\f96b";
 }
 
 .fa-pushed:before {
@@ -14195,10 +14138,6 @@ readers do not read off random characters that represent icons */
   content: "\f156";
 }
 
-.fa-rust:before {
-  content: "\e07a";
-}
-
 .fa-sad-cry:before {
   content: "\f5b3";
 }
@@ -14328,7 +14267,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-shield-virus:before {
-  content: "\e06c";
+  content: "\f96c";
 }
 
 .fa-ship:before {
@@ -14348,7 +14287,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-shopify:before {
-  content: "\e057";
+  content: "\f957";
 }
 
 .fa-shopping-bag:before {
@@ -14405,10 +14344,6 @@ readers do not read off random characters that represent icons */
 
 .fa-simplybuilt:before {
   content: "\f215";
-}
-
-.fa-sink:before {
-  content: "\e06d";
 }
 
 .fa-sistrix:before {
@@ -14536,7 +14471,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-soap:before {
-  content: "\e06e";
+  content: "\f96e";
 }
 
 .fa-socks:before {
@@ -14760,7 +14695,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-stopwatch-20:before {
-  content: "\e06f";
+  content: "\f96f";
 }
 
 .fa-store:before {
@@ -14772,11 +14707,11 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-store-alt-slash:before {
-  content: "\e070";
+  content: "\f970";
 }
 
 .fa-store-slash:before {
-  content: "\e071";
+  content: "\f971";
 }
 
 .fa-strava:before {
@@ -15059,10 +14994,6 @@ readers do not read off random characters that represent icons */
   content: "\f3ff";
 }
 
-.fa-tiktok:before {
-  content: "\e07b";
-}
-
 .fa-times:before {
   content: "\f00d";
 }
@@ -15100,7 +15031,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-toilet-paper-slash:before {
-  content: "\e072";
+  content: "\f972";
 }
 
 .fa-toolbox:before {
@@ -15140,7 +15071,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-trailer:before {
-  content: "\e041";
+  content: "\f941";
 }
 
 .fa-train:before {
@@ -15271,10 +15202,6 @@ readers do not read off random characters that represent icons */
   content: "\f5ca";
 }
 
-.fa-uncharted:before {
-  content: "\e084";
-}
-
 .fa-underline:before {
   content: "\f0cd";
 }
@@ -15292,7 +15219,7 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-unity:before {
-  content: "\e049";
+  content: "\f949";
 }
 
 .fa-universal-access:before {
@@ -15313,10 +15240,6 @@ readers do not read off random characters that represent icons */
 
 .fa-unlock-alt:before {
   content: "\f13e";
-}
-
-.fa-unsplash:before {
-  content: "\e07c";
 }
 
 .fa-untappd:before {
@@ -15439,10 +15362,6 @@ readers do not read off random characters that represent icons */
   content: "\f509";
 }
 
-.fa-users-slash:before {
-  content: "\e073";
-}
-
 .fa-usps:before {
   content: "\f7e1";
 }
@@ -15477,14 +15396,6 @@ readers do not read off random characters that represent icons */
 
 .fa-venus-mars:before {
   content: "\f228";
-}
-
-.fa-vest:before {
-  content: "\e085";
-}
-
-.fa-vest-patches:before {
-  content: "\e086";
 }
 
 .fa-viacoin:before {
@@ -15540,15 +15451,15 @@ readers do not read off random characters that represent icons */
 }
 
 .fa-virus:before {
-  content: "\e074";
+  content: "\f974";
 }
 
 .fa-virus-slash:before {
-  content: "\e075";
+  content: "\f975";
 }
 
 .fa-viruses:before {
-  content: "\e076";
+  content: "\f976";
 }
 
 .fa-vk:before {
@@ -15605,10 +15516,6 @@ readers do not read off random characters that represent icons */
 
 .fa-warehouse:before {
   content: "\f494";
-}
-
-.fa-watchman-monitoring:before {
-  content: "\e087";
 }
 
 .fa-water:before {
@@ -15709,10 +15616,6 @@ readers do not read off random characters that represent icons */
 
 .fa-wizards-of-the-coast:before {
   content: "\f730";
-}
-
-.fa-wodu:before {
-  content: "\e088";
 }
 
 .fa-wolf-pack-battalion:before {
@@ -15840,7 +15743,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
@@ -15858,7 +15761,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
@@ -15877,7 +15780,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face {
@@ -15896,16 +15799,15 @@ readers do not read off random characters that represent icons */
 
 @font-face {
   font-family: 'lg';
-  src: url("../fonts/lightgallery/lg.ttf?22t19m") format("truetype"), url("../fonts/lightgallery/lg.woff?22t19m") format("woff"), url("../fonts/lightgallery/lg.svg?22t19m#lg") format("svg");
+  src: url("../fonts/lightgallery/lg.eot?n1z373");
+  src: url("../fonts/lightgallery/lg.eot?#iefixn1z373") format("embedded-opentype"), url("../fonts/lightgallery/lg.woff?n1z373") format("woff"), url("../fonts/lightgallery/lg.ttf?n1z373") format("truetype"), url("../fonts/lightgallery/lg.svg?n1z373#lg") format("svg");
   font-weight: normal;
   font-style: normal;
-  font-display: block;
 }
 
 .lg-icon {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'lg' !important;
-  speak: never;
+  font-family: 'lg';
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -16607,7 +16509,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer #lg-share-facebook .lg-icon:after {
-  content: "\e904";
+  content: "\e901";
 }
 
 .lg-outer #lg-share-twitter .lg-icon {
@@ -16615,7 +16517,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer #lg-share-twitter .lg-icon:after {
-  content: "\e907";
+  content: "\e904";
 }
 
 .lg-outer #lg-share-googleplus .lg-icon {
@@ -16623,7 +16525,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer #lg-share-googleplus .lg-icon:after {
-  content: "\e905";
+  content: "\e902";
 }
 
 .lg-outer #lg-share-pinterest .lg-icon {
@@ -16631,7 +16533,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer #lg-share-pinterest .lg-icon:after {
-  content: "\e906";
+  content: "\e903";
 }
 
 .lg-group:after {
@@ -16649,7 +16551,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   z-index: 1050;
   text-align: left;
   opacity: 0;
-  outline: none;
   transition: opacity 0.15s ease 0s;
 }
 
@@ -17405,6 +17306,10 @@ main.site-content .page.section-default div article.centermark {
 main.site-content .section-angebotetext h2 {
   font-size: 40px;
   margin-bottom: 50px;
+}
+
+main.site-content .section-angebotetext p {
+  margin-bottom: 0px;
 }
 
 main.site-content .modular {
