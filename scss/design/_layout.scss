@@ -886,10 +886,19 @@ ul.catfilter {
   margin-right:30px;
   }
   &.oz-filteritem {
+    .list-blog-header {
+      margin-left:40px;
+      margin-right:40px;
+    }
+    .list-blog-padding {
+      margin-left:40px;
+      margin-right:40px;
+    }
     img {
       float:none;
-      width:calc(100% - 60px);
-      margin:30px;
+      width:calc(100% - 80px);
+      margin:40px;
+      border-radius: 0px 50px;
     }
     flex-basis: 26%;
     flex-grow:1;

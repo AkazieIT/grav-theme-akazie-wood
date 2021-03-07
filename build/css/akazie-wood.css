@@ -17785,10 +17785,21 @@ ul.catfilter li a.button:hover {
   border-radius: 0px 50px;
 }
 
+.list-item.h-entry.oz-filteritem .list-blog-header {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.list-item.h-entry.oz-filteritem .list-blog-padding {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 .list-item.h-entry.oz-filteritem img {
   float: none;
-  width: calc(100% - 60px);
-  margin: 30px;
+  width: calc(100% - 80px);
+  margin: 40px;
+  border-radius: 0px 50px;
 }
 
 @media (min-width: 1220px) {
