@@ -480,10 +480,12 @@ main.site-content{
       display:flex;
       flex-wrap:wrap;
        justify-content: space-between;
+       /*
        &::after {
           content: "";
           flex: auto;
        }
+       */
     }
   }
   .modular.section-angebotetext {
@@ -892,8 +894,8 @@ ul.catfilter {
         margin-right:2%;
       }
     }
-    @media (max-width:1220px) and (min-width:870px) {
-      &:nth-child(3n - 2) {
+    @media (min-width:870px) and (max-width:1220px) {
+      &:nth-child(2n - 1) {
         margin-right:2%;
       }
     }

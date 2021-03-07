@@ -17308,12 +17308,12 @@ main.site-content .page.section-default.oz-itemcontainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-main.site-content .page.section-modular.oz-itemcontainer::after,
-main.site-content .page.section-default.oz-itemcontainer::after {
-  content: "";
-  flex: auto;
+  /*
+       &::after {
+          content: "";
+          flex: auto;
+       }
+       */
 }
 
 main.site-content .modular.section-angebotetext {
@@ -17790,8 +17790,8 @@ ul.catfilter li a.button:hover {
   }
 }
 
-@media (max-width: 1220px) and (min-width: 870px) {
-  .list-item.h-entry.oz-filteritem:nth-child(3n - 2) {
+@media (min-width: 870px) and (max-width: 1220px) {
+  .list-item.h-entry.oz-filteritem:nth-child(2n - 1) {
     margin-right: 2%;
   }
 }
