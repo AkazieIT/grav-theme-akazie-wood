@@ -853,6 +853,8 @@ div.stickybottom {
 .catfilterwrap {
   display:inline-block;
   padding:10px;
+  display:flex;
+  flex-wrap:wrap;
 
 }
 ul.catfilter {
@@ -864,7 +866,7 @@ ul.catfilter {
   li {
     list-style-type: none;
     display:inline-block;
-
+    a.button {}
     a.button:not(.keyyes) {
       width:auto;
       height:auto;
@@ -873,7 +875,6 @@ ul.catfilter {
       padding-left:15px;
       padding-right:15px;
       border:none;
-      margin-top:30px;
 
       &:hover {
         font-weight:normal;

@@ -17749,6 +17749,8 @@ div.stickybottom {
 .catfilterwrap {
   display: inline-block;
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 ul.catfilter {
@@ -17769,7 +17771,6 @@ ul.catfilter li a.button:not(.keyyes) {
   padding-left: 15px;
   padding-right: 15px;
   border: none;
-  margin-top: 30px;
 }
 
 ul.catfilter li a.button:not(.keyyes):hover {
