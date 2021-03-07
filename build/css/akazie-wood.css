@@ -17768,6 +17768,8 @@ ul.catfilter li a.button:not(.keyyes) {
   padding-top: 9px;
   padding-left: 15px;
   padding-right: 15px;
+  border: none;
+  margin-top: 10px;
 }
 
 ul.catfilter li a.button:not(.keyyes):hover {
