@@ -478,7 +478,6 @@ main.site-content{
     }
     &.oz-itemcontainer {
       display:flex;
-      flex-wrap:wrap;
        justify-content: space-between;
        &::after {
           content: "";
@@ -882,8 +881,10 @@ ul.catfilter {
   margin-right:30px;
   }
   &.oz-filteritem {
-    flex: 0 0 18%;
-    margin-bottom: 2%;
+    flex-basis: 30%;
+    &:nth-child(2n) {
+      margin-right:3%;
+    }
   }
 }
 

@@ -17306,7 +17306,6 @@ main.site-content .page.section-default div article.centermark {
 main.site-content .page.section-modular.oz-itemcontainer,
 main.site-content .page.section-default.oz-itemcontainer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -17777,8 +17776,11 @@ ul.catfilter li a.button:hover {
 }
 
 .list-item.h-entry.oz-filteritem {
-  flex: 0 0 18%;
-  margin-bottom: 2%;
+  flex-basis: 30%;
+}
+
+.list-item.h-entry.oz-filteritem:nth-child(2n) {
+  margin-right: 3%;
 }
 
 .catfiltercontainer {
