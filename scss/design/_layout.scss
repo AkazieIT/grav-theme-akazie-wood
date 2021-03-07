@@ -476,6 +476,9 @@ main.site-content{
     div article.centertext, div article.centermark {
       text-align:center;
     }
+    &.oz-itemcontainer {
+      display:flex;
+    }
   }
   .modular.section-angebotetext {
     h2 {
@@ -868,12 +871,16 @@ ul.catfilter {
 
 }
 .list-item.h-entry {
-  height:300px;
+  height:400px;
   img {
   float:left;
   margin-right:30px;
   }
+  &.oz-filteritem {
+    width: 33.2%;
+  }
 }
+
 .catfiltercontainer {
   border-radius:20px;
   height:105px;

@@ -17303,6 +17303,11 @@ main.site-content .page.section-default div article.centermark {
   text-align: center;
 }
 
+main.site-content .page.section-modular.oz-itemcontainer,
+main.site-content .page.section-default.oz-itemcontainer {
+  display: flex;
+}
+
 main.site-content .modular.section-angebotetext {
   margin-bottom: 0px;
 }
@@ -17759,12 +17764,16 @@ ul.catfilter li a.button:hover {
 }
 
 .list-item.h-entry {
-  height: 300px;
+  height: 400px;
 }
 
 .list-item.h-entry img {
   float: left;
   margin-right: 30px;
+}
+
+.list-item.h-entry.oz-filteritem {
+  width: 33.2%;
 }
 
 .catfiltercontainer {
