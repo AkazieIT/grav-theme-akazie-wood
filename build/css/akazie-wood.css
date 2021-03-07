@@ -17985,3 +17985,8 @@ div.screen-fullscreen {
     min-height: 800px;
   }
 }
+
+.keyyes img {
+  width: 50px;
+  height: auto;
+}
