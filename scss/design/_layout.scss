@@ -865,11 +865,12 @@ ul.catfilter {
     list-style-type: none;
     display:inline-block;
 
-    a.button {
+    a.button:not(.keyyes) {
       width:auto;
       height:auto;
       margin:0px;
       padding-top:9px;
+      padding-bottom:9px;
       padding-left:15px;
       padding-right:15px;
       &:hover {
@@ -877,6 +878,13 @@ ul.catfilter {
         font-weight:normal;
       }
 
+    }
+    a.button.keyyes {
+      padding:5px;
+      &:hover {
+        background-color:rgb(150,150,150);
+        font-weight:normal;
+      }
     }
 
   }

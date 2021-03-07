@@ -17761,16 +17761,26 @@ ul.catfilter li {
   display: inline-block;
 }
 
-ul.catfilter li a.button {
+ul.catfilter li a.button:not(.keyyes) {
   width: auto;
   height: auto;
   margin: 0px;
   padding-top: 9px;
+  padding-bottom: 9px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-ul.catfilter li a.button:hover {
+ul.catfilter li a.button:not(.keyyes):hover {
+  background-color: #969696;
+  font-weight: normal;
+}
+
+ul.catfilter li a.button.keyyes {
+  padding: 5px;
+}
+
+ul.catfilter li a.button.keyyes:hover {
   background-color: #969696;
   font-weight: normal;
 }
