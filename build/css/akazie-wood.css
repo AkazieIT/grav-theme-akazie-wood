@@ -17987,7 +17987,6 @@ div.screen-fullscreen {
 }
 
 .keyyes img {
-  width: 50px;
+  height: 40px;
   height: auto;
-  max-height: 50px;
 }
