@@ -882,8 +882,14 @@ ul.catfilter {
   }
   &.oz-filteritem {
     flex-basis: 28%;
-    margin:2%;
     padding:30px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: -12px 0 0 -12px;
+    width: calc(100% + 12px);
+    & > * {
+      margin: 12px 0 0 12px;
+    }
   }
 }
 
