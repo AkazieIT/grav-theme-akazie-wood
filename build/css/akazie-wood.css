@@ -17792,6 +17792,8 @@ ul.catfilter li a.button:hover {
 .list-item.h-entry.oz-filteritem .list-blog-header .oz-filtericons img {
   height: 40px;
   width: auto;
+  margin: 0px;
+  border-radius: 0px;
 }
 
 .list-item.h-entry.oz-filteritem .list-blog-padding {
