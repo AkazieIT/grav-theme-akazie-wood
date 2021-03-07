@@ -17776,15 +17776,7 @@ ul.catfilter li a.button:hover {
 }
 
 .list-item.h-entry.oz-filteritem {
-  flex-basis: 30%;
-}
-
-.list-item.h-entry.oz-filteritem:nth-child(2n) {
-  margin-right: 3%;
-}
-
-.list-item.h-entry.oz-filteritem:nth-child(3n + 1) {
-  margin-right: 3%;
+  flex-basis: 28%;
 }
 
 .catfiltercontainer {

@@ -881,13 +881,7 @@ ul.catfilter {
   margin-right:30px;
   }
   &.oz-filteritem {
-    flex-basis: 30%;
-    &:nth-child(2n) {
-      margin-right:3%;
-    }
-    &:nth-child(3n + 1) {
-      margin-right:3%;
-    }
+    flex-basis: 28%;
   }
 }
 
