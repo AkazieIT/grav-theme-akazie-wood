@@ -17784,7 +17784,7 @@ ul.catfilter li a.button:hover {
 }
 
 @media (min-width: 1220px) {
-  .list-item.h-entry.oz-filteritem:nth-child(2n) {
+  .list-item.h-entry.oz-filteritem:nth-child(3n - 1) {
     margin-right: 2%;
   }
   .list-item.h-entry.oz-filteritem:nth-child(3n - 2) {
