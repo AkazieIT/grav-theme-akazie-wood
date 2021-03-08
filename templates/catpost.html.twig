@@ -71,12 +71,12 @@
   </article>
   </div>
 
-
+  {% if page.header.googlemaps is defined %}
   <div class="row">
   <article class="modular section-map col-12 col-md-6 detailmap">
     <div class="media-container">
 
-      <iframe src="{{ page.header.googlemaps | raw}}" width="100%" height="100%" style="border:0;" allowfullscreen="" class="mapiframe" loading="lazy"></iframe>
+      <iframe src="{{ page.header.googlemaps | raw}}" width="100%" height="450px" style="border:0;" allowfullscreen="" class="mapiframe" loading="lazy"></iframe>
 
     </div>
   </article>
@@ -87,7 +87,7 @@
     </div>
   </article>
   </div>
-
+  {% endif %}
 
   </section>
 {% endblock %}

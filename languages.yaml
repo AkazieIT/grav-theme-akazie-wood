@@ -173,6 +173,16 @@ en:
           TWO: 'Row two'
           THREE: 'Row three'
       FIELDS:
+        GOOGLEMAPS:
+          LABEL: 'Map embed link and description'
+        CALENDAREMBED:
+          LABEL: 'Calendar embed link'
+        PRICES:
+          LABEL: 'Price list'
+          DESC:
+            LABEL: 'Description'
+          CHF:
+            LABEL: 'Price'
         BOX:
           BGCOLOR:
             LABEL: 'background color'
@@ -513,6 +523,16 @@ de:
           TWO: 'Zeile zwei'
           THREE: 'Zeile drei'
       FIELDS:
+        GOOGLEMAPS:
+          LABEL: 'Map Embed Link und Beschreibung'
+        CALENDAREMBED:
+          LABEL: 'Kalender Embed Link'
+        PRICES:
+          LABEL: 'Preisliste'
+          DESC:
+            LABEL: 'Beschreibung'
+          CHF:
+            LABEL: 'Preis'        
         BOX:
           BGCOLOR:
             LABEL: 'Hintergrundfarbe'

@@ -27,6 +27,14 @@ form:
                   type: markdown
                   validate:
                     type: textarea
+            media:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
+              underline: true
+              fields:
+                header.media_order:
+                  type: pagemedia
+                  label: PLUGIN_ADMIN.PAGE_MEDIA
             header.googlemaps:
               type: text
               label: THEME_AKAZIEWOOD.ADMIN.FIELDS.GOOGLEMAPS.LABEL
@@ -51,11 +59,3 @@ form:
                 .chf:
                   type: text
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.PRICES.CHF.LABEL
-            media:
-              type: section
-              title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
-              underline: true
-              fields:
-                header.media_order:
-                  type: pagemedia
-                  label: PLUGIN_ADMIN.PAGE_MEDIA
