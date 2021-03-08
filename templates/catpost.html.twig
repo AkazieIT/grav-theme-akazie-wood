@@ -65,7 +65,7 @@
 <article class="modular section-gallery col-12 col-md-12">
   <div class="gallery">
   {% for img in page.header.media_order | split(',')%}
-    <article style="background-image: url('{{ page.media[img].cropZoom(400,400).url }}');" data-src="{{ page.media[img].cropResize(1920,1080).url }}"></article>
+    <article style="background-image: url('{{ page.media[img].cropZoom(400,400).url }}');" data-src="{{ page.media[img].cropResize(1920,1080).url }}" data-scale="1"></article>
   {% endfor %}
   </div>
   </article>
