@@ -129,6 +129,19 @@
 
 
   </article>
+
+
+  {% if page.header.calendarembed is defined %}
+
+    <article class="modular section-map col-12 col-md-12 calendarembed">
+      <iframe src="{{ page.header.calendarembed | raw}}" width="100%" height="450px" style="border:0;" allowfullscreen="" class="mapiframe" loading="lazy"></iframe>
+
+    </article>
+
+  {% endif %}
+
+
+
   {% if page.header.prices is defined %}
 
   <article class="modular section-map col-12 col-md-6 prices">
