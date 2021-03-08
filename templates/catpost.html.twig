@@ -94,7 +94,7 @@
     {% if page.header.calendarembed is defined %}
     <div class="row">
 
-      <article class="modular section-map col-12 col-md-12 calendarembed">
+      <article class="modular section-map col-12 col-md-12 calendarembed" id="cal">
         <iframe src="{{ page.header.calendarembed | raw}}" width="100%" style="border:0;" allowfullscreen="" class="califrame" loading="lazy"></iframe>
 
       </article>
@@ -166,6 +166,7 @@
 	 	 	<div class="catfilterwrap">
         Text
       </div>
+      <a class="button" href="#" onclick="goBack()">Zurück</a><a class="button" href="#cal">Buchen</a>
     </div>
 
   </section>
