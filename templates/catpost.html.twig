@@ -102,9 +102,8 @@
   <article class="modular section-map col-12 col-md-6 prices">
     <div class="markdown secondarytext">
     <h2>Preise</h2>
-
     {% for prices in page.header.prices %}
-    preis
+    <div class="priceelement"><div>{{ price.desc }}</div><div>{{ price.chf }}</div></div>
     {% endfor %}
     </div>
 
