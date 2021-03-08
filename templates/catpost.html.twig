@@ -89,5 +89,29 @@
   </div>
   {% endif %}
 
+  <div class="row">
+  <article class="modular section-map col-12 col-md-6 features">
+    <div class="markdown secondarytext">
+    <h2>Ausstattung</h2>
+    </div>
+
+
+  </article>
+  {% if page.header.prices is defined %}
+
+  <article class="modular section-map col-12 col-md-6 prices">
+    <div class="markdown secondarytext">
+    <h2>Preise</h2>
+
+    {% for prices in page.header.prices %}
+    preis
+    {% endfor %}
+    </div>
+
+
+  </article>
+  </div>
+  {% endif %}
+
   </section>
 {% endblock %}
