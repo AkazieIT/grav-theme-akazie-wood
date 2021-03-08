@@ -27,7 +27,30 @@ form:
                   type: markdown
                   validate:
                     type: textarea
-
+            header.googlemaps:
+              type: text
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.GOOGLEMAPS.LABEL
+            header.secondarytext:
+              type: markdown
+              validate:
+                type: textarea
+            header.calendarembed:
+              type: text
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.CALENDAREMBED.LABEL
+            header.prices:
+              name: personen
+              type: list
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.PRICES.LABEL
+              collapsed: false
+              fields:
+                .desc:
+                  type: text
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.PRICES.DESC.LABEL
+                  validate:
+                    required: true
+                .chf:
+                  type: text
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.PRICES.CHF.LABEL
             media:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
