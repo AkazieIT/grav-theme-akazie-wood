@@ -62,7 +62,7 @@
     </article>
   </div>
   <div class="row">
-<article class="modular section-gallery col-12 col-md-12 detailgallery">
+  <article class="modular section-gallery col-12 col-md-12 detailgallery">
   <div class="gallery">
   {% for img in page.header.media_order | split(',')%}
     <article style="background-image: url('{{ page.media[img].cropZoom(400,400).url }}');" data-src="{{ page.media[img].cropResize(1920,1080).url }}" data-scale="1"></article>
@@ -70,6 +70,21 @@
   </div>
   </article>
   </div>
+
+
+  <div class="row">
+  <article class="modular section-map col-12 col-md-6 detailmap">
+    <div class="media-container">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.613104159287!2d7.443382651607505!3d46.456362579022716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478efc91bf6349bd%3A0x61f94727a5d5d24f!2sAkazie%20IT%20GmbH!5e0!3m2!1sen!2sch!4v1615207282848!5m2!1sen!2sch" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+  </article>
+  <article class="modular section-text col-12 col-md-6 maptext">
+    <h2 class="heading detail">{{ page.header.title }}</h2>
+  </article>
+  </div>
+
 
   </section>
 {% endblock %}
