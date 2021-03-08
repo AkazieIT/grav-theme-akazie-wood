@@ -92,7 +92,7 @@
   <div class="row">
   <article class="modular section-map col-12 col-md-6 features">
     <div class="markdown secondarytext">
-    <h2>Ausstattung</h2>
+    <h2 class="pricetitle">Ausstattung</h2>
     <div class="oz-filtericons descicons">
           {% for tag in page.taxonomy.nichtraucher %}
           {% if tag == 'ja' %}
@@ -121,7 +121,7 @@
           {% endfor %}
           {% for tag in page.taxonomy.parking %}
           {% if tag == 'ja' %}
-          <div><div class="imgcontainer"><img src="{{ url('theme://custom/logo/parking-solid.svg')}}"/></div class="txtcontainer"><div>Parkmöglichkeit</div></div>
+          <div><div class="imgcontainer"><img src="{{ url('theme://custom/logo/parking-solid.svg')}}"/></div><div class="txtcontainer">Parkmöglichkeit</div></div>
           {% endif %}
           {% endfor %}
     </div>
