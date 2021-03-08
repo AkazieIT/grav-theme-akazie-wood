@@ -177,6 +177,8 @@ en:
           LABEL: 'Map embed link and description'
         CALENDAREMBED:
           LABEL: 'Calendar embed link'
+        BACKTEXT:
+          LABEL: 'Text on back link bar'
         PRICES:
           LABEL: 'Price list'
           DESC:
@@ -527,12 +529,14 @@ de:
           LABEL: 'Map Embed Link und Beschreibung'
         CALENDAREMBED:
           LABEL: 'Kalender Embed Link'
+        BACKTEXT:
+          LABEL: 'Text auf Zurück-Balken'
         PRICES:
           LABEL: 'Preisliste'
           DESC:
             LABEL: 'Beschreibung'
           CHF:
-            LABEL: 'Preis'        
+            LABEL: 'Preis'
         BOX:
           BGCOLOR:
             LABEL: 'Hintergrundfarbe'

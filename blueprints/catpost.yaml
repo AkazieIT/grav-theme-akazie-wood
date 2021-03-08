@@ -59,3 +59,7 @@ form:
                 .chf:
                   type: text
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.PRICES.CHF.LABEL
+
+            header.backtext:
+              type: text
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BACKTEXT.LABEL
