@@ -96,12 +96,12 @@
 
     {% if page.header.calendarembed is defined %}
     <div class="row">
-      <article class="modular section-text col-12 col-md-3 maptext">
+      <article class="modular section-text col-12 col-md-4 maptext">
         <h2 class="belegungsplan">Belegungsplan & Anfrage</h2>
       </article>
 
 
-      <article class="modular section-map col-12 col-md-9 calendarembed" id="cal">
+      <article class="modular section-map col-12 col-md-8 calendarembed" id="cal">
         <iframe src="{{ page.header.calendarembed | raw}}" width="100%" style="border:0;" allowfullscreen="" class="califrame" scrolling="no" loading="lazy"></iframe>
 
       </article>
