@@ -33,11 +33,6 @@
               <i class="svgitem paw bigger"></i>
             {% endif %}
             {% endfor %}
-            {% for tag in page.taxonomy.waschmaschine %}
-            {% if tag == 'ja' %}
-            <img src="{{ url('theme://custom/logo/washer-solid.svg')}}"/>
-            {% endif %}
-            {% endfor %}
             {% for tag in page.taxonomy.zentrumsnah %}
             {% if tag == 'ja' %}
               <i class="svgitem ortsmarker bigger"></i>
@@ -129,11 +124,6 @@
           {% for tag in page.taxonomy.haustiere %}
           {% if tag == 'ja' %}
           <div><div class="imgcontainer"><i class="svgitem paw bigger"></i></div><div class="txtcontainer">Haustiere</div></div>
-          {% endif %}
-          {% endfor %}
-          {% for tag in page.taxonomy.waschmaschine %}
-          {% if tag == 'ja' %}
-          <div><div class="imgcontainer"><img src="{{ url('theme://custom/logo/washer-solid.svg')}}"/></div><div class="txtcontainer">waschmaschine</div></div>
           {% endif %}
           {% endfor %}
           {% for tag in page.taxonomy.zentrumsnah %}
