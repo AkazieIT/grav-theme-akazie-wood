@@ -17914,6 +17914,7 @@ ul.catfilter li a.button.keyyes:hover {
   height: 40px;
   width: auto;
   margin: 0px;
+  margin-bottom: 5px;
   border-radius: 0px;
 }
 
@@ -17936,7 +17937,19 @@ ul.catfilter li a.button.keyyes:hover {
 .list-item.h-entry.oz-filteritem img {
   float: none;
   width: calc(100% - 80px);
-  margin: 40px;
+  margin: 20px;
+}
+
+@media (min-width: 870px) {
+  .list-item.h-entry.oz-filteritem img {
+    margin: 30px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .list-item.h-entry.oz-filteritem img {
+    margin: 40px;
+  }
 }
 
 @media (min-width: 870px) {

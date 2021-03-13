@@ -913,6 +913,7 @@ ul.catfilter {
           height:40px;
           width:auto;
           margin:0px;
+          margin-bottom:5px;
           border-radius:0px;
         }
       }
@@ -934,7 +935,15 @@ ul.catfilter {
     img {
       float:none;
       width:calc(100% - 80px);
-      margin:40px;
+      margin:20px;
+
+      @media (min-width: 870px) {
+        margin:30px;
+      }
+      @media (min-width: 1220px) {
+        margin:40px;
+      }
+
     }
     flex-basis: 26%;
     flex-grow:1;
