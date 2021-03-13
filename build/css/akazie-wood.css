@@ -17893,9 +17893,9 @@ ul.catfilter li a.button.keyyes:hover {
 
 .list-item.h-entry.oz-filteritem {
   min-width: 228px;
-  flex-basis: 26%;
+  flex-basis: 30%;
   flex-grow: 1;
-  margin-bottom: 6%;
+  margin-bottom: 4%;
 }
 
 .list-item.h-entry.oz-filteritem .list-blog-header {
@@ -17971,16 +17971,16 @@ ul.catfilter li a.button.keyyes:hover {
 
 @media (min-width: 870px) {
   .list-item.h-entry.oz-filteritem:nth-child(3n - 1) {
-    margin-right: 6%;
+    margin-right: 4%;
   }
   .list-item.h-entry.oz-filteritem:nth-child(3n - 2) {
-    margin-right: 6%;
+    margin-right: 4%;
   }
 }
 
 @media (min-width: 500px) and (max-width: 870px) {
   .list-item.h-entry.oz-filteritem:nth-child(2n - 1) {
-    margin-right: 6%;
+    margin-right: 4%;
   }
 }
 
