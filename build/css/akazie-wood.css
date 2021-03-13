@@ -18108,11 +18108,11 @@ div.screen-fullscreen {
   width: auto;
 }
 
-.svgitem .smoking {
+.svgitem.smoking {
   content: url("../../custom/logo/smoking-ban-solid.svg");
 }
 
-.svgitem .norm {
+.svgitem.norm {
   height: 35px;
   width: auto;
 }

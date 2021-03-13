@@ -1074,10 +1074,10 @@ div.screen-fullscreen {
  }
 
  .svgitem {
-   .smoking {
+   &.smoking {
      content: url('../../custom/logo/smoking-ban-solid.svg');
    }
-   .norm {
+   &.norm {
      height:35px;
      width:auto;
    }
