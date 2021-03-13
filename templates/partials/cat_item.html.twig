@@ -20,12 +20,12 @@
         <div class="oz-filtericons">
               {% for tag in page.taxonomy.nichtraucher %}
               {% if tag == 'ja' %}
-              <img src="{{ url('theme://custom/logo/smoking-ban-solid.svg')}}"/>
+              <i class="svgitem smoking norm"></i>
               {% endif %}
               {% endfor %}
               {% for tag in page.taxonomy.wlan %}
               {% if tag == 'ja' %}
-              <img src="{{ url('theme://custom/logo/wifi-solid.svg')}}"/>
+              <img src="{{ url('theme://custom/logo/wlan.svg')}}"/>
               {% endif %}
               {% endfor %}
               {% for tag in page.taxonomy.haustiere %}
@@ -40,7 +40,7 @@
               {% endfor %}
               {% for tag in page.taxonomy.zentrumsnah %}
               {% if tag == 'ja' %}
-              <img src="{{ url('theme://custom/logo/map-marker-smile-solid.svg')}}"/>
+              <img src="{{ url('theme://custom/logo/ortsmarker.svg')}}"/>
               {% endif %}
               {% endfor %}
               {% for tag in page.taxonomy.parking %}
