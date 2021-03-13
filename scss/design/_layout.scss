@@ -977,7 +977,7 @@ ul.catfilter {
   position:absolute;
   top: 56%;
   @media (max-height: 890px) {
-      top:63%;
+      top:65%;
   }
   @media (max-height: 680px) {
       top:500px;
@@ -1051,7 +1051,7 @@ ul.catfilter {
             font-size: 60px;
           }
           .markdown p {
-            margin-top:35vh;
+            margin-top:30vh;
             @media (max-height: 600px) {
               margin-top:40vh;
             }
