@@ -17919,9 +17919,25 @@ ul.catfilter li a.button.keyyes:hover {
 }
 
 .list-item.h-entry.oz-filteritem .list-blog-padding {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 870px) {
+  .list-item.h-entry.oz-filteritem .list-blog-padding {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .list-item.h-entry.oz-filteritem .list-blog-padding {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .list-item.h-entry.oz-filteritem .filterbutton {
@@ -17936,19 +17952,21 @@ ul.catfilter li a.button.keyyes:hover {
 
 .list-item.h-entry.oz-filteritem img {
   float: none;
-  width: calc(100% - 80px);
+  width: calc(100% - 40px);
   margin: 20px;
 }
 
 @media (min-width: 870px) {
   .list-item.h-entry.oz-filteritem img {
     margin: 30px;
+    width: calc(100% - 60px);
   }
 }
 
 @media (min-width: 1220px) {
   .list-item.h-entry.oz-filteritem img {
     margin: 40px;
+    width: calc(100% - 80px);
   }
 }
 
