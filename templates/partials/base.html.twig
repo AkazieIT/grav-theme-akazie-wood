@@ -111,7 +111,7 @@
             {% block main %}
               <main class="site-content">
                 {% if page.header.kundencode == 'immosit' %}
-                <div class="bookinghover">
+                <div class="bookinghover"><form action="/immosit/wohnungen">
   <ul><li>
   <input type="radio" id="radioApple" name="radioFruit" value="apple" checked>
   <label for="radioApple">2 Betten</label>
@@ -120,10 +120,23 @@
   <input type="radio" id="radioOrange" name="radioFruit" value="orange">
   <label for="radioOrange">ab 4 Betten</label></li>
 
-<li><input type="checkbox" id="myCheckbox1" />
-<label for="myCheckbox1">
-  <img src="{{ url( 'theme://custom/logo/wlan-white.svg') }}">
-</label></li><li>Zentrumsnah</li><li>WLAN</li><li><a href="/">Suchen</a></li></ul>
+  <li><input type="checkbox" id="myCheckbox1" name="wlan" value="ja" />
+  <label for="myCheckbox1">
+    <img src="{{ url( 'theme://custom/logo/wlan-white.svg') }}">
+  </label></li>
+  <li><input type="checkbox" id="myCheckbox2"  name="fahrstuhl" value="ja" />
+  <label for="myCheckbox2">
+    <img src="{{ url( 'theme://custom/logo/sort-circle-solid-white.svg') }}">
+  </label></li>
+  <li><input type="checkbox" id="myCheckbox3"  name="haustiere" value="ja" />
+  <label for="myCheckbox3">
+    <img src="{{ url( 'theme://custom/logo/paw-solid-white.svg') }}">
+  </label></li>
+  <li><input type="checkbox" id="myCheckbox4"  name="parking" value="ja" />
+  <label for="myCheckbox4">
+    <img src="{{ url( 'theme://custom/logo/parking-solid-white.svg') }}">
+  </label></li>
+  <li><input type="submit"></li></ul>
                 </div>
                 <div class="screen-image screen-fullscreen">
                   <section class="page section-modular immositstart">
