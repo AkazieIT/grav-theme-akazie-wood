@@ -176,7 +176,7 @@ en:
         GOOGLEMAPS:
           LABEL: 'Map embed link and description'
         CALENDAREMBED:
-          LABEL: 'Calendar embed link'
+          LABEL: 'Calendar embed code'
         BACKTEXT:
           LABEL: 'Text on back link bar'
         PRICES:
@@ -528,7 +528,7 @@ de:
         GOOGLEMAPS:
           LABEL: 'Map Embed Link und Beschreibung'
         CALENDAREMBED:
-          LABEL: 'Kalender Embed Link'
+          LABEL: 'Kalender Embed Code'
         BACKTEXT:
           LABEL: 'Text auf Zurück-Balken'
         PRICES:
