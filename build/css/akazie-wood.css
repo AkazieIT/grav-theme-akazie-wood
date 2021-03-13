@@ -18158,6 +18158,10 @@ div.screen-fullscreen {
   content: url("../../custom/logo/ortsmarker.svg");
 }
 
+.svgitem.fahrstuhl {
+  content: url("../../custom/logo/sort-circle-solid.svg");
+}
+
 .svgitem.norm {
   height: 35px;
   width: auto;

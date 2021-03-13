@@ -1114,6 +1114,9 @@ div.screen-fullscreen {
    &.ortsmarker {
      content: url('../../custom/logo/ortsmarker.svg');
    }
+   &.fahrstuhl {
+     content: url('../../custom/logo/sort-circle-solid.svg');
+   }
    &.norm {
      height:35px;
      width:auto;

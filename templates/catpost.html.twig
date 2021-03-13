@@ -43,6 +43,11 @@
               <i class="svgitem parking bigger"></i>
             {% endif %}
             {% endfor %}
+            {% for tag in page.taxonomy.fahrstuhl %}
+            {% if tag == 'ja' %}
+              <i class="svgitem fahrstuhl bigger"></i>
+            {% endif %}
+            {% endfor %}
       </div>
       {% if page.header.calendarembed is defined %}
       <div class="brownbutton"><a class="" href="#cal">Jetzt Buchen</a></div>
@@ -134,6 +139,11 @@
           {% for tag in page.taxonomy.parking %}
           {% if tag == 'ja' %}
           <div><div class="imgcontainer"><i class="svgitem parking bigger"></i></div><div class="txtcontainer">Parkmöglichkeit</div></div>
+          {% endif %}
+          {% endfor %}
+          {% for tag in page.taxonomy.fahrstuhl %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><i class="svgitem fahrstuhl bigger"></i></div><div class="txtcontainer">Fahrstuhl</div></div>
           {% endif %}
           {% endfor %}
     </div>

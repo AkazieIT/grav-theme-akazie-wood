@@ -43,6 +43,11 @@
               <i class="svgitem parking norm"></i>
               {% endif %}
               {% endfor %}
+              {% for tag in page.taxonomy.fahrstuhl %}
+              {% if tag == 'ja' %}
+              <i class="svgitem fahrstuhl norm"></i>
+              {% endif %}
+              {% endfor %}
         </div>
       {% else %}
 
