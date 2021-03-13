@@ -18082,8 +18082,14 @@ ul.catfilter li a.button.keyyes:hover {
     font-size: 60px;
   }
   .immositstart div.row article:first-child .markdown p {
-    margin-top: 40vh;
+    margin-top: 35vh;
     font-size: 25px;
+  }
+}
+
+@media (min-width: 992px) and (max-height: 600px) {
+  .immositstart div.row article:first-child .markdown p {
+    margin-top: 40vh;
   }
 }
 

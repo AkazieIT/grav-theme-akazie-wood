@@ -1051,7 +1051,10 @@ ul.catfilter {
             font-size: 60px;
           }
           .markdown p {
-            margin-top:40vh;
+            margin-top:35vh;
+            @media (max-height: 600px) {
+              margin-top:40vh;
+            }
             font-size:25px;
           }
         }
