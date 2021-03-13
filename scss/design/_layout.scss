@@ -960,7 +960,7 @@ ul.catfilter {
       }
 
     }
-    flex-basis: 30%;
+    flex-basis: 33%;
     flex-grow:1;
     margin-bottom:4%;
     @media (min-width:870px) {
@@ -974,7 +974,8 @@ ul.catfilter {
 
     @media (min-width:500px) and (max-width:870px) {
         flex-basis: 100%;
-      
+        margin-bottom:10%;
+
     }
   }
 }
