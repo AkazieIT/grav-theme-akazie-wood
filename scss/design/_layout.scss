@@ -1093,5 +1093,13 @@ div.screen-fullscreen {
      height:35px;
      width:auto;
    }
+   &.bigger {
+       height:40px;
+       width:auto;
+   }
+   &.big {
+       height:45px;
+       width:auto;
+   }
 
  }

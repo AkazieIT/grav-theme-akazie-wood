@@ -18132,3 +18132,13 @@ div.screen-fullscreen {
   height: 35px;
   width: auto;
 }
+
+.svgitem.bigger {
+  height: 40px;
+  width: auto;
+}
+
+.svgitem.big {
+  height: 45px;
+  width: auto;
+}
