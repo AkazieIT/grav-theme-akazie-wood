@@ -17893,7 +17893,7 @@ ul.catfilter li a.button.keyyes:hover {
 
 .list-item.h-entry.oz-filteritem {
   min-width: 228px;
-  flex-basis: 33%;
+  flex-basis: 30%;
   flex-grow: 1;
   margin-bottom: 4%;
 }
