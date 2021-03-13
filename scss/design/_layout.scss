@@ -900,8 +900,17 @@ ul.catfilter {
   }
   &.oz-filteritem {
     .list-blog-header {
-      margin-left:40px;
-      margin-right:40px;
+      margin-left:20px;
+      margin-right:20px;
+      @media (min-width: 870px) {
+
+          margin-left:30px;
+          margin-right:30px;
+      }
+      @media (min-width: 1220px) {
+        margin-left:40px;
+        margin-right:40px;
+      }
       .oz-filtericons {
 
           display:flex;
@@ -919,21 +928,10 @@ ul.catfilter {
       }
     }
     .list-blog-padding {
-      margin-left:20px;
-      margin-right:20px;
-      margin-bottom:20px;
+      margin-left:40px;
+      margin-right:40px;
+      margin-bottom:40px;
 
-      @media (min-width: 870px) {
-
-          margin-left:30px;
-          margin-right:30px;
-          margin-bottom:30px;
-      }
-      @media (min-width: 1220px) {
-        margin-left:40px;
-        margin-right:40px;
-        margin-bottom:40px;
-      }
     }
     .filterbutton {
       width: 100%;
