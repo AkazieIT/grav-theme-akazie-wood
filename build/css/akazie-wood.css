@@ -18112,6 +18112,22 @@ div.screen-fullscreen {
   content: url("../../custom/logo/smoking-ban-solid.svg");
 }
 
+.svgitem.wlan {
+  content: url("../../custom/logo/wlan.svg");
+}
+
+.svgitem.paw {
+  content: url("../../custom/logo/paw-solid.svg");
+}
+
+.svgitem.parking {
+  content: url("../../custom/logo/parking-solid.svg");
+}
+
+.svgitem.ortsmarker {
+  content: url("../../custom/logo/ortsmarker.svg");
+}
+
 .svgitem.norm {
   height: 35px;
   width: auto;

@@ -1077,6 +1077,18 @@ div.screen-fullscreen {
    &.smoking {
      content: url('../../custom/logo/smoking-ban-solid.svg');
    }
+   &.wlan {
+     content: url('../../custom/logo/wlan.svg');
+   }
+   &.paw {
+     content: url('../../custom/logo/paw-solid.svg');
+   }
+   &.parking {
+     content: url('../../custom/logo/parking-solid.svg');
+   }
+   &.ortsmarker {
+     content: url('../../custom/logo/ortsmarker.svg');
+   }
    &.norm {
      height:35px;
      width:auto;
