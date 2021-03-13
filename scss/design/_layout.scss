@@ -972,11 +972,10 @@ ul.catfilter {
       }
     }
 
-  /*  @media (min-width:500px) and (max-width:870px) {
-      &:nth-child(2n - 1) {
-        margin-right:4%;
-      }
-    } */
+    @media (min-width:500px) and (max-width:870px) {
+        flex-basis: 100%;
+      
+    }
   }
 }
 
