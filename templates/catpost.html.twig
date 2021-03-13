@@ -18,36 +18,36 @@
       <h2 class="heading detail">{{ page.header.title }}</h2>
       <div class="afterline"><div>&nbsp;</div></div>
       <div class="oz-filtericons detailicons">
-            {% for tag in page.taxonomy.nichtraucher %}
-            {% if tag == 'ja' %}
-            <img src="{{ url('theme://custom/logo/smoking-ban-solid.svg')}}"/>
-            {% endif %}
-            {% endfor %}
-            {% for tag in page.taxonomy.wlan %}
-            {% if tag == 'ja' %}
-            <img src="{{ url('theme://custom/logo/wifi-solid.svg')}}"/>
-            {% endif %}
-            {% endfor %}
-            {% for tag in page.taxonomy.haustiere %}
-            {% if tag == 'ja' %}
-            <img src="{{ url('theme://custom/logo/paw-solid.svg')}}"/>
-            {% endif %}
-            {% endfor %}
-            {% for tag in page.taxonomy.waschmaschine %}
-            {% if tag == 'ja' %}
-            <img src="{{ url('theme://custom/logo/washer-solid.svg')}}"/>
-            {% endif %}
-            {% endfor %}
-            {% for tag in page.taxonomy.zentrumsnah %}
-            {% if tag == 'ja' %}
-            <img src="{{ url('theme://custom/logo/map-marker-smile-solid.svg')}}"/>
-            {% endif %}
-            {% endfor %}
-            {% for tag in page.taxonomy.parking %}
-            {% if tag == 'ja' %}
-            <img src="{{ url('theme://custom/logo/parking-solid.svg')}}"/>
-            {% endif %}
-            {% endfor %}
+          {% for tag in page.taxonomy.nichtraucher %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><i class="svgitem smoking bigger"></i></div><div class="txtcontainer">Nichtraucher</div></div>
+          {% endif %}
+          {% endfor %}
+          {% for tag in page.taxonomy.wlan %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><i class="svgitem wlan bigger"></i></div><div class="txtcontainer">Wifi</div></div>
+          {% endif %}
+          {% endfor %}
+          {% for tag in page.taxonomy.haustiere %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><i class="svgitem paw bigger"></i></div><div class="txtcontainer">Haustiere</div></div>
+          {% endif %}
+          {% endfor %}
+          {% for tag in page.taxonomy.waschmaschine %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><img src="{{ url('theme://custom/logo/washer-solid.svg')}}"/></div><div class="txtcontainer">waschmaschine</div></div>
+          {% endif %}
+          {% endfor %}
+          {% for tag in page.taxonomy.zentrumsnah %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><i class="svgitem ortsmarker bigger"></i></div><div class="txtcontainer">Zentrumsnah</div></div>
+          {% endif %}
+          {% endfor %}
+          {% for tag in page.taxonomy.parking %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><i class="svgitem parking bigger"></i></div><div class="txtcontainer">Parkmöglichkeit</div></div>
+          {% endif %}
+          {% endfor %}
       </div>
       {% if page.header.calendarembed is defined %}
       <div class="brownbutton"><a class="" href="#cal">Jetzt Buchen</a></div>
@@ -118,17 +118,17 @@
     <div class="oz-filtericons descicons">
           {% for tag in page.taxonomy.nichtraucher %}
           {% if tag == 'ja' %}
-          <div><div class="imgcontainer"><i class="svgitem smoking big"></i></div><div class="txtcontainer">Nichtraucher</div></div>
+          <div><div class="imgcontainer"><i class="svgitem smoking bigger"></i></div><div class="txtcontainer">Nichtraucher</div></div>
           {% endif %}
           {% endfor %}
           {% for tag in page.taxonomy.wlan %}
           {% if tag == 'ja' %}
-          <div><div class="imgcontainer"><i class="svgitem wlan big"></i></div><div class="txtcontainer">Wifi</div></div>
+          <div><div class="imgcontainer"><i class="svgitem wlan bigger"></i></div><div class="txtcontainer">Wifi</div></div>
           {% endif %}
           {% endfor %}
           {% for tag in page.taxonomy.haustiere %}
           {% if tag == 'ja' %}
-          <div><div class="imgcontainer"><i class="svgitem paw big"></i></div><div class="txtcontainer">Haustiere</div></div>
+          <div><div class="imgcontainer"><i class="svgitem paw bigger"></i></div><div class="txtcontainer">Haustiere</div></div>
           {% endif %}
           {% endfor %}
           {% for tag in page.taxonomy.waschmaschine %}
@@ -138,12 +138,12 @@
           {% endfor %}
           {% for tag in page.taxonomy.zentrumsnah %}
           {% if tag == 'ja' %}
-          <div><div class="imgcontainer"><i class="svgitem ortsmarker big"></i></div><div class="txtcontainer">Zentrumsnah</div></div>
+          <div><div class="imgcontainer"><i class="svgitem ortsmarker bigger"></i></div><div class="txtcontainer">Zentrumsnah</div></div>
           {% endif %}
           {% endfor %}
           {% for tag in page.taxonomy.parking %}
           {% if tag == 'ja' %}
-          <div><div class="imgcontainer"><i class="svgitem parking big"></i></div><div class="txtcontainer">Parkmöglichkeit</div></div>
+          <div><div class="imgcontainer"><i class="svgitem parking bigger"></i></div><div class="txtcontainer">Parkmöglichkeit</div></div>
           {% endif %}
           {% endfor %}
     </div>
