@@ -17980,7 +17980,7 @@ ul.catfilter li a.button.keyyes:hover {
 
 @media (min-width: 500px) and (max-width: 870px) {
   .list-item.h-entry.oz-filteritem:nth-child(2n - 1) {
-    margin-right: 6%;
+    /* margin-right:6%; */
   }
 }
 

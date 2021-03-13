@@ -971,10 +971,10 @@ ul.catfilter {
         margin-right:6%;
       }
     }
-    
+
     @media (min-width:500px) and (max-width:870px) {
       &:nth-child(2n - 1) {
-        margin-right:6%;
+        /* margin-right:6%; */
       }
     }
   }
