@@ -477,6 +477,7 @@ main.site-content{
       text-align:center;
     }
     &.oz-itemcontainer {
+      margin-bottom:100px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       @media (max-width: 1220px) {
