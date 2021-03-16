@@ -1015,6 +1015,9 @@ ul.catfilter {
   margin-left: auto;
   margin-right: auto;
   width:1054px;
+  @media (max-height:680px) {
+    top: 500px;
+  }
   }
   @media (max-width: 1220px) {
   left: 0;
