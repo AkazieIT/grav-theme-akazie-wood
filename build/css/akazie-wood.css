@@ -17308,13 +17308,20 @@ main.site-content .page.section-default.oz-itemcontainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4%;
-  grid-row-gap: 1%;
+  grid-row-gap: 1.5%;
 }
 
 @media (max-width: 1220px) {
   main.site-content .page.section-modular.oz-itemcontainer,
   main.site-content .page.section-default.oz-itemcontainer {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 870px) {
+  main.site-content .page.section-modular.oz-itemcontainer,
+  main.site-content .page.section-default.oz-itemcontainer {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
