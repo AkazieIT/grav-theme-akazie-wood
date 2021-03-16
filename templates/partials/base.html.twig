@@ -112,31 +112,46 @@
               <main class="site-content">
                 {% if page.header.kundencode == 'immosit' %}
                 <div class="bookinghover"><form action="/immosit/wohnungen">
-  <ul><li>
-  <input type="radio" id="radioApple" name="betten" value="2 Betten">
-  <label for="radioApple">2 Betten</label>
-  <input type="radio" id="radioBanana" name="betten" value="3 Betten">
-  <label for="radioBanana">3 Betten</label>
-  <input type="radio" id="radioOrange" name="betten" value="ab 4 Betten">
-  <label for="radioOrange">ab 4 Betten</label></li>
+                    <ul>
+                      <li>
+                        <input type="radio" id="radioApple" name="betten" value="2 Betten">
+                        <label for="radioApple">2 Betten</label>
+                        <input type="radio" id="radioBanana" name="betten" value="3 Betten">
+                        <label for="radioBanana">3 Betten</label>
+                        <input type="radio" id="radioOrange" name="betten" value="ab 4 Betten">
+                        <label for="radioOrange">ab 4 Betten</label>
+                      </li>
 
-  <li><input type="checkbox" id="myCheckbox1" name="wlan" value="ja" />
-  <label for="myCheckbox1">
-    <img src="{{ url( 'theme://custom/logo/wlan-white.svg') }}">
-  </label></li>
-  <li><input type="checkbox" id="myCheckbox2"  name="fahrstuhl" value="ja" />
-  <label for="myCheckbox2">
-    <img src="{{ url( 'theme://custom/logo/sort-circle-solid-white.svg') }}">
-  </label></li>
-  <li><input type="checkbox" id="myCheckbox3"  name="haustiere" value="ja" />
-  <label for="myCheckbox3">
-    <img src="{{ url( 'theme://custom/logo/paw-solid-white.svg') }}">
-  </label></li>
-  <li><input type="checkbox" id="myCheckbox4"  name="parking" value="ja" />
-  <label for="myCheckbox4">
-    <img src="{{ url( 'theme://custom/logo/parking-solid-white.svg') }}">
-  </label></li>
-  <li><input type="submit" value="Suchen"></li></ul>
+                      <li>
+                        <input type="checkbox" id="myCheckbox1" name="wlan" value="ja" />
+                        <label for="myCheckbox1">
+                          <img src="{{ url( 'theme://custom/logo/wlan-white.svg') }}"><span>WLAN</span>
+                        </label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="myCheckbox2"  name="fahrstuhl" value="ja" />
+                        <label for="myCheckbox2">
+                          <img src="{{ url( 'theme://custom/logo/sort-circle-solid-white.svg') }}"><span>Fahrstuhl</span>
+                        </label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="myCheckbox3"  name="haustiere" value="ja" />
+                        <label for="myCheckbox3">
+                          <img src="{{ url( 'theme://custom/logo/paw-solid-white.svg') }}"><span>Haustiere</span>
+                        </label>
+                      </li>
+                      {#
+                      <li>
+                        <input type="checkbox" id="myCheckbox4"  name="parking" value="ja" />
+                        <label for="myCheckbox4">
+                          <img src="{{ url( 'theme://custom/logo/parking-solid-white.svg') }}"><span>Fahrstuhl</span>
+                        </label>
+                      </li>
+                      #}
+                      <li>
+                        <input type="submit" value="Suchen">
+                      </li>
+                    </ul>
                 </div>
                 <div class="screen-image screen-fullscreen">
                   <section class="page section-modular immositstart">
