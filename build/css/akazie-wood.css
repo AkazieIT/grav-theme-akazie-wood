@@ -17308,6 +17308,7 @@ main.site-content .page.section-default.oz-itemcontainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4%;
+  grid-row-gap: 1%;
 }
 
 @media (max-width: 1220px) {
