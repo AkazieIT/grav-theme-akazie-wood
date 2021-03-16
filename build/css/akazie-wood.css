@@ -17307,7 +17307,7 @@ main.site-content .page.section-modular.oz-itemcontainer,
 main.site-content .page.section-default.oz-itemcontainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-content: space-between;
 }
 
 main.site-content .page.section-modular.oz-itemcontainer::after,
@@ -17315,14 +17315,12 @@ main.site-content .page.section-default.oz-itemcontainer::after {
   content: "";
   flex: auto;
   flex-basis: 26%;
+  /*
+          @media (min-width: 870px) {
+              flex-basis:64%;
+          }
+          */
   flex-grow: 1;
-}
-
-@media (min-width: 870px) {
-  main.site-content .page.section-modular.oz-itemcontainer::after,
-  main.site-content .page.section-default.oz-itemcontainer::after {
-    flex-basis: 64%;
-  }
 }
 
 main.site-content .modular.section-angebotetext {
