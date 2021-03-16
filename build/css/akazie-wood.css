@@ -17307,8 +17307,14 @@ main.site-content .page.section-modular.oz-itemcontainer,
 main.site-content .page.section-default.oz-itemcontainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 4%;
+}
+
+@media (max-width: 1220px) {
+  main.site-content .page.section-modular.oz-itemcontainer,
+  main.site-content .page.section-default.oz-itemcontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 main.site-content .modular.section-angebotetext {
