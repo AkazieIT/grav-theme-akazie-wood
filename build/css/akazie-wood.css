@@ -17305,11 +17305,11 @@ main.site-content .page.section-default div article.centermark {
 
 main.site-content .page.section-modular.oz-itemcontainer,
 main.site-content .page.section-default.oz-itemcontainer {
-  margin-bottom: 200px;
+  margin-bottom: 150px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 4%;
-  grid-row-gap: 1.5%;
+  grid-column-gap: 4%;
+  grid-row-gap: 50px;
 }
 
 @media (max-width: 1220px) {

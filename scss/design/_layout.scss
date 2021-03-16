@@ -477,7 +477,7 @@ main.site-content{
       text-align:center;
     }
     &.oz-itemcontainer {
-      margin-bottom:200px;
+      margin-bottom:150px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       @media (max-width: 1220px) {
@@ -486,8 +486,8 @@ main.site-content{
       @media (max-width: 870px) {
         grid-template-columns: repeat(1, 1fr);
       }
-      grid-gap: 4%;
-      grid-row-gap: 1.5%;
+      grid-column-gap: 4%;
+      grid-row-gap: 50px;
 
 
 
