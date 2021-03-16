@@ -21,7 +21,7 @@
 </section>
 <section class="page section-default">
 <div class="row">
-<div class="sidebar column is-narrow catfiltercontainer">
+<div class="sidebar column is-narrow catfiltercontainer" id="catcont">
 	{% set taxlist = cascadeFilters.get() %} {# get texonomy list #}
 	{% set queries = uri.query(null, true) %} {# get queries as Array #}
 	{% if taxlist %}
