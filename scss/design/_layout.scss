@@ -485,6 +485,9 @@ main.site-content{
           content: "";
           flex: auto;
           flex-basis: 26%;
+          @media (min-width: 870px) {
+              flex-basis:64%;
+          }
           flex-grow:1;
        }
 

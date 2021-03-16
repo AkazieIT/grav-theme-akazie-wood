@@ -17318,6 +17318,13 @@ main.site-content .page.section-default.oz-itemcontainer::after {
   flex-grow: 1;
 }
 
+@media (min-width: 870px) {
+  main.site-content .page.section-modular.oz-itemcontainer::after,
+  main.site-content .page.section-default.oz-itemcontainer::after {
+    flex-basis: 64%;
+  }
+}
+
 main.site-content .modular.section-angebotetext {
   margin-bottom: 0px;
 }
