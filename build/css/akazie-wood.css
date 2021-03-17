@@ -18044,7 +18044,8 @@ div.screen-fullscreen {
 }
 
 .svgitem.smoking {
-  content: url("../../custom/logo/smoking-ban-solid.svg");
+  background-image: url("../../custom/logo/smoking-ban-solid.svg") center center no-repeat;
+  background-size: 100% 100%;
 }
 
 .svgitem.wlan {
