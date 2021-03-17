@@ -1096,11 +1096,10 @@ div.screen-fullscreen {
  }
 
  .svgitem {
+
+   /*
    &.smoking {
-     background-image: url('<svg id="smoking-ban-solid" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
-       <path id="smoking-ban-solid-2" data-name="smoking-ban-solid" d="M28.125,89.062a4.7,4.7,0,0,0,4.688,4.688H67.236L39.111,65.625h-6.3a4.7,4.7,0,0,0-4.687,4.688ZM75,0a75,75,0,1,0,75,75A74.994,74.994,0,0,0,75,0Zm0,131.25a56.159,56.159,0,0,1-45.791-88.8l78.34,78.34A55.859,55.859,0,0,1,75,131.25ZM88.242,75H112.5v9.375H97.617Zm32.549,32.549-13.8-13.8h10.2a4.7,4.7,0,0,0,4.688-4.687V70.312a4.7,4.7,0,0,0-4.687-4.687H78.867L42.451,29.209a56.159,56.159,0,0,1,78.34,78.34ZM93.926,37.5a9.373,9.373,0,0,1-9.2-7.588,2.269,2.269,0,0,0-2.256-1.787H77.725a2.392,2.392,0,0,0-2.344,2.754,18.771,18.771,0,0,0,18.545,16,9.373,9.373,0,0,1,9.2,7.588,2.269,2.269,0,0,0,2.256,1.787h4.746a2.392,2.392,0,0,0,2.344-2.754A18.771,18.771,0,0,0,93.926,37.5Z" transform="translate(0 0)" fill="#6788a1"/>
-     </svg>') center center no-repeat;
-      background-size: 100% 100%;
+     content: url('../../custom/logo/smoking-ban-solid.svg');
    }
    &.wlan {
      content: url('../../custom/logo/wlan.svg');
@@ -1117,6 +1116,7 @@ div.screen-fullscreen {
    &.fahrstuhl {
      content: url('../../custom/logo/sort-circle-solid.svg');
    }
+   */
    &.norm {
      height:35px;
      width:auto;
