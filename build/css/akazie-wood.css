@@ -17306,7 +17306,9 @@ main.site-content .page.section-default div article.centermark {
 main.site-content .page.section-modular.oz-itemcontainer,
 main.site-content .page.section-default.oz-itemcontainer {
   margin-bottom: 150px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 3 1fr;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 4%;
   grid-row-gap: 50px;
