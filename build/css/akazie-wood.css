@@ -17335,6 +17335,12 @@ main.site-content .modular.section-angebotetext h2 {
   margin-bottom: 50px;
 }
 
+@media (max-width: 500px) {
+  main.site-content .modular.section-angebotetext h2 {
+    font-size: 28px;
+  }
+}
+
 main.site-content .modular {
   margin-bottom: 3rem;
 }
