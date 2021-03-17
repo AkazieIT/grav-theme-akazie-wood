@@ -480,7 +480,7 @@ main.site-content{
       margin-bottom:150px;
       display:-ms-grid;
       display: grid;
-      -ms-grid-columns:3fr 1fr;
+      -ms-grid-columns:repeat(3 1fr);                                                         
       grid-template-columns: repeat(3, 1fr);
       @media (max-width: 1220px) {
         grid-template-columns: repeat(2, 1fr);
