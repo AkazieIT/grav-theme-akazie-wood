@@ -18295,7 +18295,8 @@ div.screen-fullscreen {
 
 @media all and (-ms-high-contrast: none) and (max-width: 870px), (-ms-high-contrast: active) and (max-width: 870px) {
   .oz-filteritem {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin: 0px;
+    margin-bottom: 20px;
   }
 }
