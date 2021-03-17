@@ -18084,3 +18084,25 @@ div.screen-fullscreen {
   height: 45px;
   width: auto;
 }
+
+/* MS Grid Catfilter fix */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .oz-filteritem:nth-child(2) {
+    -ms-grid-column: 2;
+  }
+  .oz-filteritem:nth-child(3) {
+    -ms-grid-column: 3;
+  }
+  .oz-filteritem:nth-child(4) {
+    -ms-grid-column: 1;
+  }
+  .oz-filteritem:nth-child(5) {
+    -ms-grid-column: 2;
+  }
+  .oz-filteritem:nth-child(6) {
+    -ms-grid-column: 3;
+  }
+  .oz-filteritem:nth-child(7) {
+    -ms-grid-column: 1;
+  }
+}
