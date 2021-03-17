@@ -1160,7 +1160,12 @@ div.screen-fullscreen {
    }
 
 
-
+   .oz-filteritem {
+     margin:20px;
+     @media (max-width: 870px) {
+       padding-bottom:40px;
+     }
+   }
 
 
 }

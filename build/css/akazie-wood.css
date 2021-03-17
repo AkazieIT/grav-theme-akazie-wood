@@ -18288,4 +18288,13 @@ div.screen-fullscreen {
     -ms-grid-column: 2;
     -ms-grid-row: 17;
   }
+  .oz-filteritem {
+    margin: 20px;
+  }
+}
+
+@media all and (-ms-high-contrast: none) and (max-width: 870px), (-ms-high-contrast: active) and (max-width: 870px) {
+  .oz-filteritem {
+    padding-bottom: 40px;
+  }
 }
