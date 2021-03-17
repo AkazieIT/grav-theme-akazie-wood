@@ -478,11 +478,12 @@ main.site-content{
     }
     &.oz-itemcontainer {
       margin-bottom:150px;
+      @media (min-width: 870px) {
       display:-ms-grid;
-      display: grid;
       -ms-grid-columns: 1fr 1fr 1fr;
+      }
+      display: grid;
     /*  -ms-grid-rows: 1fr 1fr 1fr; */
-      -ms-grid-gap: 1vw;
 
       grid-template-columns: repeat(3, 1fr);
       @media (max-width: 1220px) {
