@@ -9,7 +9,7 @@
       <a class="postbacklink" href="#" onclick="goBack()">
       <script>
       function goBack() {
-        window.history.back();
+        history.go(-1); event.preventDefault();
       }
       </script>
       <img src="{{ url('theme://custom/logo/arrow-to-top-solid.svg')}}"/></a>
