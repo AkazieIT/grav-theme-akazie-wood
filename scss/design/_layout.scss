@@ -1140,6 +1140,15 @@ div.screen-fullscreen {
  /* MS Grid Catfilter fix */
 
  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+
+
+   @for $i from 2 through 50 {
+     .oz-filteritem:nth-child(#{$i}) {
+       -ms-grid-column: ($i + 5) % 3 + 1;
+     }
+   }
+/*
    .oz-filteritem:nth-child(2) {
    -ms-grid-column: 2;
   }
@@ -1159,4 +1168,9 @@ div.screen-fullscreen {
   .oz-filteritem:nth-child(7) {
      -ms-grid-column: 1;
   }
+  .oz-filteritem:nth-child(8) {
+     -ms-grid-column: 2;
+  }
+*/
+
 }
