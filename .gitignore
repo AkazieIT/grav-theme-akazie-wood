@@ -20,3 +20,5 @@ blueprints/homerows.yaml
 templates/homerows.html.twig
 blueprints/fewohome.yaml
 templates/fewohome.html.twig
+blueprints/modular/saisonzeiten.yaml
+templates/modular/saisonzeiten.html.twig
