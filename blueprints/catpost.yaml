@@ -52,13 +52,13 @@ form:
               collapsed: false
               fields:
                 .desc:
-                  type: text
-                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.PRICES.DESC.LABEL
-                  validate:
-                    required: true
+                  type: select
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.SAISON.DESC.LABEL
+                  data-options@: '\Grav\Plugin\SaisonzeitenPlugin::saisonZeiten'
                 .chf:
                   type: text
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.PRICES.CHF.LABEL
+
 
             header.backtext:
               type: text
