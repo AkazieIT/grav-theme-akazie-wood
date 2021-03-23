@@ -159,7 +159,7 @@
     <div class="markdown secondarytext">
     <h2 class="pricetitle">Preise</h2>
     {% for price in page.header.prices %}
-    <div class="priceelement"><div class="pricedesc">{{ price.desc }}</div><div class="pricechf">{{ price.chf }}{{ saisonname() }}</div></div>
+    <div class="priceelement"><div class="pricedesc"><div>{{ saisonname() }}</div><div class="saisondate">{{ saisondate() }}</div></div><div class="pricechf">{{ price.chf }}</div></div>
     {% endfor %}
     </div>
 
