@@ -185,6 +185,14 @@ en:
             LABEL: 'Description'
           CHF:
             LABEL: 'Price'
+        SAISON:
+          LABEL: 'Season times'
+          DESC:
+            LABEL: 'Description'
+          VON:
+            LABEL: 'from'
+          BIS:
+            LABEL: 'to'
         BOX:
           BGCOLOR:
             LABEL: 'background color'
@@ -537,6 +545,14 @@ de:
             LABEL: 'Beschreibung'
           CHF:
             LABEL: 'Preis'
+        SAISON:
+          LABEL: 'Saisonzeiten'
+          DESC:
+            LABEL: 'Beschreibung'
+          VON:
+            LABEL: 'von'
+          BIS:
+            LABEL: 'bis'
         BOX:
           BGCOLOR:
             LABEL: 'Hintergrundfarbe'
