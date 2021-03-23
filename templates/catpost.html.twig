@@ -158,8 +158,10 @@
   <article class="modular section-map col-12 col-md-6 prices">
     <div class="markdown secondarytext">
     <h2 class="pricetitle">Preise</h2>
+    {{ set i = 0 }}
     {% for price in page.header.prices %}
-    <div class="priceelement"><div class="pricedesc"><div>{{ saisonname() }}</div><div class="saisondate">{{ saisondatum() }}</div></div><div class="pricechf">{{ price.chf }}</div></div>
+    <div class="priceelement"><div class="pricedesc"><div>{{ saisonname() }} {{ i }}</div><div class="saisondate">{{ saisondatum() }}</div></div><div class="pricechf">{{ price.chf }}</div></div>
+    {{ i = i + 1 }}
     {% endfor %}
     </div>
 
