@@ -120,6 +120,33 @@
 
 
 
+                                                          {% for tag in page.taxonomy.internettv %}
+                                                          {% if tag == 'ja' %}
+                                                          <img class="svgitem norm" src="{{ url('theme://custom/logo/Internet_TV.svg') }}" />
+                                                          {% endif %}
+                                                          {% endfor %}
+
+                                                          {% for tag in page.taxonomy.garage %}
+                                                          {% if tag == 'ja' %}
+                                                          <img class="svgitem norm" src="{{ url('theme://custom/logo/Garage.svg') }}" />
+                                                          {% endif %}
+                                                          {% endfor %}
+
+                                                          {% for tag in page.taxonomy.einstellhallenplatz %}
+                                                          {% if tag == 'ja' %}
+                                                          <img class="svgitem norm" src="{{ url('theme://custom/logo/Einstellhallenplatz.svg') }}" />
+                                                          {% endif %}
+                                                          {% endfor %}
+
+
+                                                          {% for tag in page.taxonomy.wasserkocher %}
+                                                          {% if tag == 'ja' %}
+                                                          <img class="svgitem norm" src="{{ url('theme://custom/logo/Wasserkocher.svg') }}" />
+                                                          {% endif %}
+                                                          {% endfor %}
+
+
+
         </div>
       {% else %}
 

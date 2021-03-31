@@ -120,6 +120,33 @@
 
 
 
+                      {% for tag in page.taxonomy.internettv %}
+                      {% if tag == 'ja' %}
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/Internet_TV.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+
+                      {% for tag in page.taxonomy.garage %}
+                      {% if tag == 'ja' %}
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/Garage.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+
+                      {% for tag in page.taxonomy.einstellhallenplatz %}
+                      {% if tag == 'ja' %}
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/Einstellhallenplatz.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+
+
+                      {% for tag in page.taxonomy.wasserkocher %}
+                      {% if tag == 'ja' %}
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/Wasserkocher.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+
+
+
       </div>
       {% if page.header.calendarembed is defined %}
       <div class="brownbutton"><a class="" href="#cal">Jetzt Buchen</a></div>
@@ -277,6 +304,42 @@
           <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/Ski.svg') }}" /></div><div class="txtcontainer">Skiraum</div></div>
           {% endif %}
           {% endfor %}
+
+
+          {% for tag in page.taxonomy.internettv %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/Internet_TV.svg') }}" /></div><div class="txtcontainer">Internet TV</div></div>
+          {% endif %}
+          {% endfor %}
+
+          {% for tag in page.taxonomy.garage %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/Garage.svg') }}" /></div><div class="txtcontainer">Garage</div></div>
+          {% endif %}
+          {% endfor %}
+
+          {% for tag in page.taxonomy.einstellhallenplatz %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/Einstellhallenplatz.svg') }}" /></div><div class="txtcontainer">Einstellhallenplatz</div></div>
+          {% endif %}
+          {% endfor %}
+
+
+          {% for tag in page.taxonomy.wasserkocher %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/Wasserkocher.svg') }}" /></div><div class="txtcontainer">Wasserkocher</div></div>
+          {% endif %}
+          {% endfor %}
+
+
+
+
+
+
+
+
+
+
     </div>
     </div>
 
