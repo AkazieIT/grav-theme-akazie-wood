@@ -28,11 +28,6 @@
             <img class="svgitem bigger" src="{{ url('theme://custom/logo/wlan.svg') }}" />
             {% endif %}
             {% endfor %}
-            {% for tag in page.taxonomy.haustiere %}
-            {% if tag == 'ja' %}
-            <img class="svgitem bigger" src="{{ url('theme://custom/logo/paw-solid.svg') }}" />
-            {% endif %}
-            {% endfor %}
             {% for tag in page.taxonomy.zentrumsnah %}
             {% if tag == 'ja' %}
             <img class="svgitem bigger" src="{{ url('theme://custom/logo/ortsmarker.svg') }}" />
@@ -48,6 +43,83 @@
             <img class="svgitem bigger" src="{{ url('theme://custom/logo/sort-circle-solid.svg') }}" />
             {% endif %}
             {% endfor %}
+
+
+                      {% for tag in page.taxonomy.tv %}
+                      {% if tag == 'ja' %}
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/TV.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.geschirrspueler %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/Fork.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.kaffee %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/mug-hot-solid.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.mikrowelle %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/microwave.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.foehn %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/foehn.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.raclettefondue %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/cheese.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.waschmaschine %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/washer-solid.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.balkon %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/balkon.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.gartensitzplatz %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/Chair.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.haustiere %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/paw-solid.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.keinehaustiere %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/No_pets.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.skiraum %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/Ski.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+
+
+
+
       </div>
       {% if page.header.calendarembed is defined %}
       <div class="brownbutton"><a class="" href="#cal">Jetzt Buchen</a></div>
