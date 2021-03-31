@@ -59,7 +59,9 @@
     </article>
     <article class="modular section-image col-12 col-md-6">
       <div class="media-container ">
-                                  <img class="media startimg" title="Ferien buchen und geniessen!" alt="Immosit" src="/immosit/images/5/c/e/2/d/5ce2df06a83a697671ed4f41cab0912ef0fd3591-home.jpg">
+      {% set image = page.header.image %}
+
+                                  <img class="media startimg" title="Ferien buchen und geniessen!" alt="Immosit" src="{{ image ? page.media[image].url : theme_url ~ '/custom/logo/standard.png' }}">
 
       </div>
     </article>
