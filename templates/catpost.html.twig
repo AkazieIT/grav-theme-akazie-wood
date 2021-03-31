@@ -56,12 +56,49 @@
                       <img class="svgitem bigger" src="{{ url('theme://custom/logo/Fork.svg') }}" />
                       {% endif %}
                       {% endfor %}
-                      {% for tag in page.taxonomy.kaffee %}
+
+
+                      {% for tag in page.taxonomy.nespresso %}
                       {% if tag == 'ja' %}
 
                       <img class="svgitem bigger" src="{{ url('theme://custom/logo/mug-hot-solid.svg') }}" />
                       {% endif %}
                       {% endfor %}
+                      {% for tag in page.taxonomy.dolcegusto %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/mug-hot-solid.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.tassimo %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/mug-hot-solid.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.filtermaschine %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/mug-hot-solid.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.kaffeevollautomat %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/mug-hot-solid.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+                      {% for tag in page.taxonomy.bialetti %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/mug-hot-solid.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+
+
+
+
+
                       {% for tag in page.taxonomy.mikrowelle %}
                       {% if tag == 'ja' %}
 
@@ -74,18 +111,37 @@
                       <img class="svgitem bigger" src="{{ url('theme://custom/logo/Foehn.svg') }}" />
                       {% endif %}
                       {% endfor %}
-                      {% for tag in page.taxonomy.raclettefondue %}
+
+
+                      {% for tag in page.taxonomy.raclette %}
                       {% if tag == 'ja' %}
 
                       <img class="svgitem bigger" src="{{ url('theme://custom/logo/Cheese.svg') }}" />
                       {% endif %}
                       {% endfor %}
+                      {% for tag in page.taxonomy.fondue %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/Cheese.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+
                       {% for tag in page.taxonomy.waschmaschine %}
                       {% if tag == 'ja' %}
 
                       <img class="svgitem bigger" src="{{ url('theme://custom/logo/washer-solid.svg') }}" />
                       {% endif %}
                       {% endfor %}
+
+
+                      {% for tag in page.taxonomy.waschmaschineaufanfrage %}
+                      {% if tag == 'ja' %}
+
+                      <img class="svgitem bigger" src="{{ url('theme://custom/logo/washer-solid.svg') }}" />
+                      {% endif %}
+                      {% endfor %}
+
+
                       {% for tag in page.taxonomy.balkon %}
                       {% if tag == 'ja' %}
 
@@ -254,11 +310,50 @@
           <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/Fork.svg') }}" /></div><div class="txtcontainer">Geschirrspüler</div></div>
           {% endif %}
           {% endfor %}
-          {% for tag in page.taxonomy.kaffee %}
+
+
+
+          {% for tag in page.taxonomy.nespresso %}
           {% if tag == 'ja' %}
-          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/mug-hot-solid.svg') }}" /></div><div class="txtcontainer">Kaffee</div></div>
+          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/mug-hot-solid.svg') }}" /></div><div class="txtcontainer">Nespresso</div></div>
           {% endif %}
           {% endfor %}
+
+          {% for tag in page.taxonomy.dolcegusto %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/mug-hot-solid.svg') }}" /></div><div class="txtcontainer">Dolce Gusto</div></div>
+          {% endif %}
+          {% endfor %}
+
+          {% for tag in page.taxonomy.tassimo %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/mug-hot-solid.svg') }}" /></div><div class="txtcontainer">Tassimo</div></div>
+          {% endif %}
+          {% endfor %}
+
+          {% for tag in page.taxonomy.filtermaschine %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/mug-hot-solid.svg') }}" /></div><div class="txtcontainer">Filtermaschine</div></div>
+          {% endif %}
+          {% endfor %}
+
+          {% for tag in page.taxonomy.kaffeevollautomat %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/mug-hot-solid.svg') }}" /></div><div class="txtcontainer">Kaffeevollautomat</div></div>
+          {% endif %}
+          {% endfor %}
+
+          {% for tag in page.taxonomy.bialetti %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/mug-hot-solid.svg') }}" /></div><div class="txtcontainer">Bialetti</div></div>
+          {% endif %}
+          {% endfor %}
+
+
+
+
+
+
           {% for tag in page.taxonomy.mikrowelle %}
           {% if tag == 'ja' %}
           <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/microwave.svg') }}" /></div><div class="txtcontainer">Mikrowelle</div></div>
@@ -269,16 +364,33 @@
           <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/Foehn.svg') }}" /></div><div class="txtcontainer">Föhn</div></div>
           {% endif %}
           {% endfor %}
-          {% for tag in page.taxonomy.raclettefondue %}
+
+
+          {% for tag in page.taxonomy.raclette %}
           {% if tag == 'ja' %}
-          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/Cheese.svg') }}" /></div><div class="txtcontainer">Raclette, Fondue</div></div>
+          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/Cheese.svg') }}" /></div><div class="txtcontainer">Raclette</div></div>
           {% endif %}
           {% endfor %}
+
+          {% for tag in page.taxonomy.fondue %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/Cheese.svg') }}" /></div><div class="txtcontainer">Fondue</div></div>
+          {% endif %}
+          {% endfor %}
+
           {% for tag in page.taxonomy.waschmaschine %}
           {% if tag == 'ja' %}
           <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/washer-solid.svg') }}" /></div><div class="txtcontainer">Waschmaschine</div></div>
           {% endif %}
           {% endfor %}
+
+          {% for tag in page.taxonomy.waschmaschineaufanfrage %}
+          {% if tag == 'ja' %}
+          <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/washer-solid.svg') }}" /></div><div class="txtcontainer">Waschmaschine a.A.</div></div>
+          {% endif %}
+          {% endfor %}
+
+
           {% for tag in page.taxonomy.balkon %}
           {% if tag == 'ja' %}
           <div><div class="imgcontainer"><img class="svgitem bigger" src="{{ url('theme://custom/logo/balkon.svg') }}" /></div><div class="txtcontainer">Balkon</div></div>
