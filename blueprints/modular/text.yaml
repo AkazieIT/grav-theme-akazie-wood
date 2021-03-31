@@ -63,6 +63,15 @@ form:
                             0: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.0
                             1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.1
                             2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.2
+                        header.titleh:
+                          type: select
+                          label: 'THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLESIZE.LABEL'
+                          highlight: 0
+                          default: 0
+                          options:
+                            0: 'h2'
+                            1: 'h1'
+                            2: 'h3'
                         header.centertext:
                           type: toggle
                           label: THEME_AKAZIEWOOD.ADMIN.FIELDS.CENTERTEXT.LABEL

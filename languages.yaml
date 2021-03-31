@@ -230,6 +230,8 @@ en:
             0: "No"
             1: "Yes"
             2: "Only placeholder"
+        TITLESIZE:
+          LABEL: 'Title size'
         CENTERTEXT:
           LABEL: "Center text"
         CONTACTBUTTON:
@@ -584,6 +586,8 @@ de:
           LABEL: "Alt Tag"
         SHOWTITLE:
           LABEL: "Titel anzeigen?"
+        TITLESIZE:
+          LABEL: 'Titelgrösse'
           OPTIONS:
             0: "Nein"
             1: "Ja"
