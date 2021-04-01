@@ -35,7 +35,7 @@
     {% endif %}
     #}
 			<ul class="is-clearfix catfilter">
-				{% for tax in values|keys %}
+				{% for tax in values|keys|sort %}
 					<li>
 						{{ f.genQueryUrl(queries|sort,key,tax, page.url, cascadeFilters) }}
 					</li>
