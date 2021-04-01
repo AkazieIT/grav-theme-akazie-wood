@@ -2,7 +2,8 @@ $(".gallery").lightGallery();
 
 $('.pull').click(function() {
 
-  menuClick('.pull');
+menuClick('.pull'); 
+
 
 });
 
@@ -15,12 +16,6 @@ $('.stickybottommenu').click(function() {
 $('.stickybottomtoggle').click(function() {
 
   menuClick('.stickybottommenu');
-
-});
-
-$('.pull').click(function() {
-
-  menuClick('.pull');
 
 });
 

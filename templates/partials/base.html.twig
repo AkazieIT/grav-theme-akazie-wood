@@ -54,25 +54,48 @@
           {% include 'partials/header.html.twig' %}
         {% endblock %}
 
+        {% if page.header.kundencode != 'immosit' %}
 
-
-    {% if  page.header.kundencode != 'immosit' %}
-
-        {% if page.template == 'home' %}
-          {% set image = page.header.image %}
-          {% if theme_var('site.parallax') == 0 %}
-          <div class="screen-image screen-fullscreen{% if page.header.removeheader == true %} removeheader{% endif %}"
-              {% if page.header.removeheader != true %}
-              style="background-image: url('{{ image ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"
-              {% endif %}>
-            {% else %}
-              <div class="screen-image screen-fullscreen">
-              {% endif %}
+          {% if page.template == 'home' %}
+            {% set image = page.header.image %}
+            {% if theme_var('site.parallax') == 0 %}
               <div
-                class="image-caption color-new-line  {% if page.header.markdown.newlineoncolorchangemobile %}color-new-line-mobile{% endif %}{% if page.header.claimswitch == true %} claim{% endif %}{% if page.header.removeheader == true %} removeheader{% endif %}">
-                {% if page.header.markdown.title %}
-                  {{ page.header.title | markdown }}
+                class="screen-image screen-fullscreen{% if page.header.removeheader == true %} removeheader{% endif %}"
+                {% if page.header.removeheader != true %}
+                style="background-image: url('{{ image ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"
+                {% endif %}>
+              {% else %}
+                <div class="screen-image screen-fullscreen">
+                {% endif %}
+                <div
+                  class="image-caption color-new-line  {% if page.header.markdown.newlineoncolorchangemobile %}color-new-line-mobile{% endif %}{% if page.header.claimswitch == true %} claim{% endif %}{% if page.header.removeheader == true %} removeheader{% endif %}">
+                  {% if page.header.markdown.title %}
+                    {{ page.header.title | markdown }}
+                  {% else %}
+                    {% if page.header.claimswitch == false %}
+                      <h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
+                    {% else %}
+                      {% if page.header.claimasmarkdown == false %}
+                        <h3 class="claim">{{ page.header.claim | nl2br }}</h3>
+                      {% else %}
+                        <div class="claim">{{ page.header.claim | markdown }}</div>
+                      {% endif %}
+                    {% endif %}
+                  {% endif %}
+                  <p>{{ page.header.text }}</p>
+                </div>
+              </div>
+
+            {% else %}
+              {% set image = page.header.image %}
+              {% if theme_var('site.parallax') == 0 %}
+                <div class="screen-image screen-top removeheader" {% if page.header.removeheader != true %} style="background-image: url('{{ image  ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')" {% endif %}>
                 {% else %}
+                  <div class="screen-image screen-top">
+                  {% endif %}
+
+                  <div class="image-caption{% if page.header.claimswitch == true %} claim{% endif %}{% if page.header.removeheader == true %} removeheader{% endif %}">
+
                   {% if page.header.claimswitch == false %}
                     <h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
                   {% else %}
@@ -82,65 +105,63 @@
                       <div class="claim">{{ page.header.claim | markdown }}</div>
                     {% endif %}
                   {% endif %}
-                {% endif %}
-                <p>{{ page.header.text }}</p>
-              </div>
-            </div>
 
-
-          {% else %}
-            {% set image = page.header.image %}
-            {% if theme_var('site.parallax') == 0 %}
-              <div
-                class="screen-image screen-top removeheader"
-                {% if page.header.removeheader != true %}
-                style="background-image: url('{{ image  ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"
-                {% endif %}>
-              {% else %}
-                <div class="screen-image screen-top">
-                {% endif %}
-
-                <div class="image-caption{% if page.header.claimswitch == true %} claim{% endif %}{% if page.header.removeheader == true %} removeheader{% endif %}">
-
+                  </div>
                 </div>
-              </div>
-          {% endif %}
+              {% endif %}
 
-      {% endif %}
+            {% endif %}
 
             {% block main %}
               <main class="site-content">
                 {% if page.header.kundencode == 'immosit' %}
-                <div class="bookinghover"><form action="/immosit/wohnungen">
-                    <ul>
-                      <li>
-                        <input type="radio" id="radioApple" name="betten" value="2 Betten">
-                        <label for="radioApple"><div><strong class="bigger">2</strong> Betten</div></label>
-                        <input type="radio" id="radioBanana" name="betten" value="3 Betten">
-                        <label for="radioBanana"><div><strong class="bigger">3</strong> Betten</div></label>
-                        <input type="radio" id="radioOrange" name="betten" value="ab 4 Betten">
-                        <label for="radioOrange"><div><span style="font-size:16px;">ab</span> <strong class="bigger">4</strong> Betten</div></label>
-                      </li>
+                  <div class="bookinghover">
+                    <form action="/immosit/wohnungen">
+                      <ul>
+                        <li>
+                          <input type="radio" id="radioApple" name="betten" value="2 Betten">
+                          <label for="radioApple">
+                            <div>
+                              <strong class="bigger">2</strong>
+                              Betten</div>
+                          </label>
+                          <input type="radio" id="radioBanana" name="betten" value="3 Betten">
+                          <label for="radioBanana">
+                            <div>
+                              <strong class="bigger">3</strong>
+                              Betten</div>
+                          </label>
+                          <input type="radio" id="radioOrange" name="betten" value="ab 4 Betten">
+                          <label for="radioOrange">
+                            <div>
+                              <span style="font-size:16px;">ab</span>
+                              <strong class="bigger">4</strong>
+                              Betten</div>
+                          </label>
+                        </li>
 
-                      <li>
-                        <input type="checkbox" id="myCheckbox1" name="wlan" value="ja" />
-                        <label for="myCheckbox1">
-                          <img src="{{ url( 'theme://custom/logo/wlan-white.svg') }}"><div>WLAN</div>
-                        </label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="myCheckbox2"  name="fahrstuhl" value="ja" />
-                        <label for="myCheckbox2">
-                          <img src="{{ url( 'theme://custom/logo/sort-circle-solid-white.svg') }}"><div>Fahrstuhl</div>
-                        </label>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="myCheckbox3"  name="haustiere" value="ja" />
-                        <label for="myCheckbox3">
-                          <img src="{{ url( 'theme://custom/logo/paw-solid-white.svg') }}"><div>Haustiere</div>
-                        </label>
-                      </li>
-                      {#
+                        <li>
+                          <input type="checkbox" id="myCheckbox1" name="wlan" value="ja"/>
+                          <label for="myCheckbox1">
+                            <img src="{{ url( 'theme://custom/logo/wlan-white.svg') }}">
+                            <div>WLAN</div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="myCheckbox2" name="fahrstuhl" value="ja"/>
+                          <label for="myCheckbox2">
+                            <img src="{{ url( 'theme://custom/logo/sort-circle-solid-white.svg') }}">
+                            <div>Fahrstuhl</div>
+                          </label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="myCheckbox3" name="haustiere" value="ja"/>
+                          <label for="myCheckbox3">
+                            <img src="{{ url( 'theme://custom/logo/paw-solid-white.svg') }}">
+                            <div>Haustiere</div>
+                          </label>
+                        </li>
+                        {#
                       <li>
                         <input type="checkbox" id="myCheckbox4"  name="parking" value="ja" />
                         <label for="myCheckbox4">
@@ -148,52 +169,52 @@
                         </label>
                       </li>
                       #}
-                      <li>
-                        <input type="submit" value="Suchen">
-                      </li>
-                    </ul>
-                </div>
-                <div class="screen-image screen-fullscreen">
-                  <section class="page section-modular immositstart">
-                    <div class="row">
-                      <article class="modular section-text col-12 col-md-6">
-                        <h2 class="heading">{{page.header.title | raw}}</h2>
-                        <div class="markdown ">
-                            {{page.header.text | markdown}}
-                            <a class="bookinghovermobile linksbutton" href="{{ base_url_absolute  ~ '/wohnungen' }}">
-                            Ferienwohnung buchen
-                            </a>
-                        </div>
-                      </article>
-                      <article class="modular section-image col-12 col-md-6">
-                        <div class="media-container ">
-                          {% set image = page.header.image %}
-                          <img class="media startimg" title="{{ page.header.title }}" alt="Immosit" src="{{ page.media[image].cropZoom(500,500).url }}" />
-
-                        </div>
-                      </article>
+                        <li>
+                          <input type="submit" value="Suchen">
+                        </li>
+                      </ul>
                     </div>
-                  </section>
-                </div>
-              {% endif %}
-                {% block content %}{% endblock %}
-              </main>
+                    <div class="screen-image screen-fullscreen">
+                      <section class="page section-modular immositstart">
+                        <div class="row">
+                          <article class="modular section-text col-12 col-md-6">
+                            <h2 class="heading">{{page.header.title | raw}}</h2>
+                            <div class="markdown ">
+                              {{page.header.text | markdown}}
+                              <a class="bookinghovermobile linksbutton" href="{{ base_url_absolute  ~ '/wohnungen' }}">
+                                Ferienwohnung buchen
+                              </a>
+                            </div>
+                          </article>
+                          <article class="modular section-image col-12 col-md-6">
+                            <div class="media-container ">
+                              {% set image = page.header.image %}
+                              <img class="media startimg" title="{{ page.header.title }}" alt="Immosit" src="{{ page.media[image].cropZoom(500,500).url }}"/>
+
+                            </div>
+                          </article>
+                        </div>
+                      </section>
+                    </div>
+                  {% endif %}
+                  {% block content %}{% endblock %}
+                </main>
+              {% endblock %}
+
+              {% block footer %}
+                {% include 'partials/footer.html.twig' %}
+              {% endblock %}
+            </div>
+
+            {% if theme_var('map.apikey')and theme_var('map.type') == 'google' %}
+              {%  include 'partials/map-google-js.html.twig' %}
+            {% elseif theme_var('map.type') == 'osm' %}
+              {%  include 'partials/map-osm-js.html.twig' %}
+            {% endif %}
+            {% block bottom %}
+              {{ assets.js('bottom')|raw }}
+              {{ theme_var('footer.javascript.code')|raw }}
             {% endblock %}
 
-            {% block footer %}
-              {% include 'partials/footer.html.twig' %}
-            {% endblock %}
-          </div>
-
-          {% if theme_var('map.apikey')and theme_var('map.type') == 'google' %}
-            {%  include 'partials/map-google-js.html.twig' %}
-          {% elseif theme_var('map.type') == 'osm' %}
-            {%  include 'partials/map-osm-js.html.twig' %}
-          {% endif %}
-          {% block bottom %}
-            {{ assets.js('bottom')|raw }}
-            {{ theme_var('footer.javascript.code')|raw }}
-          {% endblock %}
-
-        </body>
-      </html>
+          </body>
+        </html>
