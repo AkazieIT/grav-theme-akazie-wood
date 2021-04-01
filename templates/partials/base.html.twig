@@ -97,16 +97,17 @@
                   <div class="image-caption{% if page.header.claimswitch == true %} claim{% endif %}{% if page.header.removeheader == true %} removeheader{% endif %}">
                   {% if page.header.kundencode == 'immosit' %}
 
-                  {% if page.header.claimswitch == false %}
-                    <h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
-                  {% else %}
-                    {% if page.header.claimasmarkdown == false %}
-                      <h3 class="claim">{{ page.header.claim | nl2br }}</h3>
+                    {% if page.header.claimswitch == false %}
+                      <h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
                     {% else %}
-                      <div class="claim">{{ page.header.claim | markdown }}</div>
+                      {% if page.header.claimasmarkdown == false %}
+                        <h3 class="claim">{{ page.header.claim | nl2br }}</h3>
+                      {% else %}
+                        <div class="claim">{{ page.header.claim | markdown }}</div>
+                      {% endif %}
                     {% endif %}
+                    
                   {% endif %}
-                {% endif %}
                   </div>
                 </div>
               {% endif %}
