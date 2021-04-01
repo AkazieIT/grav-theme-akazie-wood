@@ -22,3 +22,8 @@ blueprints/fewohome.yaml
 templates/fewohome.html.twig
 blueprints/modular/saisonzeiten.yaml
 templates/modular/saisonzeiten.html.twig
+blueprints/catfilter.yaml
+templates/catfilter.html.twig
+blueprints/catpost.yaml
+templates/catpost.html.twig
+templates/partials/cat_item.html.twig
