@@ -10,7 +10,7 @@
 {% block content %}
 <section class="page section-default">
 <div class="row">
-  <article class="modular section-angebotetext col-12 col-md-8">
+  <article class="modular section-angebotetext col-12 col-md-8" id="catcont">
     {% if page.header.showtitle == 1 %}<h2 class="heading">{{ page.header.title }}</h2>{% endif %}
     <div class="markdown {% if page.header.showtitle == 2 %}title-placeholder{% endif %}">
       {{ page.content|raw }}
@@ -21,7 +21,7 @@
 </section>
 <section class="page section-default">
 <div class="row">
-<div class="sidebar column is-narrow catfiltercontainer" id="catcont">
+<div class="sidebar column is-narrow catfiltercontainer">
 	{% set taxlist = cascadeFilters.get() %} {# get texonomy list #}
 	{% set queries = uri.query(null, true) %} {# get queries as Array #}
 	{% if taxlist %}
