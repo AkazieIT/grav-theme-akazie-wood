@@ -35,6 +35,9 @@ form:
                 header.media_order:
                   type: pagemedia
                   label: PLUGIN_ADMIN.PAGE_MEDIA
+            header.bettentext:
+              type: text
+              label: 'Anzahl Betten'
             header.googlemaps:
               type: text
               label: THEME_AKAZIEWOOD.ADMIN.FIELDS.GOOGLEMAPS.LABEL

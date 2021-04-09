@@ -50,6 +50,8 @@
                       <img class="svgitem bigger" src="{{ url('theme://custom/logo/TV.svg') }}" />
                       {% endif %}
                       {% endfor %}
+{#
+
                       {% for tag in page.taxonomy.geschirrspueler %}
                       {% if tag == 'ja' %}
 
@@ -57,7 +59,7 @@
                       {% endif %}
                       {% endfor %}
 
-{#
+
                       {% for tag in page.taxonomy.nespresso %}
                       {% if tag == 'ja' %}
 
@@ -105,13 +107,16 @@
                       <img class="svgitem bigger" src="{{ url('theme://custom/logo/microwave.svg') }}" />
                       {% endif %}
                       {% endfor %}
+
+
+{#
                       {% for tag in page.taxonomy.foehn %}
                       {% if tag == 'ja' %}
 
                       <img class="svgitem bigger" src="{{ url('theme://custom/logo/Foehn.svg') }}" />
                       {% endif %}
                       {% endfor %}
-{#
+
 
                       {% for tag in page.taxonomy.raclette %}
                       {% if tag == 'ja' %}
@@ -119,6 +124,8 @@
                       <img class="svgitem bigger" src="{{ url('theme://custom/logo/Cheese.svg') }}" />
                       {% endif %}
                       {% endfor %}
+
+
                       {% for tag in page.taxonomy.fondue %}
                       {% if tag == 'ja' %}
 
@@ -204,6 +211,26 @@
 
 
       </div>
+
+
+      {% if page.header.prices is defined %}
+
+
+          <div class="preistext">Preis / Nacht ({{ saisonname(getcurrent()) }})<br /><span class="preistextpreis">
+
+            {% for price in page.header.prices %}
+              {% if price.desc == getcurrent() %}
+              {{ price.chf }}
+              {% endif %}
+            {% endfor %}
+
+          </span></div>
+
+      {% endif %}
+
+      {% if page.header.bettentext is defined %}
+      <div class="bettentext">Anzahl Betten<br />{{ page.header.bettentext }}</div>
+      {% endif %}
       {% if page.header.calendarembed is defined %}
       <div class="brownbutton"><a class="" href="#cal">Jetzt Buchen</a></div>
       {% endif %}
@@ -464,6 +491,7 @@
   <article class="modular section-map col-12 col-md-6 prices">
     <div class="markdown secondarytext">
     <h2 class="pricetitle">Preise</h2>
+	<p>Pro Wohnung, pro Nacht, inkl. Mwst.<p>
     {% for price in page.header.prices %}
     <div class="priceelement"><div class="pricedesc"><div class="saisondesc">{{ saisonname(price.desc) }}</div><div class="saisondate">{{ saisondatum(price.desc) | raw }}</div></div><div class="pricechf">{{ price.chf }}</div></div>
     {% endfor %}
