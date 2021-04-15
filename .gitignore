@@ -27,4 +27,6 @@ templates/catfilter.html.twig
 blueprints/catpost.yaml
 templates/catpost.html.twig
 templates/partials/cat_item.html.twig
-# Akaziestart.yaml / akaziestart.html.twig
+blueprints/modular/akaziestart.yaml
+templates/modular/akaziestart.html.twig
+templates/modular/feed.html.twig
