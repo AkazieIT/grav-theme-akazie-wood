@@ -5,8 +5,6 @@
     * favicon now displayed in firefox
 
 
-
-
 # v0.9.947
 ## 27.04.2021
 
