@@ -1,3 +1,12 @@
+# v0.9.948
+## 28.04.2021
+
+1. [](#new)
+    * favicon now displayed in firefox
+
+
+
+
 # v0.9.947
 ## 27.04.2021
 
