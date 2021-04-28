@@ -1,14 +1,16 @@
 # v0.9.948
 ## 28.04.2021
 
-1. [](#new)
+1. [](#bugfix)
     * favicon now displayed in firefox
+    * fixed a bug in 0.9.947
+
 
 
 # v0.9.947
 ## 27.04.2021
 
-1. [](#new)
+1. [](#bugfix)
     * fixed another bug in 0.9.945
 
 
@@ -16,7 +18,7 @@
 # v0.9.946
 ## 27.04.2021
 
-1. [](#new)
+1. [](#bugfix)
     * fixed a major bug in 0.9.945
 
 
@@ -24,7 +26,7 @@
 # v0.9.945
 ## 06.04.2021
 
-1. [](#new)
+1. [](#bugfix)
     * minor fixes
 
 

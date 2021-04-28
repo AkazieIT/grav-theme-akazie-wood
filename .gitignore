@@ -13,6 +13,7 @@ scss/core
 js/core
 package-lock.json
 custom/
+custom/*
 !custom/css/.gitkeep
 
 # OZ themes

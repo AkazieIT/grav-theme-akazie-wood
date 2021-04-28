@@ -89,8 +89,9 @@
             {% else %}
               {% set image = page.header.image %}
               {% if theme_var('site.parallax') == 0 %}
-                <div class="screen-image screen-top removeheader" {% if page.header.removeheader != true %} style="background-image: url('{{ image  ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')" {% endif %}>
-                {% else %}
+            <div class="screen-image screen-top{% if page.header.removeheader == true %} removeheader{% endif %}"
+             {% if page.header.removeheader != true %}
+                style="background-image: url('{{ image  ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')" {% endif %}> {% else %}
                   <div class="screen-image screen-top">
                   {% endif %}
 
