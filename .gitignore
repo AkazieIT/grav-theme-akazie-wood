@@ -13,6 +13,10 @@ scss/core
 js/core
 package-lock.json
 custom/*
+custom/css/*
+custom/logo/*
+custom/images/*
+custom/favicon/*
 
 # OZ themes
 blueprints/homerows.yaml
