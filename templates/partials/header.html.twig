@@ -1,15 +1,21 @@
 {% set logo = theme_var('header.logo') %}
-
+{% if theme_var('header.kundencode') == 'stkh' %}
+  {% include 'partials/stkhheader.html.twig' %}
+{% endif %}
 <header class="site-header  {{ theme_var('header.fixed') ? 'fixed' : '' }} {% if theme_var('nav.fittocontent') == '1' %}fittowidth{% endif %}">
 <div class="header-inner">
+
+
     <div class="logo">
       <a href="{{ home_url}}">
-        {% if logo %}
+      {% if theme_var('header.displaylogo') == 1 %} {% else %}
+          {% if logo %}
           {% set logo_file = (logo|first).name %}
           <img id="headerlogo" src="{{ url('theme://custom/logo/' ~ logo_file)  }}" alt="{{ site.name }}" />
         {% else %}
           <img id="headerlogo" src="{{ url('theme://images/logo.png')  }}" alt="{{ site.name }}" />
         {% endif %}
+      {% endif %}
       </a>
     </div>
     {% if theme_var('nav.stickybottom') %}

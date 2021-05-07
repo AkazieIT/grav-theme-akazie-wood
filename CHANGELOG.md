@@ -1,3 +1,10 @@
+# v0.9.951
+## 08.05.2021
+
+1. [](#new)
+    * added various header functions
+
+
 # v0.9.950
 ## 29.04.2021
 
@@ -19,7 +26,7 @@
 ## 28.04.2021
 
 1. [](#bugfix)
-    * favicon now displayed in firefox
+    * favicon now displayed in firefox #9
     * fixed a bug in 0.9.947
 
 

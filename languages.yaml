@@ -93,7 +93,8 @@ en:
             LABEL: 'Show the background behind header'
         LOGO:
           LABEL: 'Own logo'
-          DESCRIPTION: 'Used instead of `theme://images/logo.png` verwendet'
+          DESCRIPTION: 'Used instead of `theme://images/logo.png`'
+          DISPLAY: 'Display logo?'
         FIXED:
           LABEL: 'Fixed Header'
           HELP: 'If activated, the header will always be at the top of the browser window.'
@@ -343,6 +344,8 @@ en:
               LABEL: 'Title'
             LINK:
               LABEL: 'Link'
+          RIGHTSIDEDIV:
+            LABEL: 'Width of right side div'
         BUTTONS:
           LABEL: 'Buttons'
         NEWWINDOW:
@@ -456,6 +459,7 @@ de:
         LOGO:
           LABEL: 'Eigenes Logo'
           DESCRIPTION: 'Benutzen anstelle von `theme://images/logo.png` verwendet'
+          DISPLAY: 'Logo anzeigen?'
         FIXED:
           LABEL: 'Fixierte Navigation'
           HELP: 'Wenn aktiviert wird die Navigation immer oben im Browser angezeigt.'
@@ -703,6 +707,8 @@ de:
               LABEL: 'Titel'
             LINK:
               LABEL: 'Link'
+          RIGHTSIDEDIV:
+            LABEL: 'Breite des div auf der rechten Seite'
         BUTTONS:
           LABEL: 'Buttons'
         NEWWINDOW:
