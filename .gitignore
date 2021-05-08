@@ -12,13 +12,11 @@ node_modules
 scss/core
 js/core
 package-lock.json
-custom/
-custom/css/
+custom/*
+custom/css/*
 custom/logo/*
 custom/images/*
 custom/favicon/*
-!custom/.gitkeep
-!custom/css/.gitkeep
 
 # OZ themes
 blueprints/homerows.yaml
