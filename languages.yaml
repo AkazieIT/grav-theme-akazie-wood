@@ -48,6 +48,8 @@ en:
           LABEL: 'max content width (1000-2000 / default 1280)'
         CUSTOMCSS:
           LABEL: 'Use custom CSS file (please create file in theme directory akazie-wood/custom/css/custom.css)'
+        CUSTOMJS:
+          LABEL: 'Use custom JS file (please create file in theme directory akazie-wood/custom/js/custom.js)'
         IMAGESIZING:
           LABEL: 'Use dynamic image resizing with picture tag (experimental feature. make sure to activate caching)'
           HELP: 'For production sites please activate cache and set purge and clear times to every month or longer. Also set "Clear image cache by default" to "No" **If you do not activate cache, you will have very long load times because of the responsive images in the modular/image module.**'
@@ -413,6 +415,8 @@ de:
           LABEL: 'Maximale Breite des Contents (1000-2000 / Standard 1280)'
         CUSTOMCSS:
           LABEL: 'Benutzerdefinierte CSS Datei (bitte zuerst folgende Datei erstellen im theme directory: akazie-wood/custom/css/custom.css)'
+        CUSTOMJS:
+          LABEL: 'Benutzerdefinierte JS Datei (bitte zuerst folgende Datei erstellen im theme directory: akazie-wood/custom/js/custom.js)'
         IMAGESIZING:
           LABEL: 'Image Resizing mit picture Tag (cache aktivieren! Experimentelles Feature)'
           HELP: 'For production sites please activate cache and set purge and clear times to every month or longer. Also set "Clear image cache by default" to "No" **If you do not activate cache, you will have very long load times because of the responsive images in the modular/image module.**'

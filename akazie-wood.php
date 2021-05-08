@@ -63,18 +63,27 @@ class AkazieWood extends Theme
     }
 
     $custom_css = __DIR__ . '/custom/css/custom.css';
+    $custom_js = __DIR__ . '/custom/js/custom.js';
     /*
     if(!file_exists($custom_css)){
       file_put_contents($custom_css, '');
     }
     */
-    if($this->getThemeConfigValue('style.css')){
-      $this->grav['assets']->addCss('theme://custom/css/custom.css', ['priority' => 10]);
-    }
+
+      if($this->getThemeConfigValue('style.css')){
+            if(file_exists($custom_css)){
+                $this->grav['assets']->addCss('theme://custom/css/custom.css', ['priority' => 10]);
+            }
+      }
+
     $this->grav['assets']->addCss('theme://build/css/akazie-wood.min.css', ['priority' => 100]);
     $this->grav['assets']->addJs('theme://build/js/akazie-wood.core.min.js', ['group' => 'bottom', 'priority' => 100]);
     $this->grav['assets']->addJs('theme://build/js/akazie-wood.app.min.js', ['group' => 'bottom', 'priority' => 95]);
-
+    if($this->getThemeConfigValue('style.js')){
+          if(file_exists($custom_js)){
+              $this->grav['assets']->addJs('theme://custom/js/custom.js', ['group' => 'bottom', 'priority' => 55]);
+          }
+    }
   }
 
 

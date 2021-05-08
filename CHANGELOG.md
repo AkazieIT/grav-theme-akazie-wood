@@ -1,3 +1,13 @@
+# v0.9.952
+## 08.05.2021
+
+1. [](#new)
+    * added possibility to add custom js
+1. [](#bugfix)
+    * further improvements to custom.css
+
+
+
 # v0.9.951
 ## 08.05.2021
 
