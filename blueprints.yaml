@@ -422,8 +422,6 @@ form:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.IMPORT.LABEL
               default: 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway&display=swap'
-              validate:
-                required: true
             style.fonts.main:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.MAIN.LABEL

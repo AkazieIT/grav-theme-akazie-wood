@@ -3,6 +3,8 @@
 
 1. [](#new)
     * added various header functions
+1. [](#improved)
+    * font import not required anymore
 
 
 # v0.9.950
