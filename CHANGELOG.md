@@ -5,6 +5,8 @@
     * added various header functions
 1. [](#improved)
     * font import not required anymore
+1. [](#bugfix)
+    * fixed a bug where akazie-wood tries to find custom.css file on install
 
 
 # v0.9.950
