@@ -17,6 +17,7 @@ custom/css/*
 custom/logo/*
 custom/images/*
 custom/favicon/*
+!custom/css/.gitkeep
 
 # OZ themes
 blueprints/homerows.yaml
