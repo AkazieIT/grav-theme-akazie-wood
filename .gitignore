@@ -12,8 +12,8 @@ node_modules
 scss/core
 js/core
 package-lock.json
-custom/*
-custom/css/*
+custom/
+custom/css/
 custom/logo/*
 custom/images/*
 custom/favicon/*
