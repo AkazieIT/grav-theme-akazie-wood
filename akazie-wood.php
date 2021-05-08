@@ -63,9 +63,11 @@ class AkazieWood extends Theme
     }
 
     $custom_css = __DIR__ . '/custom/css/custom.css';
+    /*
     if(!file_exists($custom_css)){
       file_put_contents($custom_css, '');
     }
+    */
     if($this->getThemeConfigValue('style.css')){
       $this->grav['assets']->addCss('theme://custom/css/custom.css', ['priority' => 10]);
     }
@@ -75,6 +77,6 @@ class AkazieWood extends Theme
 
   }
 
-  
+
 
 }
