@@ -36,6 +36,10 @@ en:
         VARIOUS: 'Various'
         MAP: 'Google map'
       FIELDS:
+        TITLE:
+          LABEL: 'Title'
+        URL:
+          LABEL: 'URL'
         BUTTON:
           LABEL: 'Custom Nav button'
           LINK:
@@ -163,6 +167,7 @@ en:
         CONTENT: "Content"
       SECTION:
         CONTENT: "Pages content"
+        BUTTONS: "Buttons under image"
         SETTINGS: "Settings"
         HIDENSETTINGS: "Settings for Admin"
         PREVIEW: "Preview"
@@ -314,6 +319,8 @@ en:
           LABEL: 'Link URL (no link generated if left empty)'
         PERSONS:
           LABEL: 'Persons'
+        BUTTONS:
+          LABEL: 'Buttons'
         FOOTERTEXT:
           BGHEIGHTMOBILE:
             LABEL: 'Mobile height (if left empty, footer height will be used)'
@@ -321,6 +328,8 @@ en:
             LABEL: 'Text left'
           NONAV:
             LABEL: 'Show 2nd row?'
+          NOSOC:
+            LABEL: 'Show content instead of social media (if left empty, links are shown)'
           RIGHTNAV:
             LABEL: 'Title'
             CONTENT:
@@ -348,8 +357,6 @@ en:
               LABEL: 'Link'
           RIGHTSIDEDIV:
             LABEL: 'Width of right side div'
-        BUTTONS:
-          LABEL: 'Buttons'
         NEWWINDOW:
           LABEL: 'Open in new Window?'
           OPTIONS:
@@ -403,6 +410,10 @@ de:
         VARIOUS: 'Diverses'
         MAP: 'Google Map'
       FIELDS:
+        TITLE:
+          LABEL: 'Titel'
+        URL:
+          LABEL: 'URL'
         BUTTON:
           LABEL: 'Spezialbutton in der Navigation'
           LINK:
@@ -530,6 +541,7 @@ de:
         CONTENT: "Inhalt"
       SECTION:
         CONTENT: "Seiteninhalt"
+        BUTTONS: "Buttons unter dem Bild"
         SETTINGS: "Einstellungen"
         HIDENSETTINGS: "Administrator Einstellungen"
         PREVIEW: "Vorschau"
@@ -679,6 +691,8 @@ de:
           LABEL: 'Link URL (es wird kein Link generiert wenn leer gelassen)'
         PERSONS:
           LABEL: 'Personen'
+        BUTTONS:
+          LABEL: 'Buttons'
         FOOTERTEXT:
           BGHEIGHTMOBILE:
             LABEL: 'Mobile Höhe (wenn leer gelassen wird die Footer Höhe verwendet)'
@@ -686,6 +700,8 @@ de:
             LABEL: 'Text links'
           NONAV:
             LABEL: '2. Spalte anzeigen?'
+          NOSOC:
+            LABEL: 'Content zeigen anstelle von Social Media (wenn leer gelassen, werden die Social Media Links generiert)'
           RIGHTNAV:
             LABEL: 'Titel'
             CONTENT:
@@ -713,8 +729,6 @@ de:
               LABEL: 'Link'
           RIGHTSIDEDIV:
             LABEL: 'Breite des div auf der rechten Seite'
-        BUTTONS:
-          LABEL: 'Buttons'
         NEWWINDOW:
           LABEL: 'In neuem Fenster oeffnen?'
           OPTIONS:

@@ -2,7 +2,7 @@
 ## 08.05.2021
 
 1. [](#new)
-    * 
+    * possibility to make a button row under images
 
 
 # v0.9.952

@@ -53,5 +53,22 @@
       {% endif %}
     {% endif %}
 
+    {% if page.header.button is defined %}
+      <div class="imgbuttons">
+        {% if page.header.button | length < 5 and page.header.button | length > 1 %}
+          <div class="row">
+            {% for button in page.header.button %}
+              <div class="col-12 col-md-{{ 12 / page.header.button | length }}">
+                <a class="button" href="{{ button.url }}" {% if button.newtab == 1 %}target="_blank"{% endif %}>{{ button.title }}</a>
+              </div>
+            {% endfor %}
+          </div>
+        {% else %}
+          {% for button in page.header.button %}
+            <a class="button" href="{{ button.url }}" {% if button.newtab == 1 %}target="_blank"{% endif %}>{{ button.title }}</a>
+          {% endfor %}
+        {% endif %}
+      </div>
+    {% endif %}
 
 </article>

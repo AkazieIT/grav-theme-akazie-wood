@@ -41,6 +41,10 @@ form:
                         .link:
                           type: text
                           label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.SOCIALMEDIA.LINK.LABEL
+                    header.row1text:
+                      type: markdown
+                      validate:
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FOOTERTEXT.NOSOC.LABEL
                 col2:
                   type: fieldset
                   title: THEME_AKAZIEWOOD.THEME.FIELDSET.COL.2

@@ -100,3 +100,32 @@ form:
                     column2:
                       type: column
                       fields:
+            buttons:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.BUTTONS
+              underline: true
+              fields:
+                header.button:
+                  name: buttons
+                  type: list
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BUTTONS.LABEL
+                  collapsed: true
+                  fields:
+                    .title:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+                      validate:
+                        required: true
+                    .url:
+                      type: text
+                      label: THEME_AKAZIEWOOD.THEME.FIELDS.URL.LABEL
+                      validate:
+                        required: true
+                    .newtab:
+                      type: select
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.LABEL
+                      default: 0
+                      size: medium
+                      options:
+                        0: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.OPTIONS.0
+                        1: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.OPTIONS.1

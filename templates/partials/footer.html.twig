@@ -26,11 +26,16 @@
               <div class="col-12 {% if footerpage.header.row2show != 1 %}col-md-4{% else %}col-md-6{% endif %} rightfootercontent">
                 <h4>{{ footerpage.header.row1titel }}</h4>
                 <div>
-                  <ul>
-                    {% for links in footerpage.header.row1content %}
-                    <li><a href="{{ links.link }}" target="_blank">{{ links.text }}</a></li>
-                    {% endfor %}
-                  </ul>
+                  {% if footerpage.header.row1text is empty %}
+                    <ul>
+                      {% for links in footerpage.header.row1content %}
+                      <li><a href="{{ links.link }}" target="_blank">{{ links.text }}</a></li>
+                      {% endfor %}
+                    </ul>
+                  {% else %}
+
+                      {{ footerpage.header.row1text | markdown }}
+                  {% endif %}
                 </div>
               </div>
               {% if footerpage.header.row2show != 1 %}
