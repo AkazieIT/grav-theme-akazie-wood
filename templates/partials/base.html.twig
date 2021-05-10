@@ -1,5 +1,9 @@
 {% set theme_config = attribute(config.themes, config.system.pages.theme) %}
 {% set favicon = theme_var('site.favicon') %}
+{% set removehead = false %}
+{% if page.header.removeheader == true or page.template == 'catfilter' or page.template == 'catpost' %}
+{% set removehead = true %}
+{% endif %}
 <!DOCTYPE html>
 <html lang="{{ grav.language.getLanguage ?: 'de' }}">
   <head>
@@ -58,16 +62,18 @@
           {% if page.template == 'home' %}
             {% set image = page.header.image %}
             {% if theme_var('site.parallax') == 0 %}
+
+
               <div
-                class="screen-image screen-fullscreen{% if page.header.removeheader == true %} removeheader{% endif %}"
-                {% if page.header.removeheader != true %}
+                class="screen-image screen-fullscreen{% if removehead == true %} removeheader{% endif %}"
+                {% if removehead != true %}
                 style="background-image: url('{{ image ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"
                 {% endif %}>
               {% else %}
                 <div class="screen-image screen-fullscreen">
                 {% endif %}
                 <div
-                  class="image-caption color-new-line  {% if page.header.markdown.newlineoncolorchangemobile %}color-new-line-mobile{% endif %}{% if page.header.claimswitch == true %} claim{% endif %}{% if page.header.removeheader == true %} removeheader{% endif %}">
+                  class="image-caption color-new-line  {% if page.header.markdown.newlineoncolorchangemobile %}color-new-line-mobile{% endif %}{% if page.header.claimswitch == true %} claim{% endif %}{% if removehead == true %} removeheader{% endif %}">
                   {% if page.header.markdown.title %}
                     {{ page.header.title | markdown }}
                   {% else %}
@@ -89,13 +95,13 @@
             {% else %}
               {% set image = page.header.image %}
               {% if theme_var('site.parallax') == 0 %}
-            <div class="screen-image screen-top{% if page.header.removeheader == true %} removeheader{% endif %}"
-             {% if page.header.removeheader != true %}
+            <div class="screen-image screen-top{% if removehead == true %} removeheader{% endif %}"
+             {% if removehead != true %}
                 style="background-image: url('{{ image  ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')" {% endif %}> {% else %}
                   <div class="screen-image screen-top">
                   {% endif %}
 
-                <div class="image-caption{% if page.header.claimswitch == true %} claim{% endif %}{% if page.header.removeheader == true %} removeheader{% endif %}">
+                <div class="image-caption{% if page.header.claimswitch == true %} claim{% endif %}{% if removehead == true %} removeheader{% endif %}">
 
                   {% if theme_var('header.kundencode') != 'immosit' %}
 
