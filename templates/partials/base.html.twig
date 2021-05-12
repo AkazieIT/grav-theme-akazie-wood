@@ -8,10 +8,10 @@
 <html lang="{{ grav.language.getLanguage ?: 'de' }}">
   <head>
     {% block head %}
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       {{ theme_var('header.javascript')|raw }}
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes"/>
       {% include 'partials/metadata.html.twig' %}
       {% if favicon %}

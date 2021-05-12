@@ -1,3 +1,11 @@
+# v0.9.956
+## 12.05.2021
+
+1. [](#bugfix)
+    * fixed a bug where google didn't recognize meta viewport
+
+
+
 # v0.9.955
 ## 11.05.2021
 
