@@ -7,6 +7,8 @@
 {% else %}col-md-6{% endif %}
 {% if page.header.centertext == 1 %} centertext{% endif %}
 {% if page.header.column == 3 %} centermark{% endif %}">
+{% if page.header.hid %}<a class="anchor" id="{{ page.header.hid }}"></a>{% endif %}
+
 {% if page.header.showtitle == 1 %}
 <{% if page.header.titleh == 1 %}h1{% elseif page.header.titleh == 2 %}h3{% else %}h2{% endif %} class="heading{% if page.header.column == 3 %} centermark{% endif %}">
 {{ page.header.title }}

@@ -240,6 +240,8 @@ en:
             2: "Only placeholder"
         TITLESIZE:
           LABEL: 'Title size'
+        TITLEID:
+          LABEL: 'Title id (for html anchors)'
         CENTERTEXT:
           LABEL: "Center text"
         CONTACTBUTTON:
@@ -612,6 +614,8 @@ de:
             0: "Nein"
             1: "Ja"
             2: "Nur Abstand benutzen"
+        TITLEID:
+          LABEL: 'Titel id (für html Anker)'
         CENTERTEXT:
           LABEL: "Center text"
         CONTACTBUTTON:

@@ -1,4 +1,11 @@
-# v0.9.958
+# v0.9.960
+## 14.06.2021
+
+1. [](#new)
+    * added possibility to change title class for buttonlist
+
+
+# v0.9.959
 ## 13.05.2021
 
 1. [](#bugfix)
