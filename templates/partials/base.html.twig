@@ -44,6 +44,9 @@
 
   </head>
   <body class="{{ page.header.body_classes }}{% if theme_var('nav.expanded') == '1' %} navexpanded{% endif %} page-{{ page.slug }}">
+  {% if theme_var('header.kundencode') == 'stkh' %}
+  <div class="fullbgstkh"></div>
+  {% endif %}
     {% if config.plugins.langswitcher.enabled %}
       {% include 'partials/langswitcher.html.twig' %}
     {% endif %}
