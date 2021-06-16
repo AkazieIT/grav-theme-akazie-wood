@@ -1,3 +1,11 @@
+# v0.9.961
+## 16.06.2021
+
+1. [](#new)
+    * added some minor functionalities
+
+
+
 # v0.9.960
 ## 14.06.2021
 
