@@ -2,7 +2,7 @@
 ## 16.06.2021
 
 1. [](#new)
-    * added some minor functionalities
+    * added some minor functionalities.
 
 
 
