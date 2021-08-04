@@ -550,7 +550,7 @@ de:
         MEDIA: 'Medien'
         MAPSETTINGS: 'Map Einstellungen'
         MAPINFO: 'Map Info'
-        CONTINUE: 'Weiter text'
+        CONTINUE: 'Weiter Text'
         SECTIONTWO: 'Sektion 2 rechts'
         ROW:
           ONE: 'Zeile eins'
@@ -581,9 +581,9 @@ de:
           BGCOLOR:
             LABEL: 'Hintergrundfarbe'
           COLOR:
-            LABEL: 'Farbe'
+            LABEL: 'Textfarbe'
           ROUNDCORNERS:
-            LABEL: 'Box Radius'
+            LABEL: 'Box Radius (in Pixel angeben)'
           ENABLED:
             LABEL: 'Als Box darstellen'
         MAP_LAT:
@@ -617,7 +617,7 @@ de:
         TITLEID:
           LABEL: 'Titel id (für html Anker)'
         CENTERTEXT:
-          LABEL: "Center text"
+          LABEL: "Text zentrieren"
         CONTACTBUTTON:
           LABEL: "Kontaktbutton anzeigen"
           OPTIONS:
@@ -631,7 +631,7 @@ de:
         CONTACTTEXT:
           LABEL: "Kontaktbutton Text"
         GALLERIE:
-          LABEL: "Bildergallerie"
+          LABEL: "Bildergalerie"
         TEXT:
           LABEL: "Text"
         HEADING:
@@ -669,30 +669,30 @@ de:
         COLUMN:
           LABEL: 'Element Breite'
           OPTIONS:
-            1: "Eine Spalte"
-            2: "Zwei Spalten"
+            1: "Halbe Breite"
+            2: "Volle Breite"
             3: "Eine Spalte zentriert"
             4: "1/3 von voller Breite"
             5: "2/3 von voller Breite"
             6: "1/4 von voller Breite"
             7: "1/6 von voller Breite"
         MARGINRIGHT:
-          LABEL: "padding"
+          LABEL: "Padding"
         SCALE:
           LABEL: 'Format'
           OPTIONS:
-            1: '4:3'
-            2: '16:9 (Full HD)'
-            3: '2.35:1 (Widescreen)'
-            4: '1:1 (Quadratisch)'
-            5: '3:4 (Hochformat)'
+            1: 'Querformat 1 (4:3)'
+            2: 'Querformat 2 (16:9)'
+            3: 'Querformat 3 (2.35:1)'
+            4: 'Quadratisch (1:1)'
+            5: 'Hochformat(3:4)'
         WINDOW:
-          LABEL: 'Im selben Fenster öffnen?'
+          LABEL: 'Im gleichen Fenster öffnen?'
           OPTIONS:
-            0: 'Selbes Fenster'
+            0: 'Gleiches Fenster'
             1: 'Neuer Tab'
         LINK:
-          LABEL: 'Link URL (es wird kein Link generiert wenn leer gelassen)'
+          LABEL: 'Link URL (es wird kein Link generiert, wenn leer gelassen)'
         PERSONS:
           LABEL: 'Personen'
         BUTTONS:
