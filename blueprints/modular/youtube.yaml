@@ -26,6 +26,14 @@ form:
                   markdown: true
                   validate:
                     required: true
+                header.platform:
+                  type: toggle
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.YOUTUBE.PLATFORM
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: 'youtube'
+                    1: 'vimeo'
             settings:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.SETTINGS
@@ -53,4 +61,3 @@ form:
                             0: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.0
                             1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.1
                             2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.2
-

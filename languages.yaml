@@ -293,6 +293,7 @@ en:
             2: 'Description under the picture'
         YOUTUBE:
           LABEL: "Enter video ID"
+          PLATFORM: "platform"
           DESCRIPTION: "Example: `VkvUH8vRQfE`"
         COLUMN:
           LABEL: 'content width'
@@ -668,7 +669,8 @@ de:
             1: 'Beschreibung im Bild'
             2: 'Beschreibung unter dem Bild'
         YOUTUBE:
-          LABEL: "Vidoe ID eingeben"
+          LABEL: "Video ID eingeben"
+          PLATFORM: "Plattform"
           DESCRIPTION: "Beispiel: `VkvUH8vRQfE`"
         COLUMN:
           LABEL: 'Element Breite'
