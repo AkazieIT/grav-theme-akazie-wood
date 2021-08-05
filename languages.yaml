@@ -181,6 +181,8 @@ en:
           TWO: 'Row two'
           THREE: 'Row three'
       FIELDS:
+        BREAKHEIGHT:
+          LABEL: 'Height (if left empty, breaktitle stays responsive)'
         GOOGLEMAPS:
           LABEL: 'Map embed link and description'
         CALENDAREMBED:
@@ -557,6 +559,8 @@ de:
           TWO: 'Zeile zwei'
           THREE: 'Zeile drei'
       FIELDS:
+        BREAKHEIGHT:
+          LABEL: 'Höhe (wenn leer gelassen wird die Höhe automatisch definiert)'
         GOOGLEMAPS:
           LABEL: 'Map Embed Link und Beschreibung'
         CALENDAREMBED:
