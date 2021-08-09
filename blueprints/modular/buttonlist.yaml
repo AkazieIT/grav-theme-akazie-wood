@@ -22,7 +22,7 @@ form:
               options:
                 0: 'h2'
                 1: 'h1'
-                2: 'h3'              
+                2: 'h3'
             header.fixedwidth:
               type: text
               label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FIXWIDTH.LABEL
@@ -45,13 +45,41 @@ form:
                     .link:
                       type: text
                       label: THEME_AKAZIEWOOD.ADMIN.FIELDS.URLS.LABEL
+                    .pdf:
+                      type: filepicker
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.PDF_SRC.LABEL
+                      preview_images: true
+                    .pdfenabled:
+                      type: toggle
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.PDF_HEADER.LABEL
+                      highlight: 0
+                      default: 0
+                      options:
+                        0: 'URL'
+                        1: THEME_AKAZIEWOOD.ADMIN.FIELDS.PDF_HEADER.FILE
                       validate:
-                        required: true
+                        type: bool
                     .newwindow:
-                          type: select
+                          type: toggle
                           label: THEME_AKAZIEWOOD.ADMIN.FIELDS.NEWWINDOW.LABEL
                           highlight: 1
                           default: 1
                           options:
                             0: THEME_AKAZIEWOOD.ADMIN.FIELDS.NEWWINDOW.OPTIONS.0
                             1: THEME_AKAZIEWOOD.ADMIN.FIELDS.NEWWINDOW.OPTIONS.1
+                    .style:
+                          type: toggle
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.STYLING.LABEL
+                          highlight: 0
+                          default: 0
+                          options:
+                            0: THEME_AKAZIEWOOD.ADMIN.FIELDS.STYLING.OPTIONS.0
+                            1: THEME_AKAZIEWOOD.ADMIN.FIELDS.STYLING.OPTIONS.1
+            media:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
+              underline: true
+              fields:
+                header.media_order:
+                  type: pagemedia
+                  label: PLUGIN_ADMIN.PAGE_MEDIA

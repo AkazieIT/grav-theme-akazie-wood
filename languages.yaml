@@ -7,6 +7,7 @@ en:
         LAYOUT: 'Site layout'
         STYLE: 'Custom style (only for admins)'
       FIELDSET:
+        SEO: 'SEO Settings'
         MOBILENAV: 'Mobile Navigation'
         HEADER: 'Header'
         COLS: 'Footer columns right'
@@ -57,6 +58,9 @@ en:
         IMAGESIZING:
           LABEL: 'Use dynamic image resizing with picture tag (experimental feature. make sure to activate caching)'
           HELP: 'For production sites please activate cache and set purge and clear times to every month or longer. Also set "Clear image cache by default" to "No" **If you do not activate cache, you will have very long load times because of the responsive images in the modular/image module.**'
+        PROPERH:
+          LABEL: 'Dont use H tags in header'
+          HELP: 'Replaces standard H entries in header with DIVs so that you have full control over the title structure.'
         NAV:
           LENGTH:
             LABEL: 'Number Max. Navigation points'
@@ -274,6 +278,11 @@ en:
           LABEL: "Images"
         IMAGE_HEADER:
           LABEL: "Header image"
+        PDF_HEADER:
+          LABEL: "Link to a file instead of a link?"
+          FILE: "File"
+        PDF_SRC:
+          LABEL: "Select file"
         KUNDENCODE:
           LABEL: "Client code (leave empty)"
         CLAIM:
@@ -362,6 +371,11 @@ en:
               LABEL: 'Link'
           RIGHTSIDEDIV:
             LABEL: 'Width of right side div'
+        STYLING:
+          LABEL: 'Style as button?'
+          OPTIONS:
+            0: 'yes'
+            1: 'no'
         NEWWINDOW:
           LABEL: 'Open in new Window?'
           OPTIONS:
@@ -388,6 +402,7 @@ de:
       FIELDSET:
         MOBILENAV: 'Mobile Navigation'
         COLS: 'Footer Spalten rechts'
+        SEO: 'SEO Einstellungen'
         COL:
           1: 'Erste Spalte'
           2: 'Zweite Spalte'
@@ -435,7 +450,10 @@ de:
           LABEL: 'Benutzerdefinierte JS Datei (bitte zuerst folgende Datei erstellen im theme directory: akazie-wood/custom/js/custom.js)'
         IMAGESIZING:
           LABEL: 'Image Resizing mit picture Tag (cache aktivieren! Experimentelles Feature)'
-          HELP: 'For production sites please activate cache and set purge and clear times to every month or longer. Also set "Clear image cache by default" to "No" **If you do not activate cache, you will have very long load times because of the responsive images in the modular/image module.**'
+          HELP: 'Für Live-Seiten aktivieren Sie bitte den Cache und stellen Sie die Purge-Zeiten auf jeden Monat oder länger ein. Stellen Sie außerdem "Bild-Cache standardmäßig löschen" auf "Nein" **Wenn Sie den Cache nicht aktivieren, haben Sie aufgrund der responsiven Bilder sehr lange Ladezeiten.**'
+        PROPERH:
+          LABEL: 'Keine H Tags im Header brauchen'
+          HELP: 'Ersetzt H Tags mit DIVs damit Sie die volle Kontrolle haben bei der Titelstruktur.'
         NAV:
           LENGTH:
             LABEL: 'Anzahl Max. Navigationspunkte'
@@ -651,6 +669,11 @@ de:
           LABEL: "Bilder"
         IMAGE_HEADER:
           LABEL: "Titelbild"
+        PDF_HEADER:
+          LABEL: "Datei anstatt Link?"
+          FILE: "Datei"
+        PDF_SRC:
+          LABEL: "Datei auswählen"
         KUNDENCODE:
           LABEL: "Kundencode (leer lassen)"
         CLAIM:
@@ -739,6 +762,11 @@ de:
               LABEL: 'Link'
           RIGHTSIDEDIV:
             LABEL: 'Breite des div auf der rechten Seite'
+        STYLING:
+          LABEL: 'Als Button stylen?'
+          OPTIONS:
+            0: 'Ja'
+            1: 'Nein'
         NEWWINDOW:
           LABEL: 'In neuem Fenster oeffnen?'
           OPTIONS:

@@ -84,7 +84,13 @@
                       <h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
                     {% else %}
                       {% if page.header.claimasmarkdown == false %}
+
+                        {% if theme_var('header.properh') == 0 %}
                         <h3 class="claim">{{ page.header.claim | nl2br }}</h3>
+                        {% else %}
+                        <div class="claim">{{ page.header.claim | nl2br }}</div>
+                        {% endif %}
+
                       {% else %}
                         <div class="claim">{{ page.header.claim | markdown }}</div>
                       {% endif %}
@@ -112,7 +118,13 @@
                     <h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
                   {% else %}
                     {% if page.header.claimasmarkdown == false %}
+                      {% if theme_var('header.properh') == 0 %}
                       <h3 class="claim">{{ page.header.claim | nl2br }}</h3>
+                      {% else %}
+                      <div class="claim">{{ page.header.claim | nl2br }}</div>
+                      {% endif %}
+
+
                     {% else %}
                       <div class="claim">{{ page.header.claim | markdown }}</div>
                     {% endif %}

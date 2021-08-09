@@ -489,17 +489,6 @@ form:
             header.kundencode:
               type: text
               label: THEME_AKAZIEWOOD.ADMIN.FIELDS.KUNDENCODE.LABEL
-            header.imagesizing:
-              type: toggle
-              label: THEME_AKAZIEWOOD.THEME.FIELDS.IMAGESIZING.LABEL
-              help: THEME_AKAZIEWOOD.THEME.FIELDS.IMAGESIZING.HELP
-              highlight: 0
-              default: 0
-              options:
-                0: PLUGIN_ADMIN.DISABLED
-                1: PLUGIN_ADMIN.ENABLED
-              validate:
-                type: bool
             style.css:
               type: toggle
               label: THEME_AKAZIEWOOD.THEME.FIELDS.CUSTOMCSS.LABEL
@@ -513,6 +502,32 @@ form:
             style.js:
               type: toggle
               label: THEME_AKAZIEWOOD.THEME.FIELDS.CUSTOMJS.LABEL
+              highlight: 0
+              default: 0
+              options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
+              validate:
+                type: bool
+        seo:
+          type: fieldset
+          title: THEME_AKAZIEWOOD.THEME.FIELDSET.SEO
+          fields:
+            header.imagesizing:
+              type: toggle
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.IMAGESIZING.LABEL
+              help: THEME_AKAZIEWOOD.THEME.FIELDS.IMAGESIZING.HELP
+              highlight: 0
+              default: 0
+              options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
+              validate:
+                type: bool
+            header.properh:
+              type: toggle
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.PROPERH.LABEL
+              help: THEME_AKAZIEWOOD.THEME.FIELDS.PROPERH.HELP
               highlight: 0
               default: 0
               options:

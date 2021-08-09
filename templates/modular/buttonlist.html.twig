@@ -3,8 +3,11 @@
     </{% if page.header.titleh == 1 %}h1{% elseif page.header.titleh == 2 %}h3{% else %}h2{% endif %}>
     <div class="markdown buttonlist">
     {% for button in page.header.buttons %}
+    {% set image = button.pdf %}
 
-  <a class="linksbutton" target="{% if button.newwindow == 1 %}_blank{% endif %}" href="{{ button.link }}" style="{% if page.header.fixedwidth %}width:{{ page.header.fixedwidth }}{% endif %}">{{ button.name }}</a>
+  <a {% if button.style == 0 %}class="linksbutton"{% endif %} target="{% if button.newwindow == 1 %}_blank{% endif %}"
+href="{% if button.pdfenabled == 1 %}{{ page.media[image].url }}{% else %}{{ button.link }}{% endif %}"
+  style="{% if page.header.fixedwidth %}width:{{ page.header.fixedwidth }}{% endif %}">{{ button.name }}</a>
 
     {% endfor %}
     </div>

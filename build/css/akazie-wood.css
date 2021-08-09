@@ -16949,7 +16949,7 @@ a:not([link]):hover {
   height: 100%;
 }
 
-.screen-image .image-caption.claim h3 {
+.screen-image .image-caption.claim .h3, .screen-image .image-caption.claim .claim {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -16961,16 +16961,22 @@ a:not([link]):hover {
 }
 
 @media (max-width: 1219.98px) {
-  .screen-image .image-caption.claim h3 {
+  .screen-image .image-caption.claim .h3, .screen-image .image-caption.claim .claim {
     max-width: 960px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .screen-image .image-caption.claim h3 {
+  .screen-image .image-caption.claim .h3, .screen-image .image-caption.claim .claim {
     margin-top: 50px;
     font-size: 1.6em;
   }
+}
+
+.screen-image .image-caption.claim .claim {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 110%;
 }
 
 .screen-image .image-caption.removeheader {
