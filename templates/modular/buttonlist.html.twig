@@ -5,7 +5,7 @@
     {% for button in page.header.buttons %}
     {% set image = button.pdf %}
 
-  <a {% if button.style == 0 %}class="linksbutton"{% endif %} target="{% if button.newwindow == 1 %}_blank{% endif %}"
+  <a class="{% if button.style == 0 %}linksbutton{% else %}linkstext{% endif %}{% if page.header.block == 1 %} block{% endif %}" target="{% if button.newwindow == 1 %}_blank{% endif %}"
 href="{% if button.pdfenabled == 1 %}{{ page.media[image].url }}{% else %}{{ button.link }}{% endif %}"
   style="{% if page.header.fixedwidth %}width:{{ page.header.fixedwidth }}{% endif %}">{{ button.name }}</a>
 

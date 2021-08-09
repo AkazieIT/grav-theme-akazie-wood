@@ -553,6 +553,15 @@ main.site-content{
       margin-right:25px;
       margin-bottom:25px;
       border-radius: 10px;
+      &.block {
+        display:block;
+      }
+    }
+    a.linkstext {
+      margin-right:20px;
+      &.block {
+        display:block;
+      }
     }
   }
   .modular.section-teamlist{

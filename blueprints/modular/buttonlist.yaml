@@ -26,6 +26,14 @@ form:
             header.fixedwidth:
               type: text
               label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FIXWIDTH.LABEL
+            header.block:
+              type: toggle
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BLOCK.LABEL
+              highlight: 0
+              default: 0
+              options:
+                0: THEME_AKAZIEWOOD.ADMIN.FIELDS.BLOCK.OPTIONS.0
+                1: THEME_AKAZIEWOOD.ADMIN.FIELDS.BLOCK.OPTIONS.1
             content:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.CONTENT

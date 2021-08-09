@@ -17397,6 +17397,18 @@ main.site-content .modular a.linksbutton {
   border-radius: 10px;
 }
 
+main.site-content .modular a.linksbutton.block {
+  display: block;
+}
+
+main.site-content .modular a.linkstext {
+  margin-right: 20px;
+}
+
+main.site-content .modular a.linkstext.block {
+  display: block;
+}
+
 main.site-content .modular.section-teamlist {
   padding: 0;
 }

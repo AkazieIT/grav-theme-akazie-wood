@@ -376,6 +376,11 @@ en:
           OPTIONS:
             0: 'yes'
             1: 'no'
+        BLOCK:
+          LABEL: 'Display as block?'
+          OPTIONS:
+            0: 'no'
+            1: 'yes'
         NEWWINDOW:
           LABEL: 'Open in new Window?'
           OPTIONS:
@@ -767,6 +772,11 @@ de:
           OPTIONS:
             0: 'Ja'
             1: 'Nein'
+        BLOCK:
+          LABEL: 'Als Block darstellen? (eine Zeile pro Button)'
+          OPTIONS:
+            0: 'Nein'
+            1: 'Ja'
         NEWWINDOW:
           LABEL: 'In neuem Fenster oeffnen?'
           OPTIONS:
