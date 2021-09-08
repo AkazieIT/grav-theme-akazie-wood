@@ -154,6 +154,8 @@ en:
         FONT:
           IMPORT:
             LABEL: 'Font import'
+          GOOGLE:
+            LABEL: 'Faster loading for google fonts'
           MAIN:
             LABEL: 'Main'
           FOOTER:
@@ -552,6 +554,8 @@ de:
         FONT:
           IMPORT:
             LABEL: 'Schriften import'
+          GOOGLE:
+            LABEL: 'Schnelleres Laden für Google Fonts?'
           MAIN:
             LABEL: 'Hauptschrift'
           FOOTER:

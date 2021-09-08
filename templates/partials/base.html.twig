@@ -28,7 +28,29 @@
           |
         {% endif %}{{ site.title|e('html') }}</title>
       {% if theme_var('style.fonts.import') %}
-        <link href="{{ theme_var('style.fonts.import') }}" rel="stylesheet">
+
+        {% if theme_var ('style.fonts.google') %}
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            rel="preload"
+            as="style"
+            href="{{ theme_var('style.fonts.import') }}"
+          />
+          <link
+            rel="stylesheet"
+            href="{{ theme_var('style.fonts.import') }}"
+            media="print"
+            onload="this.media='all'"
+          />
+          <noscript>
+            <link
+              rel="stylesheet"
+              href="{{ theme_var('style.fonts.import') }}"
+            />
+          </noscript>
+        {% else %}
+          <link rel="preload" as="style" href="{{ theme_var('style.fonts.import') }}" onload="this.rel='stylesheet'" />
+        {% endif %}
       {% endif %}
       {% if theme_var('style.fonts.customhtml') %}
         {{ theme_var('style.fonts.customhtml') }}

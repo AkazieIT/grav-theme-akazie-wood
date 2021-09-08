@@ -1,5 +1,5 @@
 name: "Akazie Wood"
-version: 0.9.963
+version: 0.9.964
 description: "A simple Grav template made by Akazie IT GmbH"
 icon: smile-o
 keywords: akazieit, akazie, wood, carpenter, simple, chargeable, schreiner, holz, zimmerei, zimmermann, wald
@@ -422,6 +422,14 @@ form:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.IMPORT.LABEL
               default: 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway&display=swap'
+            style.fonts.google:
+              type: toggle
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.GOOGLE.LABEL
+              highlight: 0
+              default: 0
+              options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
             style.fonts.main:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.FONT.MAIN.LABEL
