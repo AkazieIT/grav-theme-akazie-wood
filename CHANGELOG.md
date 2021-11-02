@@ -1,3 +1,12 @@
+# v0.9.965
+## 02.11.2021
+
+1. [](#bugfix)
+    * fixed a bug in the image module with grav 1.7.24
+
+
+
+
 # v0.9.964
 ## 08.09.2021
 

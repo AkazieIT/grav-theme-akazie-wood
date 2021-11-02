@@ -23,7 +23,7 @@ form:
               underline: true
               fields:
                 header.image:
-                  type: file
+                  type: pagemedia
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE.LABEL
                   destination: '@self'
                   accept:
