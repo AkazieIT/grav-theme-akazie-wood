@@ -19,6 +19,11 @@ form:
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.CONTENT
               underline: true
               fields:
+                header.images:
+                  type: pagemedia
+                  ldestination: '@self'
+                  accept:
+                    - image/*
                 header.personen:
                   name: personen
                   type: list
@@ -41,11 +46,8 @@ form:
                       label: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION.LABEL
                       rows: 4
                     .image:
-                      type: file
+                      type: pagemediaselect
                       label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE.LABEL
-                      destination: 'self@'
-                      accept:
-                      - image/*
             settings:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.SETTINGS

@@ -7,19 +7,26 @@
 
 
         <div class="person-image{% if page.header.textpos == 1 %}full{% endif %}">
-            {% set image = person.image|first %}
+
+          {% if person.image|first is iterable %}
+            {% set imgtemp = person.image|first %}
+            {% set image = page.media[imgtemp.name] %}
+          {% else %}
+            {% set imgtemp = person.image %}
+            {% set image = page.media[imgtemp] %}
+          {% endif %}
 
             {% if theme_var('header.imagesizing') == 1 %}
               <picture>
-              <source media="(min-width:1220px)" srcset="{{ page.media[image.name].cropZoom(358,358).url }} 1x, {{ page.media[image.name].cropZoom(716,716).url }} 2x">
-              <source media="(min-width:992px)" srcset="{{ page.media[image.name].cropZoom(261,261).url }} 1x, {{ page.media[image.name].cropZoom(522,522).url }} 2x">
-              <source media="(min-width:870px)" srcset="{{ page.media[image.name].cropZoom(742,742).url }} 1x, {{ page.media[image.name].cropZoom(1484,1484).url }} 2x">
-              <source media="(min-width:500px)" srcset="{{ page.media[image.name].cropZoom(538,538).url }} 1x, {{ page.media[image.name].cropZoom(1076,1076).url }} 2x">
-              <source media="(max-width:499px)" srcset="{{ page.media[image.name].cropZoom(370,370).url }} 1x, {{ page.media[image.name].cropZoom(740,740).url }} 2x">
-                <img class="media" style="width:inherit;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ page.media[image.name].cropZoom(700,700).url }}" />
+              <source media="(min-width:1220px)" srcset="{{ image.cropZoom(358,358).url }} 1x, {{ image.cropZoom(716,716).url }} 2x">
+              <source media="(min-width:992px)" srcset="{{ image.cropZoom(261,261).url }} 1x, {{ image.cropZoom(522,522).url }} 2x">
+              <source media="(min-width:870px)" srcset="{{ image.cropZoom(742,742).url }} 1x, {{ image.cropZoom(1484,1484).url }} 2x">
+              <source media="(min-width:500px)" srcset="{{ image.cropZoom(538,538).url }} 1x, {{ image.cropZoom(1076,1076).url }} 2x">
+              <source media="(max-width:499px)" srcset="{{ image.cropZoom(370,370).url }} 1x, {{ image.cropZoom(740,740).url }} 2x">
+                <img class="media" style="width:inherit;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.cropZoom(700,700).url }}" />
               </picture>
             {% else %}
-              <img src="{{ page.media[image.name].cropZoom(500,500).url }}" alt="{{ person.name }}" title="{{ person.name }}" />
+              <img src="{{ image.cropZoom(500,500).url }}" alt="{{ person.name }}" title="{{ person.name }}" />
             {% endif %}
 
           </div>

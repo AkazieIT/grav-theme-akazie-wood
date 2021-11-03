@@ -1,8 +1,8 @@
-# v0.9.965
+# v0.9.966
 ## 02.11.2021
 
 1. [](#bugfix)
-    * fixed a bug in the image module with grav 1.7.24
+    * fixed a bug in the image and team module with grav 1.7.24
 
 
 

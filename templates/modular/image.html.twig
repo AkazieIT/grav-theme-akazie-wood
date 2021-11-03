@@ -2,7 +2,14 @@
     {% if page.header.showtitle == 1 %}<h2 class="heading{% if page.header.column == 3 %} centermark{% endif %}">{{ page.header.title }}</h2>{% endif %}
 
 
-    {% set image = page.media | first %}
+    {% if page.header.image | first is iterable %}
+      {% set imgtemp = page.header.image | first %}
+      {% set image = page.media[imgtemp.name] %}
+    {% else %}
+      {% set image = page.media | first %}
+    {% endif %}
+
+
 
     {% if page.header.scale == 1 %}
         {% set resize = 3 / 4 %}
