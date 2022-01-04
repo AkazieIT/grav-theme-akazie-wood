@@ -40,8 +40,7 @@ It is possible to change various theme settings:
 
 These settings can be changed directly in the backend without time-consuming changes via FTP
 
-Optionally, in the theme folder `/custom/css`,
-the file `custom.css` can be used to define your own styles and to override the existing formatting.
+Optionally, in the theme folder `/custom/css`, the file `custom.css` can be used to define your own styles and to override the existing formatting. **Please make sure to activate your custom.css in the Theme settings.**
 
 
 
