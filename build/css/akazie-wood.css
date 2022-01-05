@@ -1,7 +1,7 @@
 /*!
  * akazie-wood - v1.0.0
  * @author Tom Hirter
- * Copyright (c) 2021
+ * Copyright (c) 2022
  */
 /*
  * Bootstrap
@@ -16850,6 +16850,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   padding: 0;
   line-height: 110%;
+}
+
+h1 {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 a:not([link]) {
