@@ -3,10 +3,15 @@ en:
     THEME:
       BLOG:
         CONTINUE_READING: 'Continue reading'
+        IMAGESIDE: 'Side of Blog Thumbnail'
+        IMAGE_POSITION:
+          LEFT: 'Left'
+          RIGHT: 'Right'
       SECTION:
         LAYOUT: 'Site layout'
         STYLE: 'Custom style (only for admins)'
       FIELDSET:
+        BLOG: 'Blog'
         SEO: 'SEO Settings'
         MOBILENAV: 'Mobile Navigation'
         HEADER: 'Header'
@@ -403,10 +408,15 @@ de:
     THEME:
       BLOG:
         CONTINUE_READING: 'Weiterlesen'
+        IMAGESIDE: 'Position des Thumbnails'
+        IMAGE_POSITION:
+          LEFT: 'Links'
+          RIGHT: 'Rechts'
       SECTION:
         LAYOUT: 'Seiten Design'
         STYLE: 'Benutzerdefinierte Anpassungen (nur für Superadmins)'
       FIELDSET:
+        BLOG: 'Blog'
         MOBILENAV: 'Mobile Navigation'
         COLS: 'Footer Spalten rechts'
         SEO: 'SEO Einstellungen'

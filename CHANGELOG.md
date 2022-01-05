@@ -1,3 +1,13 @@
+# v0.9.968
+## 06.01.2022
+
+1. [](#new)
+    * added modular template for very simple static "blog posts"
+
+
+
+
+
 # v0.9.967
 ## 05.01.2022
 
