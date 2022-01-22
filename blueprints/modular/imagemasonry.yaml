@@ -1,0 +1,125 @@
+title: text
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        inhalt:
+          type: tab
+          title: THEME_AKAZIEWOOD.ADMIN.TAB.CONTENT
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+            header.alt:
+              type: text
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.ALT.LABEL
+            content:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.CONTENT
+              underline: true
+              fields:
+                header.masonryw:
+                  type: select
+                  label: 'masonry width'
+                  default: 1
+                  size: medium
+                  options:
+                    1: 'normal (33%) width'
+                    2: 'double (66%) width'
+                    3: 'triple (99%) width'
+                header.image:
+                  type: pagemedia
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE.LABEL
+                  destination: '@self'
+                  accept:
+                    - image/*
+                header.description:
+                  type: textarea
+                  rows: 2
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION.LABEL
+                header.description_position:
+                  type: select
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION_POS.LABEL
+                  default: 1
+                  size: medium
+                  options:
+                    1: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION_POS.OPTIONS.1
+                    2: THEME_AKAZIEWOOD.ADMIN.FIELDS.DESCRIPTION_POS.OPTIONS.2
+                header.scale:
+                  type: select
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.LABEL
+                  default: 1
+                  size: medium
+                  options:
+                    1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.1
+                    2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.2
+                    3: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.3
+                    4: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.4
+                    5: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.5
+                header.link:
+                  type: text
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.LINK.LABEL
+                header.window:
+                  type: select
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.LABEL
+                  default: 1
+                  size: medium
+                  options:
+                    0: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.OPTIONS.0
+                    1: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.OPTIONS.1
+            settings:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.SETTINGS
+              underline: true
+              fields:
+                columns:
+                  type: columns
+                  fields:
+                    column1:
+                      type: column
+                      fields:
+                        header.showtitle:
+                          type: select
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.LABEL
+                          highlight: 1
+                          default: 1
+                          options:
+                            0: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.0
+                            1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.1
+                            2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.2
+                    column2:
+                      type: column
+                      fields:
+            buttons:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.BUTTONS
+              underline: true
+              fields:
+                header.button:
+                  name: buttons
+                  type: list
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BUTTONS.LABEL
+                  collapsed: true
+                  fields:
+                    .title:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+                      validate:
+                        required: true
+                    .url:
+                      type: text
+                      label: THEME_AKAZIEWOOD.THEME.FIELDS.URL.LABEL
+                      validate:
+                        required: true
+                    .newtab:
+                      type: select
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.LABEL
+                      default: 0
+                      size: medium
+                      options:
+                        0: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.OPTIONS.0
+                        1: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.OPTIONS.1

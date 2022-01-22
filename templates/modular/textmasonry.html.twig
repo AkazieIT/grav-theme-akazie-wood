@@ -1,0 +1,33 @@
+<article class="modular section-text {% if page.header.masonryw == 2 %}a-width2{% elseif page.header.masonryw == 3 %}a-width3{% endif %}">
+{% if page.header.hid %}<a class="anchor" id="{{ page.header.hid }}"></a>{% endif %}
+
+{% if page.header.showtitle == 1 %}
+<{% if page.header.titleh == 1 %}h1{% elseif page.header.titleh == 2 %}h3{% else %}h2{% endif %} class="heading">
+{{ page.header.title }}
+</{% if page.header.titleh == 1 %}h1{% elseif page.header.titleh == 2 %}h3{% else %}h2{% endif %}>
+{% endif %}
+  <div class="markdown {% if page.header.showtitle == 2 %}title-placeholder{% endif %}{% if page.header.boxenabled == 1 %} bgbox{% endif %}" {% if page.header.boxenabled == 1 %}style="background-color:{{page.header.boxbgcolor}};color:{{page.header.boxcolor}};border-radius:{{page.header.boxcorners}}"{% endif %}>
+        {{ page.content | markdown }}
+    </div>
+
+
+    {% if page.header.button is defined %}
+      <div class="imgbuttons">
+        {% if page.header.button | length < 5 and page.header.button | length > 1 %}
+          <div class="row">
+            {% for button in page.header.button %}
+              <div class="col-12 col-md-{{ 12 / page.header.button | length }}">
+                <a class="button" href="{{ button.url }}" {% if button.newtab == 1 %}target="_blank"{% endif %}>{{ button.title }}</a>
+              </div>
+            {% endfor %}
+          </div>
+        {% else %}
+          {% for button in page.header.button %}
+            <a class="button" href="{{ button.url }}" {% if button.newtab == 1 %}target="_blank"{% endif %}>{{ button.title }}</a>
+          {% endfor %}
+        {% endif %}
+      </div>
+    {% endif %}
+
+
+</article>

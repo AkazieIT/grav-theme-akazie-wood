@@ -1,0 +1,77 @@
+<article class="modular section-image {% if page.header.masonryw == 2 %}a-width2{% elseif page.header.masonryw == 3 %}a-width3{% endif %}">
+    {% if page.header.showtitle == 1 %}<h2 class="heading">{{ page.header.title }}</h2>{% endif %}
+
+
+    {% if page.header.image | first is iterable %}
+      {% set imgtemp = page.header.image | first %}
+      {% set image = page.media[imgtemp.name] %}
+    {% else %}
+      {% set image = page.media | first %}
+    {% endif %}
+
+
+
+    {% if page.header.scale == 1 %}
+        {% set resize = 3 / 4 %}
+    {% elseif page.header.scale == 2 %}
+        {% set resize = 9 / 16 %}
+    {% elseif page.header.scale == 3 %}
+        {% set resize = 1 / 2.35 %}
+    {% elseif page.header.scale == 4 %}
+        {% set resize = 1 %}
+    {% elseif page.header.scale == 5 %}
+        {% set resize = 4 / 3 %}
+    {% endif %}
+
+  <div class="media-container {% if page.header.showtitle == 2 %}title-placeholder{% endif %}">
+    {% if page.header.link %}
+      <a href="{{ page.header.link }}" {% if page.header.window == 1 %}target="_blank"{% endif %}>
+    {% endif %}
+
+{% if theme_var('header.imagesizing') == 1 %}
+
+            <picture>
+              <source media="(min-width:1220px)" srcset="{{ image.cropZoom(610,610 * resize).url }} 1x, {{ image.cropZoom(900,900 * resize).url }} 2x">
+              <source media="(min-width:992px)" srcset="{{ image.cropZoom(450,450 * resize).url }} 1x, {{ image.cropZoom(800,800 * resize).url }} 2x">
+              <source media="(min-width:500px)" srcset="{{ image.cropZoom(510,510 * resize).url }} 1x, {{ image.cropZoom(900,900 * resize).url }} 2x">
+              <source media="(max-width:499px)" srcset="{{ image.cropZoom(450,450 * resize).url }} 1x, {{ image.cropZoom(900,900 * resize).url }} 2x">
+              <img class="media" style="width:100%;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.cropZoom(1280,1280 * resize).url }}" />
+            </picture>
+
+{% else %}
+<img class="media" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.cropZoom(1280,1280 * resize).url }}" />
+
+{% endif %}
+        {% if page.header.description %}
+            {% if page.header.description_position == 1 %}
+                <div class="caption_1">{{ page.header.description }}</div>
+            {% endif %}
+
+        {% endif %}
+    {% if page.header.link %}</a>{% endif %}
+    </div>
+    {% if page.header.description %}
+      {% if page.header.description_position == 2 %}
+        <div class="caption_2">{{ page.header.description }}</div>
+      {% endif %}
+    {% endif %}
+
+    {% if page.header.button is defined %}
+      <div class="imgbuttons">
+        {% if page.header.button | length < 5 and page.header.button | length > 1 %}
+          <div class="row">
+            {% for button in page.header.button %}
+              <div class="col-12 col-md-{{ 12 / page.header.button | length }}">
+                <a class="button" href="{{ button.url }}" {% if button.newtab == 1 %}target="_blank"{% endif %}>{{ button.title }}</a>
+              </div>
+            {% endfor %}
+          </div>
+        {% else %}
+          {% for button in page.header.button %}
+            <a class="button" href="{{ button.url }}" {% if button.newtab == 1 %}target="_blank"{% endif %}>{{ button.title }}</a>
+          {% endfor %}
+        {% endif %}
+      </div>
+    {% endif %}
+
+</article>

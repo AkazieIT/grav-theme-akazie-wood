@@ -1,0 +1,134 @@
+title: text
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        inhalt:
+          type: tab
+          title: THEME_AKAZIEWOOD.ADMIN.TAB.CONTENT
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+            content:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.CONTENT
+              underline: true
+              fields:
+                content:
+                  type: markdown
+                  validate:
+                    type: textarea
+            media:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
+              underline: true
+              fields:
+                header.media_order:
+                  type: pagemedia
+                  label: PLUGIN_ADMIN.PAGE_MEDIA
+            settings:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.SETTINGS
+              underline: true
+              fields:
+                columns:
+                  type: columns
+                  fields:
+                    column1:
+                      type: column
+                      fields:
+                        header.masonryw:
+                          type: select
+                          label: 'masonry width'
+                          default: 1
+                          size: medium
+                          options:
+                            1: 'normal (33%) width'
+                            2: 'double (66%) width'
+                            3: 'triple (99%) width'
+                        header.showtitle:
+                          type: select
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.LABEL
+                          highlight: 1
+                          default: 1
+                          options:
+                            0: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.0
+                            1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.1
+                            2: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.2
+                        header.titleh:
+                          type: select
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLESIZE.LABEL
+                          highlight: 0
+                          default: 0
+                          options:
+                            0: 'h2'
+                            1: 'h1'
+                            2: 'h3'
+                        header.hid:
+                          type: text
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLEID.LABEL
+                        header.centertext:
+                          type: toggle
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.CENTERTEXT.LABEL
+                          highlight: 0
+                          default: 0
+                          options:
+                            0: PLUGIN_ADMIN.DISABLED
+                            1: PLUGIN_ADMIN.ENABLED
+                        header.boxenabled:
+                          type: toggle
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BOX.ENABLED.LABEL
+                          highlight: 0
+                          default: 0
+                          options:
+                            0: PLUGIN_ADMIN.DISABLED
+                            1: PLUGIN_ADMIN.ENABLED
+                        header.boxbgcolor:
+                          type: colorpicker
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BOX.BGCOLOR.LABEL
+                          default: '#ffffff'
+                        header.boxcolor:
+                          type: colorpicker
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BOX.COLOR.LABEL
+                          default: '#ffffff'
+                        header.boxcorners:
+                          type: text
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BOX.ROUNDCORNERS.LABEL
+                          default: 0
+                    column2:
+                      type: column
+                      fields:
+            buttons:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.BUTTONS
+              underline: true
+              fields:
+                header.button:
+                  name: buttons
+                  type: list
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BUTTONS.LABEL
+                  collapsed: true
+                  fields:
+                    .title:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+                      validate:
+                        required: true
+                    .url:
+                      type: text
+                      label: THEME_AKAZIEWOOD.THEME.FIELDS.URL.LABEL
+                      validate:
+                        required: true
+                    .newtab:
+                      type: select
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.LABEL
+                      default: 0
+                      size: medium
+                      options:
+                        0: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.OPTIONS.0
+                        1: THEME_AKAZIEWOOD.ADMIN.FIELDS.WINDOW.OPTIONS.1

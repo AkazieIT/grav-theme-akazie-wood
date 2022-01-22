@@ -59,8 +59,32 @@
         {{ assets.css()|raw }}
         {{ assets.js()|raw }}
       {% endblock %}
-
+      {% if theme_var('header.masonryg') %}
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <style>
+        .grid-sizer,
+        .grid-item {
+          width: 33.3%;
+        }
+        article {
+          width: 33.3%;
+          padding: {{ theme_var('header.masonryp') }};
+        }
+        article.a-width2 { width:  66.6%; }
+        article.a-width3 { width:  99.9%; }
+        @media (max-width: 869px) {
+          article {
+            width: 100%;
+            padding: 10px;
+          }
+          article.a-width2 { width:  100%; }
+          article.a-width3 { width:  100%; }
+        }
+        </style>
+      {% endif %}
       {% include 'partials/custom-css.html.twig' %}
+
 
     {% endblock head %}
 
@@ -266,7 +290,18 @@
             {% block bottom %}
               {{ assets.js('bottom')|raw }}
               {{ theme_var('footer.javascript.code')|raw }}
+              {% if theme_var('header.masonryg') %}
+              <script>
+              var grid = document.querySelector('.masonryrow');
+              imagesLoaded( document.querySelector('.masonryrow'), function( instance ) {
+                var msnry = new Masonry( grid, {
+                  itemSelector: 'article',
+                  columnWidth: '.grid-sizer',
+                  percentPosition: true
+                });
+              });
+              </script>
+            {% endif %}
             {% endblock %}
-
           </body>
         </html>

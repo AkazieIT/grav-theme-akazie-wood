@@ -542,6 +542,24 @@ form:
                 1: THEME_AKAZIEWOOD.THEME.BLOG.IMAGE_POSITION.RIGHT
               validate:
                 type: bool
+        masonry:
+          type: fieldset
+          title: 'Masonry (experimental)'
+          fields:
+            header.masonryg:
+              type: toggle
+              label: 'Activate Masonry?'
+              highlight: 0
+              default: 0
+              options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
+              validate:
+                type: bool
+            header.masonryp:
+              type: text
+              label: 'masonry padding'
+              default: '10px'
         seo:
           type: fieldset
           title: THEME_AKAZIEWOOD.THEME.FIELDSET.SEO

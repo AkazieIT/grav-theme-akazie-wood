@@ -2,11 +2,22 @@
 
 {% block content %}
   {% set collection = page.collection() %}
-  <section class="page section-modular">
-    <div class="row">
-      {% for module in collection %}
-        {{ module.content|raw }}
-      {% endfor %}
-    </div>
-  </section>
+    {% if page.header.masonry == 1 %}
+    <section class="page section-modular">
+      <div class="masonryrow">
+        <div class="grid-sizer"></div>
+        {% for module in collection %}
+          {{ module.content|raw }}
+        {% endfor %}
+      </div>
+    </section>
+  {% else %}
+    <section class="page section-modular">
+      <div class="row">
+        {% for module in collection %}
+          {{ module.content|raw }}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
 {% endblock %}

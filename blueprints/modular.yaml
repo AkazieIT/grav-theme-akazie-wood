@@ -58,6 +58,16 @@ form:
                     1: PLUGIN_ADMIN.ENABLED
                   validate:
                     type: bool
+                header.masonry:
+                  type: toggle
+                  label: 'Activate Masonry? (experimental) please also activate in theme options'
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: PLUGIN_ADMIN.DISABLED
+                    1: PLUGIN_ADMIN.ENABLED
+                  validate:
+                    type: bool
             media:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
