@@ -1,3 +1,12 @@
+# v0.9.969
+## 22.01.2022
+
+1. [](#new)
+    * added an experimental feature to use modular pages as three-column masonry
+
+
+
+
 # v0.9.968
 ## 06.01.2022
 
