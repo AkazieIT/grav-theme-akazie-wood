@@ -31,6 +31,7 @@ const pkg = require('./package.json');
 const pkgName = pkg.name.toLowerCase();
 const pkgNameJSCore = pkgName + '.core';
 const pkgNameJSMain = pkgName + '.app';
+const pkgNameJSMasonry = pkgName + '.masonry';
 
 const dir = {
   src: './',
@@ -44,6 +45,10 @@ const path = {
     core: {
       js: dir.src + 'js/core/',
       scss: dir.src + 'scss/core/'
+    },
+    masonry: {
+      js: dir.src + 'js/masonry/',
+      scss: dir.src + 'scss/masonry/'
     },
     fonts: dir.src + dir.build + 'fonts/',
   },
@@ -69,6 +74,10 @@ const files = {
       path.src.core.js + 'jquery.min.js',
       path.src.core.js + 'bootstrap.bundle.min.js',
       path.src.core.js + 'lightgallery.js',
+    ],
+    masonry: [
+      path.src.masonry.js + 'imagesloaded.pkgd.js',
+      path.src.masonry.js + 'masonry.pkgd.js',
     ]
   },
   scss: {
@@ -254,6 +263,13 @@ gulp.task('js-main', () => {
     .pipe(rename({basename: pkgNameJSMain, suffix: '.min'}))
     .pipe(gulp.dest(path.build.js));
 });
+gulp.task('js-masonry', () => {
+  return gulp.src(files.js.masonry)
+    .pipe(concat(pkgNameJSMasonry + '.min.js'))
+    .pipe(uglify())
+    .pipe(header(banner, {pkg : pkg} ))
+    .pipe(gulp.dest(path.build.js));
+});
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -268,7 +284,8 @@ gulp.task('css', gulp.series(
 
 gulp.task('js', gulp.series(
   gulp.series('js-core'),
-  gulp.series('js-main')
+  gulp.series('js-main'),
+  gulp.series('js-masonry')
 ));
 
 gulp.task('build', gulp.series('css', 'js'));

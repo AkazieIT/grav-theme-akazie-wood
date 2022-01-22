@@ -1,6 +1,6 @@
 {
   "name": "akazie-wood",
-  "version": "1.0.0",
+  "version": "6.0.0",
   "description": "I don't know",
   "main": "",
   "private": true,
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Memurame/grav-theme-akazie-wood.git"
   },
-  "author": "Tom Hirter",
+  "author": "Olivier Zurkirchen",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Memurame/grav-theme-akazie-wood/issues"

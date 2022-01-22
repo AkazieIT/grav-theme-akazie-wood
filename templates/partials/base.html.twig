@@ -59,9 +59,11 @@
         {{ assets.css()|raw }}
         {{ assets.js()|raw }}
       {% endblock %}
-      {% if theme_var('header.masonryg') %}
-        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+      {% if page.header.masonry == 1 %}
+      {% do assets.addJs('theme://build/js/akazie-wood.masonry.min.js') %}
+
+
+      {{ masonry.js()|raw }}
         <style>
         .grid-sizer,
         .grid-item {
@@ -290,7 +292,7 @@
             {% block bottom %}
               {{ assets.js('bottom')|raw }}
               {{ theme_var('footer.javascript.code')|raw }}
-              {% if theme_var('header.masonryg') %}
+              {% if page.header.masonry == 1 %}
               <script>
               var grid = document.querySelector('.masonryrow');
               imagesLoaded( document.querySelector('.masonryrow'), function( instance ) {

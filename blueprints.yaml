@@ -544,18 +544,8 @@ form:
                 type: bool
         masonry:
           type: fieldset
-          title: 'Masonry (experimental)'
+          title: 'Masonry (experimental. activate on modular page and use imagemasonry or textmasonry module)'
           fields:
-            header.masonryg:
-              type: toggle
-              label: 'Activate Masonry?'
-              highlight: 0
-              default: 0
-              options:
-                0: PLUGIN_ADMIN.DISABLED
-                1: PLUGIN_ADMIN.ENABLED
-              validate:
-                type: bool
             header.masonryp:
               type: text
               label: 'masonry padding'
