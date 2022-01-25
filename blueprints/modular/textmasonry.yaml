@@ -44,13 +44,13 @@ form:
                       fields:
                         header.masonryw:
                           type: select
-                          label: 'masonry width'
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MASONRYWIDTH.LABEL
                           default: 1
                           size: medium
                           options:
-                            1: 'normal (33%) width'
-                            2: 'double (66%) width'
-                            3: 'triple (99%) width'
+                            1: THEME_AKAZIEWOOD.ADMIN.FIELDS.MASONRYWIDTH.OPTIONS.1
+                            2: THEME_AKAZIEWOOD.ADMIN.FIELDS.MASONRYWIDTH.OPTIONS.2
+                            3: THEME_AKAZIEWOOD.ADMIN.FIELDS.MASONRYWIDTH.OPTIONS.3
                         header.showtitle:
                           type: select
                           label: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.LABEL

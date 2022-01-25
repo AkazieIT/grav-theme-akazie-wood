@@ -251,6 +251,12 @@ en:
             0: "No"
             1: "Yes"
             2: "Only placeholder"
+        MASONRYWIDTH:
+          LABEL: "Masonry field width"
+          OPTIONS:
+            1: "normal (33.3%) width"
+            2: "double (66.6%) width"
+            3: "triple (99.9%) width"
         TITLESIZE:
           LABEL: 'Title size'
         TITLEID:
@@ -298,6 +304,8 @@ en:
           LABEL: "Show claim instead of title?"
         REMOVEHEADER:
           LABEL: "Remove header entirely?"
+        MASONRY:
+          LABEL: "Activate Masonry? (experimental)"
         CLAIMASMARKDOWN:
           LABEL: "Display claim as markdown?"
         DESCRIPTION:
@@ -650,6 +658,12 @@ de:
           LABEL: "Alt Tag"
         SHOWTITLE:
           LABEL: "Titel anzeigen?"
+        MASONRYWIDTH:
+          LABEL: "Masonryfeld Breite"
+          OPTIONS:
+            1: "normale Breite (33.3%)"
+            2: "doppelte Breite (66.6%)"
+            3: "dreifache Breite (99.9%)"
         TITLESIZE:
           LABEL: 'Titelgrösse'
           OPTIONS:
@@ -701,6 +715,8 @@ de:
           LABEL: "Claim anstelle Titel anzeigen?"
         REMOVEHEADER:
           LABEL: "Header ganz ausblenden?"
+        MASONRY:
+          LABEL: "Masonry aktivieren? (experimentelles Feature)"
         CLAIMASMARKDOWN:
         LABEL: "Claim als Markdown anzeigen?"
         DESCRIPTION:

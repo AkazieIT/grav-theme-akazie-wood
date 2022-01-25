@@ -60,7 +60,7 @@ form:
                     type: bool
                 header.masonry:
                   type: toggle
-                  label: 'Activate Masonry? (experimental)'
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MASONRY.LABEL
                   highlight: 0
                   default: 0
                   options:
