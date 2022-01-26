@@ -331,6 +331,8 @@ en:
             7: "1/6 full width"
         MARGINRIGHT:
           LABEL: "padding"
+        MASONRYSETTING:
+          LABEL: 'Masonry (experimental. activate on modular page and use imagemasonry or textmasonry module'
         SCALE:
           LABEL: 'Format'
           OPTIONS:
@@ -742,6 +744,8 @@ de:
             7: "1/6 von voller Breite"
         MARGINRIGHT:
           LABEL: "Padding"
+        MASONRYSETTING:
+          LABEL: 'Masonry (experimentell. Auf modularer Seite aktivieren und Imagemasonry oder Textmasonry Modul verwenden'
         SCALE:
           LABEL: 'Format'
           OPTIONS:

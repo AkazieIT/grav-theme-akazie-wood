@@ -1,10 +1,17 @@
+# v0.9.970
+## 26.01.2022
+
+1. [](#new)
+    * translation fix for masonry
+
+
+
 # v0.9.969
 ## 22.01.2022
 
 1. [](#new)
     * added an experimental feature to use modular pages as three-column masonry
     * TODO JS error Uncaught ReferenceError: osm is not defined (open layers?)
-
 
 
 
