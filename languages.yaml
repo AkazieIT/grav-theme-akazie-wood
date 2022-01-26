@@ -332,7 +332,7 @@ en:
         MARGINRIGHT:
           LABEL: "padding"
         MASONRYSETTING:
-          LABEL: 'Masonry (experimental. activate on modular page and use imagemasonry or textmasonry module'
+          LABEL: 'Masonry (experimental. activate on modular page and use imagemasonry or textmasonry module)'
         SCALE:
           LABEL: 'Format'
           OPTIONS:
@@ -745,7 +745,7 @@ de:
         MARGINRIGHT:
           LABEL: "Padding"
         MASONRYSETTING:
-          LABEL: 'Masonry (experimentell. Auf modularer Seite aktivieren und Imagemasonry oder Textmasonry Modul verwenden'
+          LABEL: 'Masonry (experimentell. Auf modularer Seite aktivieren und Imagemasonry oder Textmasonry Modul verwenden)'
         SCALE:
           LABEL: 'Format'
           OPTIONS:
