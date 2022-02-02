@@ -136,3 +136,25 @@ form:
                     0: '1/2'
                   validate:
                     type: bool
+            lower:
+              type: fieldset
+              title: 'lower footer'
+              collapsed: false
+              collapsible: true
+              fields:
+                header.lowerfooteron:
+                  type: toggle
+                  label: 'turn lower footer on'
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: 'off'
+                    1: 'on'
+                  validate:
+                    type: bool
+                header.lowerfooterleft:
+                  type: markdown
+                  label: 'left markdown'
+                header.lowerfooterright:
+                  type: markdown
+                  label: 'right markdown'
