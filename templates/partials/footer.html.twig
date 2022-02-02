@@ -135,7 +135,14 @@
       {% endif %}
     </div>
   {% endif %}
-
+  {% if footerpage.header.lowerfooteron == 1 %}
+  <div class="lowerfooter">
+    <div class="container">
+      <div class="left">{{ footerpage.header.lowerfooterleft | markdown }}</div>
+      <div class="right">{{ footerpage.header.lowerfooterright | markdown }}</div>
+    </div>
+  </div>
+  {% endif %}
   </div>
 
 
