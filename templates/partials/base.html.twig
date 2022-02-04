@@ -71,7 +71,7 @@
         }
         article {
           width: 33.3%;
-          padding: {{ theme_var('header.masonryp') }};
+          padding: {% if theme_var('header.masonryp') is defined %}{{ theme_var('header.masonryp') }}{% else %}10px{% endif %};
         }
         article.a-width2 { width:  66.6%; }
         article.a-width3 { width:  99.9%; }

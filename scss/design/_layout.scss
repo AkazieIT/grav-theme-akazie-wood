@@ -537,6 +537,11 @@ main.site-content{
       padding-right: 1rem;
     }
   }
+  .masonryrow {
+    .modular {
+      margin-bottom:0px;
+    }
+  }
   .modular.section-text{
     *:last-child{
       margin-bottom: 0;
