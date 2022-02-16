@@ -17428,6 +17428,7 @@ main.site-content .modular.section-teamlist .person {
   -ms-display: flex;
   margin-bottom: 30px;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 @media (max-width: 575.98px) {
