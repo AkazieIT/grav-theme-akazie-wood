@@ -1,0 +1,44 @@
+
+
+
+<article class="modular section-text col-12 col-md-12 bgwide {{ page.header.class }}">
+{% if page.header.hid %}<a class="anchor" id="{{ page.header.hid }}"></a>{% endif %}
+
+<{% if page.header.titleh == 1 %}h1{% elseif page.header.titleh == 2 %}h3{% else %}h2{% endif %}>
+{{ page.header.title }}
+</{% if page.header.titleh == 1 %}h1{% elseif page.header.titleh == 2 %}h3{% else %}h2{% endif %}>
+   <div class="content">
+        {{ page.content | markdown }}
+    </div>
+
+    {% set resize = 1 %}
+    {% if page.header.button is defined %}
+
+      <div class="imgbuttons">
+        {% if page.header.button | length < 5 and page.header.button | length > 1 %}
+          <div class="row fullwidthcardsrow">
+            {% for button in page.header.button %}
+              {% set image = page.media[button.image] %}
+              <div class="col-12 col-md-{{ 12 / page.header.button | length }} fullwidthcards">
+              {% if button.link != '' %}<a href="{{ button.link }}" {% if button.target != 0 %}target="_blank"{% endif %}>{% endif %}
+              <div class="inner">
+                <img class="media" title="{{ button.title }}" alt="{{ button.title }}" src="{{ image.cropZoom(1280,1280 * resize).url }}" />
+                <h2>{{ button.title }}</h2>
+                <p>{{ button.text }}</p>
+              </div>
+              {% if button.link is defined %}</a>{% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        {% else %}
+          {% for button in page.header.button %}
+            {% set image = page.media[button.image] %}
+              <img class="media" title="{{ button.title }}" alt="{{ button.title }}" src="{{ image.cropZoom(1280,1280 * resize).url }}" />
+              <h2>{{ button.title }}</h2>
+              <p>{{ button.text }}</p>
+          {% endfor %}
+        {% endif %}
+      </div>
+    {% endif %}
+
+</article>

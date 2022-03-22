@@ -71,7 +71,7 @@
         }
         article {
           width: 33.3%;
-          padding: {% if theme_var('header.masonryp') is defined %}{{ theme_var('header.masonryp') }}{% else %}10px{% endif %};
+          padding: {{ theme_var('header.masonryp') }};
         }
         article.a-width2 { width:  66.6%; }
         article.a-width3 { width:  99.9%; }
@@ -108,7 +108,7 @@
           {% include 'partials/header.html.twig' %}
         {% endblock %}
 
-        {% if page.header.kundencode != 'immosit' %}
+        {% if page.header.kundencode != 'immosit' and page.header.kundencode != 'immositweb'  %}
 
           {% if page.template == 'home' %}
             {% set image = page.header.image %}
@@ -160,7 +160,7 @@
 
                 <div class="image-caption{% if page.header.claimswitch == true %} claim{% endif %}{% if removehead == true %} removeheader{% endif %}">
 
-                  {% if theme_var('header.kundencode') != 'immosit' %}
+                  {% if theme_var('header.kundencode') != 'immosit' and theme_var('header.kundencode') != 'immositweb' %}
 
                   {% if page.header.claimswitch == false %}
                     <h1 style="word-wrap: break-word">{{ page.header.title }}</h1>
@@ -268,6 +268,55 @@
                             <div class="media-container ">
                               {% set image = page.header.image %}
                               <img class="media startimg" title="{{ page.header.title }}" alt="Immosit" src="{{ page.media[image].cropZoom(500,500).url }}"/>
+
+                            </div>
+                          </article>
+                        </div>
+                      </section>
+                    </div>
+
+                  {% elseif page.header.kundencode == 'immositweb' %}
+                  <div class="bookinghover">
+                      <ul>
+                        <li>
+                          <a href="/wohnungen?verkauf=ja#catcont" class="kauf"><div class="bookspan">Kaufen</div></a>
+
+
+                        <li>
+                          <a href="/wohnungen?vermietung=ja#catcont" class="miet"><div class="bookspan">Mieten</div></a>
+
+
+                        </li>
+                        <li>
+                          <a href="https://fewolenk.ch" target="_blank" class="fewo"><div class="bookspan">Ferienwohnung</div></a>
+
+                        </li>
+
+
+
+                      </ul>
+                    </div>
+                    <div class="screen-image screen-fullscreen">
+                      <section class="page section-modular immositstart">
+                        <div class="row">
+                          <article class="modular section-text col-12 col-md-5">
+                          <h2>{{page.header.title | raw}}</h2>
+                          <div class="markdown headertext">
+                            {{page.header.text | markdown}}
+                            <a class="bookinghovermobile linksbutton" href="{{ base_url_absolute  ~ '/wohnungen' }}">
+                              Immobilien ansehen
+                            </a>
+                          </div>
+                            <div class="media-container startimgtwo">
+                              {% set imagetwo = page.header.imagetwo %}
+                              <img class="media startimg startimgtwo" title="{{ page.header.title }}" alt="Immosit" src="{{ page.media[imagetwo].cropZoom(750,600).url }}"/>
+
+                            </div>
+                          </article>
+                          <article class="modular section-image col-12 col-md-7 startimgone">
+                            <div class="media-container ">
+                              {% set image = page.header.image %}
+                              <img class="media startimg" title="{{ page.header.title }}" alt="Immosit" src="{{ page.media[image].cropZoom(1000,1000).url }}"/>
 
                             </div>
                           </article>

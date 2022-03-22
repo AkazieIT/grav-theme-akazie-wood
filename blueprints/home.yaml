@@ -28,6 +28,10 @@ form:
               type: filepicker
               label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE_HEADER.LABEL
               preview_images: true
+            header.imagetwo:
+              type: filepicker
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE_HEADER.LABEL
+              preview_images: true
             media:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA

@@ -1,0 +1,83 @@
+title: text
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        inhalt:
+          type: tab
+          title: THEME_AKAZIEWOOD.ADMIN.TAB.CONTENT
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+            content:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.CONTENT
+              underline: true
+              fields:
+                content:
+                  type: markdown
+                  validate:
+                    type: textarea
+            settings:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE.LABEL
+              underline: true
+              fields:
+                header.image:
+                  type: pagemedia
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE.LABEL
+                  destination: '@self'
+                  accept:
+                    - image/*
+                header.class:
+                  type: text
+                  autofocus: true
+                  label: 'custom class'
+                header.titleh:
+                  type: select
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLESIZE.LABEL
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: 'h2'
+                    1: 'h1'
+                    2: 'h3'
+            buttons:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.BUTTONS
+              underline: true
+              fields:
+                header.button:
+                  name: buttons
+                  type: list
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BUTTONS.LABEL
+                  collapsed: true
+                  fields:
+                    .image:
+                      type: pagemediaselect
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE_HEADER.LABEL
+                      preview_images: true
+                    .title:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+                      validate:
+                        required: true
+                    .link:
+                      type: text
+                      label: THEME_AKAZIEWOOD.THEME.FIELDS.URL.LABEL
+                    .target:
+                      type: select
+                      label: 'target'
+                      highlight: 0
+                      default: 0
+                      options:
+                        0: '_self'
+                        1: '_blank'
+                    .text:
+                      type: markdown
+                      label: 'Text'
