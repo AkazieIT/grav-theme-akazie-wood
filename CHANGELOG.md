@@ -1,8 +1,11 @@
 # v0.9.970
-## 26.01.2022
+## 22.03.2022
+
+1. [](#bugfix)
+    * translation fix for masonry
 
 1. [](#new)
-    * translation fix for masonry
+    * added an experimental module called fullwidthcards.
 
 
 
