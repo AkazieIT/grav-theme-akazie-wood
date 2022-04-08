@@ -51,6 +51,22 @@ form:
                     3: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.3
                     4: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.4
                     5: THEME_AKAZIEWOOD.ADMIN.FIELDS.SCALE.OPTIONS.5
+                header.slidein:
+                  type: toggle
+                  label: 'Slide in?'
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: PLUGIN_ADMIN.DISABLED
+                    1: PLUGIN_ADMIN.ENABLED
+                  validate:
+                    type: bool
+                header.slidedirection:
+                  type: toggle
+                  label: 'Slide in direction?'
+                  options:
+                    left: 'Left'
+                    right: 'Right'
                 header.marginright:
                   type: text
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MARGINRIGHT.LABEL

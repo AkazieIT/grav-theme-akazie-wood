@@ -39,6 +39,14 @@ form:
               fields:
                 header.media_order:
                   type: pagemedia
+            header.slideshow:
+              type: toggle
+              label: 'Slideshow'
+              highlight: 0
+              default: 0
+              options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
             header.kundencode:
               type: text
               label: THEME_AKAZIEWOOD.ADMIN.FIELDS.KUNDENCODE.LABEL
