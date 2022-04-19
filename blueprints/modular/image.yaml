@@ -61,12 +61,6 @@ form:
                     1: PLUGIN_ADMIN.ENABLED
                   validate:
                     type: bool
-                header.slidedirection:
-                  type: toggle
-                  label: 'Slide in direction?'
-                  options:
-                    left: 'Left'
-                    right: 'Right'
                 header.marginright:
                   type: text
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MARGINRIGHT.LABEL

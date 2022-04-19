@@ -47,7 +47,7 @@
             </picture>
     {% endif %}
 {% else %}
-<img class="media {% if theme_var('site.slideimagesin') and header.slidein %}slide-in{% if header.slidedirection == 'left' %} align-left{% else %} align-right{% endif %}{% endif %}" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.cropZoom(1280,1280 * resize).url }}" />
+<img class="media {% if theme_var('site.slideimagesin') and header.slidein %}slide-in{% endif %}" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.cropZoom(1280,1280 * resize).url }}" />
 
 {% endif %}
         {% if page.header.description %}
