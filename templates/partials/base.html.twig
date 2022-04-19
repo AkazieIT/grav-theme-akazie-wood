@@ -64,30 +64,145 @@
       body {
       overflow-x:hidden;
       }
-      .hiddensli {
-      display:none;
-      }
+
       .slide-in {
           opacity:0 !important;
-          transition:1.5s;
+          transition: all 1s;
+         -webkit-transition: all 1s;
         }
         .active {
           opacity:1 !important;
-           transition: all 1.5s;
-          -webkit-transition: all 1.5s;
+           transition: all 1s;
+          -webkit-transition: all 1s;
           transform: translateX(0%) !important;
 
         }
-        .align-left {
-     transform: translateX(-110%);
- }
 
- .align-right {
-   transform: translateX(110%);
- }
  </style>
 
         {% endif %}
+
+    {% if page.header.slideshow %}
+    <style>
+
+
+    .bgslide,
+    .bgslide:after {
+        position: fixed;
+        {% if theme_var('header.kundencode') == 'brodbeck' %}
+        width: 60%;
+        left: 20%;
+        {% else %}
+        width: 100%;
+        left: 0px;
+        {% endif %}
+        height: 100%;
+        top: 0px;
+        z-index: 0;
+    }
+    {% if theme_var('header.kundencode') == 'brodbeck' %}
+    @media (max-width:991px) {
+      .bgslide,
+      .bgslide:after {
+      width:100%;
+      left:0%;
+      }
+    }
+
+    {% endif %}
+    .bgslidew:after {
+        content: '';
+        background: transparent;
+    }
+
+
+    .bgslide .hiddensli {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: transparent;
+        background-size: contain;
+
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        opacity: 0;
+        z-index: 0;
+    	-webkit-backface-visibility: hidden;
+        -webkit-animation: imageAnimation {{ page.media|length * 8 }}s linear infinite 0s;
+        -moz-animation: imageAnimation {{ page.media|length * 8 }}s linear infinite 0s;
+        -o-animation: imageAnimation {{ page.media|length * 8 }}s linear infinite 0s;
+        -ms-animation: imageAnimation {{ page.media|length * 8 }}s linear infinite 0s;
+        animation: imageAnimation {{ page.media|length * 8 }}s linear infinite 0s;
+    }
+    {% set i = 0 %}
+    {% for img in page.media %}
+
+    .bgslide .hiddensli:nth-child({{ i + 1 }}) {
+        background-image: url('{{img.url}}');
+        -webkit-animation-delay: {{ i * 8 }}s;
+        -moz-animation-delay: {{ i * 8 }}s;
+        -o-animation-delay: {{ i * 8 }}s;
+        -ms-animation-delay: {{ i * 8 }}s;
+        animation-delay: {{ i * 8 }}s;
+    }
+
+    {% set i = i + 1 %}
+    {% endfor %}
+
+
+
+
+    @-webkit-keyframes imageAnimation {
+        0% { opacity: 0;
+        -webkit-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             -webkit-animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+    @-moz-keyframes imageAnimation {
+        0% { opacity: 0;
+        -moz-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             -moz-animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+    @-o-keyframes imageAnimation {
+        0% { opacity: 0;
+        -o-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             -o-animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+    @-ms-keyframes imageAnimation {
+        0% { opacity: 0;
+        -ms-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             -ms-animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+    @keyframes imageAnimation {
+        0% { opacity: 0;
+        animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+
+
+    </style>
+    {% endif %}
 
       {% if page.header.masonry == 1 %}
       {% do assets.addJs('theme://build/js/akazie-wood.masonry.min.js') %}
@@ -147,9 +262,17 @@
 
               <div
                 class="screen-image screen-fullscreen{% if removehead == true %} removeheader{% endif %}{% if page.template == 'home' and page.header.slideshow %} bgslide{% endif %}"
-                {% if removehead != true %}
+                {% if page.header.slideshow %}
+
+                {% elseif removehead != true %}
                 style="background-image: url('{{ image ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"
                 {% endif %}>
+
+                {% if page.template == 'home' and page.header.slideshow %}
+                {% for img in page.media %}
+                <div class="hiddensli">{{ img.url }}</div>
+                {% endfor %}
+                {% endif %}
               {% else %}
                 <div class="screen-image screen-fullscreen">
                 {% endif %}
@@ -418,127 +541,9 @@
             </script>
             {% endif %}
 
-            {% for img in page.media %}
-            <div class="hiddensli">{{ img.url }}</div>
-
-            {% endfor %}
-
-            {% if page.template == 'home' and page.header.slideshow %}
-            <script>
-            easy_background(".bgslide",
-
-              {
-                slide: [],
-
-                delay: []
-              }
 
 
-            );
-            function easy_background(selector, sld_args) {
 
-              function empty_img(x) {
-                if (x) {
-                  return "<img src='" + x + "'>";
-                } else {
-                  return "";
-                }
-              }
-
-              //use object same as arrays in php {nameofindex:variable} inside object you can use arrays [value1,val2] (variable in object can be as array
-              //var sld_args={i:["img/555.jpg","img/44.jpg","img/33.jpg","img/22.jpg","img/11.jpg","img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg"],d:[3000,3000,3000,3000,3000] };
-
-              //if delay is empty or forgotten then use this default value
-              var def_del = 3000;
-
-              var p = document.createElement("div");
-              p.innerHTML = " ";
-              p.classList.add("easy_slider");
-
-              document.body.insertBefore(p, document.body.firstChild);
-              //switch all values in object -- objectname.index in you case sld_args is object and i is index of array which keep images (i). We use this function for fill div with img tags
-              //and for insert delays into empty or forgotten places in object
-
-              document.querySelectorAll('.hiddensli').forEach(function(el) {
-                sld_args.slide.push(el.textContent)
-                sld_args.delay.push(5000)
-              })
-
-              //add various style on selector
-              document.querySelector(".easy_slider").style.display = "none";
-
-
-              //add various style on selector
-              document.querySelector(selector).style.backgroundSize = "contain";
-              document.querySelector(selector).style.backgroundRepeat = "no-repeat";
-              document.querySelector(selector).style.backgroundPosition = "center center";
-
-
-              setTimeout(function() {
-                //add various style on selector
-                if (typeof sld_args.transition_timing === 'undefined') {
-                  sld_args.transition_timing = "ease-in";
-                }
-                if (typeof sld_args.transition_duration === 'undefined') {
-                  sld_args.transition_duration = 1000;
-                }
-                var transition = "all " + sld_args.transition_duration + 'ms ' + sld_args.transition_timing;
-                document.querySelector(selector).style.WebkitTransition = transition;
-                document.querySelector(selector).style.MozTransition = transition;
-                document.querySelector(selector).style.MsTransition = transition;
-                document.querySelector(selector).style.OTransition = transition;
-                document.querySelector(selector).style.transition = transition;
-              }, 100);
-
-
-              //this n is number of row  in object - if first row one function if more than 1 then other
-              var n = 1;
-              //li collection previous delays from previous slides
-              var li = 0;
-
-              function slider() {
-                //switching all images one by one
-                sld_args.slide.forEach(function(vvv, iii) {
-                  //here go all slides except first
-                  if (n > 1) {
-                    //set delay from collected number from previous slides
-                    var delay = li;
-                    setTimeout(function() {
-
-                      document.querySelector(selector).style.backgroundImage = "url('" + vvv + "')";
-
-                    }, delay); // >1
-                    //collecting delays from curent
-                    li = li + sld_args.delay[iii];
-
-                  } else { //this function for only  first slide
-
-                    //next row
-                    n++;
-                    //collect delay first time
-                    li = sld_args.delay[iii];
-
-                    document.querySelector(selector).style.backgroundImage = "url('" + vvv + "')";
-
-                  }
-
-                });
-
-              };
-
-              slider();
-
-              setInterval(function() { // REPEAT
-
-                slider();
-                //here used length of array of delays in object instead you tot_time variable
-              }, sld_args.delay.length);
-
-            }
-            </script>
-
-
-            {% endif %}
             {% if theme_var('map.apikey') and theme_var('map.type') == 'google' %}
               {%  include 'partials/map-google-js.html.twig' %}
             {% elseif theme_var('map.type') == 'osm' %}
