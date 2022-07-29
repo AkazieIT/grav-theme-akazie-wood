@@ -31,23 +31,23 @@
 {% if theme_var('header.imagesizing') == 1 %}
     {% if page.header.column == 2 or page.header.column == 3  %}
             <picture>
-            <source media="(min-width:992px)" srcset="{{ image.cropZoom(1250,1250 * resize).url }} 1x, {{ image.cropZoom(2500,2500 * resize).url }} 2x">
-            <source media="(min-width:870px)" srcset="{{ image.cropZoom(840,840 * resize).url }} 1x, {{ image.cropZoom(1680,1680 * resize).url }} 2x">
-            <source media="(min-width:500px)" srcset="{{ image.cropZoom(510,510 * resize).url }} 1x, {{ image.cropZoom(1020,1020 * resize).url }} 2x">
-              <source media="(max-width:499px)" srcset="{{ image.cropZoom(450,450 * resize).url }} 1x, {{ image.cropZoom(900,900 * resize).url }} 2x">
-              <img class="media" style="width:100%;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.cropZoom(1280,1280 * resize).url }}" />
+          <source media="(min-width:992px)" srcset="{% if page.header.cropzoom %}{{ image.resize(1250,1250 * resize).url }}{% else %}{{ image.cropZoom(1250,1250 * resize).url }}{% endif %} 1x, {% if page.header.cropzoom %}{{ image.resize(2500,2500 * resize).url }}{% else %}{{ image.cropZoom(2500,2500 * resize).url }}{% endif %} 2x">
+          <source media="(min-width:870px)" srcset="{% if page.header.cropzoom %}{{ image.resize(840,840 * resize).url }}{% else %}{{ image.cropZoom(840,840 * resize).url }}{% endif %} 1x, {% if page.header.cropzoom %}{{ image.resize(1680,1680 * resize).url }}{% else %}{{ image.cropZoom(1680,1680 * resize).url }}{% endif %} 2x">
+          <source media="(min-width:500px)" srcset="{% if page.header.cropzoom %}{{ image.resize(510,510 * resize).url }}{% else %}{{ image.cropZoom(510,510 * resize).url }}{% endif %} 1x, {% if page.header.cropzoom %}{{ image.resize(1020,1020 * resize).url }}{% else %}{{ image.cropZoom(1020,1020 * resize).url }}{% endif %} 2x">
+          <source media="(max-width:499px)" srcset="{% if page.header.cropzoom %}{{ image.resize(450,450 * resize).url }}{% else %}{{ image.cropZoom(450,450 * resize).url }}{% endif %} 1x, {% if page.header.cropzoom %}{{ image.resize(900,900 * resize).url }}{% else %}{{ image.cropZoom(900,900 * resize).url }}{% endif %} 2x">
+              <img class="media" style="width:100%;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{% if page.header.cropzoom %}{{ image.resize(1280,1280 * resize).url }}{% else %}{{ image.cropZoom(1280,1280 * resize).url }}{% endif %}" />
             </picture>
     {% else %}
             <picture>
-              <source media="(min-width:1220px)" srcset="{{ image.cropZoom(610,610 * resize).url }} 1x, {{ image.cropZoom(900,900 * resize).url }} 2x">
-              <source media="(min-width:992px)" srcset="{{ image.cropZoom(450,450 * resize).url }} 1x, {{ image.cropZoom(800,800 * resize).url }} 2x">
-              <source media="(min-width:500px)" srcset="{{ image.cropZoom(510,510 * resize).url }} 1x, {{ image.cropZoom(900,900 * resize).url }} 2x">
-              <source media="(max-width:499px)" srcset="{{ image.cropZoom(450,450 * resize).url }} 1x, {{ image.cropZoom(900,900 * resize).url }} 2x">
-              <img class="media" style="width:100%;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.cropZoom(1280,1280 * resize).url }}" />
+          <source media="(min-width:1220px)" srcset="{% if page.header.cropzoom %}{{ image.resize(610,610 * resize).url }}{% else %}{{ image.cropZoom(610,610 * resize).url }}{% endif %} 1x, {% if page.header.cropzoom %}{{ image.resize(900,900 * resize).url }}{% else %}{{ image.cropZoom(900,900 * resize).url }}{% endif %} 2x">
+        <source media="(min-width:992px)" srcset="{% if page.header.cropzoom %}{{ image.resize(450,450 * resize).url }}{% else %}{{ image.cropZoom(450,450 * resize).url }}{% endif %} 1x, {% if page.header.cropzoom %}{{ image.resize(800,800 * resize).url }}{% else %}{{ image.cropZoom(800,800 * resize).url }}{% endif %} 2x">
+      <source media="(min-width:500px)" srcset="{% if page.header.cropzoom %}{{ image.resize(510,510 * resize).url }}{% else %}{{ image.cropZoom(510,510 * resize).url }}{% endif %} 1x, {% if page.header.cropzoom %}{{ image.resize(900,900 * resize).url }}{% else %}{{ image.cropZoom(900,900 * resize).url }}{% endif %} 2x">
+    <source media="(max-width:499px)" srcset="{% if page.header.cropzoom %}{{ image.resize(450,450 * resize).url }}{% else %}{{ image.cropZoom(450,450 * resize).url }}{% endif %} 1x, {% if page.header.cropzoom %}{{ image.resize(900,900 * resize).url }}{% else %}{{ image.cropZoom(900,900 * resize).url }}{% endif %} 2x">
+              <img class="media" style="width:100%;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{% if page.header.cropzoom %}{{ image.resize(1280,1280 * resize).url }}{% else %}{{ image.cropZoom(1280,1280 * resize).url }}{% endif %}" />
             </picture>
     {% endif %}
 {% else %}
-<img class="media {% if theme_var('site.slideimagesin') and header.slidein %}slide-in{% endif %}" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.cropZoom(1280,1280 * resize).url }}" />
+<img class="media {% if theme_var('site.slideimagesin') and header.slidein %}slide-in{% endif %}" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{% if page.header.cropzoom %}{{ image.resize(1280,1280 * resize).url }}{% else %}{{ image.cropZoom(1280,1280 * resize).url }}{% endif %}" />
 
 {% endif %}
         {% if page.header.description %}
