@@ -28,6 +28,16 @@ form:
                   destination: '@self'
                   accept:
                     - image/*
+                header.cropzoom:
+                  type: toggle
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.CROPZOOM.LABEL
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: PLUGIN_ADMIN.ENABLED
+                    1: PLUGIN_ADMIN.DISABLED
+                  validate:
+                    type: bool
                 header.description:
                   type: textarea
                   rows: 2

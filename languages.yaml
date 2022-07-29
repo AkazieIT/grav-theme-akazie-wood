@@ -310,6 +310,8 @@ en:
           LABEL: "Display claim as markdown?"
         DESCRIPTION:
           LABEL: "Description"
+        CROPZOOM:
+          LABEL: "CropZoom? (for photos. deactiviate for logos.)"
         DESCRIPTION_POS:
           LABEL: 'Position of the image description'
           OPTIONS:
@@ -723,6 +725,8 @@ de:
         LABEL: "Claim als Markdown anzeigen?"
         DESCRIPTION:
           LABEL: "Beschreibung"
+        CROPZOOM:
+          LABEL: "CropZoom? (für photos. deaktivieren für logos.)"
         DESCRIPTION_POS:
           LABEL: 'Position der Bildbeschreibung'
           OPTIONS:
