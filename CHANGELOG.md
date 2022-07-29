@@ -1,3 +1,11 @@
+# v0.9.971
+## 29.07.2022
+
+
+1. [](#new)
+    * added option to deactivate cropzoom on images
+
+
 # v0.9.970
 ## 22.03.2022
 
