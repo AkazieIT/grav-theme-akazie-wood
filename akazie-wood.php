@@ -25,11 +25,52 @@ class AkazieWood extends Theme
   public static function getSubscribedEvents()
   {
     return [
+      'onTNTSearchQuery' => ['onTNTSearchQuery', 1000],
       'onBlueprintCreated' => ['onBlueprintCreated', 0],
-      'onTwigSiteVariables'   => ['onTwigSiteVariables', 0]
+      'onTwigSiteVariables'   => ['onTwigSiteVariables', 0],
+      'onTNTSearchIndex' => ['onTNTSearchIndex', 0],
     ];
   }
+  public function onTNTSearchQuery(Event $e)
+  {
+          $page = $e['page'];
+          $query = $e['query'];
+          $options = $e['options'];
+          $fields = $e['fields'];
+          $gtnt = $e['gtnt'];
 
+          $content = $gtnt->getCleanContent($page);
+          $title = $page->title();
+          $taxonomy = $page->taxonomy();
+          $header = $page->header();
+          $media = $page->media();
+          $url = $page->url();
+
+          $relevant = $gtnt->tnt->snippet($query, $content, $options['snippet']);
+
+          $fields->hits[] = [
+              'link' => $page->route(),
+              'title' =>  $title,
+              'content' =>  $relevant,
+              'taxonomy' => $taxonomy,
+              'header' => $header,
+              'media' => $media,
+              'url' => $url
+          ];
+          $e->stopPropagation();
+
+  }
+
+  public function onTNTSearchIndex(Event $e)
+  {
+      $fields = $e['fields'];
+      $page = $e['page'];
+/* OZ Beschriebtext aktivieren
+      if (isset($page->header()->secondarytext)) {
+          $fields->secondarytext = $page->header()->secondarytext;
+      }
+*/
+  }
   public function onBlueprintCreated(Event $event)
   {
     $newtype = $event['type'];

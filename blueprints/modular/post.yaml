@@ -40,6 +40,13 @@ form:
                 header.marginright:
                   type: text
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.MARGINRIGHT.LABEL
+                header.column:
+                  type: select
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.LABEL
+                  default: asc
+                  options:
+                    0: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.OPTIONS.2
+                    1: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.OPTIONS.1
             buttons:
               type: section
               title: THEME_AKAZIEWOOD.ADMIN.SECTION.BUTTONS

@@ -1,11 +1,9 @@
 
 
-
 {% if theme_var('header.blogimgpos') == 1 %}
 
 
-<article class="modular section-text col-12 col-md-6">
-{% if page.header.hid %}<a class="anchor" id="{{ page.header.hid }}"></a>{% endif %}
+<article class="modular section-text col-12 {% if page.header.column == 1 %}col-md-3{% else %}col-md-6{% endif %}">
 <h2>{{ page.header.title }}</h2>
 
    <div class="markdown">
@@ -37,7 +35,7 @@
 {% endif %}
 
 
-<article class="modular section-image col-12 col-md-6">
+<article class="modular section-image col-12 {% if page.header.column == 1 %}col-md-3{% else %}col-md-6{% endif %}">
 
 {#
   <h3 class="heading">{{ page.header.title }}</h3>
@@ -93,7 +91,7 @@
 {% if theme_var('header.blogimgpos') != 1 %}
 
 
-<article class="modular section-text col-12 col-md-6">
+<article class="modular section-text col-12 {% if page.header.column == 1 %}col-md-3{% else %}col-md-6{% endif %}">
 {% if page.header.hid %}<a class="anchor" id="{{ page.header.hid }}"></a>{% endif %}
 <h3>{{ page.header.title }}</h3>
 
