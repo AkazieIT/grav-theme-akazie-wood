@@ -1,9 +1,11 @@
 # v0.9.971
-## 29.07.2022
+## 09.08.2022
 
 
 1. [](#new)
     * added option to deactivate cropzoom on images
+    * added possibility to make blog posts half width
+    * added testimonial block
 
 
 # v0.9.970
