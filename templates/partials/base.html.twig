@@ -121,17 +121,25 @@
         background: transparent;
     }
 
+
+
+    {% set b = 5 %}
+    {% set c = 5 %}
+
     {% set i = 0 %}
     {% for img in page.media %}
 
     .bgslide .hiddensli:nth-child({{ i + 1 }}) {
         background-image: url('{{img.url}}');
-        -webkit-animation-delay: {{ i * 5 }}s;
-        -moz-animation-delay: {{ i * 5 }}s;
-        -o-animation-delay: {{ i * 5 }}s;
-        -ms-animation-delay: {{ i * 5 }}s;
-        animation-delay: {{ i * 5 }}s;
+        -webkit-animation-delay: {{ i * c }}s;
+        -moz-animation-delay: {{ i * c }}s;
+        -o-animation-delay: {{ i * c }}s;
+        -ms-animation-delay: {{ i * c }}s;
+        animation-delay: {{ i * c }}s;
     }
+
+
+
 
     {% set i = i + 1 %}
     {% endfor %}
@@ -150,11 +158,11 @@
         opacity: 0;
         z-index: 0;
     	-webkit-backface-visibility: hidden;
-        -webkit-animation: imageAnimation 20s linear infinite 0s;
-        -moz-animation: imageAnimation 20s linear infinite 0s;
-        -o-animation: imageAnimation 20s linear infinite 0s;
-        -ms-animation: imageAnimation 20s linear infinite 0s;
-        animation: imageAnimation 20s linear infinite 0s;
+      -webkit-animation: imageAnimation {{ page.media|length * b }}s linear infinite 0s;
+  -moz-animation: imageAnimation {{ page.media|length * b }}s linear infinite 0s;
+  -o-animation: imageAnimation {{ page.media|length * b }}s linear infinite 0s;
+  -ms-animation: imageAnimation {{ page.media|length * b }}s linear infinite 0s;
+  animation: imageAnimation {{ page.media|length * b }}s linear infinite 0s;
 
 
     }
@@ -162,49 +170,50 @@
 
 
 
+
         @-webkit-keyframes imageAnimation {
             0% { opacity: 0;
             -webkit-animation-timing-function: ease-in; }
-            8% { opacity: 1;
+            {{ 32 / page.media|length }}% { opacity: 1;
                  -webkit-animation-timing-function: ease-out; }
-            17% { opacity: 1 }
-            25% { opacity: 0 }
+            {{ 64 / page.media|length }}% { opacity: 1 }
+            {{ 96 / page.media|length }}% { opacity: 0 }
             100% { opacity: 0 }
         }
         @-moz-keyframes imageAnimation {
             0% { opacity: 0;
             -moz-animation-timing-function: ease-in; }
-            8% { opacity: 1;
+            {{ 32 / page.media|length }}% { opacity: 1;
                  -moz-animation-timing-function: ease-out; }
-            17% { opacity: 1 }
-            25% { opacity: 0 }
+            {{ 64 / page.media|length }}% { opacity: 1 }
+            {{ 96 / page.media|length }}% { opacity: 0 }
             100% { opacity: 0 }
         }
         @-o-keyframes imageAnimation {
             0% { opacity: 0;
             -o-animation-timing-function: ease-in; }
-            8% { opacity: 1;
+            {{ 32 / page.media|length }}% { opacity: 1;
                  -o-animation-timing-function: ease-out; }
-            17% { opacity: 1 }
-            25% { opacity: 0 }
+            {{ 64 / page.media|length }}% { opacity: 1 }
+            {{ 96 / page.media|length }}% { opacity: 0 }
             100% { opacity: 0 }
         }
         @-ms-keyframes imageAnimation {
             0% { opacity: 0;
             -ms-animation-timing-function: ease-in; }
-            8% { opacity: 1;
+            {{ 32 / page.media|length }}% { opacity: 1;
                  -ms-animation-timing-function: ease-out; }
-            17% { opacity: 1 }
-            25% { opacity: 0 }
+            {{ 64 / page.media|length }}% { opacity: 1 }
+            {{ 96 / page.media|length }}% { opacity: 0 }
             100% { opacity: 0 }
         }
         @keyframes imageAnimation {
             0% { opacity: 0;
             animation-timing-function: ease-in; }
-            8% { opacity: 1;
+            {{ 32 / page.media|length }}% { opacity: 1;
                  animation-timing-function: ease-out; }
-            17% { opacity: 1 }
-            25% { opacity: 0 }
+            {{ 64 / page.media|length }}% { opacity: 1 }
+            {{ 96 / page.media|length }}% { opacity: 0 }
             100% { opacity: 0 }
         }
 
