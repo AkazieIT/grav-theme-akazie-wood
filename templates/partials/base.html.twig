@@ -59,12 +59,164 @@
         {{ assets.css()|raw }}
         {{ assets.js()|raw }}
       {% endblock %}
+      {% if theme_var('site.slideimagesin') %}
+      <style>
+      body {
+      overflow-x:hidden;
+      }
 
-      {% if theme_var('header.slick') == 1 %}
-      {% do assets.addCss('theme://build/css/slick.css') %}
-      {% do assets.addCss('theme://build/css/slick-theme.css') %}
-      {% do assets.addJs('theme://build/js/slick.min.js', { group: 'bottom' }) %}
-      {% endif %}
+      .slide-in {
+          opacity:0 !important;
+          {% if theme_var('header.kundencode') == 'brodbeck' %}
+          transform: scale(2,2);
+          {% endif %}
+          transition: all 1s;
+         -webkit-transition: all 1s;
+        }
+        .active {
+          opacity:1 !important;
+          {% if theme_var('header.kundencode') == 'brodbeck' %}
+          transform: scale(1,1);
+          {% endif %}
+           transition: all 1s;
+          -webkit-transition: all 1s;
+          transform: translateX(0%) !important;
+
+        }
+
+ </style>
+
+        {% endif %}
+
+    {% if page.header.slideshow %}
+    <style>
+
+
+    .bgslide,
+    .bgslide:after {
+        position: fixed;
+        {% if theme_var('header.kundencode') == 'brodbeck' %}
+        width: 50%;
+        left: 25%;
+        {% else %}
+        width: 100%;
+        left: 0px;
+        {% endif %}
+        height: 100%;
+        top: 0px;
+        z-index: 0;
+    }
+    {% if theme_var('header.kundencode') == 'brodbeck' %}
+    @media (max-width:991px) {
+      .bgslide,
+      .bgslide:after {
+      width:100%;
+      left:0%;
+      }
+    }
+
+    {% endif %}
+    .bgslidew:after {
+        content: '';
+        background: transparent;
+    }
+
+
+    .bgslide .hiddensli {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: transparent;
+        background-size: contain;
+
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        opacity: 0;
+        z-index: 0;
+    	-webkit-backface-visibility: hidden;
+        -webkit-animation: imageAnimation {{ page.media|length * 5 }}s linear infinite 0s;
+        -moz-animation: imageAnimation {{ page.media|length * 5 }}s linear infinite 0s;
+        -o-animation: imageAnimation {{ page.media|length * 5 }}s linear infinite 0s;
+        -ms-animation: imageAnimation {{ page.media|length * 5 }}s linear infinite 0s;
+        animation: imageAnimation {{ page.media|length * 5 }}s linear infinite 0s;
+    }
+    {% set i = 0 %}
+    {% for img in page.media %}
+
+    .bgslide .hiddensli:nth-child({{ i + 1 }}) {
+        background-image: url('{{img.url}}');
+        -webkit-animation-delay: {{ i * 5 }}s;
+        -moz-animation-delay: {{ i * 5 }}s;
+        -o-animation-delay: {{ i * 5 }}s;
+        -ms-animation-delay: {{ i * 5 }}s;
+        animation-delay: {{ i * 5 }}s;
+    }
+
+    {% set i = i + 1 %}
+    {% endfor %}
+
+
+
+
+    @-webkit-keyframes imageAnimation {
+        0% { opacity: 0;
+        -webkit-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             -webkit-animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+    @-moz-keyframes imageAnimation {
+        0% { opacity: 0;
+        -moz-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             -moz-animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+    @-o-keyframes imageAnimation {
+        0% { opacity: 0;
+        -o-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             -o-animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+    @-ms-keyframes imageAnimation {
+        0% { opacity: 0;
+        -ms-animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             -ms-animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+    @keyframes imageAnimation {
+        0% { opacity: 0;
+        animation-timing-function: ease-in; }
+        8% { opacity: 1;
+             animation-timing-function: ease-out; }
+        17% { opacity: 1 }
+        25% { opacity: 0 }
+        100% { opacity: 0 }
+    }
+
+
+    </style>
+    {% endif %}
+
+    {% if theme_var('header.slick') == 1 %}
+{% do assets.addCss('theme://build/css/slick.css') %}
+{% do assets.addCss('theme://build/css/slick-theme.css') %}
+{% do assets.addJs('theme://build/js/slick.min.js', { group: 'bottom' }) %}
+{% endif %}
+
+
       {% if page.header.masonry == 1 %}
       {% do assets.addJs('theme://build/js/akazie-wood.masonry.min.js') %}
 
@@ -96,7 +248,6 @@
 
     {% endblock head %}
 
-
   </head>
   <body class="{{ page.header.body_classes }}{% if theme_var('nav.expanded') == '1' %} navexpanded{% endif %} page-{{ page.slug }}">
   {% if theme_var('header.kundencode') == 'stkh' %}
@@ -123,10 +274,18 @@
 
 
               <div
-                class="screen-image screen-fullscreen{% if removehead == true %} removeheader{% endif %}"
-                {% if removehead != true %}
+                class="screen-image screen-fullscreen{% if removehead == true %} removeheader{% endif %}{% if page.template == 'home' and page.header.slideshow %} bgslide{% endif %}"
+                {% if page.header.slideshow %}
+
+                {% elseif removehead != true %}
                 style="background-image: url('{{ image ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"
                 {% endif %}>
+
+                {% if page.template == 'home' and page.header.slideshow %}
+                {% for img in page.media %}
+                <div class="hiddensli">{{ img.url }}</div>
+                {% endfor %}
+                {% endif %}
               {% else %}
                 <div class="screen-image screen-fullscreen">
                 {% endif %}
@@ -339,8 +498,66 @@
                 {% include 'partials/footer.html.twig' %}
               {% endblock %}
             </div>
+            {% if theme_var('site.slideimagesin') %}
+            <script>
+            function debounce(func, wait, immediate) {
+              var timeout;
+              return function () {
+                var context = this,args = arguments;
+                var later = function () {
+                  timeout = null;
+                  if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+              };
+            };
 
-            {% if theme_var('map.apikey')and theme_var('map.type') == 'google' %}
+            const sliderImages = document.querySelectorAll('.slide-in');
+
+            function checkSlide(e) {
+
+              // loop over every image
+              // figure out where it needs to be shown
+              // at least 50% of its height
+
+              var scrollposy = window.scrollY;
+              sliderImages.forEach(sliderImage => {
+                //half way through images
+                const slideInAt = window.scrollY + window.innerHeight - sliderImage.height / 2;
+
+                var bodyRect = document.body.getBoundingClientRect(),
+                    elemRect = sliderImage.getBoundingClientRect(),
+                    offset   = elemRect.top - bodyRect.top;
+
+
+                // bottom of the image
+                const imageBottom = offset + sliderImage.offsetHeight;
+                // half way in the images
+                const isHalfShown = slideInAt > offset;
+
+                const isNoScrolledPast = window.scrollY < imageBottom;
+
+                if (isHalfShown && isNoScrolledPast) {
+                  sliderImage.classList.add('active');
+                } else {
+                  sliderImage.classList.remove('active');
+                }
+              });
+
+
+            }
+
+            window.addEventListener('scroll', debounce(checkSlide));
+            </script>
+            {% endif %}
+
+
+
+
+            {% if theme_var('map.apikey') and theme_var('map.type') == 'google' %}
               {%  include 'partials/map-google-js.html.twig' %}
             {% elseif theme_var('map.type') == 'osm' %}
               {%  include 'partials/map-osm-js.html.twig' %}
@@ -361,7 +578,6 @@
               </script>
             {% endif %}
             {% if theme_var('header.slick') == 1 %}
-
             <script>
             let sl = 3;
             if(window.innerWidth > 869) { sl = 3; } else { sl = 1; }
@@ -372,6 +588,7 @@
             });
             </script>
             {% endif %}
+
             {% endblock %}
           </body>
         </html>
