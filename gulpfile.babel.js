@@ -134,7 +134,7 @@ const dependencies = {
       dest: path.src.core.js
     },
     lightgallery: {
-      base: path.src.core.js + '/lightgallery.js',
+      base: path.src.core.js + 'lightgallery.js',
       src: 'node_modules/lightgallery/dist/js/lightgallery.js',
       dest: path.src.core.js
     }

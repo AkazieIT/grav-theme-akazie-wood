@@ -42,6 +42,8 @@ en:
         VARIOUS: 'Various'
         MAP: 'Google map'
       FIELDS:
+        SLICK:
+          LABEL: 'Activate Slick.js? (for testimonials)'
         TITLE:
           LABEL: 'Title'
         URL:
@@ -192,6 +194,12 @@ en:
           TWO: 'Row two'
           THREE: 'Row three'
       FIELDS:
+        TESTIMONIALS:
+          LABEL: 'Testimonials'
+        ZITAT:
+          LABEL: 'Quote'
+        FUNKTION:
+          LABEL: 'Function'
         BREAKHEIGHT:
           LABEL: 'Height (if left empty, breaktitle stays responsive)'
         GOOGLEMAPS:
@@ -310,8 +318,6 @@ en:
           LABEL: "Display claim as markdown?"
         DESCRIPTION:
           LABEL: "Description"
-        CROPZOOM:
-          LABEL: "CropZoom? (for photos. deactiviate for logos.)"
         DESCRIPTION_POS:
           LABEL: 'Position of the image description'
           OPTIONS:
@@ -459,6 +465,8 @@ de:
         VARIOUS: 'Diverses'
         MAP: 'Google Map'
       FIELDS:
+        SLICK:
+          LABEL: 'Activate Slick.js? (for testimonials)'
         TITLE:
           LABEL: 'Titel'
         URL:
@@ -609,6 +617,12 @@ de:
           TWO: 'Zeile zwei'
           THREE: 'Zeile drei'
       FIELDS:
+        TESTIMONIALS:
+          LABEL: 'Testimonials'
+        ZITAT:
+          LABEL: 'Zitat'
+        FUNKTION:
+          LABEL: 'Funktion'
         BREAKHEIGHT:
           LABEL: 'Höhe (wenn leer gelassen wird die Höhe automatisch definiert)'
         GOOGLEMAPS:
@@ -725,8 +739,6 @@ de:
         LABEL: "Claim als Markdown anzeigen?"
         DESCRIPTION:
           LABEL: "Beschreibung"
-        CROPZOOM:
-          LABEL: "CropZoom? (für photos. deaktivieren für logos.)"
         DESCRIPTION_POS:
           LABEL: 'Position der Bildbeschreibung'
           OPTIONS:

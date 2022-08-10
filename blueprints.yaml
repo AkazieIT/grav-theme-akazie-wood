@@ -164,16 +164,6 @@ form:
               type: text
               label: THEME_AKAZIEWOOD.THEME.FIELDS.MAXWIDTH.LABEL
               default: 1280
-            site.slideimagesin:
-              type: toggle
-              label: 'Slide Images in'
-              highlight: 0
-              default: 0
-              options:
-                0: PLUGIN_ADMIN.DISABLED
-                1: PLUGIN_ADMIN.ENABLED
-              validate:
-                type: bool
         header:
           type: fieldset
           title: THEME_AKAZIEWOOD.THEME.FIELDSET.HEADER
@@ -480,6 +470,17 @@ form:
               help: THEME_AKAZIEWOOD.THEME.FIELDS.FIXED.HELP
               highlight: 1
               default: 1
+              options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
+              validate:
+                type: bool
+            header.slick:
+              type: toggle
+              label: THEME_AKAZIEWOOD.THEME.FIELDS.SLICK.LABEL
+              help: THEME_AKAZIEWOOD.THEME.FIELDS.SLICK.HELP
+              highlight: 0
+              default: 0
               options:
                 0: PLUGIN_ADMIN.DISABLED
                 1: PLUGIN_ADMIN.ENABLED

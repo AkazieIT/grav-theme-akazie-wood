@@ -1,129 +1,8 @@
-/* Slider */
-.slick-slider
-{
-    position: relative;
-
-    display: block;
-    box-sizing: border-box;
-
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list
-{
-    position: relative;
-
-    display: block;
-    overflow: hidden;
-
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus
-{
-    outline: none;
-}
-.slick-list.dragging
-{
-    cursor: pointer;
-    cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-
-.slick-track
-{
-    position: relative;
-    top: 0;
-    left: 0;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.slick-track:before,
-.slick-track:after
-{
-    display: table;
-
-    content: '';
-}
-.slick-track:after
-{
-    clear: both;
-}
-.slick-loading .slick-track
-{
-    visibility: hidden;
-}
-
-.slick-slide
-{
-    display: none;
-    float: left;
-
-    height: 100%;
-    min-height: 1px;
-}
-[dir='rtl'] .slick-slide
-{
-    float: right;
-}
-.slick-slide img
-{
-    display: block;
-}
-.slick-slide.slick-loading img
-{
-    display: none;
-}
-.slick-slide.dragging img
-{
-    pointer-events: none;
-}
-.slick-initialized .slick-slide
-{
-    display: block;
-}
-.slick-loading .slick-slide
-{
-    visibility: hidden;
-}
-.slick-vertical .slick-slide
-{
-    display: block;
-
-    height: auto;
-
-    border: 1px solid transparent;
-}
-.slick-arrow.slick-hidden {
-    display: none;
-}
-
-
 @charset 'UTF-8';
 /* Slider */
 .slick-loading .slick-list
 {
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
+    background: #fff url('../../images/ajax-loader.gif') center center no-repeat;
 }
 
 /* Icons */
@@ -133,13 +12,15 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev,
 .slick-next
 {
+
+    z-index: 20;
     font-size: 0;
     line-height: 0;
 
@@ -192,7 +73,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -200,11 +81,11 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 0;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 0;
     left: auto;
 }
 .slick-prev:before
@@ -218,12 +99,12 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 0px;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 0px;
 }
 .slick-next:before
 {
@@ -322,4 +203,55 @@
 {
     opacity: .75;
     color: black;
+}
+.testi-wrapper {
+  margin: 30px;
+}
+
+.testi-cont {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 320px;
+  margin-top:50px;
+  padding-bottom:30px;
+}
+
+.testi-image {
+  width:100%;
+
+/*
+    left: 50%;
+    transform: translate(-50%, 0);*/
+}
+
+.testi-image img {
+  width:100px;
+  height:100px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.testi-detail {
+  padding:10px;
+}
+.slick-dots {
+  bottom:-35px;
+}
+
+.testi-zitat {
+  padding:20px;
+  font-weight:150;
+  font-size:1.2rem;
+}
+
+.testi-funktion, .testi-name {
+  font-size:1rem;
+  font-weight:bold;
+  padding-left:20px;
+  padding-right:20px;
+}
+.testi-funktion {
+  font-size:0.9rem;
+}
+main.site-content .modular.testi-section {
+  margin-bottom:6rem;
 }

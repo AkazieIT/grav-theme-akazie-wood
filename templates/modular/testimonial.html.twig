@@ -1,0 +1,35 @@
+<section class="modular section-text col-12 col-md-12 testi-section centermark">
+{% if page.header.showtitle == 1 %}<h2 class="heading headingteam">{{ page.header.title }}</h2>{% endif %}
+  <div class="testi-container">
+      {% for person in page.header.testimonials %}
+    <article class="testi">
+      <div class="testi-wrapper">
+        <div class="testi-cont">
+        <div class="testi-image">
+
+          {% if person.image|first is iterable %}
+            {% set imgtemp = person.image|first %}
+            {% set image = page.media[imgtemp.name] %}
+          {% else %}
+            {% set imgtemp = person.image %}
+            {% set image = page.media[imgtemp] %}
+          {% endif %}
+
+
+              <img src="{{ image.cropZoom(150,150).url }}" alt="{{ person.name }}" title="{{ person.name }}" />
+
+        </div>
+        <div class="testi-detail">
+            <div class="testi-zitat">{{ person.zitat }}</div>
+            <div class="testi-name">{{ person.name }}</div>
+            <div class="testi-funktion">{{ person.funktion }}</div>
+
+        </div>
+        </div>
+      </div>
+    </article>
+
+      {% endfor %}
+  </div>
+
+</section>

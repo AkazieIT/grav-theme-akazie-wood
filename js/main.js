@@ -157,7 +157,9 @@ if(window.innerWidth < 800 && $('.wrapper').css('background-image')) {
     });
   }).trigger('resize');
 
-  osm();
+  if (typeof osm === "function") {
+      osm();
+  }
 
 
 

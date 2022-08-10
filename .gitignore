@@ -9,8 +9,6 @@ Thumbs.db
 *.swp
 
 node_modules
-scss/core
-js/core
 package-lock.json
 custom/*
 custom/css/*

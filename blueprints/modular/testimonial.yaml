@@ -1,0 +1,66 @@
+title: team
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        inhalt:
+          type: tab
+          title: THEME_AKAZIEWOOD.ADMIN.TAB.CONTENT
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+            content:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.CONTENT
+              underline: true
+              fields:
+                header.images:
+                  type: pagemedia
+                  ldestination: '@self'
+                  accept:
+                    - image/*
+                header.testimonials:
+                  name: testimonials
+                  type: list
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TESTIMONIALS.LABEL
+                  collapsed: true
+                  fields:
+                    .name:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.NAME.LABEL
+                    .zitat:
+                      type: textarea
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.ZITAT.LABEL
+                      validate:
+                        required: true
+                    .funktion:
+                      type: textarea
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FUNKTION.LABEL
+                    .image:
+                      type: pagemediaselect
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.IMAGE.LABEL
+            settings:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.SETTINGS
+              underline: true
+              fields:
+                header.showtitle:
+                  type: select
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.LABEL
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.0
+                    1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.1
+                header.column:
+                  type: select
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.LABEL
+                  default: asc
+                  options:
+                    0: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.OPTIONS.2
+                    1: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.OPTIONS.1
