@@ -1,6 +1,6 @@
-<section class="modular section-text col-12 col-md-12 testi-section centermark">
+<section class="modular section-text col-12 {% if page.header.column == 0 %}col-md-12{% else %}col-md-6{% endif %} testi-section centermark">
 {% if page.header.showtitle == 1 %}<h2 class="heading headingteam">{{ page.header.title }}</h2>{% endif %}
-  <div class="testi-container">
+<div class="{% if page.header.column == 0 %}testi-container{% else %}testi-container-small{% endif %}">
       {% for person in page.header.testimonials %}
     <article class="testi">
       <div class="testi-wrapper">
