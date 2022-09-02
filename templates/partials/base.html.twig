@@ -59,6 +59,14 @@
         {{ assets.css()|raw }}
         {{ assets.js()|raw }}
       {% endblock %}
+
+      {% if theme_var('header.kundencode') == 'immosit' %}
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+      {% endif %}
+
+
       {% if theme_var('site.slideimagesin') %}
       <style>
       body {
@@ -595,11 +603,15 @@
               dots: true,
               infinite: true,
               slidesToShow: sl,
+              autoplay: true,
+              autoplaySpeed: 3000,
             });
             jQuery('.testi-container-small').slick({
               dots: true,
               infinite: true,
               slidesToShow: 1,
+              autoplay: true,
+              autoplaySpeed: 3000,
             });
             </script>
             {% endif %}
