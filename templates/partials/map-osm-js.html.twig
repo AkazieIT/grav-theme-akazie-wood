@@ -78,6 +78,6 @@
 
 
 {% block javascripts %}
-    {% do assets.addJs('https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js',{'priority':0, 'group':'head'}) %}
-    {% do assets.addCss('https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css',{'priority':0, 'group':'head'}) %}
+    {% do assets.addJs('https://cdn.jsdelivr.net/npm/ol@v7.1.0/dist/ol.js',{'priority':0, 'group':'head'}) %}
+    {% do assets.addCss('https://cdn.jsdelivr.net/npm/ol@v7.1.0/ol.css',{'priority':0, 'group':'head'}) %}
 {% endblock %}

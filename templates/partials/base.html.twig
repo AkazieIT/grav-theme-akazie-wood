@@ -61,9 +61,10 @@
       {% endblock %}
 
       {% if theme_var('header.kundencode') == 'immosit' %}
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+      {% do assets.addJs('system://assets/jquery/jquery-2.x.min.js') %}
+      {% do assets.addJs('theme://build/js/moment.min.js') %}
+      {% do assets.addJs('theme://build/js/daterangepicker.min.js') %}
+      {% do assets.addCss('theme://build/css/daterangepicker.css') %}
       {% endif %}
 
 
