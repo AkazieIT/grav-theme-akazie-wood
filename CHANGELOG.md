@@ -1,3 +1,10 @@
+# v0.9.974
+## 27.10.2022
+
+
+1. [](#changed)
+    * reduced administrator level in theme options
+
 # v0.9.973
 ## 07.09.2022
 
