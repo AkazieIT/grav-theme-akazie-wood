@@ -5,7 +5,7 @@
 
             var self = this;
             map[i] = new ol.Map({
-                controls: ol.control.defaults({
+                controls: ol.control.defaults.defaults({
                     zoom: this.getAttribute('map-controls'),
                     rotate: this.getAttribute('map-controls'),
                     attribution: this.getAttribute('map-controls')}),
