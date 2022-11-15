@@ -1,3 +1,13 @@
+
+# v0.9.975
+## 15.11.2022
+
+
+1. [](#new)
+    * added a module called "script" which lets you add raw javascript to a singular page.
+
+
+
 # v0.9.974
 ## 31.10.2022
 
