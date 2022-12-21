@@ -1,0 +1,81 @@
+title: text
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        inhalt:
+          type: tab
+          title: THEME_AKAZIEWOOD.ADMIN.TAB.CONTENT
+          fields:
+            header.title:
+              type: text
+              autofocus: true
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+            header.titleh:
+              type: select
+              label: 'THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLESIZE.LABEL'
+              highlight: 0
+              default: 0
+              options:
+                0: 'h2'
+                1: 'h1'
+                2: 'h3'
+            header.fixedwidth:
+              type: text
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FIXWIDTH.LABEL
+            header.block:
+              type: toggle
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BLOCK.LABEL
+              highlight: 0
+              default: 0
+              options:
+                0: THEME_AKAZIEWOOD.ADMIN.FIELDS.BLOCK.OPTIONS.0
+                1: THEME_AKAZIEWOOD.ADMIN.FIELDS.BLOCK.OPTIONS.1
+            content:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.CONTENT
+              underline: true
+              fields:
+                header.buttons:
+                  name: buttons
+                  type: list
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.BUTTONS.LABEL
+                  collapsed: true
+                  fields:
+                    .name:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.NAME.LABEL
+                      validate:
+                        required: true
+                    .txt:
+                      type: text
+                      label: 'Text'
+                    .icon:
+                      type: filepicker
+                      label: 'Icon'
+                      preview_images: true
+                    .btntxt:
+                      type: text
+                      label: 'Button Text'
+                    .link:
+                      type: text
+                      label: THEME_AKAZIEWOOD.ADMIN.FIELDS.URLS.LABEL
+                    .newwindow:
+                          type: toggle
+                          label: THEME_AKAZIEWOOD.ADMIN.FIELDS.NEWWINDOW.LABEL
+                          highlight: 0
+                          default: 0
+                          options:
+                            0: THEME_AKAZIEWOOD.ADMIN.FIELDS.NEWWINDOW.OPTIONS.0
+                            1: THEME_AKAZIEWOOD.ADMIN.FIELDS.NEWWINDOW.OPTIONS.1
+            media:
+              type: section
+              title: THEME_AKAZIEWOOD.ADMIN.SECTION.MEDIA
+              underline: true
+              fields:
+                header.media_order:
+                  type: pagemedia
+                  label: PLUGIN_ADMIN.PAGE_MEDIA
