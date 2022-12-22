@@ -1,8 +1,10 @@
 <article class="modular section-iconbuttons col-12 col-md-12">
+{% if page.header.showtitle == 1 %}
     <{% if page.header.titleh == 1 %}h1{% elseif page.header.titleh == 2 %}h3{% else %}h2{% endif %} class="heading">{{ page.header.title }}
     </{% if page.header.titleh == 1 %}h1{% elseif page.header.titleh == 2 %}h3{% else %}h2{% endif %}>
-    <div class="row iconbuttons">
+{% endif %}
 
+    <div class="row iconbuttons">
 
     {% for button in page.header.buttons %}
     <div class="col-md-6">

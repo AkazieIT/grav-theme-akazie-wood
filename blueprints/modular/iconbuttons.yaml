@@ -14,6 +14,14 @@ form:
               type: text
               autofocus: true
               label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLE.LABEL
+            header.showtitle:
+              type: select
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.LABEL
+              highlight: 1
+              default: 1
+              options:
+                0: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.0
+                1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.1
             header.titleh:
               type: select
               label: 'THEME_AKAZIEWOOD.ADMIN.FIELDS.TITLESIZE.LABEL'
