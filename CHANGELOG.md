@@ -7,6 +7,9 @@
     * added a module called "iconbuttons"
 
 
+1. [](#changed)
+    * expanded map sizing options
+
 
 # v0.9.975
 ## 15.11.2022
