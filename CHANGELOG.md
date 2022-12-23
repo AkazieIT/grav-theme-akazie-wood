@@ -8,7 +8,7 @@
 
 
 1. [](#changed)
-    * expanded map sizing options
+    * expanded map sizing options 
 
 
 # v0.9.975
