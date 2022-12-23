@@ -4,7 +4,7 @@
 
 
 1. [](#new)
-    * added a module called "iconbuttons"
+    * added a module called "iconbuttons".
 
 
 1. [](#changed)
