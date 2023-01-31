@@ -842,3 +842,5 @@ de:
           LABEL: 'Mail'
         FIXWIDTH:
           LABEL: "Fixe Breite"
+        CROPZOOM:
+          LABEL: "Bild einpassen"
