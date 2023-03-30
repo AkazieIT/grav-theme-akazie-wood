@@ -97,6 +97,26 @@ form:
                   label: THEME_AKAZIEWOOD.THEME.FIELDSET.NAVI.STICKYBOTTOMCODE
                   rows: 4
                   size: large
+            nav.secondary:
+              type: fieldset
+              title: 'Secondary nav (experimental)'
+              collapsed: true
+              collapsible: true
+              fields:
+                nav.seconadryrepeater:
+                  name: secondaryrepeater
+                  type: list
+                  label: Nav items
+                  collapsed: false
+                  fields:
+                    .name:
+                      type: text
+                      label: Label
+                      validate:
+                        required: true
+                    .link:
+                      type: text
+                      label: URL
             nav.button:
               type: fieldset
               title: THEME_AKAZIEWOOD.THEME.FIELDS.BUTTON.LABEL
