@@ -450,7 +450,7 @@ de:
         NAVI:
           EXPANDABLE: 'Klickbare Main Nav / Expandable auf Mobile'
           FITTOCONTENT: 'Breite der Navigation auf Contentbreite'
-          NAVHEIGHT: 'Navigation Höhe (60-205)'
+          NAVHEIGHT: 'Navigation Höhe (20-205)'
           MOBNAVHEIGHT: 'Mobile Nav Höhe (60-300)'
           MOBNAVENABLED: 'Separate Höhe für Mobile Nav'
           STICKYBOTTOM: 'Add sticky Menu to bottom (and remove hamburger top left!)'
