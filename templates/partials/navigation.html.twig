@@ -8,7 +8,7 @@
     {% if p.children.visible.count > 0 and theme_config.header.subnav %}
       <li>
     <a href="{{ p.url }}" class="{{ active_page }} onlymobile">{% if theme_var('nav.expanded') == '1' %}<span class="plussign">+</span><span class="minussign" style="display:none;">-</span>&nbsp;&nbsp;{% endif %}</a>
-        <a href="{{ p.url }}" class="{{ active_page }}" link>
+        <a href="{{ p.url }}" class="{{ active_page }} mainlink expandable" link>
         {{ p.menu }}
         </a>
         <ul class="nav-lvl2">
@@ -18,7 +18,7 @@
     {% else %}
       {% if (p.home() and theme_config.header.home and p.header.markdown.title == false) or p.home() == false %}
         <li>
-          <a href="{{ p.url }}" class="{{ active_page }}" link>
+          <a href="{{ p.url }}" class="{{ active_page }} mainlink" link>
             {{ p.menu }}
           </a>
         </li>
