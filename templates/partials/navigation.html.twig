@@ -28,13 +28,17 @@
 {% endmacro %}
 
 <nav class="header-nav desktop">
+  {% if theme_var('header.kundencode') == 'stkh' %}<div class="wrap">{% endif %}
+      {% if theme_var('header.kundencode') == 'stkh' %}
+        <a href="/" class="stickyheaderimg"><img src="{{ url('theme://custom/images/logo_stkh.svg') }}"  /></a>
+      {% endif %}
   <ul class="nav-lvl1" {{ tree ? 'class="tree"' : '' }}>
   {% if theme_var('nav.button.enabled') %}
     <li class="specialbutton"><a href="{{ base_url }}{{ theme_var('nav.button.link') }}">{{ theme_var('nav.button.text') }}</a></li>
   {% endif %}
     {{ _self.nav_loop(pages, theme_config) }}
   </ul>
-
+  {% if theme_var('header.kundencode') == 'stkh' %}</div>{% endif %}
 </nav>
 <nav class="header-nav mobile">
   <ul class="nav-lvl1" {{ tree ? 'class="tree"' : '' }}>
