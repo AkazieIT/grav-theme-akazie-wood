@@ -293,10 +293,10 @@
 
 
               <div
-                class="screen-image screen-fullscreen{% if removehead == true %} removeheader{% endif %}{% if page.template == 'home' and page.header.slideshow %} bgslide{% endif %}"
+                class="screen-image screen-fullscreen{% if removehead == true  or theme_var('header.hidetoptnt') %} removeheader{% endif %}{% if page.template == 'home' and page.header.slideshow %} bgslide{% endif %}"
                 {% if page.header.slideshow %}
 
-                {% elseif removehead != true %}
+                {% elseif removehead != true or  or theme_var('header.hidetoptnt') != true %}
                 style="background-image: url('{{ image ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"
                 {% endif %}>
 
@@ -309,7 +309,7 @@
                 <div class="screen-image screen-fullscreen">
                 {% endif %}
                 <div
-                  class="image-caption color-new-line  {% if page.header.markdown.newlineoncolorchangemobile %}color-new-line-mobile{% endif %}{% if page.header.claimswitch == true %} claim{% endif %}{% if removehead == true %} removeheader{% endif %}">
+                  class="image-caption color-new-line  {% if page.header.markdown.newlineoncolorchangemobile %}color-new-line-mobile{% endif %}{% if page.header.claimswitch == true %} claim{% endif %}{% if removehead == true  or theme_var('header.hidetoptnt') %} removeheader{% endif %}">
                   {% if page.header.markdown.title %}
                     {{ page.header.title | markdown }}
                   {% else %}
@@ -338,12 +338,12 @@
               {% set image = page.header.image %}
               {% if theme_var('site.parallax') == 0 %}
             <div class="screen-image screen-top{% if removehead == true or theme_var('header.hidetoptnt')  %} removeheader{% endif %}"
-             {% if removehead != true %}
+             {% if removehead != true  or theme_var('header.hidetoptnt') != true %}
                 style="background-image: url('{{ image  ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')" {% endif %}> {% else %}
                   <div class="screen-image screen-top">
                   {% endif %}
 
-                <div class="image-caption{% if page.header.claimswitch == true %} claim{% endif %}{% if removehead == true %} removeheader{% endif %}">
+                <div class="image-caption{% if page.header.claimswitch == true %} claim{% endif %}{% if removehead == true or theme_var('header.hidetoptnt') %} removeheader{% endif %}">
 
                   {% if theme_var('header.kundencode') != 'immosit' and theme_var('header.kundencode') != 'immositweb' %}
 
