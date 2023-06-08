@@ -527,6 +527,14 @@ form:
             header.kundencode:
               type: text
               label: THEME_AKAZIEWOOD.ADMIN.FIELDS.KUNDENCODE.LABEL
+            header.hidetoptnt:
+              type: toggle
+              label: 'Hide header with plugins that exend base.twig'
+              highlight: 0
+              default: 0
+              options:
+                0: PLUGIN_ADMIN.DISABLED
+                1: PLUGIN_ADMIN.ENABLED
             style.css:
               type: toggle
               label: THEME_AKAZIEWOOD.THEME.FIELDS.CUSTOMCSS.LABEL

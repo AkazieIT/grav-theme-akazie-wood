@@ -337,7 +337,7 @@
             {% else %}
               {% set image = page.header.image %}
               {% if theme_var('site.parallax') == 0 %}
-            <div class="screen-image screen-top{% if removehead == true %} removeheader{% endif %}"
+            <div class="screen-image screen-top{% if removehead == true or theme_var('header.hidetoptnt')  %} removeheader{% endif %}"
              {% if removehead != true %}
                 style="background-image: url('{{ image  ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')" {% endif %}> {% else %}
                   <div class="screen-image screen-top">
