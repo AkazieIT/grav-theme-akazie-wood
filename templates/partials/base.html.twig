@@ -296,8 +296,10 @@
                 class="screen-image screen-fullscreen{% if removehead == true  or theme_var('header.hidetoptnt') %} removeheader{% endif %}{% if page.template == 'home' and page.header.slideshow %} bgslide{% endif %}"
                 {% if page.header.slideshow %}
 
-                {% elseif removehead != true or theme_var('header.hidetoptnt') != true %}
+                {% elseif removehead != true %}
+                 {%  if theme_var('header.hidetoptnt') != true %}
                 style="background-image: url('{{ image ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')"
+                 {% endif %}
                 {% endif %}>
 
                 {% if page.template == 'home' and page.header.slideshow %}
@@ -338,10 +340,13 @@
               {% set image = page.header.image %}
               {% if theme_var('site.parallax') == 0 %}
             <div class="screen-image screen-top{% if removehead == true or theme_var('header.hidetoptnt')  %} removeheader{% endif %}"
-             {% if removehead != true  or theme_var('header.hidetoptnt') != true %}
+             {% if removehead != true %}
+
+                 {%  if theme_var('header.hidetoptnt') != true %}
                 style="background-image: url('{{ image  ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')" {% endif %}> {% else %}
                   <div class="screen-image screen-top">
-                  {% endif %}
+                {% endif %}
+              {% endif %}
 
                 <div class="image-caption{% if page.header.claimswitch == true %} claim{% endif %}{% if removehead == true or theme_var('header.hidetoptnt') %} removeheader{% endif %}">
 
