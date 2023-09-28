@@ -34,7 +34,7 @@
       {% endif %}
   <ul class="nav-lvl1" {{ tree ? 'class="tree"' : '' }}>
   {% if theme_var('nav.button.enabled') %}
-    <li class="specialbutton"><a href="{{ base_url }}{{ theme_var('nav.button.link') }}">{{ theme_var('nav.button.text') }}</a></li>
+    <li class="specialbutton"><a href="{{ base_url }}{{ theme_var('nav.button.link') }}">{{ theme_var('nav.button.text') | raw }}</a></li>
   {% endif %}
     {{ _self.nav_loop(pages, theme_config) }}
   </ul>
