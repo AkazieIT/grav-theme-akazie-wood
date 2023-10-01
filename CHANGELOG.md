@@ -1,4 +1,15 @@
 
+# v0.9.98
+## 01.10.2022
+
+
+1. [](#changed)
+    * image modules can now also parse mp4 files
+
+1. [](#new)
+    * added experimental secondary nav and buttons
+
+
 # v0.9.976
 ## 21.12.2022
 

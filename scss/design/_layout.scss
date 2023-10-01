@@ -259,6 +259,15 @@ header.site-header{
     }
     nav.header-nav{
       &.desktop{
+        display:flex;
+        flex-direction:row-reverse;
+        .specialnav {
+          display:flex;
+          align-items:center;
+          padding-left:30px;
+          padding-right:30px;
+        
+        }
         @include media-breakpoint-down(md) {
           display: none;
         }
@@ -287,12 +296,19 @@ header.site-header{
           li.specialbutton {
             a {
               height:60px;
-              margin-left:30px;
-              @media (max-width: 1780px) {
-                margin-right:30px;
-              }
             }
           }
+          &.nav-lvl1 {
+           // margin-left:30px;
+            flex-grow:1;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row-reverse;
+            li:first-child {
+              margin-left:0px;
+            }
+          }
+          
           &.nav-lvl1{
             > li{
               float: right;
@@ -304,6 +320,7 @@ header.site-header{
               }
             }
           }
+          
           &.nav-lvl2{
             position: absolute;
             display: none;

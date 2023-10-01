@@ -1,7 +1,7 @@
 /*!
  * akazie-wood - v6.0.0
  * @author Olivier Zurkirchen
- * Copyright (c) 2022
+ * Copyright (c) 2023
  */
 /*
  * Bootstrap
@@ -17172,8 +17172,17 @@ header.site-header div.header-inner div.logo img {
 }
 
 header.site-header div.header-inner nav.header-nav.desktop {
+  display: flex;
+  flex-direction: row-reverse;
   flex: 1 1 auto;
   text-align: right;
+}
+
+header.site-header div.header-inner nav.header-nav.desktop .specialnav {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 @media (max-width: 991.98px) {
@@ -17202,13 +17211,17 @@ header.site-header div.header-inner nav.header-nav.desktop ul li a.onlymobile {
 
 header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a {
   height: 60px;
-  margin-left: 30px;
 }
 
-@media (max-width: 1780px) {
-  header.site-header div.header-inner nav.header-nav.desktop ul li.specialbutton a {
-    margin-right: 30px;
-  }
+header.site-header div.header-inner nav.header-nav.desktop ul.nav-lvl1 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+
+header.site-header div.header-inner nav.header-nav.desktop ul.nav-lvl1 li:first-child {
+  margin-left: 0px;
 }
 
 header.site-header div.header-inner nav.header-nav.desktop ul.nav-lvl1 > li {
