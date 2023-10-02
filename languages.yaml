@@ -50,8 +50,10 @@ en:
           LABEL: 'URL'
         BUTTON:
           LABEL: 'Custom Nav button'
+          URL:
+            LABEL: 'Button Link'
           LINK:
-            LABEL: 'Button link'
+            LABEL: 'If Link left empty: Button Page'
           ENABLED:
             LABEL: 'Custom nav button enabled?'
           TEXT:
@@ -473,8 +475,10 @@ de:
           LABEL: 'URL'
         BUTTON:
           LABEL: 'Spezialbutton in der Navigation'
-          LINK:
+          URL:
             LABEL: 'Spezialbutton Link'
+          LINK:
+            LABEL: 'Falls Link leergelassen: Spezialbutton Page'
           ENABLED:
             LABEL: 'Spezialbutton aktiviert?'
           TEXT:

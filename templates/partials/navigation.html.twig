@@ -37,10 +37,10 @@
   </ul>
   <ul class="specialnav">
       {% if theme_var('nav.button.enabled') %}
-    <li class="specialbutton"><a href="{{ base_url }}{{ theme_var('nav.button.link') }}">{{ theme_var('nav.button.text') | raw }}</a></li>
+    <li class="specialbutton"><a href="{% if theme_var('nav.button.url') is empty %}{{ base_url }}{{ theme_var('nav.button.link') }}{% else %}{{ theme_var('nav.button.url') }}{% endif %}">{{ theme_var('nav.button.text') | raw }}</a></li>
       {% endif %}
         {% if theme_var('nav.button2.enabled') %}
-        <li class="specialbutton"><a href="{{ base_url }}{{ theme_var('nav.button2.link') }}">{{ theme_var('nav.button2.text') | raw }}</a></li>
+        <li class="specialbutton"><a href="{% if theme_var('nav.button2.url') is empty %}{{ base_url }}{{ theme_var('nav.button2.link') }}{% else %}{{ theme_var('nav.button2.url') }}{% endif %}">{{ theme_var('nav.button2.text') | raw }}</a></li>
       {% endif %}
   </ul>
   {% if theme_var('header.kundencode') == 'stkh' %}</div>{% endif %}
@@ -49,10 +49,10 @@
   <ul class="nav-lvl1" {{ tree ? 'class="tree"' : '' }}>
     {{ _self.nav_loop(pages, theme_config, false) }}
     {% if theme_var('nav.button.enabled') %}
-      <li class="specialbutton"><a href="{{ base_url }}{{ theme_var('nav.button.link') }}" class="onlymobile">{{ theme_var('nav.button.text') | raw }}</a></li>
+      <li class="specialbutton"><a href="{% if theme_var('nav.button.url') is empty %}{{ base_url }}{{ theme_var('nav.button.link') }}{% else %}{{ theme_var('nav.button.url') }}{% endif %}" class="onlymobile">{{ theme_var('nav.button.text') | raw }}</a></li>
     {% endif %}
         {% if theme_var('nav.button2.enabled') %}
-      <li class="specialbutton2"><a href="{{ base_url }}{{ theme_var('nav.button2.link') }}" class="onlymobile">{{ theme_var('nav.button2.text') | raw }}</a></li>
+      <li class="specialbutton2"><a href="{% if theme_var('nav.button2.url') is empty %}{{ base_url }}{{ theme_var('nav.button2.link') }}{% else %}{{ theme_var('nav.button2.url') }}{% endif %}" class="onlymobile">{{ theme_var('nav.button2.text') | raw }}</a></li>
     {% endif %}
       {% if theme_var('header.kundencode') == 'stkh' %}
        {% include 'partials/stkhmobile.html.twig' %}
