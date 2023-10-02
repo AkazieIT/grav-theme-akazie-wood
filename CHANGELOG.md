@@ -1,5 +1,15 @@
 
-# v0.9.98
+# v0.9.982
+## 01.10.2022
+
+
+1. [](#new)
+    * html anchor element for in-page-linking
+
+
+
+
+# v0.9.981
 ## 01.10.2022
 
 

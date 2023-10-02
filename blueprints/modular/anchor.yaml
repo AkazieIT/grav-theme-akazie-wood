@@ -1,0 +1,18 @@
+title: text
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        inhalt:
+          type: tab
+          title: THEME_AKAZIEWOOD.ADMIN.TAB.CONTENT
+          fields:
+            header.anchor:
+              type: text
+              autofocus: true
+              label: 'Anchor'
+              validate:
+                type: slug
