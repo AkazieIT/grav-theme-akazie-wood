@@ -343,9 +343,9 @@
              {% if removehead != true %}
 
                  {%  if theme_var('header.hidetoptnt') != true %}
-                style="background-image: url('{{ image  ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')" {% endif %}> {% else %}
+                style="background-image: url('{{ image  ? page.media[image].url : theme_url ~ '/images/home.jpg' }}')" {% endif %}{% endif %}> {% else %}
                   <div class="screen-image screen-top">
-                {% endif %}
+
               {% endif %}
 
                 <div class="image-caption{% if page.header.claimswitch == true %} claim{% endif %}{% if removehead == true or theme_var('header.hidetoptnt') %} removeheader{% endif %}">
