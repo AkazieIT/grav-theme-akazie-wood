@@ -65,7 +65,7 @@ en:
         CUSTOMJS:
           LABEL: 'Use custom JS file (please create file in theme directory akazie-wood/custom/js/custom.js)'
         IMAGESIZING:
-          LABEL: 'Use dynamic image resizing with picture tag (experimental feature. make sure to activate caching)'
+          LABEL: 'Use dynamic image resizing with picture tag (experimental feature // make sure to activate caching // doesn't work with slide-in image feature)'
           HELP: 'For production sites please activate cache and set purge and clear times to every month or longer. Also set "Clear image cache by default" to "No" **If you do not activate cache, you will have very long load times because of the responsive images in the modular/image module.**'
         PROPERH:
           LABEL: 'Dont use H tags in header'
@@ -490,7 +490,7 @@ de:
         CUSTOMJS:
           LABEL: 'Benutzerdefinierte JS Datei (bitte zuerst folgende Datei erstellen im theme directory: akazie-wood/custom/js/custom.js)'
         IMAGESIZING:
-          LABEL: 'Image Resizing mit picture Tag (cache aktivieren! Experimentelles Feature)'
+          LABEL: 'Image Resizing mit picture Tag (cache aktivieren! // Experimentelles Feature // funktioniert nicht mit "slide-in" Image Feature)'
           HELP: 'Für Live-Seiten aktivieren Sie bitte den Cache und stellen Sie die Purge-Zeiten auf jeden Monat oder länger ein. Stellen Sie außerdem "Bild-Cache standardmäßig löschen" auf "Nein" **Wenn Sie den Cache nicht aktivieren, haben Sie aufgrund der responsiven Bilder sehr lange Ladezeiten.**'
         PROPERH:
           LABEL: 'Keine H Tags im Header brauchen'
