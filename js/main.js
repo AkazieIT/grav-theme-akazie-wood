@@ -40,14 +40,17 @@ function menuClick(menuSelector) {
   $(menuSelector).toggleClass('open');
   if($(menuSelector).hasClass('open')){
     if($('.stickybottom').find(menuSelector).length == 1) { $('header').addClass('fixed');  $('.stickybottomtoggle').show(); }
-    $('.header-nav.mobile').show().attr('aria-hidden', 'false');
+    $('.header-nav.mobile').css('display', 'flex').attr('aria-hidden', 'false');
     $('.content, .footer, .screen-image').hide();
     $('.page-header').attr('menu', 'open');
+
+    $('body').addClass('navisopen');
   } else {
     if($('.stickybottom').find(menuSelector).length == 1) { $('header').removeClass('fixed'); $('.stickybottomtoggle').hide();}
-    $('.header-nav.mobile').hide().attr('aria-hidden', 'true');
+    $('.header-nav.mobile').css('display', 'none').attr('aria-hidden', 'true');
     $('.content, .footer, .screen-image').show();
     $('.page-header').attr('menu', 'close');
+    $('body').removeClass('navisopen');
   }
 
 

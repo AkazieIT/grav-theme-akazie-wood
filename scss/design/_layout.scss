@@ -8,6 +8,10 @@
   }
 }
 
+body.navisopen{
+  overflow: hidden;
+}
+
 /* ##################################
  Markdown
 ###################################*/
@@ -337,13 +341,35 @@ header.site-header{
         }
       }
       &.mobile {
+        margin-top: $nav-height;
+        padding-top: $nav-height;
+        padding-bottom: $nav-height;
         display: none;
         background-color: lightgrey;
         width: 100%;
-        height: 100vh;
+        height: calc(100vh - 60px);
         position: absolute;
         top: 0;
+        overflow-y: scroll;
 
+        // change scrollbar to something more beautiful
+        &::-webkit-scrollbar {
+          width: 3px;
+        }
+        &::-webkit-scrollbar-track {
+          background: #000;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: #888;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+
+
+
+        align-items: center;
+        justify-content: center;
         //padding-top: 2rem;
         ul{
           padding: 0;
@@ -382,11 +408,14 @@ header.site-header{
               padding:20px;
             }
           }
-          &.nav-lvl1{
+          &.nav-lvl1{ /*
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            */
+            position:absolute;
+            top: $nav-height;
             > li{
               > a{
                 text-transform: uppercase;

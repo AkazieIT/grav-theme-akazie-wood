@@ -1,7 +1,7 @@
 /*!
  * akazie-wood - v6.0.0
  * @author Olivier Zurkirchen
- * Copyright (c) 2023
+ * Copyright (c) 2024
  */
 /*
  * Bootstrap
@@ -16895,6 +16895,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-size: 18px;
 }
 
+body.navisopen {
+  overflow: hidden;
+}
+
 /* ##################################
  Markdown
 ###################################*/
@@ -17247,12 +17251,34 @@ header.site-header div.header-inner nav.header-nav.desktop ul.nav-lvl2 > li > a 
 }
 
 header.site-header div.header-inner nav.header-nav.mobile {
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: none;
   background-color: lightgrey;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 60px);
   position: absolute;
   top: 0;
+  overflow-y: scroll;
+  align-items: center;
+  justify-content: center;
+}
+
+header.site-header div.header-inner nav.header-nav.mobile::-webkit-scrollbar {
+  width: 3px;
+}
+
+header.site-header div.header-inner nav.header-nav.mobile::-webkit-scrollbar-track {
+  background: #000;
+}
+
+header.site-header div.header-inner nav.header-nav.mobile::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+header.site-header div.header-inner nav.header-nav.mobile::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 header.site-header div.header-inner nav.header-nav.mobile ul {
@@ -17294,10 +17320,14 @@ header.site-header div.header-inner nav.header-nav.mobile ul li.specialbutton a 
 }
 
 header.site-header div.header-inner nav.header-nav.mobile ul.nav-lvl1 {
+  /*
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            */
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 60px;
 }
 
 header.site-header div.header-inner nav.header-nav.mobile ul.nav-lvl1 > li > a {

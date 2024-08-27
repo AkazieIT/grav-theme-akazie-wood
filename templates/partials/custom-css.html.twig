@@ -1,4 +1,20 @@
 <style>
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+         ::-webkit-scrollbar-track {
+          background: {{theme_var('style.color.background.main')}};
+        }
+       ::-webkit-scrollbar-thumb {
+          background: {{theme_var('style.color.background.secondary')}};
+        }
+       ::-webkit-scrollbar-thumb:hover {
+          background: {{theme_var('style.color.text.nav.default')}};
+        }
+
+
   html, body{
     font-family: {{ theme_var('style.fonts.main') | raw }};
     color: {{ theme_var('style.color.text.main') }};
@@ -9,6 +25,21 @@
   .wrapper{
     background-color: {{ theme_var('style.color.background.main') }};
   }
+
+
+
+
+        header.site-header div.header-inner nav.header-nav.mobile::-webkit-scrollbar-track {
+          background: {{theme_var('style.color.background.main')}};
+        }
+        header.site-header div.header-inner nav.header-nav.mobile::-webkit-scrollbar-thumb {
+          background: {{theme_var('style.color.background.secondary')}};
+        }
+        header.site-header div.header-inner nav.header-nav.mobile::-webkit-scrollbar-thumb:hover {
+          background: {{theme_var('style.color.text.nav.default')}};
+        }
+
+
   h1, h2, h3, h4, h5, h6{
     font-family: {{ theme_var('style.fonts.h') | raw }};
   }
