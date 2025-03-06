@@ -91,12 +91,26 @@ h1 {
   hyphens: auto;
 }
 
-a:not([link]){
+:not(.imgbuttons) a:not([link]){
   text-decoration: none !important;
   &:hover{
     font-weight: bold;
   }
 }
+.imgbuttons a.button {
+  text-decoration: none !important;
+  margin: 0px;
+  &:hover{
+    font-weight: normal;
+  }
+}
+.imgbuttons {
+      display: flex;
+      padding: 25px 0px;
+      flex-wrap: wrap;
+      gap: 25px;
+}
+
 
 /* ##################################
  components

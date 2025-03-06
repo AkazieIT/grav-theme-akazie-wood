@@ -1,7 +1,7 @@
 /*!
  * akazie-wood - v6.0.0
  * @author Olivier Zurkirchen
- * Copyright (c) 2024
+ * Copyright (c) 2025
  */
 /*
  * Bootstrap
@@ -16985,12 +16985,28 @@ h1 {
           hyphens: auto;
 }
 
-a:not([link]) {
+:not(.imgbuttons) a:not([link]) {
   text-decoration: none !important;
 }
 
-a:not([link]):hover {
+:not(.imgbuttons) a:not([link]):hover {
   font-weight: bold;
+}
+
+.imgbuttons a.button {
+  text-decoration: none !important;
+  margin: 0px;
+}
+
+.imgbuttons a.button:hover {
+  font-weight: normal;
+}
+
+.imgbuttons {
+  display: flex;
+  padding: 25px 0px;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 /* ##################################
