@@ -61,6 +61,14 @@ form:
                   options:
                     0: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.0
                     1: THEME_AKAZIEWOOD.ADMIN.FIELDS.SHOWTITLE.OPTIONS.1
+                header.aspectratio:
+                  type: select
+                  label: THEME_AKAZIEWOOD.ADMIN.FIELDS.ASPECTRATIO.LABEL
+                  highlight: 0
+                  default: 0
+                  options:
+                    0: THEME_AKAZIEWOOD.ADMIN.FIELDS.ASPECTRATIO.OPTIONS.0
+                    1: THEME_AKAZIEWOOD.ADMIN.FIELDS.ASPECTRATIO.OPTIONS.1
                 header.textpos:
                   type: select
                   label: THEME_AKAZIEWOOD.ADMIN.FIELDS.TEXTPOS.LABEL

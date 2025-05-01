@@ -261,6 +261,11 @@ en:
             0: "No"
             1: "Yes"
             2: "Only placeholder"
+        ASPECTRATIO:
+          LABEL: "Aspect ratio"
+          OPTIONS:
+            0: "1:1"
+            1: "4:3"
         MASONRYWIDTH:
           LABEL: "Masonry field width"
           OPTIONS:
@@ -680,6 +685,11 @@ de:
           LABEL: "Alt Tag"
         SHOWTITLE:
           LABEL: "Titel anzeigen?"
+        ASPECTRATIO:
+          LABEL: "Seitenverhältnis"
+          OPTIONS:
+            0: "1:1"
+            1: "4:3"
         MASONRYWIDTH:
           LABEL: "Masonryfeld Breite"
           OPTIONS:

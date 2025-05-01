@@ -16,17 +16,50 @@
             {% set image = page.media[imgtemp] %}
           {% endif %}
 
+            {% set point1 = 358 %}
+            {% set point2 = 261 %}
+            {% set point3 = 742 %}
+            {% set point4 = 538 %}
+            {% set point5 = 370 %}
+            {% set point6 = 700 %}
+            {% set point7 = 500 %}
+
+            {% if page.header.aspectratio == 1 %}
+
+
+
+            {% set point1h = 358 / 4 * 3 %}
+            {% set point2h = 261 / 4 * 3  %}
+            {% set point3h = 742 / 4 * 3  %}
+            {% set point4h = 538 / 4 * 3  %}
+            {% set point5h = 370 / 4 * 3  %}
+            {% set point6h = 700 / 4 * 3  %}
+            {% set point7h = 500 / 4 * 3  %}
+
+            {% else %}
+
+            {% set point1h = 358 %}
+            {% set point2h = 261 %}
+            {% set point3h = 742 %}
+            {% set point4h = 538 %}
+            {% set point5h = 370 %}
+            {% set point6h = 700 %}
+            {% set point7h = 500 %}
+
+
+            {% endif %}
+
             {% if theme_var('header.imagesizing') == 1 %}
               <picture>
-              <source media="(min-width:1220px)" srcset="{{ image.cropZoom(358,358).url }} 1x, {{ image.cropZoom(716,716).url }} 2x">
-              <source media="(min-width:992px)" srcset="{{ image.cropZoom(261,261).url }} 1x, {{ image.cropZoom(522,522).url }} 2x">
-              <source media="(min-width:870px)" srcset="{{ image.cropZoom(742,742).url }} 1x, {{ image.cropZoom(1484,1484).url }} 2x">
-              <source media="(min-width:500px)" srcset="{{ image.cropZoom(538,538).url }} 1x, {{ image.cropZoom(1076,1076).url }} 2x">
-              <source media="(max-width:499px)" srcset="{{ image.cropZoom(370,370).url }} 1x, {{ image.cropZoom(740,740).url }} 2x">
-                <img class="media" style="width:inherit;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.cropZoom(700,700).url }}" />
+              <source media="(min-width:1220px)" srcset="{{ image.cropZoom(point1,point1h).url }} 1x, {{ image.cropZoom(point1 * 2,point1h * 2).url }} 2x">
+              <source media="(min-width:992px)" srcset="{{ image.cropZoom(point2,point2h).url }} 1x, {{ image.cropZoom(point2 * 2,point2h * 2).url }} 2x">
+              <source media="(min-width:870px)" srcset="{{ image.cropZoom(point3,point3h).url }} 1x, {{ image.cropZoom(point3 * 2,point3h * 2).url }} 2x">
+              <source media="(min-width:500px)" srcset="{{ image.cropZoom(point4,point4h).url }} 1x, {{ image.cropZoom(point4 * 2,point4h * 2).url }} 2x">
+              <source media="(max-width:499px)" srcset="{{ image.cropZoom(point5,point5h).url }} 1x, {{ image.cropZoom(point5 * 2,point5h * 2).url }} 2x">
+                <img class="media" style="width:inherit;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.cropZoom(point6,point6h).url }}" />
               </picture>
             {% else %}
-              <img src="{{ image.cropZoom(500,500).url }}" alt="{{ person.name }}" title="{{ person.name }}" />
+              <img src="{{ image.cropZoom(point7,point7h).url }}" alt="{{ person.name }}" title="{{ person.name }}" />
             {% endif %}
 
           </div>
