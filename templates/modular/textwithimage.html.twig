@@ -1,0 +1,77 @@
+</div>
+</section>
+
+<article class="modular section-textwithimage col-12" {% if page.header.background_image %}
+     style="background-image: url('{{ page.media[page.header.background_image].url }}'); 
+            background-position: {{ page.header.background_position | default('center center') }}; 
+            background-size: {{ page.header.background_size | default('cover') }}; 
+            background-repeat: no-repeat;"
+     {% endif %}>
+{% if page.header.hid %}<a class="anchor" id="{{ page.header.hid }}"></a>{% endif %}
+
+<div class="textwithimage-wrapper" >
+
+  
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <div class="col-12 col-md-6 text-content" 
+           {% if page.header.text_align %}style="text-align: {{ page.header.text_align }}"{% endif %}>
+        
+        {% if page.header.showtitle == 1 %}
+        <{% if page.header.titleh == 1 %}h1{% elseif page.header.titleh == 2 %}h3{% else %}h2{% endif %} class="heading">
+        {{ page.header.title }}
+        </{% if page.header.titleh == 1 %}h1{% elseif page.header.titleh == 2 %}h3{% else %}h2{% endif %}>
+        {% endif %}
+        
+        <div class="markdown {% if page.header.showtitle == 2 %}title-placeholder{% endif %}">
+          {{ page.content | markdown }}
+        </div>
+
+        {% if page.header.button is defined %}
+          <div class="imgbuttons">
+            {% if page.header.button | length < 5 and page.header.button | length > 1 %}
+              <div class="row">
+                {% for button in page.header.button %}
+                  <div class="col-12 col-md-{{ 12 / page.header.button | length }}">
+                    <a class="button" href="{{ button.url }}" {% if button.newtab == 1 %}target="_blank"{% endif %}>{{ button.title }}</a>
+                  </div>
+                {% endfor %}
+              </div>
+            {% else %}
+              {% for button in page.header.button %}
+                <a class="button" href="{{ button.url }}" {% if button.newtab == 1 %}target="_blank"{% endif %}>{{ button.title }}</a>
+              {% endfor %}
+            {% endif %}
+          </div>
+        {% endif %}
+        
+      </div>
+      
+      <div class="col-12 col-md-6 image-content">
+          {% set image = page.media[page.header.image] %}
+        
+        {% if image %}
+          <div class="media-container">
+            {% if theme_var('header.imagesizing') == 1 %}
+              <picture>
+                <source media="(min-width:992px)" srcset="{{ image.resize(600,400).url }} 1x, {{ image.resize(1200,800).url }} 2x">
+                <source media="(min-width:500px)" srcset="{{ image.resize(510,340).url }} 1x, {{ image.resize(1020,680).url }} 2x">
+                <source media="(max-width:499px)" srcset="{{ image.resize(450,300).url }} 1x, {{ image.resize(900,600).url }} 2x">
+                <img class="media" style="width:100%;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.resize(600,400).url }}" />
+              </picture>
+            {% else %}
+              <img class="media" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.resize(600,400).url }}" />
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</article>
+  <section class="page section-modular">
+    <div class="row">

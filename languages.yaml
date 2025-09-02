@@ -187,6 +187,7 @@ en:
         HIDENSETTINGS: "Settings for Admin"
         PREVIEW: "Preview"
         MEDIA: 'Media'
+        IMAGES: 'Images'
         MAPSETTINGS: 'Map settings'
         MAPINFO: 'Map info'
         CONTINUE: 'Continue text'
@@ -304,6 +305,14 @@ en:
           LABEL: "Image"
         IMAGES:
           LABEL: "Images"
+        BACKGROUND_IMAGE:
+          LABEL: "Background Image"
+        BACKGROUND_POSITION:
+          LABEL: "Background Position"
+        BACKGROUND_SIZE:
+          LABEL: "Background Size"
+        TEXT_ALIGN:
+          LABEL: "Text Alignment"
         IMAGE_HEADER:
           LABEL: "Header image"
         PDF_HEADER:
@@ -617,6 +626,7 @@ de:
         HIDENSETTINGS: "Administrator Einstellungen"
         PREVIEW: "Vorschau"
         MEDIA: 'Medien'
+        IMAGES: 'Bilder'
         MAPSETTINGS: 'Map Einstellungen'
         MAPINFO: 'Map Info'
         CONTINUE: 'Weiter Text'
@@ -732,6 +742,14 @@ de:
           LABEL: "Bild"
         IMAGES:
           LABEL: "Bilder"
+        BACKGROUND_IMAGE:
+          LABEL: "Hintergrundbild"
+        BACKGROUND_POSITION:
+          LABEL: "Hintergrundposition"
+        BACKGROUND_SIZE:
+          LABEL: "Hintergrundgröße"
+        TEXT_ALIGN:
+          LABEL: "Textausrichtung"
         IMAGE_HEADER:
           LABEL: "Titelbild"
         PDF_HEADER:
