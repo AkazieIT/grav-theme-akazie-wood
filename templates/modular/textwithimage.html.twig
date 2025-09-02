@@ -12,7 +12,7 @@
 <div class="textwithimage-wrapper" >
 
   
-  <div class="container">
+  <div class="container" style="max-width:none;">
     <div class="row align-items-center">
       
       <div class="col-12 col-md-6 text-content" 
@@ -40,7 +40,7 @@
               </div>
             {% else %}
               {% for button in page.header.button %}
-                <a class="button" href="{{ button.url }}" {% if button.newtab == 1 %}target="_blank"{% endif %}>{{ button.title }}</a>
+                <a class="linksbutton" href="{{ button.url }}" {% if button.newtab == 1 %}target="_blank"{% endif %}>{{ button.title }}</a>
               {% endfor %}
             {% endif %}
           </div>
@@ -53,16 +53,7 @@
         
         {% if image %}
           <div class="media-container">
-            {% if theme_var('header.imagesizing') == 1 %}
-              <picture>
-                <source media="(min-width:992px)" srcset="{{ image.resize(600,400).url }} 1x, {{ image.resize(1200,800).url }} 2x">
-                <source media="(min-width:500px)" srcset="{{ image.resize(510,340).url }} 1x, {{ image.resize(1020,680).url }} 2x">
-                <source media="(max-width:499px)" srcset="{{ image.resize(450,300).url }} 1x, {{ image.resize(900,600).url }} 2x">
-                <img class="media" style="width:100%;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.resize(600,400).url }}" />
-              </picture>
-            {% else %}
-              <img class="media" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.resize(600,400).url }}" />
-            {% endif %}
+              <img class="media" style="width:100%; max-width:100%;" title="{{ page.header.title }}" alt="{{ page.header.alt }}" src="{{ image.url }}" />
           </div>
         {% endif %}
       </div>
