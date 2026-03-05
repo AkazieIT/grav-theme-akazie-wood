@@ -16,9 +16,11 @@
         <div class="col-9">
         <h3>{{ button.name }}</h3>
         <div>{{ button.txt }}</div>
+        {% if button.link %}
         <a class="linksbutton{% if page.header.block == 1 %} block{% endif %}" target="{% if button.newwindow == 1 %}_blank{% endif %}"
         href="{{ button.link }}"
         style="{% if page.header.fixedwidth %}width:{{ page.header.fixedwidth }}{% endif %}">{{ button.btntxt }}</a>
+        {% endif %}
         </div>
       </div>
      </div>
