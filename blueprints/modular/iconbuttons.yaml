@@ -31,6 +31,14 @@ form:
                 0: 'h2'
                 1: 'h1'
                 2: 'h3'
+            header.column:
+              type: select
+              label: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.LABEL
+              highlight: 2
+              default: 2
+              options:
+                2: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.OPTIONS.2
+                5: THEME_AKAZIEWOOD.ADMIN.FIELDS.COLUMN.OPTIONS.5
             header.fixedwidth:
               type: text
               label: THEME_AKAZIEWOOD.ADMIN.FIELDS.FIXWIDTH.LABEL
